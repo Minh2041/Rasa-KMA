@@ -1,0 +1,207 @@
+version: "3.1"
+
+nlu:
+  # 13 · ĐOÀN THANH NIÊN & CÂU LẠC BỘ | intent trong Excel: clb/danh_sach
+  - intent: faq_clb/danh_sach
+    examples: |
+      - Học viện hiện có những câu lạc bộ nào?
+      - KMA có những câu lạc bộ sinh viên nào?
+      - Liệt kê các CLB trong Học viện Kỹ thuật mật mã?
+      - Cho em hỏi, KMA có những câu lạc bộ sinh viên nào?
+      - Cho mình hỏi, liệt kê các CLB trong Học viện Kỹ thuật mật mã?
+      - Admin ơi, KMA có những câu lạc bộ sinh viên nào?
+      - Ad cho mình hỏi, liệt kê các CLB trong Học viện Kỹ thuật mật mã?
+      - Mình muốn biết: KMA có những câu lạc bộ sinh viên nào?
+      - Em đang thắc mắc: Liệt kê các CLB trong Học viện Kỹ thuật mật mã?
+      - Cho hỏi một chút, KMA có những câu lạc bộ sinh viên nào?
+      - Mình hỏi về KMA: Liệt kê các CLB trong Học viện Kỹ thuật mật mã?
+      - Về Học viện Kỹ thuật mật mã, KMA có những câu lạc bộ sinh viên nào?
+      - Ở KMA thì liệt kê các CLB trong Học viện Kỹ thuật mật mã?
+      - Em đang tìm hiểu về KMA, KMA có những câu lạc bộ sinh viên nào?
+      - KMA ơi, liệt kê các CLB trong Học viện Kỹ thuật mật mã?
+      - Các anh chị cho em hỏi: KMA có những câu lạc bộ sinh viên nào?
+      - Cần tư vấn giúp em: Liệt kê các CLB trong Học viện Kỹ thuật mật mã?
+      - Giải đáp giúp em: KMA có những câu lạc bộ sinh viên nào?
+      - Em cần thông tin cụ thể: Liệt kê các CLB trong Học viện Kỹ thuật mật mã?
+      - What student clubs currently operate at KMA?
+      - I have a question about KMA: What student clubs currently operate at KMA?
+      - Please help me with this question: What student clubs currently operate at KMA?
+      - KMA co nhung cau lac bo sinh vien nao?
+      - Liet ke cac CLB trong Hoc vien Ky thuat mat ma?
+      - Cho em hoi, KMA co nhung cau lac bo sinh vien nao?
+      - Ad oi, liet ke cac CLB trong Hoc vien Ky thuat mat ma?
+      - KMA: KMA co nhung cau lac bo sinh vien nao?
+      - KMA có những câu lạc bộ sv nào?
+      - Liệt kê các CLB trong KMA?
+      - ad oi, KMA co nhung cau lac bo sv nao?
+
+  # 13 · ĐOÀN THANH NIÊN & CÂU LẠC BỘ | intent trong Excel: clb/kcsc
+  - intent: faq_clb/kcsc
+    examples: |
+      - CLB KCSC là gì, tham gia để làm gì?
+      - CLB KCSC tại KMA làm hoạt động gì?
+      - KCSC là câu lạc bộ gì trong Học viện?
+      - Cho em hỏi, cLB KCSC tại KMA làm hoạt động gì?
+      - Cho mình hỏi, kCSC là câu lạc bộ gì trong Học viện?
+      - Admin ơi, cLB KCSC tại KMA làm hoạt động gì?
+      - Ad cho mình hỏi, kCSC là câu lạc bộ gì trong Học viện?
+      - Mình muốn biết: CLB KCSC tại KMA làm hoạt động gì?
+      - Em đang thắc mắc: KCSC là câu lạc bộ gì trong Học viện?
+      - Cho hỏi một chút, cLB KCSC tại KMA làm hoạt động gì?
+      - Mình hỏi về KMA: KCSC là câu lạc bộ gì trong Học viện?
+      - Về Học viện Kỹ thuật mật mã, cLB KCSC tại KMA làm hoạt động gì?
+      - Ở KMA thì kCSC là câu lạc bộ gì trong Học viện?
+      - Em đang tìm hiểu về KMA, cLB KCSC tại KMA làm hoạt động gì?
+      - KMA ơi, kCSC là câu lạc bộ gì trong Học viện?
+      - Các anh chị cho em hỏi: CLB KCSC tại KMA làm hoạt động gì?
+      - Cần tư vấn giúp em: KCSC là câu lạc bộ gì trong Học viện?
+      - Giải đáp giúp em: CLB KCSC tại KMA làm hoạt động gì?
+      - Em cần thông tin cụ thể: KCSC là câu lạc bộ gì trong Học viện?
+      - What is the KCSC student club at KMA?
+      - I have a question about KMA: What is the KCSC student club at KMA?
+      - Please help me with this question: What is the KCSC student club at KMA?
+      - CLB KCSC tai KMA lam hoat dong gi?
+      - KCSC la cau lac bo gi trong Hoc vien?
+      - Cho em hoi, cLB KCSC tai KMA lam hoat dong gi?
+      - Ad oi, kCSC la cau lac bo gi trong Hoc vien?
+      - KMA: CLB KCSC tai KMA lam hoat dong gi?
+      - KCSC là câu lạc bộ gì trong HV?
+      - ad oi, cLB KCSC tai KMA lam hoat dong gi?
+      - Mình xin hỏi thêm: CLB KCSC tại KMA làm hoạt động gì?
+
+  # 13 · ĐOÀN THANH NIÊN & CÂU LẠC BỘ | intent trong Excel: clb/xung_kich
+  - intent: faq_clb/xung_kich
+    examples: |
+      - CLB Thanh niên Xung kích KMA làm những gì?
+      - CLB Thanh niên Xung kích KMA làm gì?
+      - Đội xung kích trong Học viện có các hoạt động nào?
+      - Cho em hỏi, cLB Thanh niên Xung kích KMA làm gì?
+      - Cho mình hỏi, đội xung kích trong Học viện có các hoạt động nào?
+      - Admin ơi, cLB Thanh niên Xung kích KMA làm gì?
+      - Ad cho mình hỏi, đội xung kích trong Học viện có các hoạt động nào?
+      - Mình muốn biết: CLB Thanh niên Xung kích KMA làm gì?
+      - Em đang thắc mắc: Đội xung kích trong Học viện có các hoạt động nào?
+      - Cho hỏi một chút, cLB Thanh niên Xung kích KMA làm gì?
+      - Mình hỏi về KMA: Đội xung kích trong Học viện có các hoạt động nào?
+      - Về Học viện Kỹ thuật mật mã, cLB Thanh niên Xung kích KMA làm gì?
+      - Ở KMA thì đội xung kích trong Học viện có các hoạt động nào?
+      - Em đang tìm hiểu về KMA, cLB Thanh niên Xung kích KMA làm gì?
+      - KMA ơi, đội xung kích trong Học viện có các hoạt động nào?
+      - Các anh chị cho em hỏi: CLB Thanh niên Xung kích KMA làm gì?
+      - Cần tư vấn giúp em: Đội xung kích trong Học viện có các hoạt động nào?
+      - Giải đáp giúp em: CLB Thanh niên Xung kích KMA làm gì?
+      - Em cần thông tin cụ thể: Đội xung kích trong Học viện có các hoạt động nào?
+      - What does the KMA Youth Volunteer Club do?
+      - I have a question about KMA: What does the KMA Youth Volunteer Club do?
+      - Please help me with this question: What does the KMA Youth Volunteer Club do?
+      - CLB Thanh nien Xung kich KMA lam gi?
+      - Doi xung kich trong Hoc vien co cac hoat dong nao?
+      - Cho em hoi, cLB Thanh nien Xung kich KMA lam gi?
+      - Ad oi, doi xung kich trong Hoc vien co cac hoat dong nao?
+      - KMA: CLB Thanh nien Xung kich KMA lam gi?
+      - Đội xung kích trong HV có các hoạt động nào?
+      - ad oi, cLB Thanh nien Xung kich KMA lam gi?
+      - Mình xin hỏi thêm: CLB Thanh niên Xung kích KMA làm gì?
+
+  # 13 · ĐOÀN THANH NIÊN & CÂU LẠC BỘ | intent trong Excel: clb/hien_mau
+  - intent: faq_clb/hien_mau
+    examples: |
+      - Đội/CLB hiến máu KMA làm gì, tham gia thế nào?
+      - Đội hiến máu KMA sinh hoạt như thế nào?
+      - Muốn tham gia CLB hiến máu Học viện cần làm gì?
+      - Cho em hỏi, đội hiến máu KMA sinh hoạt như thế nào?
+      - Cho mình hỏi, muốn tham gia CLB hiến máu Học viện cần làm gì?
+      - Admin ơi, đội hiến máu KMA sinh hoạt như thế nào?
+      - Ad cho mình hỏi, muốn tham gia CLB hiến máu Học viện cần làm gì?
+      - Mình muốn biết: Đội hiến máu KMA sinh hoạt như thế nào?
+      - Em đang thắc mắc: Muốn tham gia CLB hiến máu Học viện cần làm gì?
+      - Cho hỏi một chút, đội hiến máu KMA sinh hoạt như thế nào?
+      - Mình hỏi về KMA: Muốn tham gia CLB hiến máu Học viện cần làm gì?
+      - Về Học viện Kỹ thuật mật mã, đội hiến máu KMA sinh hoạt như thế nào?
+      - Ở KMA thì muốn tham gia CLB hiến máu Học viện cần làm gì?
+      - Em đang tìm hiểu về KMA, đội hiến máu KMA sinh hoạt như thế nào?
+      - KMA ơi, muốn tham gia CLB hiến máu Học viện cần làm gì?
+      - Các anh chị cho em hỏi: Đội hiến máu KMA sinh hoạt như thế nào?
+      - Cần tư vấn giúp em: Muốn tham gia CLB hiến máu Học viện cần làm gì?
+      - Giải đáp giúp em: Đội hiến máu KMA sinh hoạt như thế nào?
+      - Em cần thông tin cụ thể: Muốn tham gia CLB hiến máu Học viện cần làm gì?
+      - What does KMA's blood donation club do?
+      - I have a question about KMA: What does KMA's blood donation club do?
+      - Please help me with this question: What does KMA's blood donation club do?
+      - Doi hien mau KMA sinh hoat nhu the nao?
+      - Muon tham gia CLB hien mau Hoc vien can lam gi?
+      - Cho em hoi, doi hien mau KMA sinh hoat nhu the nao?
+      - Ad oi, muon tham gia CLB hien mau Hoc vien can lam gi?
+      - KMA: Doi hien mau KMA sinh hoat nhu the nao?
+      - Đội hiến máu KMA sinh hoạt ntn?
+      - Muốn tham gia CLB hiến máu HV cần làm gì?
+      - ad oi, doi hien mau KMA sinh hoat ntn?
+
+  # 13 · ĐOÀN THANH NIÊN & CÂU LẠC BỘ | intent trong Excel: clb/van_nghe_the_thao
+  - intent: faq_clb/van_nghe_the_thao
+    examples: |
+      - Có CLB Guitar, võ thuật, bóng chuyền không?
+      - KMA có CLB guitar và võ thuật không?
+      - Các câu lạc bộ văn nghệ thể thao của Học viện?
+      - Cho em hỏi, KMA có CLB guitar và võ thuật không?
+      - Cho mình hỏi, các câu lạc bộ văn nghệ thể thao của Học viện?
+      - Admin ơi, KMA có CLB guitar và võ thuật không?
+      - Ad cho mình hỏi, các câu lạc bộ văn nghệ thể thao của Học viện?
+      - Mình muốn biết: KMA có CLB guitar và võ thuật không?
+      - Em đang thắc mắc: Các câu lạc bộ văn nghệ thể thao của Học viện?
+      - Cho hỏi một chút, KMA có CLB guitar và võ thuật không?
+      - Mình hỏi về KMA: Các câu lạc bộ văn nghệ thể thao của Học viện?
+      - Về Học viện Kỹ thuật mật mã, KMA có CLB guitar và võ thuật không?
+      - Ở KMA thì các câu lạc bộ văn nghệ thể thao của Học viện?
+      - Em đang tìm hiểu về KMA, KMA có CLB guitar và võ thuật không?
+      - KMA ơi, các câu lạc bộ văn nghệ thể thao của Học viện?
+      - Các anh chị cho em hỏi: KMA có CLB guitar và võ thuật không?
+      - Cần tư vấn giúp em: Các câu lạc bộ văn nghệ thể thao của Học viện?
+      - Giải đáp giúp em: KMA có CLB guitar và võ thuật không?
+      - Em cần thông tin cụ thể: Các câu lạc bộ văn nghệ thể thao của Học viện?
+      - Which arts and sports clubs does KMA have?
+      - I have a question about KMA: Which arts and sports clubs does KMA have?
+      - Please help me with this question: Which arts and sports clubs does KMA have?
+      - KMA co CLB guitar va vo thuat khong?
+      - Cac cau lac bo van nghe the thao cua Hoc vien?
+      - Cho em hoi, KMA co CLB guitar va vo thuat khong?
+      - Ad oi, cac cau lac bo van nghe the thao cua Hoc vien?
+      - KMA: KMA co CLB guitar va vo thuat khong?
+      - KMA có CLB guitar và võ thuật ko?
+      - Các câu lạc bộ văn nghệ thể thao của HV?
+      - ad oi, KMA co CLB guitar va vo thuat ko?
+
+  # 13 · ĐOÀN THANH NIÊN & CÂU LẠC BỘ | intent trong Excel: clb/dang_ky_tham_gia
+  - intent: faq_clb/dang_ky_tham_gia
+    examples: |
+      - Sinh viên KMA có thể đăng ký tham gia các câu lạc bộ của Học viện bằng cách nào? 
+      - Muốn tham gia CLB ở KMA thì liên hệ hoặc đăng ký ở đâu?
+      - Đăng ký tham gia CLB KMA ở đâu?
+      - Cách liên hệ ban chủ nhiệm câu lạc bộ Học viện?
+      - Cho em hỏi, đăng ký tham gia CLB KMA ở đâu?
+      - Cho mình hỏi, cách liên hệ ban chủ nhiệm câu lạc bộ Học viện?
+      - Admin ơi, đăng ký tham gia CLB KMA ở đâu?
+      - Ad cho mình hỏi, cách liên hệ ban chủ nhiệm câu lạc bộ Học viện?
+      - Mình muốn biết: Đăng ký tham gia CLB KMA ở đâu?
+      - Em đang thắc mắc: Cách liên hệ ban chủ nhiệm câu lạc bộ Học viện?
+      - Cho hỏi một chút, đăng ký tham gia CLB KMA ở đâu?
+      - Mình hỏi về KMA: Cách liên hệ ban chủ nhiệm câu lạc bộ Học viện?
+      - Về Học viện Kỹ thuật mật mã, đăng ký tham gia CLB KMA ở đâu?
+      - Ở KMA thì cách liên hệ ban chủ nhiệm câu lạc bộ Học viện?
+      - Em đang tìm hiểu về KMA, đăng ký tham gia CLB KMA ở đâu?
+      - KMA ơi, cách liên hệ ban chủ nhiệm câu lạc bộ Học viện?
+      - Các anh chị cho em hỏi: Đăng ký tham gia CLB KMA ở đâu?
+      - Cần tư vấn giúp em: Cách liên hệ ban chủ nhiệm câu lạc bộ Học viện?
+      - Giải đáp giúp em: Đăng ký tham gia CLB KMA ở đâu?
+      - Em cần thông tin cụ thể: Cách liên hệ ban chủ nhiệm câu lạc bộ Học viện?
+      - How do students join a club at KMA?
+      - I have a question about KMA: How do students join a club at KMA?
+      - Please help me with this question: How do students join a club at KMA?
+      - Dang ky tham gia CLB KMA o dau?
+      - Cach lien he ban chu nhiem cau lac bo Hoc vien?
+      - Cho em hoi, dang ky tham gia CLB KMA o dau?
+      - Ad oi, cach lien he ban chu nhiem cau lac bo Hoc vien?
+      - KMA: Dang ky tham gia CLB KMA o dau?
+      - Cách liên hệ ban chủ nhiệm câu lạc bộ HV?
+      - ad oi, dk tham gia CLB KMA o dau?
+      - Mình xin hỏi thêm: Đăng ký tham gia CLB KMA ở đâu?

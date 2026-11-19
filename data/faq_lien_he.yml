@@ -1,0 +1,173 @@
+version: "3.1"
+
+nlu:
+  # 02 · LIÊN HỆ & CƠ SỞ VẬT CHẤT | intent trong Excel: lien_he/tong_quan
+  - intent: faq_lien_he/tong_quan
+    examples: |
+      - Học viện ở đâu và liên hệ thế nào?
+      - Địa chỉ và liên hệ chung của KMA ở đâu?
+      - Muốn tìm thông tin cơ sở và liên lạc Học viện ở đâu?
+      - Cho em hỏi, địa chỉ và liên hệ chung của KMA ở đâu?
+      - Cho mình hỏi, muốn tìm thông tin cơ sở và liên lạc Học viện ở đâu?
+      - Admin ơi, địa chỉ và liên hệ chung của KMA ở đâu?
+      - Ad cho mình hỏi, muốn tìm thông tin cơ sở và liên lạc Học viện ở đâu?
+      - Mình muốn biết: Địa chỉ và liên hệ chung của KMA ở đâu?
+      - Em đang thắc mắc: Muốn tìm thông tin cơ sở và liên lạc Học viện ở đâu?
+      - Cho hỏi một chút, địa chỉ và liên hệ chung của KMA ở đâu?
+      - Mình hỏi về KMA: Muốn tìm thông tin cơ sở và liên lạc Học viện ở đâu?
+      - Về Học viện Kỹ thuật mật mã, địa chỉ và liên hệ chung của KMA ở đâu?
+      - Ở KMA thì muốn tìm thông tin cơ sở và liên lạc Học viện ở đâu?
+      - Em đang tìm hiểu về KMA, địa chỉ và liên hệ chung của KMA ở đâu?
+      - KMA ơi, muốn tìm thông tin cơ sở và liên lạc Học viện ở đâu?
+      - Các anh chị cho em hỏi: Địa chỉ và liên hệ chung của KMA ở đâu?
+      - Cần tư vấn giúp em: Muốn tìm thông tin cơ sở và liên lạc Học viện ở đâu?
+      - Giải đáp giúp em: Địa chỉ và liên hệ chung của KMA ở đâu?
+      - Em cần thông tin cụ thể: Muốn tìm thông tin cơ sở và liên lạc Học viện ở đâu?
+      - Where is KMA located and how can I contact the academy?
+      - I have a question about KMA: Where is KMA located and how can I contact the academy?
+      - Please help me with this question: Where is KMA located and how can I contact the academy?
+      - Dia chi va lien he chung cua KMA o dau?
+      - Muon tim thong tin co so va lien lac Hoc vien o dau?
+      - Cho em hoi, dia chi va lien he chung cua KMA o dau?
+      - Ad oi, muon tim thong tin co so va lien lac Hoc vien o dau?
+      - KMA: Dia chi va lien he chung cua KMA o dau?
+      - Muốn tìm thông tin cơ sở và liên lạc HV ở đâu?
+      - ad oi, dia chi va lien he chung cua KMA o dau?
+      - Mình xin hỏi thêm: Địa chỉ và liên hệ chung của KMA ở đâu?
+
+  # 02 · LIÊN HỆ & CƠ SỞ VẬT CHẤT | intent trong Excel: lien_he/co_so_ha_noi
+  - intent: faq_lien_he/co_so_ha_noi
+    examples: |
+      - Địa chỉ cơ sở Hà Nội của Học viện ở đâu?
+      - Địa chỉ KMA tại Hà Nội ở đâu?
+      - Cơ sở Hà Nội của Học viện nằm chỗ nào?
+      - Cho em hỏi, địa chỉ KMA tại Hà Nội ở đâu?
+      - Cho mình hỏi, cơ sở Hà Nội của Học viện nằm chỗ nào?
+      - Admin ơi, địa chỉ KMA tại Hà Nội ở đâu?
+      - Ad cho mình hỏi, cơ sở Hà Nội của Học viện nằm chỗ nào?
+      - Mình muốn biết: Địa chỉ KMA tại Hà Nội ở đâu?
+      - Em đang thắc mắc: Cơ sở Hà Nội của Học viện nằm chỗ nào?
+      - Cho hỏi một chút, địa chỉ KMA tại Hà Nội ở đâu?
+      - Mình hỏi về KMA: Cơ sở Hà Nội của Học viện nằm chỗ nào?
+      - Về Học viện Kỹ thuật mật mã, địa chỉ KMA tại Hà Nội ở đâu?
+      - Ở KMA thì cơ sở Hà Nội của Học viện nằm chỗ nào?
+      - Em đang tìm hiểu về KMA, địa chỉ KMA tại Hà Nội ở đâu?
+      - KMA ơi, cơ sở Hà Nội của Học viện nằm chỗ nào?
+      - Các anh chị cho em hỏi: Địa chỉ KMA tại Hà Nội ở đâu?
+      - Cần tư vấn giúp em: Cơ sở Hà Nội của Học viện nằm chỗ nào?
+      - Giải đáp giúp em: Địa chỉ KMA tại Hà Nội ở đâu?
+      - Em cần thông tin cụ thể: Cơ sở Hà Nội của Học viện nằm chỗ nào?
+      - Where is KMA's Hanoi campus located?
+      - I have a question about KMA: Where is KMA's Hanoi campus located?
+      - Please help me with this question: Where is KMA's Hanoi campus located?
+      - Dia chi KMA tai Ha Noi o dau?
+      - Co so Ha Noi cua Hoc vien nam cho nao?
+      - Cho em hoi, dia chi KMA tai Ha Noi o dau?
+      - Ad oi, co so Ha Noi cua Hoc vien nam cho nao?
+      - KMA: Dia chi KMA tai Ha Noi o dau?
+      - Cơ sở Hà Nội của HV nằm chỗ nào?
+      - ad oi, dia chi KMA tai Ha Noi o dau?
+      - Mình xin hỏi thêm: Địa chỉ KMA tại Hà Nội ở đâu?
+
+  # 02 · LIÊN HỆ & CƠ SỞ VẬT CHẤT | intent trong Excel: lien_he/co_so_hcm
+  - intent: faq_lien_he/co_so_hcm
+    examples: |
+      - Học viện có cơ sở ở TP.HCM không và ở đâu?
+      - Địa chỉ phân hiệu KMA tại TPHCM ở đâu?
+      - Học viện Kỹ thuật mật mã có cơ sở tại Thành phố Hồ Chí Minh không và cơ sở đó ở đâu?
+      - Học viện có cơ sở ở Sài Gòn không?
+      - Cho em hỏi, địa chỉ phân hiệu KMA tại TPHCM ở đâu?
+      - Cho mình hỏi, học viện có cơ sở ở Sài Gòn không?
+      - Admin ơi, địa chỉ phân hiệu KMA tại TPHCM ở đâu?
+      - Ad cho mình hỏi, học viện có cơ sở ở Sài Gòn không?
+      - Mình muốn biết: Địa chỉ phân hiệu KMA tại TPHCM ở đâu?
+      - Em đang thắc mắc: Học viện có cơ sở ở Sài Gòn không?
+      - Cho hỏi một chút, địa chỉ phân hiệu KMA tại TPHCM ở đâu?
+      - Mình hỏi về KMA: Học viện có cơ sở ở Sài Gòn không?
+      - Về Học viện Kỹ thuật mật mã, địa chỉ phân hiệu KMA tại TPHCM ở đâu?
+      - Ở KMA thì học viện có cơ sở ở Sài Gòn không?
+      - Em đang tìm hiểu về KMA, địa chỉ phân hiệu KMA tại TPHCM ở đâu?
+      - KMA ơi, học viện có cơ sở ở Sài Gòn không?
+      - Các anh chị cho em hỏi: Địa chỉ phân hiệu KMA tại TPHCM ở đâu?
+      - Cần tư vấn giúp em: Học viện có cơ sở ở Sài Gòn không?
+      - Giải đáp giúp em: Địa chỉ phân hiệu KMA tại TPHCM ở đâu?
+      - Em cần thông tin cụ thể: Học viện có cơ sở ở Sài Gòn không?
+      - Where is the KMA campus in Ho Chi Minh City?
+      - I have a question about KMA: Where is the KMA campus in Ho Chi Minh City?
+      - Please help me with this question: Where is the KMA campus in Ho Chi Minh City?
+      - Dia chi phan hieu KMA tai TPHCM o dau?
+      - Hoc vien co co so o Sai Gon khong?
+      - Cho em hoi, dia chi phan hieu KMA tai TPHCM o dau?
+      - Ad oi, hoc vien co co so o Sai Gon khong?
+      - KMA: Dia chi phan hieu KMA tai TPHCM o dau?
+      - HV có cơ sở ở Sài Gòn ko?
+      - ad oi, dia chi phan hieu KMA tai TPHCM o dau?
+      - Mình xin hỏi thêm: Địa chỉ phân hiệu KMA tại TPHCM ở đâu?
+
+  # 02 · LIÊN HỆ & CƠ SỞ VẬT CHẤT | intent trong Excel: lien_he/kenh_chinh_thuc
+  - intent: faq_lien_he/kenh_chinh_thuc
+    examples: |
+      - Website, Facebook, số điện thoại chính thức của Học viện là gì?
+      - Website và fanpage chính thức KMA là gì?
+      - Số điện thoại liên hệ Học viện Kỹ thuật mật mã?
+      - Cho em hỏi, website và fanpage chính thức KMA là gì?
+      - Cho mình hỏi, số điện thoại liên hệ Học viện Kỹ thuật mật mã?
+      - Admin ơi, website và fanpage chính thức KMA là gì?
+      - Ad cho mình hỏi, số điện thoại liên hệ Học viện Kỹ thuật mật mã?
+      - Mình muốn biết: Website và fanpage chính thức KMA là gì?
+      - Em đang thắc mắc: Số điện thoại liên hệ Học viện Kỹ thuật mật mã?
+      - Cho hỏi một chút, website và fanpage chính thức KMA là gì?
+      - Mình hỏi về KMA: Số điện thoại liên hệ Học viện Kỹ thuật mật mã?
+      - Về Học viện Kỹ thuật mật mã, website và fanpage chính thức KMA là gì?
+      - Ở KMA thì số điện thoại liên hệ Học viện Kỹ thuật mật mã?
+      - Facebook chính thức của trường là gì?
+      - KMA ơi, số điện thoại liên hệ Học viện Kỹ thuật mật mã?
+      - Các anh chị cho em hỏi: Website và fanpage chính thức KMA là gì?
+      - Website chính thức của trường là gì?
+      - Giải đáp giúp em: Website và fanpage chính thức KMA là gì?
+      - Số điện thoại của trường là gì?
+      - What are KMA's official website and contact channels?
+      - I have a question about KMA: What are KMA's official website and contact channels?
+      - Please help me with this question: What are KMA's official website and contact channels?
+      - Website va fanpage chinh thuc KMA la gi?
+      - So dien thoai lien he Hoc vien Ky thuat mat ma?
+      - Cho em hoi, website va fanpage chinh thuc KMA la gi?
+      - Ad oi, so dien thoai lien he Hoc vien Ky thuat mat ma?
+      - KMA: Website va fanpage chinh thuc KMA la gi?
+      - Số điện thoại liên hệ KMA?
+      - ad oi, website va fanpage chinh thuc KMA la gi?
+      - Mình xin hỏi thêm: Website và fanpage chính thức KMA là gì?
+
+  # 02 · LIÊN HỆ & CƠ SỞ VẬT CHẤT | intent trong Excel: lien_he/danh_ba_phong_ban
+  - intent: faq_lien_he/danh_ba_phong_ban
+    examples: |
+      - Em muốn liên hệ phòng Đào tạo/Khảo thí/Hệ QLSV thì đến đâu?
+      - Phòng Đào tạo và Khảo thí KMA ở đâu?
+      - Liên hệ các phòng ban Học viện bằng cách nào?
+      - Cho em hỏi, phòng Đào tạo và Khảo thí KMA ở đâu?
+      - Cho mình hỏi, liên hệ các phòng ban Học viện bằng cách nào?
+      - Admin ơi, phòng Đào tạo và Khảo thí KMA ở đâu?
+      - Ad cho mình hỏi, liên hệ các phòng ban Học viện bằng cách nào?
+      - Mình muốn biết: Phòng Đào tạo và Khảo thí KMA ở đâu?
+      - Em đang thắc mắc: Liên hệ các phòng ban Học viện bằng cách nào?
+      - Cho hỏi một chút, phòng Đào tạo và Khảo thí KMA ở đâu?
+      - Mình hỏi về KMA: Liên hệ các phòng ban Học viện bằng cách nào?
+      - Về Học viện Kỹ thuật mật mã, phòng Đào tạo và Khảo thí KMA ở đâu?
+      - Ở KMA thì liên hệ các phòng ban Học viện bằng cách nào?
+      - Em đang tìm hiểu về KMA, phòng Đào tạo và Khảo thí KMA ở đâu?
+      - KMA ơi, liên hệ các phòng ban Học viện bằng cách nào?
+      - Các anh chị cho em hỏi: Phòng Đào tạo và Khảo thí KMA ở đâu?
+      - Cần tư vấn giúp em: Liên hệ các phòng ban Học viện bằng cách nào?
+      - Giải đáp giúp em: Phòng Đào tạo và Khảo thí KMA ở đâu?
+      - Em cần thông tin cụ thể: Liên hệ các phòng ban Học viện bằng cách nào?
+      - How can I contact the academic affairs and examination offices at KMA?
+      - I have a question about KMA: How can I contact the academic affairs and examination offices at KMA?
+      - Please help me with this question: How can I contact the academic affairs and examination offices at KMA?
+      - Phong Dao tao va Khao thi KMA o dau?
+      - Lien he cac phong ban Hoc vien bang cach nao?
+      - Cho em hoi, phong Dao tao va Khao thi KMA o dau?
+      - Ad oi, lien he cac phong ban Hoc vien bang cach nao?
+      - KMA: Phong Dao tao va Khao thi KMA o dau?
+      - Liên hệ các phòng ban HV bằng cách nào?
+      - ad oi, phong Dao tao va Khao thi KMA o dau?
+      - Mình xin hỏi thêm: Phòng Đào tạo và Khảo thí KMA ở đâu?

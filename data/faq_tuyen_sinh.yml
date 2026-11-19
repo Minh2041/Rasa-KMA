@@ -1,0 +1,313 @@
+version: "3.1"
+
+nlu:
+  # 03 · TUYỂN SINH & NHẬP HỌC | intent trong Excel: tuyen_sinh/tong_quan
+  - intent: faq_tuyen_sinh/tong_quan
+    examples: |
+      - Học viện tuyển sinh đại học như thế nào?
+      - Tuyển sinh đại học KMA có những bước gì?
+      - Thông tin tổng quan về tuyển sinh Học viện năm nay?
+      - Cho em hỏi, tuyển sinh đại học KMA có những bước gì?
+      - Cho mình hỏi, thông tin tổng quan về tuyển sinh Học viện năm nay?
+      - Admin ơi, tuyển sinh đại học KMA có những bước gì?
+      - Ad cho mình hỏi, thông tin tổng quan về tuyển sinh Học viện năm nay?
+      - Mình muốn biết: Tuyển sinh đại học KMA có những bước gì?
+      - Em đang thắc mắc: Thông tin tổng quan về tuyển sinh Học viện năm nay?
+      - Cho hỏi một chút, tuyển sinh đại học KMA có những bước gì?
+      - Mình hỏi về KMA: Thông tin tổng quan về tuyển sinh Học viện năm nay?
+      - Về Học viện Kỹ thuật mật mã, tuyển sinh đại học KMA có những bước gì?
+      - Ở KMA thì thông tin tổng quan về tuyển sinh Học viện năm nay?
+      - Em đang tìm hiểu về KMA, tuyển sinh đại học KMA có những bước gì?
+      - KMA ơi, thông tin tổng quan về tuyển sinh Học viện năm nay?
+      - Các anh chị cho em hỏi: Tuyển sinh đại học KMA có những bước gì?
+      - Cần tư vấn giúp em: Thông tin tổng quan về tuyển sinh Học viện năm nay?
+      - Giải đáp giúp em: Tuyển sinh đại học KMA có những bước gì?
+      - Em cần thông tin cụ thể: Thông tin tổng quan về tuyển sinh Học viện năm nay?
+      - How does undergraduate admission work at KMA?
+      - I have a question about KMA: How does undergraduate admission work at KMA?
+      - Please help me with this question: How does undergraduate admission work at KMA?
+      - Tuyen sinh dai hoc KMA co nhung buoc gi?
+      - Thong tin tong quan ve tuyen sinh Hoc vien nam nay?
+      - Cho em hoi, tuyen sinh dai hoc KMA co nhung buoc gi?
+      - Ad oi, thong tin tong quan ve tuyen sinh Hoc vien nam nay?
+      - KMA: Tuyen sinh dai hoc KMA co nhung buoc gi?
+      - Thông tin tổng quan về tuyển sinh HV năm nay?
+      - ad oi, tuyen sinh dai hoc KMA co nhung buoc gi?
+      - Mình xin hỏi thêm: Tuyển sinh đại học KMA có những bước gì?
+
+  # 03 · TUYỂN SINH & NHẬP HỌC | intent trong Excel: tuyen_sinh/nganh_va_ma
+  - intent: faq_tuyen_sinh/nganh_va_ma
+    examples: |
+      - KMA tuyển ngành nào, mã ngành và mã trường là gì?
+      - Mã trường KMA và mã ngành là gì?
+      - Học viện tuyển những ngành nào và mã tuyển sinh tương ứng?
+      - Cho em hỏi, mã trường KMA và mã ngành là gì?
+      - Cho mình hỏi, học viện tuyển những ngành nào và mã tuyển sinh tương ứng?
+      - Admin ơi, mã trường KMA và mã ngành là gì?
+      - Ad cho mình hỏi, học viện tuyển những ngành nào và mã tuyển sinh tương ứng?
+      - Mình muốn biết: Mã trường KMA và mã ngành là gì?
+      - Em đang thắc mắc: Học viện tuyển những ngành nào và mã tuyển sinh tương ứng?
+      - Cho hỏi một chút, mã trường KMA và mã ngành là gì?
+      - Mình hỏi về KMA: Học viện tuyển những ngành nào và mã tuyển sinh tương ứng?
+      - Về Học viện Kỹ thuật mật mã, mã trường KMA và mã ngành là gì?
+      - Ở KMA thì học viện tuyển những ngành nào và mã tuyển sinh tương ứng?
+      - Em đang tìm hiểu về KMA, mã trường KMA và mã ngành là gì?
+      - KMA ơi, học viện tuyển những ngành nào và mã tuyển sinh tương ứng?
+      - Các anh chị cho em hỏi: Mã trường KMA và mã ngành là gì?
+      - Cần tư vấn giúp em: Học viện tuyển những ngành nào và mã tuyển sinh tương ứng?
+      - Giải đáp giúp em: Mã trường KMA và mã ngành là gì?
+      - Em cần thông tin cụ thể: Học viện tuyển những ngành nào và mã tuyển sinh tương ứng?
+      - What are KMA's institution code and admission major codes?
+      - I have a question about KMA: What are KMA's institution code and admission major codes?
+      - Please help me with this question: What are KMA's institution code and admission major codes?
+      - Ma truong KMA va ma nganh la gi?
+      - Hoc vien tuyen nhung nganh nao va ma tuyen sinh tuong ung?
+      - Cho em hoi, ma truong KMA va ma nganh la gi?
+      - Ad oi, hoc vien tuyen nhung nganh nao va ma tuyen sinh tuong ung?
+      - KMA: Ma truong KMA va ma nganh la gi?
+      - HV tuyển những ngành nào và mã tuyển sinh tương ứng?
+      - ad oi, ma truong KMA va ma nganh la gi?
+      - Mình xin hỏi thêm: Mã trường KMA và mã ngành là gì?
+
+  # 03 · TUYỂN SINH & NHẬP HỌC | intent trong Excel: tuyen_sinh/phuong_thuc
+  - intent: faq_tuyen_sinh/phuong_thuc
+    examples: |
+      - KMA xét tuyển bằng những phương thức nào?
+      - KMA xét tuyển bằng phương thức gì?
+      - Các cách xét tuyển vào Học viện là gì?
+      - Cho em hỏi, KMA xét tuyển bằng phương thức gì?
+      - Cho mình hỏi, các cách xét tuyển vào Học viện là gì?
+      - Admin ơi, KMA xét tuyển bằng phương thức gì?
+      - Ad cho mình hỏi, các cách xét tuyển vào Học viện là gì?
+      - Mình muốn biết: KMA xét tuyển bằng phương thức gì?
+      - Em đang thắc mắc: Các cách xét tuyển vào Học viện là gì?
+      - Cho hỏi một chút, KMA xét tuyển bằng phương thức gì?
+      - Mình hỏi về KMA: Các cách xét tuyển vào Học viện là gì?
+      - Về Học viện Kỹ thuật mật mã, KMA xét tuyển bằng phương thức gì?
+      - Ở KMA thì các cách xét tuyển vào Học viện là gì?
+      - Trường có xét tuyển bằng điểm đgnl không?
+      - KMA ơi, các cách xét tuyển vào Học viện là gì?
+      - Các anh chị cho em hỏi: KMA xét tuyển bằng phương thức gì?
+      - Cần tư vấn giúp em: Các cách xét tuyển vào Học viện là gì?
+      - Giải đáp giúp em: KMA xét tuyển bằng phương thức gì?
+      - Em cần thông tin cụ thể: Các cách xét tuyển vào Học viện là gì?
+      - What admission methods does KMA use?
+      - I have a question about KMA: What admission methods does KMA use?
+      - Please help me with this question: What admission methods does KMA use?
+      - KMA xet tuyen bang phuong thuc gi?
+      - Cac cach xet tuyen vao Hoc vien la gi?
+      - Cho em hoi, KMA xet tuyen bang phuong thuc gi?
+      - Ad oi, cac cach xet tuyen vao Hoc vien la gi?
+      - KMA: KMA xet tuyen bang phuong thuc gi?
+      - Các cách xét tuyển vào HV là gì?
+      - ad oi, KMA xet tuyen bang phuong thuc gi?
+      - Mình xin hỏi thêm: KMA xét tuyển bằng phương thức gì?
+
+  # 03 · TUYỂN SINH & NHẬP HỌC | intent trong Excel: tuyen_sinh/to_hop
+  - intent: faq_tuyen_sinh/to_hop
+    examples: |
+      - Ngành ATTT/CNTT/ĐTVT xét tổ hợp nào?
+      - Các ngành An toàn thông tin, Công nghệ thông tin và Kỹ thuật Điện tử - Viễn thông tại KMA xét tuyển theo những tổ hợp môn nào?
+      - Ngành ATTT ở KMA xét những tổ hợp nào?
+      - Tổ hợp xét tuyển CNTT và ĐTVT Học viện?
+      - Cho em hỏi, ngành ATTT ở KMA xét những tổ hợp nào?
+      - Cho mình hỏi, tổ hợp xét tuyển CNTT và ĐTVT Học viện?
+      - Admin ơi, ngành ATTT ở KMA xét những tổ hợp nào?
+      - Ad cho mình hỏi, tổ hợp xét tuyển CNTT và ĐTVT Học viện?
+      - Mình muốn biết: Ngành ATTT ở KMA xét những tổ hợp nào?
+      - Em đang thắc mắc: Tổ hợp xét tuyển CNTT và ĐTVT Học viện?
+      - Cho hỏi một chút, ngành ATTT ở KMA xét những tổ hợp nào?
+      - Mình hỏi về KMA: Tổ hợp xét tuyển CNTT và ĐTVT Học viện?
+      - Về Học viện Kỹ thuật mật mã, ngành ATTT ở KMA xét những tổ hợp nào?
+      - Ở KMA thì tổ hợp xét tuyển CNTT và ĐTVT Học viện?
+      - Ngành Kỹ thuật Điện tử – Viễn thông xét tuyển theo tổ hợp nào?
+      - KMA ơi, tổ hợp xét tuyển CNTT và ĐTVT Học viện?
+      - Các anh chị cho em hỏi: Ngành ATTT ở KMA xét những tổ hợp nào?
+      - Ngành Công nghệ thông tin xét tuyển theo tổ hợp nào?
+      - Giải đáp giúp em: Ngành ATTT ở KMA xét những tổ hợp nào?
+      - Ngành An toàn thông tin xét tuyển theo tổ hợp nào?
+      - Which subject combinations are accepted for KMA majors?
+      - I have a question about KMA: Which subject combinations are accepted for KMA majors?
+      - Please help me with this question: Which subject combinations are accepted for KMA majors?
+      - Nganh ATTT o KMA xet nhung to hop nao?
+      - To hop xet tuyen CNTT va DTVT Hoc vien?
+      - Cho em hoi, nganh ATTT o KMA xet nhung to hop nao?
+      - Ad oi, to hop xet tuyen CNTT va DTVT Hoc vien?
+      - KMA: Nganh ATTT o KMA xet nhung to hop nao?
+      - Tổ hợp xét tuyển CNTT và ĐTVT HV?
+      - ad oi, nganh ATTT o KMA xet nhung to hop nao?
+      - Mình xin hỏi thêm: Ngành ATTT ở KMA xét những tổ hợp nào?
+
+  # 03 · TUYỂN SINH & NHẬP HỌC | intent trong Excel: tuyen_sinh/diem_chuan
+  - intent: faq_tuyen_sinh/diem_chuan
+    examples: |
+      - Điểm chuẩn KMA theo năm, ngành, cơ sở là bao nhiêu?
+      - Điểm chuẩn KMA năm 2026 bao nhiêu?
+      - Điểm chuẩn tuyển sinh của KMA theo từng năm, từng ngành và từng cơ sở là bao nhiêu?
+      - Điểm trúng tuyển ngành An toàn thông tin Học viện là mấy?
+      - Cho em hỏi, điểm chuẩn KMA năm 2026 bao nhiêu?
+      - Cho mình hỏi, điểm trúng tuyển ngành An toàn thông tin Học viện là mấy?
+      - Admin ơi, điểm chuẩn KMA năm 2026 bao nhiêu?
+      - Ad cho mình hỏi, điểm trúng tuyển ngành An toàn thông tin Học viện là mấy?
+      - Mình muốn biết: Điểm chuẩn KMA năm 2026 bao nhiêu?
+      - Em đang thắc mắc: Điểm trúng tuyển ngành An toàn thông tin Học viện là mấy?
+      - Cho hỏi một chút, điểm chuẩn KMA năm 2026 bao nhiêu?
+      - Mình hỏi về KMA: Điểm trúng tuyển ngành An toàn thông tin Học viện là mấy?
+      - Về Học viện Kỹ thuật mật mã, điểm chuẩn KMA năm 2026 bao nhiêu?
+      - Ở KMA thì điểm trúng tuyển ngành An toàn thông tin Học viện là mấy?
+      - Em đang tìm hiểu về KMA, điểm chuẩn KMA năm 2026 bao nhiêu?
+      - KMA ơi, điểm trúng tuyển ngành An toàn thông tin Học viện là mấy?
+      - Các anh chị cho em hỏi: Điểm chuẩn KMA năm 2026 bao nhiêu?
+      - Cần tư vấn giúp em: Điểm trúng tuyển ngành An toàn thông tin Học viện là mấy?
+      - Giải đáp giúp em: Điểm chuẩn KMA năm 2026 bao nhiêu?
+      - Em cần thông tin cụ thể: Điểm trúng tuyển ngành An toàn thông tin Học viện là mấy?
+      - What is the admission cutoff score for KMA by year and major?
+      - I have a question about KMA: What is the admission cutoff score for KMA by year and major?
+      - Please help me with this question: What is the admission cutoff score for KMA by year and major?
+      - Diem chuan KMA nam 2026 bao nhieu?
+      - Diem trung tuyen nganh An toan thong tin Hoc vien la may?
+      - Cho em hoi, diem chuan KMA nam 2026 bao nhieu?
+      - Ad oi, diem trung tuyen nganh An toan thong tin Hoc vien la may?
+      - KMA: Diem chuan KMA nam 2026 bao nhieu?
+      - Điểm chuẩn KMA năm 2026 bn?
+      - Điểm trúng tuyển ngành ATTT HV là mấy?
+      - ad oi, diem chuan KMA nam 2026 bn?
+
+  # 03 · TUYỂN SINH & NHẬP HỌC | intent trong Excel: tuyen_sinh/chi_tieu
+  - intent: faq_tuyen_sinh/chi_tieu
+    examples: |
+      - Chỉ tiêu tuyển sinh từng ngành và cơ sở là bao nhiêu?
+      - Chỉ tiêu tuyển sinh CNTT KMA bao nhiêu?
+      - KMA tuyển sinh bao nhiêu chỉ tiêu cho từng ngành và từng cơ sở?
+      - Mỗi ngành của Học viện tuyển bao nhiêu sinh viên?
+      - Cho em hỏi, chỉ tiêu tuyển sinh CNTT KMA bao nhiêu?
+      - Cho mình hỏi, mỗi ngành của Học viện tuyển bao nhiêu sinh viên?
+      - Admin ơi, chỉ tiêu tuyển sinh CNTT KMA bao nhiêu?
+      - Ad cho mình hỏi, mỗi ngành của Học viện tuyển bao nhiêu sinh viên?
+      - Mình muốn biết: Chỉ tiêu tuyển sinh CNTT KMA bao nhiêu?
+      - Em đang thắc mắc: Mỗi ngành của Học viện tuyển bao nhiêu sinh viên?
+      - Cho hỏi một chút, chỉ tiêu tuyển sinh CNTT KMA bao nhiêu?
+      - Mình hỏi về KMA: Mỗi ngành của Học viện tuyển bao nhiêu sinh viên?
+      - Về Học viện Kỹ thuật mật mã, chỉ tiêu tuyển sinh CNTT KMA bao nhiêu?
+      - Ở KMA thì mỗi ngành của Học viện tuyển bao nhiêu sinh viên?
+      - Chỉ tiêu tuyển sinh của Học viện là bao nhiêu?
+      - KMA ơi, mỗi ngành của Học viện tuyển bao nhiêu sinh viên?
+      - Các anh chị cho em hỏi: Chỉ tiêu tuyển sinh CNTT KMA bao nhiêu?
+      - Cần tư vấn giúp em: Mỗi ngành của Học viện tuyển bao nhiêu sinh viên?
+      - Giải đáp giúp em: Chỉ tiêu tuyển sinh CNTT KMA bao nhiêu?
+      - Em cần thông tin cụ thể: Mỗi ngành của Học viện tuyển bao nhiêu sinh viên?
+      - How many admission places are available for each KMA major?
+      - I have a question about KMA: How many admission places are available for each KMA major?
+      - Please help me with this question: How many admission places are available for each KMA major?
+      - Chi tieu tuyen sinh CNTT KMA bao nhieu?
+      - Moi nganh cua Hoc vien tuyen bao nhieu sinh vien?
+      - Cho em hoi, chi tieu tuyen sinh CNTT KMA bao nhieu?
+      - Ad oi, moi nganh cua Hoc vien tuyen bao nhieu sinh vien?
+      - KMA: Chi tieu tuyen sinh CNTT KMA bao nhieu?
+      - Chỉ tiêu tuyển sinh CNTT KMA bn?
+      - Mỗi ngành của HV tuyển bn sv?
+      - ad oi, chi tieu tuyen sinh CNTT KMA bn?
+
+  # 03 · TUYỂN SINH & NHẬP HỌC | intent trong Excel: tuyen_sinh/uu_tien_ngoai_ngu
+  - intent: faq_tuyen_sinh/uu_tien_ngoai_ngu
+    examples: |
+      - IELTS/TOEIC có được cộng điểm xét tuyển không?
+      - IELTS có được cộng điểm khi xét tuyển KMA không?
+      - TOEIC có ưu tiên điểm tuyển sinh Học viện không?
+      - Cho em hỏi, IELTS có được cộng điểm khi xét tuyển KMA không?
+      - Cho mình hỏi, TOEIC có ưu tiên điểm tuyển sinh Học viện không?
+      - Admin ơi, IELTS có được cộng điểm khi xét tuyển KMA không?
+      - Ad cho mình hỏi, TOEIC có ưu tiên điểm tuyển sinh Học viện không?
+      - Mình muốn biết: IELTS có được cộng điểm khi xét tuyển KMA không?
+      - Em đang thắc mắc: TOEIC có ưu tiên điểm tuyển sinh Học viện không?
+      - Cho hỏi một chút, IELTS có được cộng điểm khi xét tuyển KMA không?
+      - Mình hỏi về KMA: TOEIC có ưu tiên điểm tuyển sinh Học viện không?
+      - Về Học viện Kỹ thuật mật mã, IELTS có được cộng điểm khi xét tuyển KMA không?
+      - Ở KMA thì TOEIC có ưu tiên điểm tuyển sinh Học viện không?
+      - Em đang tìm hiểu về KMA, IELTS có được cộng điểm khi xét tuyển KMA không?
+      - KMA ơi, TOEIC có ưu tiên điểm tuyển sinh Học viện không?
+      - Các anh chị cho em hỏi: IELTS có được cộng điểm khi xét tuyển KMA không?
+      - Cần tư vấn giúp em: TOEIC có ưu tiên điểm tuyển sinh Học viện không?
+      - Giải đáp giúp em: IELTS có được cộng điểm khi xét tuyển KMA không?
+      - Em cần thông tin cụ thể: TOEIC có ưu tiên điểm tuyển sinh Học viện không?
+      - Does IELTS or TOEIC add bonus points for KMA admission?
+      - I have a question about KMA: Does IELTS or TOEIC add bonus points for KMA admission?
+      - Please help me with this question: Does IELTS or TOEIC add bonus points for KMA admission?
+      - IELTS co duoc cong diem khi xet tuyen KMA khong?
+      - TOEIC co uu tien diem tuyen sinh Hoc vien khong?
+      - Cho em hoi, IELTS co duoc cong diem khi xet tuyen KMA khong?
+      - Ad oi, TOEIC co uu tien diem tuyen sinh Hoc vien khong?
+      - KMA: IELTS co duoc cong diem khi xet tuyen KMA khong?
+      - IELTS có dc cộng điểm khi xét tuyển KMA ko?
+      - TOEIC có ưu tiên điểm tuyển sinh HV ko?
+      - ad oi, IELTS co dc cong diem khi xet tuyen KMA ko?
+
+  # 03 · TUYỂN SINH & NHẬP HỌC | intent trong Excel: tuyen_sinh/tuyen_thang_uu_tien
+  - intent: faq_tuyen_sinh/tuyen_thang_uu_tien
+    examples: |
+      - Ai được xét tuyển thẳng hoặc cộng điểm ưu tiên?
+      - Điều kiện xét tuyển thẳng KMA là gì?
+      - Những thí sinh nào được KMA xét tuyển thẳng hoặc cộng điểm ưu tiên?
+      - Những ai được ưu tiên xét tuyển vào Học viện?
+      - Cho em hỏi, điều kiện xét tuyển thẳng KMA là gì?
+      - Cho mình hỏi, những ai được ưu tiên xét tuyển vào Học viện?
+      - Admin ơi, điều kiện xét tuyển thẳng KMA là gì?
+      - Ad cho mình hỏi, những ai được ưu tiên xét tuyển vào Học viện?
+      - Mình muốn biết: Điều kiện xét tuyển thẳng KMA là gì?
+      - Em đang thắc mắc: Những ai được ưu tiên xét tuyển vào Học viện?
+      - Cho hỏi một chút, điều kiện xét tuyển thẳng KMA là gì?
+      - Mình hỏi về KMA: Những ai được ưu tiên xét tuyển vào Học viện?
+      - Về Học viện Kỹ thuật mật mã, điều kiện xét tuyển thẳng KMA là gì?
+      - Ở KMA thì những ai được ưu tiên xét tuyển vào Học viện?
+      - Học viện có xét tuyển thẳng không?
+      - KMA ơi, những ai được ưu tiên xét tuyển vào Học viện?
+      - Các anh chị cho em hỏi: Điều kiện xét tuyển thẳng KMA là gì?
+      - Học viện có chính sách cộng điểm ưu tiên không?
+      - Giải đáp giúp em: Điều kiện xét tuyển thẳng KMA là gì?
+      - Em cần thông tin cụ thể: Những ai được ưu tiên xét tuyển vào Học viện?
+      - Who qualifies for direct admission or admission priority at KMA?
+      - I have a question about KMA: Who qualifies for direct admission or admission priority at KMA?
+      - Please help me with this question: Who qualifies for direct admission or admission priority at KMA?
+      - Dieu kien xet tuyen thang KMA la gi?
+      - Nhung ai duoc uu tien xet tuyen vao Hoc vien?
+      - Cho em hoi, dieu kien xet tuyen thang KMA la gi?
+      - Ad oi, nhung ai duoc uu tien xet tuyen vao Hoc vien?
+      - KMA: Dieu kien xet tuyen thang KMA la gi?
+      - Những ai dc ưu tiên xét tuyển vào HV?
+      - ad oi, dieu kien xet tuyen thang KMA la gi?
+      - Mình xin hỏi thêm: Điều kiện xét tuyển thẳng KMA là gì?
+
+  # 03 · TUYỂN SINH & NHẬP HỌC | intent trong Excel: tuyen_sinh/dieu_kien_suc_khoe
+  - intent: faq_tuyen_sinh/dieu_kien_suc_khoe
+    examples: |
+      - Cận thị, hạnh kiểm hay lý lịch có ảnh hưởng xét tuyển không?
+      - Bị cận thị có được xét tuyển KMA không?
+      - Tình trạng cận thị, hạnh kiểm hoặc lý lịch có ảnh hưởng đến điều kiện xét tuyển vào KMA không?
+      - Học viện yêu cầu sức khỏe và lý lịch khi tuyển sinh thế nào?
+      - Cho em hỏi, bị cận thị có được xét tuyển KMA không?
+      - Cho mình hỏi, học viện yêu cầu sức khỏe và lý lịch khi tuyển sinh thế nào?
+      - Admin ơi, bị cận thị có được xét tuyển KMA không?
+      - Ad cho mình hỏi, học viện yêu cầu sức khỏe và lý lịch khi tuyển sinh thế nào?
+      - Mình muốn biết: Bị cận thị có được xét tuyển KMA không?
+      - Em đang thắc mắc: Học viện yêu cầu sức khỏe và lý lịch khi tuyển sinh thế nào?
+      - Cho hỏi một chút, bị cận thị có được xét tuyển KMA không?
+      - Mình hỏi về KMA: Học viện yêu cầu sức khỏe và lý lịch khi tuyển sinh thế nào?
+      - Về Học viện Kỹ thuật mật mã, bị cận thị có được xét tuyển KMA không?
+      - Ở KMA thì học viện yêu cầu sức khỏe và lý lịch khi tuyển sinh thế nào?
+      - Có cần khám sức khỏe khi đăng ký xét tuyển không?
+      - KMA ơi, học viện yêu cầu sức khỏe và lý lịch khi tuyển sinh thế nào?
+      - Các anh chị cho em hỏi: Bị cận thị có được xét tuyển KMA không?
+      - Có cần xét lý lịch ba đời khi vào Học viện không?
+      - Giải đáp giúp em: Bị cận thị có được xét tuyển KMA không?
+      - Bị cận thị có được thi vào trường không ạ?
+      - Are eyesight, health or background requirements part of KMA admissions?
+      - I have a question about KMA: Are eyesight, health or background requirements part of KMA admissions?
+      - Please help me with this question: Are eyesight, health or background requirements part of KMA admissions?
+      - Bi can thi co duoc xet tuyen KMA khong?
+      - Hoc vien yeu cau suc khoe va ly lich khi tuyen sinh the nao?
+      - Cho em hoi, bi can thi co duoc xet tuyen KMA khong?
+      - Ad oi, hoc vien yeu cau suc khoe va ly lich khi tuyen sinh the nao?
+      - KMA: Bi can thi co duoc xet tuyen KMA khong?
+      - Bị cận thị có dc xét tuyển KMA ko?
+      - HV yêu cầu sức khỏe và lý lịch khi tuyển sinh tn?
+      - ad oi, bi can thi co dc xet tuyen KMA ko?

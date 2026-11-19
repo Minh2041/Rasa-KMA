@@ -1,0 +1,308 @@
+version: "3.1"
+
+nlu:
+  # 10 · HỌC BỔNG | intent trong Excel: hoc_bong/tong_quan
+  - intent: faq_hoc_bong/tong_quan
+    examples: |
+      - KMA có những loại học bổng nào?
+      - KMA có những loại học bổng gì?
+      - Danh sách học bổng dành cho sinh viên Học viện?
+      - Cho em hỏi, KMA có những loại học bổng gì?
+      - Cho mình hỏi, danh sách học bổng dành cho sinh viên Học viện?
+      - Admin ơi, KMA có những loại học bổng gì?
+      - Ad cho mình hỏi, danh sách học bổng dành cho sinh viên Học viện?
+      - Mình muốn biết: KMA có những loại học bổng gì?
+      - Em đang thắc mắc: Danh sách học bổng dành cho sinh viên Học viện?
+      - Cho hỏi một chút, KMA có những loại học bổng gì?
+      - Mình hỏi về KMA: Danh sách học bổng dành cho sinh viên Học viện?
+      - Về Học viện Kỹ thuật mật mã, KMA có những loại học bổng gì?
+      - Ở KMA thì danh sách học bổng dành cho sinh viên Học viện?
+      - Em đang tìm hiểu về KMA, KMA có những loại học bổng gì?
+      - KMA ơi, danh sách học bổng dành cho sinh viên Học viện?
+      - Các anh chị cho em hỏi: KMA có những loại học bổng gì?
+      - Cần tư vấn giúp em: Danh sách học bổng dành cho sinh viên Học viện?
+      - Giải đáp giúp em: KMA có những loại học bổng gì?
+      - Em cần thông tin cụ thể: Danh sách học bổng dành cho sinh viên Học viện?
+      - What scholarships are available for KMA students?
+      - I have a question about KMA: What scholarships are available for KMA students?
+      - Please help me with this question: What scholarships are available for KMA students?
+      - KMA co nhung loai hoc bong gi?
+      - Danh sach hoc bong danh cho sinh vien Hoc vien?
+      - Cho em hoi, KMA co nhung loai hoc bong gi?
+      - Ad oi, danh sach hoc bong danh cho sinh vien Hoc vien?
+      - KMA: KMA co nhung loai hoc bong gi?
+      - KMA có những loại hb gì?
+      - Danh sách hb dành cho sv HV?
+      - ad oi, KMA co nhung loai hb gi?
+
+  # 10 · HỌC BỔNG | intent trong Excel: hoc_bong/kkht_dieu_kien
+  - intent: faq_hoc_bong/kkht_dieu_kien
+    examples: |
+      - Điều kiện được học bổng khuyến khích học tập là gì?
+      - Điều kiện nhận học bổng khuyến khích học tập KMA?
+      - GPA và điểm rèn luyện bao nhiêu mới có học bổng KKHT?
+      - Cho em hỏi, điều kiện nhận học bổng khuyến khích học tập KMA?
+      - Cho mình hỏi, GPA và điểm rèn luyện bao nhiêu mới có học bổng KKHT?
+      - Admin ơi, điều kiện nhận học bổng khuyến khích học tập KMA?
+      - Ad cho mình hỏi, GPA và điểm rèn luyện bao nhiêu mới có học bổng KKHT?
+      - Mình muốn biết: Điều kiện nhận học bổng khuyến khích học tập KMA?
+      - Em đang thắc mắc: GPA và điểm rèn luyện bao nhiêu mới có học bổng KKHT?
+      - Cho hỏi một chút, điều kiện nhận học bổng khuyến khích học tập KMA?
+      - Mình hỏi về KMA: GPA và điểm rèn luyện bao nhiêu mới có học bổng KKHT?
+      - Về Học viện Kỹ thuật mật mã, điều kiện nhận học bổng khuyến khích học tập KMA?
+      - Ở KMA thì GPA và điểm rèn luyện bao nhiêu mới có học bổng KKHT?
+      - Điều kiện xét học bổng là gì?
+      - KMA ơi, GPA và điểm rèn luyện bao nhiêu mới có học bổng KKHT?
+      - Các anh chị cho em hỏi: Điều kiện nhận học bổng khuyến khích học tập KMA?
+      - Cần tư vấn giúp em: GPA và điểm rèn luyện bao nhiêu mới có học bổng KKHT?
+      - Giải đáp giúp em: Điều kiện nhận học bổng khuyến khích học tập KMA?
+      - Em cần thông tin cụ thể: GPA và điểm rèn luyện bao nhiêu mới có học bổng KKHT?
+      - What are the eligibility requirements for KMA merit scholarships?
+      - I have a question about KMA: What are the eligibility requirements for KMA merit scholarships?
+      - Please help me with this question: What are the eligibility requirements for KMA merit scholarships?
+      - Dieu kien nhan hoc bong khuyen khich hoc tap KMA?
+      - GPA va diem ren luyen bao nhieu moi co hoc bong KKHT?
+      - Cho em hoi, dieu kien nhan hoc bong khuyen khich hoc tap KMA?
+      - Ad oi, GPA va diem ren luyen bao nhieu moi co hoc bong KKHT?
+      - KMA: Dieu kien nhan hoc bong khuyen khich hoc tap KMA?
+      - Điều kiện nhận hb khuyến khích học tập KMA?
+      - GPA và điểm rèn luyện bn mới có hb KKHT?
+      - ad oi, dieu kien nhan hb khuyen khich hoc tap KMA?
+
+  # 10 · HỌC BỔNG | intent trong Excel: hoc_bong/kkht_phan_loai
+  - intent: faq_hoc_bong/kkht_phan_loai
+    examples: |
+      - Học bổng loại Khá, Giỏi, Xuất sắc xét như thế nào?
+      - Học bổng khá giỏi xuất sắc KMA phân loại thế nào?
+      - Tiêu chí xét từng mức học bổng khuyến khích học tập?
+      - Cho em hỏi, học bổng khá giỏi xuất sắc KMA phân loại thế nào?
+      - Cho mình hỏi, tiêu chí xét từng mức học bổng khuyến khích học tập?
+      - Admin ơi, học bổng khá giỏi xuất sắc KMA phân loại thế nào?
+      - Ad cho mình hỏi, tiêu chí xét từng mức học bổng khuyến khích học tập?
+      - Mình muốn biết: Học bổng khá giỏi xuất sắc KMA phân loại thế nào?
+      - Em đang thắc mắc: Tiêu chí xét từng mức học bổng khuyến khích học tập?
+      - Cho hỏi một chút, học bổng khá giỏi xuất sắc KMA phân loại thế nào?
+      - Mình hỏi về KMA: Tiêu chí xét từng mức học bổng khuyến khích học tập?
+      - Về Học viện Kỹ thuật mật mã, học bổng khá giỏi xuất sắc KMA phân loại thế nào?
+      - Ở KMA thì tiêu chí xét từng mức học bổng khuyến khích học tập?
+      - Em đang tìm hiểu về KMA, học bổng khá giỏi xuất sắc KMA phân loại thế nào?
+      - KMA ơi, tiêu chí xét từng mức học bổng khuyến khích học tập?
+      - Các anh chị cho em hỏi: Học bổng khá giỏi xuất sắc KMA phân loại thế nào?
+      - Cần tư vấn giúp em: Tiêu chí xét từng mức học bổng khuyến khích học tập?
+      - Giải đáp giúp em: Học bổng khá giỏi xuất sắc KMA phân loại thế nào?
+      - Em cần thông tin cụ thể: Tiêu chí xét từng mức học bổng khuyến khích học tập?
+      - How are KMA merit scholarships classified as good excellent or outstanding?
+      - I have a question about KMA: How are KMA merit scholarships classified as good excellent or outstanding?
+      - Please help me with this question: How are KMA merit scholarships classified as good excellent or outstanding?
+      - Hoc bong kha gioi xuat sac KMA phan loai the nao?
+      - Tieu chi xet tung muc hoc bong khuyen khich hoc tap?
+      - Cho em hoi, hoc bong kha gioi xuat sac KMA phan loai the nao?
+      - Ad oi, tieu chi xet tung muc hoc bong khuyen khich hoc tap?
+      - KMA: Hoc bong kha gioi xuat sac KMA phan loai the nao?
+      - HB khá giỏi xuất sắc KMA phân loại tn?
+      - Tiêu chí xét từng mức hb khuyến khích học tập?
+      - ad oi, hb kha gioi xuat sac KMA phan loai tn?
+
+  # 10 · HỌC BỔNG | intent trong Excel: hoc_bong/kkht_xep_thu_tu
+  - intent: faq_hoc_bong/kkht_xep_thu_tu
+    examples: |
+      - Nếu nhiều sinh viên đủ điểm thì ưu tiên xét học bổng ra sao?
+      - KMA xếp thứ tự xét học bổng khi nhiều người đạt thế nào?
+      - Tiêu chí ưu tiên khi cạnh tranh học bổng KKHT?
+      - Cho em hỏi, KMA xếp thứ tự xét học bổng khi nhiều người đạt thế nào?
+      - Cho mình hỏi, tiêu chí ưu tiên khi cạnh tranh học bổng KKHT?
+      - Admin ơi, KMA xếp thứ tự xét học bổng khi nhiều người đạt thế nào?
+      - Ad cho mình hỏi, tiêu chí ưu tiên khi cạnh tranh học bổng KKHT?
+      - Mình muốn biết: KMA xếp thứ tự xét học bổng khi nhiều người đạt thế nào?
+      - Em đang thắc mắc: Tiêu chí ưu tiên khi cạnh tranh học bổng KKHT?
+      - Cho hỏi một chút, KMA xếp thứ tự xét học bổng khi nhiều người đạt thế nào?
+      - Mình hỏi về KMA: Tiêu chí ưu tiên khi cạnh tranh học bổng KKHT?
+      - Về Học viện Kỹ thuật mật mã, KMA xếp thứ tự xét học bổng khi nhiều người đạt thế nào?
+      - Ở KMA thì tiêu chí ưu tiên khi cạnh tranh học bổng KKHT?
+      - Em đang tìm hiểu về KMA, KMA xếp thứ tự xét học bổng khi nhiều người đạt thế nào?
+      - KMA ơi, tiêu chí ưu tiên khi cạnh tranh học bổng KKHT?
+      - Các anh chị cho em hỏi: KMA xếp thứ tự xét học bổng khi nhiều người đạt thế nào?
+      - Cần tư vấn giúp em: Tiêu chí ưu tiên khi cạnh tranh học bổng KKHT?
+      - Giải đáp giúp em: KMA xếp thứ tự xét học bổng khi nhiều người đạt thế nào?
+      - Em cần thông tin cụ thể: Tiêu chí ưu tiên khi cạnh tranh học bổng KKHT?
+      - How does KMA rank eligible students for limited scholarship awards?
+      - I have a question about KMA: How does KMA rank eligible students for limited scholarship awards?
+      - Please help me with this question: How does KMA rank eligible students for limited scholarship awards?
+      - KMA xep thu tu xet hoc bong khi nhieu nguoi dat the nao?
+      - Tieu chi uu tien khi canh tranh hoc bong KKHT?
+      - Cho em hoi, KMA xep thu tu xet hoc bong khi nhieu nguoi dat the nao?
+      - Ad oi, tieu chi uu tien khi canh tranh hoc bong KKHT?
+      - KMA: KMA xep thu tu xet hoc bong khi nhieu nguoi dat the nao?
+      - KMA xếp thứ tự xét hb khi nhiều người đạt tn?
+      - Tiêu chí ưu tiên khi cạnh tranh hb KKHT?
+      - ad oi, KMA xep thu tu xet hb khi nhieu nguoi dat tn?
+
+  # 10 · HỌC BỔNG | intent trong Excel: hoc_bong/kkht_hoc_lai
+  - intent: faq_hoc_bong/kkht_hoc_lai
+    examples: |
+      - Học lại, học cải thiện hoặc thiếu tín chỉ có được xét học bổng không?
+      - Học lại có bị mất xét học bổng KMA không?
+      - Thi cải thiện và thiếu tín chỉ có ảnh hưởng học bổng KKHT?
+      - Cho em hỏi, học lại có bị mất xét học bổng KMA không?
+      - Cho mình hỏi, thi cải thiện và thiếu tín chỉ có ảnh hưởng học bổng KKHT?
+      - Admin ơi, học lại có bị mất xét học bổng KMA không?
+      - Ad cho mình hỏi, thi cải thiện và thiếu tín chỉ có ảnh hưởng học bổng KKHT?
+      - Mình muốn biết: Học lại có bị mất xét học bổng KMA không?
+      - Em đang thắc mắc: Thi cải thiện và thiếu tín chỉ có ảnh hưởng học bổng KKHT?
+      - Cho hỏi một chút, học lại có bị mất xét học bổng KMA không?
+      - Mình hỏi về KMA: Thi cải thiện và thiếu tín chỉ có ảnh hưởng học bổng KKHT?
+      - Về Học viện Kỹ thuật mật mã, học lại có bị mất xét học bổng KMA không?
+      - Ở KMA thì thi cải thiện và thiếu tín chỉ có ảnh hưởng học bổng KKHT?
+      - Em đang tìm hiểu về KMA, học lại có bị mất xét học bổng KMA không?
+      - KMA ơi, thi cải thiện và thiếu tín chỉ có ảnh hưởng học bổng KKHT?
+      - Các anh chị cho em hỏi: Học lại có bị mất xét học bổng KMA không?
+      - Cần tư vấn giúp em: Thi cải thiện và thiếu tín chỉ có ảnh hưởng học bổng KKHT?
+      - Giải đáp giúp em: Học lại có bị mất xét học bổng KMA không?
+      - Em cần thông tin cụ thể: Thi cải thiện và thiếu tín chỉ có ảnh hưởng học bổng KKHT?
+      - Does retaking a course or lacking credits affect KMA merit scholarship eligibility?
+      - I have a question about KMA: Does retaking a course or lacking credits affect KMA merit scholarship eligibility?
+      - Please help me with this question: Does retaking a course or lacking credits affect KMA merit scholarship eligibility?
+      - Hoc lai co bi mat xet hoc bong KMA khong?
+      - Thi cai thien va thieu tin chi co anh huong hoc bong KKHT?
+      - Cho em hoi, hoc lai co bi mat xet hoc bong KMA khong?
+      - Ad oi, thi cai thien va thieu tin chi co anh huong hoc bong KKHT?
+      - KMA: Hoc lai co bi mat xet hoc bong KMA khong?
+      - Học lại có bị mất xét hb KMA ko?
+      - Thi cải thiện và thiếu tín chỉ có ảnh hưởng hb KKHT?
+      - ad oi, hoc lai co bi mat xet hb KMA ko?
+
+  # 10 · HỌC BỔNG | intent trong Excel: hoc_bong/kkht_hoc_song_nganh
+  - intent: faq_hoc_bong/kkht_hoc_song_nganh
+    examples: |
+      - Học song ngành hoặc hưởng trợ cấp có được xét học bổng KKHT không?
+      - Học song ngành có được nhận học bổng KKHT không?
+      - Đang hưởng trợ cấp có được xét thêm học bổng khuyến khích?
+      - Cho em hỏi, học song ngành có được nhận học bổng KKHT không?
+      - Cho mình hỏi, đang hưởng trợ cấp có được xét thêm học bổng khuyến khích?
+      - Admin ơi, học song ngành có được nhận học bổng KKHT không?
+      - Ad cho mình hỏi, đang hưởng trợ cấp có được xét thêm học bổng khuyến khích?
+      - Mình muốn biết: Học song ngành có được nhận học bổng KKHT không?
+      - Em đang thắc mắc: Đang hưởng trợ cấp có được xét thêm học bổng khuyến khích?
+      - Cho hỏi một chút, học song ngành có được nhận học bổng KKHT không?
+      - Mình hỏi về KMA: Đang hưởng trợ cấp có được xét thêm học bổng khuyến khích?
+      - Về Học viện Kỹ thuật mật mã, học song ngành có được nhận học bổng KKHT không?
+      - Ở KMA thì đang hưởng trợ cấp có được xét thêm học bổng khuyến khích?
+      - Em đang tìm hiểu về KMA, học song ngành có được nhận học bổng KKHT không?
+      - KMA ơi, đang hưởng trợ cấp có được xét thêm học bổng khuyến khích?
+      - Các anh chị cho em hỏi: Học song ngành có được nhận học bổng KKHT không?
+      - Cần tư vấn giúp em: Đang hưởng trợ cấp có được xét thêm học bổng khuyến khích?
+      - Giải đáp giúp em: Học song ngành có được nhận học bổng KKHT không?
+      - Em cần thông tin cụ thể: Đang hưởng trợ cấp có được xét thêm học bổng khuyến khích?
+      - Can dual-program students or stipend recipients receive KMA merit scholarships?
+      - I have a question about KMA: Can dual-program students or stipend recipients receive KMA merit scholarships?
+      - Please help me with this question: Can dual-program students or stipend recipients receive KMA merit scholarships?
+      - Hoc song nganh co duoc nhan hoc bong KKHT khong?
+      - Dang huong tro cap co duoc xet them hoc bong khuyen khich?
+      - Cho em hoi, hoc song nganh co duoc nhan hoc bong KKHT khong?
+      - Ad oi, dang huong tro cap co duoc xet them hoc bong khuyen khich?
+      - KMA: Hoc song nganh co duoc nhan hoc bong KKHT khong?
+      - Học song ngành có dc nhận hb KKHT ko?
+      - Đang hưởng trợ cấp có dc xét thêm hb khuyến khích?
+      - ad oi, hoc song nganh co dc nhan hb KKHT ko?
+
+  # 10 · HỌC BỔNG | intent trong Excel: hoc_bong/tai_tro
+  - intent: faq_hoc_bong/tai_tro
+    examples: |
+      - Học bổng doanh nghiệp và hỗ trợ hoàn cảnh khó khăn có điều kiện gì?
+      - Học bổng doanh nghiệp KMA cần điều kiện gì?
+      - Hỗ trợ sinh viên hoàn cảnh khó khăn từ nhà tài trợ?
+      - Cho em hỏi, học bổng doanh nghiệp KMA cần điều kiện gì?
+      - Cho mình hỏi, hỗ trợ sinh viên hoàn cảnh khó khăn từ nhà tài trợ?
+      - Admin ơi, học bổng doanh nghiệp KMA cần điều kiện gì?
+      - Ad cho mình hỏi, hỗ trợ sinh viên hoàn cảnh khó khăn từ nhà tài trợ?
+      - Mình muốn biết: Học bổng doanh nghiệp KMA cần điều kiện gì?
+      - Em đang thắc mắc: Hỗ trợ sinh viên hoàn cảnh khó khăn từ nhà tài trợ?
+      - Cho hỏi một chút, học bổng doanh nghiệp KMA cần điều kiện gì?
+      - Mình hỏi về KMA: Hỗ trợ sinh viên hoàn cảnh khó khăn từ nhà tài trợ?
+      - Về Học viện Kỹ thuật mật mã, học bổng doanh nghiệp KMA cần điều kiện gì?
+      - Ở KMA thì hỗ trợ sinh viên hoàn cảnh khó khăn từ nhà tài trợ?
+      - Em đang tìm hiểu về KMA, học bổng doanh nghiệp KMA cần điều kiện gì?
+      - KMA ơi, hỗ trợ sinh viên hoàn cảnh khó khăn từ nhà tài trợ?
+      - Các anh chị cho em hỏi: Học bổng doanh nghiệp KMA cần điều kiện gì?
+      - Cần tư vấn giúp em: Hỗ trợ sinh viên hoàn cảnh khó khăn từ nhà tài trợ?
+      - Giải đáp giúp em: Học bổng doanh nghiệp KMA cần điều kiện gì?
+      - Em cần thông tin cụ thể: Hỗ trợ sinh viên hoàn cảnh khó khăn từ nhà tài trợ?
+      - What sponsored and financial hardship scholarships does KMA offer?
+      - I have a question about KMA: What sponsored and financial hardship scholarships does KMA offer?
+      - Please help me with this question: What sponsored and financial hardship scholarships does KMA offer?
+      - Hoc bong doanh nghiep KMA can dieu kien gi?
+      - Ho tro sinh vien hoan canh kho khan tu nha tai tro?
+      - Cho em hoi, hoc bong doanh nghiep KMA can dieu kien gi?
+      - Ad oi, ho tro sinh vien hoan canh kho khan tu nha tai tro?
+      - KMA: Hoc bong doanh nghiep KMA can dieu kien gi?
+      - HB doanh nghiệp KMA cần điều kiện gì?
+      - Hỗ trợ sv hoàn cảnh khó khăn từ nhà tài trợ?
+      - ad oi, hb doanh nghiep KMA can dieu kien gi?
+
+  # 10 · HỌC BỔNG | intent trong Excel: hoc_bong/nganh_chien_luoc
+  - intent: faq_hoc_bong/nganh_chien_luoc
+    examples: |
+      - Học bổng ngành khoa học, kỹ thuật then chốt và công nghệ chiến lược là gì?
+      - Học bổng ngành công nghệ chiến lược KMA là gì?
+      - Ai đủ điều kiện hưởng học bổng ngành khoa học kỹ thuật then chốt?
+      - Cho em hỏi, học bổng ngành công nghệ chiến lược KMA là gì?
+      - Cho mình hỏi, ai đủ điều kiện hưởng học bổng ngành khoa học kỹ thuật then chốt?
+      - Admin ơi, học bổng ngành công nghệ chiến lược KMA là gì?
+      - Ad cho mình hỏi, ai đủ điều kiện hưởng học bổng ngành khoa học kỹ thuật then chốt?
+      - Mình muốn biết: Học bổng ngành công nghệ chiến lược KMA là gì?
+      - Em đang thắc mắc: Ai đủ điều kiện hưởng học bổng ngành khoa học kỹ thuật then chốt?
+      - Cho hỏi một chút, học bổng ngành công nghệ chiến lược KMA là gì?
+      - Mình hỏi về KMA: Ai đủ điều kiện hưởng học bổng ngành khoa học kỹ thuật then chốt?
+      - Về Học viện Kỹ thuật mật mã, học bổng ngành công nghệ chiến lược KMA là gì?
+      - Ở KMA thì ai đủ điều kiện hưởng học bổng ngành khoa học kỹ thuật then chốt?
+      - Em đang tìm hiểu về KMA, học bổng ngành công nghệ chiến lược KMA là gì?
+      - KMA ơi, ai đủ điều kiện hưởng học bổng ngành khoa học kỹ thuật then chốt?
+      - Các anh chị cho em hỏi: Học bổng ngành công nghệ chiến lược KMA là gì?
+      - Cần tư vấn giúp em: Ai đủ điều kiện hưởng học bổng ngành khoa học kỹ thuật then chốt?
+      - Giải đáp giúp em: Học bổng ngành công nghệ chiến lược KMA là gì?
+      - Em cần thông tin cụ thể: Ai đủ điều kiện hưởng học bổng ngành khoa học kỹ thuật then chốt?
+      - What is KMA's strategic technology major scholarship?
+      - I have a question about KMA: What is KMA's strategic technology major scholarship?
+      - Please help me with this question: What is KMA's strategic technology major scholarship?
+      - Hoc bong nganh cong nghe chien luoc KMA la gi?
+      - Ai du dieu kien huong hoc bong nganh khoa hoc ky thuat then chot?
+      - Cho em hoi, hoc bong nganh cong nghe chien luoc KMA la gi?
+      - Ad oi, ai du dieu kien huong hoc bong nganh khoa hoc ky thuat then chot?
+      - KMA: Hoc bong nganh cong nghe chien luoc KMA la gi?
+      - HB ngành công nghệ chiến lược KMA là gì?
+      - Ai đủ điều kiện hưởng hb ngành khoa học kỹ thuật then chốt?
+      - ad oi, hb nganh cong nghe chien luoc KMA la gi?
+
+  # 10 · HỌC BỔNG | intent trong Excel: hoc_bong/nganh_duy_tri
+  - intent: faq_hoc_bong/nganh_duy_tri
+    examples: |
+      - Muốn duy trì học bổng ngành từ năm 2 cần đạt gì?
+      - Duy trì học bổng ngành KMA từ năm thứ hai cần gì?
+      - Điều kiện giữ học bổng công nghệ chiến lược năm sau?
+      - Cho em hỏi, duy trì học bổng ngành KMA từ năm thứ hai cần gì?
+      - Cho mình hỏi, điều kiện giữ học bổng công nghệ chiến lược năm sau?
+      - Admin ơi, duy trì học bổng ngành KMA từ năm thứ hai cần gì?
+      - Ad cho mình hỏi, điều kiện giữ học bổng công nghệ chiến lược năm sau?
+      - Mình muốn biết: Duy trì học bổng ngành KMA từ năm thứ hai cần gì?
+      - Em đang thắc mắc: Điều kiện giữ học bổng công nghệ chiến lược năm sau?
+      - Cho hỏi một chút, duy trì học bổng ngành KMA từ năm thứ hai cần gì?
+      - Mình hỏi về KMA: Điều kiện giữ học bổng công nghệ chiến lược năm sau?
+      - Về Học viện Kỹ thuật mật mã, duy trì học bổng ngành KMA từ năm thứ hai cần gì?
+      - Ở KMA thì điều kiện giữ học bổng công nghệ chiến lược năm sau?
+      - Em đang tìm hiểu về KMA, duy trì học bổng ngành KMA từ năm thứ hai cần gì?
+      - KMA ơi, điều kiện giữ học bổng công nghệ chiến lược năm sau?
+      - Các anh chị cho em hỏi: Duy trì học bổng ngành KMA từ năm thứ hai cần gì?
+      - Cần tư vấn giúp em: Điều kiện giữ học bổng công nghệ chiến lược năm sau?
+      - Giải đáp giúp em: Duy trì học bổng ngành KMA từ năm thứ hai cần gì?
+      - Em cần thông tin cụ thể: Điều kiện giữ học bổng công nghệ chiến lược năm sau?
+      - How can KMA students keep the strategic major scholarship in later years?
+      - I have a question about KMA: How can KMA students keep the strategic major scholarship in later years?
+      - Please help me with this question: How can KMA students keep the strategic major scholarship in later years?
+      - Duy tri hoc bong nganh KMA tu nam thu hai can gi?
+      - Dieu kien giu hoc bong cong nghe chien luoc nam sau?
+      - Cho em hoi, duy tri hoc bong nganh KMA tu nam thu hai can gi?
+      - Ad oi, dieu kien giu hoc bong cong nghe chien luoc nam sau?
+      - KMA: Duy tri hoc bong nganh KMA tu nam thu hai can gi?
+      - Duy trì hb ngành KMA từ năm thứ hai cần gì?
+      - Điều kiện giữ hb công nghệ chiến lược năm sau?
+      - ad oi, duy tri hb nganh KMA tu nam thu hai can gi?

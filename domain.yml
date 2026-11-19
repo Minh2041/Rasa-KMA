@@ -1,34 +1,674 @@
-version: "3.1"
-
+version: '3.1'
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
+- faq_clb
+- faq_dao_tao
+- faq_doan
+- faq_giay_to
+- faq_gioi_thieu
+- faq_hoc_bong
+- faq_hoc_phi
+- faq_hoc_vu
+- faq_khao_thi
+- faq_lien_he
+- faq_mien_giam
+- faq_nhap_hoc
+- faq_noi_quy
+- faq_phan_hoi
+- faq_tien_ich
+- faq_tieng_anh
+- faq_tro_giup
+- faq_tuyen_sinh
+- faq_giaotiep
+- nlu_fallback
+- out_of_scope
+actions:
+- action_kma_rag
+- action_kma_faq_gate
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
+  utter_faq_giaotiep/greet:
+  - text: Xin chào! Mình là trợ lý thông tin của Học viện Kỹ thuật mật mã (KMA). Bạn cần tìm hiểu về tuyển sinh, học tập, học phí, học bổng hay thủ
+      tục sinh viên?
+  utter_faq_giaotiep/goodbye:
+  - text: Tạm biệt bạn! Chúc bạn học tập tốt và hẹn gặp lại nhé.
+  utter_faq_giaotiep/thanks:
+  - text: Không có gì đâu! Rất vui vì đã giúp được bạn. Nếu còn câu hỏi khác, bạn cứ nhắn nhé.
+  utter_faq_giaotiep/bot_challenge:
+  - text: Mình là trợ lý AI hỗ trợ tra cứu thông tin về Học viện Kỹ thuật mật mã (KMA), không phải cán bộ tư vấn trực tiếp. Mình có thể giải đáp các
+      câu hỏi thường gặp và hướng dẫn tìm thông tin, thủ tục liên quan đến Học viện.
+  utter_faq_giaotiep/ask_capabilities:
+  - text: Mình có thể giải đáp thông tin về KMA, ngành đào tạo, tuyển sinh, lịch học và học vụ, học bổng, học phí, miễn giảm học phí, quy định tiếng
+      Anh, giấy tờ sinh viên, nội quy và hoạt động Đoàn – câu lạc bộ. Bạn cứ đặt câu hỏi cụ thể để mình hỗ trợ nhé!
+  utter_faq_giaotiep/affirm:
+  - text: Vâng, mình hiểu rồi. Bạn muốn hỏi tiếp điều gì?
+  utter_faq_giaotiep/deny:
+  - text: Xin lỗi, mình đã hiểu sai ý bạn. Bạn có thể nói rõ hơn nội dung cần hỏi để mình trả lời chính xác không?
+  utter_faq_giaotiep/mood_unhappy:
+  - text: Mình rất tiếc khi bạn đang gặp áp lực học tập. Nếu bạn lo vì điểm số, lịch thi hay khối lượng bài tập, bạn có thể chia sẻ cụ thể; mình sẽ
+      giúp bạn tìm hướng giải quyết và sắp xếp việc học phù hợp.
+  utter_default:
+  - text: Xin lỗi, mình chưa tìm thấy thông tin phù hợp để trả lời câu hỏi này. Bạn có thể nói rõ hơn vấn đề cần hỏi không?
+  utter_faq_clb/dang_ky_tham_gia:
+  - text: Để tham gia câu lạc bộ tại KMA, bạn chọn nhóm phù hợp sở thích và theo dõi thông báo tuyển thành viên của Đoàn cơ sở hoặc câu lạc bộ. Tùy
+      nhóm, bạn có thể đăng ký qua biểu mẫu, tham gia buổi giới thiệu, phỏng vấn hoặc sinh hoạt thử. Trước khi đăng ký, nên xem lịch sinh hoạt, yêu
+      cầu thành viên và người phụ trách để sắp xếp việc học.
+  utter_faq_clb/danh_sach:
+  - text: Các câu lạc bộ và đội nhóm được giới thiệu trong hoạt động sinh viên KMA gồm KCSC (an toàn thông tin, an ninh mạng), Thanh niên Xung kích
+      và đội thanh niên vận động hiến máu tình nguyện. Học viện cũng từng giới thiệu câu lạc bộ Guitar và Bóng chuyền. Bạn quan tâm học thuật,
+      tình nguyện hay văn nghệ – thể thao để mình giới thiệu nhóm phù hợp?
+  utter_faq_clb/hien_mau:
+  - text: Đội thanh niên vận động hiến máu tình nguyện tại KMA tham gia tuyên truyền, vận động người hiến máu và hỗ trợ tổ chức các đợt hiến máu. Sinh
+      viên có thể tham gia hoạt động truyền thông, hậu cần hoặc trực tiếp hiến máu nếu đủ điều kiện sức khỏe sau khám sàng lọc. Bạn có thể theo dõi
+      lịch hiến máu và đăng ký thông qua Đoàn cơ sở hoặc đội tổ chức.
+  utter_faq_clb/kcsc:
+  - text: KCSC là câu lạc bộ học thuật về an toàn thông tin và an ninh mạng tại Học viện Kỹ thuật mật mã. Các hoạt động tiêu biểu gồm trao đổi kiến
+      thức bảo mật, thực hành kỹ thuật, giải bài CTF, làm việc nhóm và tham gia cuộc thi chuyên môn. Sinh viên quan tâm an ninh mạng có thể theo dõi
+      thông báo tuyển thành viên của KCSC để biết cách đăng ký và lịch sinh hoạt.
+  utter_faq_clb/van_nghe_the_thao:
+  - text: Học viện từng giới thiệu các câu lạc bộ hoặc nhóm hoạt động Guitar và Bóng chuyền. Đây là nơi sinh viên tập luyện, giao lưu, tham
+      gia biểu diễn hoặc các giải thể thao theo kế hoạch. Bạn muốn tham gia nhóm nào có thể hỏi Đoàn cơ sở hoặc theo dõi thông báo tuyển thành viên
+      và lịch sinh hoạt của nhóm đó.
+  utter_faq_clb/xung_kich:
+  - text: Câu lạc bộ Thanh niên Xung kích của Học viện tham gia các hoạt động tình nguyện, hỗ trợ sự kiện, chương trình Đoàn và công tác đón tiếp,
+      hướng dẫn tân sinh viên. Thành viên có cơ hội rèn kỹ năng tổ chức, giao tiếp và làm việc nhóm. Bạn có thể đăng ký khi câu lạc bộ hoặc Đoàn cơ
+      sở thông báo tuyển thành viên.
+  utter_faq_dao_tao/attt_chuyen_nganh:
+  - text: Ngành An toàn thông tin tại KMA có các hướng chuyên ngành được giới thiệu gồm An toàn hệ thống thông tin, Kỹ nghệ an toàn mạng và Công nghệ
+      phần mềm an toàn. An toàn hệ thống thông tin tập trung bảo vệ, vận hành hệ thống và xử lý sự cố; Kỹ nghệ an toàn mạng tập trung giám sát, phân
+      tích và phòng thủ mạng; Công nghệ phần mềm an toàn tập trung thiết kế, phát triển và đánh giá bảo mật phần mềm.
+  utter_faq_dao_tao/attt_gioi_thieu:
+  - text: Ngành An toàn thông tin tại KMA đào tạo kiến thức về hệ thống máy tính, mạng, lập trình, mật mã và các kỹ thuật bảo vệ dữ liệu, ứng dụng,
+      hạ tầng số. Sinh viên được học cách phân tích nguy cơ, phát hiện lỗ hổng, phòng chống tấn công và ứng phó sự cố an ninh mạng. Ngành có các định
+      hướng như An toàn hệ thống thông tin, Kỹ nghệ an toàn mạng và Công nghệ phần mềm an toàn.
+  utter_faq_dao_tao/attt_viec_lam:
+  - text: Sinh viên tốt nghiệp ngành An toàn thông tin có thể làm chuyên viên an ninh mạng, phân tích sự kiện tại SOC, kiểm thử xâm nhập hợp pháp,
+      bảo mật ứng dụng, quản trị hệ thống an toàn, ứng phó sự cố hoặc tư vấn bảo mật. Công việc cụ thể phụ thuộc chuyên ngành, kỹ năng thực hành và
+      yêu cầu tuyển dụng của cơ quan, doanh nghiệp.
+  utter_faq_dao_tao/chuong_trinh_hoc_ky:
+  - text: Danh sách môn học mỗi học kỳ được quy định trong chương trình đào tạo theo ngành, chuyên ngành và khóa tuyển sinh. Sinh viên cần xem học
+      phần bắt buộc, tự chọn, số tín chỉ, điều kiện tiên quyết và học kỳ dự kiến của chính khóa mình. Bạn cho mình biết ngành, khóa và học kỳ muốn
+      xem để xác định đúng danh sách học phần nhé.
+  utter_faq_dao_tao/chuong_trinh_tin_chi:
+  - text: Tổng số tín chỉ và thời gian đào tạo tại KMA phụ thuộc ngành, hệ và khóa tuyển sinh. Chương trình kỹ sư thường có thời gian đào tạo dài hơn
+      chương trình cử nhân; chẳng hạn thông tin tuyển sinh từng giới thiệu hệ kỹ sư tại Hà Nội 4,5 năm và chương trình cử nhân An toàn thông tin ở
+      TP.HCM 4 năm. Bạn cho mình biết ngành, khóa và cơ sở để xác định đúng chương trình và số tín chỉ.
+  utter_faq_dao_tao/cntt_chuyen_nganh:
+  - text: Các hướng đào tạo Công nghệ thông tin được giới thiệu tại KMA có Kỹ thuật phần mềm nhúng và di động, Kỹ thuật phần mềm di động và Trí tuệ
+      nhân tạo ứng dụng. Phần mềm nhúng chú trọng lập trình thiết bị, vi điều khiển và IoT; phần mềm di động chú trọng xây dựng ứng dụng trên điện
+      thoại; trí tuệ nhân tạo ứng dụng chú trọng dữ liệu, mô hình học máy và triển khai AI vào sản phẩm. Việc mở chuyên ngành thực tế theo kế hoạch
+      từng khóa.
+  utter_faq_dao_tao/cntt_gioi_thieu:
+  - text: Ngành Công nghệ thông tin tại KMA trang bị kiến thức về lập trình, cấu trúc dữ liệu và giải thuật, cơ sở dữ liệu, hệ điều hành, mạng máy
+      tính và phát triển phần mềm. Tùy chuyên ngành, sinh viên có thể học sâu về ứng dụng web, di động, phần mềm nhúng hoặc trí tuệ nhân tạo. Chương
+      trình kết hợp kiến thức nền tảng với thực hành và đồ án chuyên môn.
+  utter_faq_dao_tao/cntt_viec_lam:
+  - text: Tốt nghiệp Công nghệ thông tin, sinh viên có thể làm lập trình viên web, ứng dụng di động, kỹ sư phần mềm, kiểm thử phần mềm, quản trị hệ
+      thống, phát triển phần mềm nhúng hoặc làm việc trong lĩnh vực dữ liệu và AI. Hướng nghề nghiệp phụ thuộc chuyên ngành lựa chọn, kết quả học tập,
+      dự án thực tế và năng lực của mỗi người.
+  utter_faq_dao_tao/dtvt_chuyen_nganh:
+  - text: Ngành Kỹ thuật điện tử – viễn thông của KMA có các hướng chuyên sâu được giới thiệu như Hệ thống nhúng và điều khiển tự động, Hệ thống nhúng
+      và thiết kế vi mạch. Hướng điều khiển tập trung vào vi điều khiển, cảm biến và tự động hóa; hướng vi mạch tập trung thiết kế, mô phỏng và kiểm
+      thử mạch điện tử, kết hợp lập trình nhúng. Danh sách chuyên ngành và học phần áp dụng theo chương trình của từng khóa.
+  utter_faq_dao_tao/dtvt_gioi_thieu:
+  - text: Ngành Kỹ thuật điện tử – viễn thông tại KMA đào tạo về mạch điện tử, vi xử lý, tín hiệu, truyền thông, hệ thống nhúng và các thiết bị điện
+      tử. Sinh viên được rèn kỹ năng thiết kế, lập trình, đo kiểm, tích hợp và vận hành hệ thống kỹ thuật. Một số định hướng chuyên sâu liên quan đến
+      điều khiển tự động và thiết kế vi mạch.
+  utter_faq_dao_tao/dtvt_viec_lam:
+  - text: Sinh viên tốt nghiệp Kỹ thuật điện tử – viễn thông có thể làm kỹ sư hệ thống nhúng, lập trình firmware, thiết kế và kiểm thử phần cứng, kỹ
+      sư vi mạch, tích hợp IoT, vận hành thiết bị điện tử hoặc làm việc trong lĩnh vực thông tin – truyền thông. Vị trí phù hợp phụ thuộc chuyên ngành
+      và năng lực thực hành.
+  utter_faq_dao_tao/tong_quan_nganh:
+  - text: 'Hệ đại học chính quy dân sự của Học viện Kỹ thuật mật mã đào tạo ba ngành: An toàn thông tin, Công nghệ thông tin và Kỹ thuật điện tử –
+      viễn thông. An toàn thông tin tập trung bảo vệ dữ liệu và hệ thống; Công nghệ thông tin tập trung lập trình, phần mềm và hệ thống thông tin;
+      Kỹ thuật điện tử – viễn thông tập trung điện tử, truyền thông, hệ thống nhúng và vi mạch. Chương trình cụ thể được công bố theo từng ngành, khóa
+      học và cơ sở đào tạo.'
+  utter_faq_doan/ban_chap_hanh:
+  - text: 'Ban Chấp hành Đoàn cơ sở Học viện Kỹ thuật mật mã nhiệm kỳ 2025–2030 có 11 đồng chí, được bầu tại Đại hội lần thứ XX ngày 9–10/10/2025:
+      Trịnh Duy Hải, Hoàng Thị An, Nguyễn Tuấn Anh, Đặng Tuấn Anh, Hoàng Anh Tuấn, Nguyễn Cảnh Hiếu, Võ An Phú, Lê Tiến Đạt, Đào Thu Hoài, Lương Thị
+      Hồng Thắm và Hoàng Quang Minh. Trong đó, đồng chí Trịnh Duy Hải là Bí thư và đồng chí Hoàng Thị An là Phó Bí thư.'
+  utter_faq_doan/ban_thuong_vu:
+  - text: Theo kết quả Đại hội Đoàn cơ sở Học viện nhiệm kỳ 2025–2030, đồng chí Trịnh Duy Hải giữ chức Bí thư, đồng chí Hoàng Thị An giữ chức Phó Bí
+      thư và đồng chí Nguyễn Tuấn Anh là Ủy viên Ban Thường vụ. Đây là các chức danh được nêu trong thông tin Đại hội ngày 9–10/10/2025.
+  utter_faq_doan/bi_thu:
+  - text: Theo kết quả Đại hội Đoàn cơ sở Học viện Kỹ thuật mật mã lần thứ XX, nhiệm kỳ 2025–2030, đồng chí Trịnh Duy Hải, Trợ lý Ban Chính trị – Tổ
+      chức, được bầu làm Bí thư Đoàn cơ sở Học viện.
+  utter_faq_doan/diem_ren_luyen:
+  - text: Hoạt động Đoàn, tình nguyện, hiến máu hoặc câu lạc bộ có thể được tính điểm rèn luyện khi thuộc tiêu chí đánh giá và có minh chứng tham gia
+      hợp lệ. Bạn nên giữ giấy chứng nhận, xác nhận của ban tổ chức hoặc danh sách điểm danh, sau đó nộp theo hướng dẫn chấm điểm rèn luyện của lớp
+      và Hệ Quản lý sinh viên. Mức điểm phụ thuộc loại hoạt động và khung đánh giá của học kỳ.
+  utter_faq_doan/lanh_dao_nhiem_ky:
+  - text: Đoàn cơ sở Học viện Kỹ thuật mật mã nhiệm kỳ 2025–2030 có Bí thư là đồng chí Trịnh Duy Hải, Phó Bí thư là đồng chí Hoàng Thị An và Ủy viên
+      Ban Thường vụ được giới thiệu là đồng chí Nguyễn Tuấn Anh. Ban Chấp hành có tổng cộng 11 thành viên, được bầu tại Đại hội lần thứ XX ngày 9–10/10/2025.
+  utter_faq_doan/pho_bi_thu:
+  - text: Theo kết quả Đại hội Đoàn cơ sở Học viện Kỹ thuật mật mã lần thứ XX, nhiệm kỳ 2025–2030, đồng chí Hoàng Thị An, Trợ lý Viện Nghiên cứu và
+      Hợp tác Phát triển, được bầu làm Phó Bí thư Đoàn cơ sở Học viện.
+  utter_faq_doan/tham_gia_chuyen_sinh_hoat:
+  - text: Tân sinh viên đã là đoàn viên cần làm thủ tục chuyển sinh hoạt Đoàn từ nơi sinh hoạt cũ về chi đoàn tại Học viện theo hướng dẫn nhập học.
+      Bạn chuẩn bị hồ sơ đoàn viên hoặc thông tin chuyển sinh hoạt điện tử theo yêu cầu của từng khóa. Nếu chưa là đoàn viên, bạn có thể đăng ký tìm
+      hiểu, bồi dưỡng và xét kết nạp thông qua chi đoàn hoặc Đoàn cơ sở Học viện.
+  utter_faq_doan/to_chuc_cap:
+  - text: Tổ chức Đoàn trong Học viện gồm chi đoàn, liên chi đoàn và Đoàn cơ sở Học viện. Chi đoàn trực tiếp tổ chức sinh hoạt cho đoàn viên ở lớp
+      hoặc đơn vị; liên chi đoàn điều phối nhiều chi đoàn; Đoàn cơ sở phụ trách các hoạt động Đoàn và phong trào thanh niên toàn Học viện. Bạn muốn
+      đăng ký hoạt động thường có thể liên hệ Bí thư chi đoàn trước.
+  utter_faq_doan/tong_quan_hoat_dong:
+  - text: Sinh viên KMA có thể tham gia hoạt động Đoàn, tình nguyện, hiến máu nhân đạo, hỗ trợ tân sinh viên, cuộc thi học thuật và các câu lạc bộ
+      văn nghệ – thể thao. Đoàn cơ sở Học viện tổ chức các chương trình theo năm học và phối hợp với các liên chi đoàn. Bạn có thể theo dõi thông báo
+      của Đoàn và các câu lạc bộ để đăng ký hoạt động phù hợp.
+  utter_faq_giay_to/bao_hiem_mic:
+  - text: Để đề nghị thanh toán quyền lợi bảo hiểm thân thể MIC, bạn sử dụng mẫu “19 – Đơn xin thanh toán bảo hiểm MIC” của Học viện. Hồ sơ thường
+      cần đơn đề nghị, giấy tờ định danh, chứng từ điều trị hoặc giấy tờ chứng minh sự kiện bảo hiểm và thông tin nhận tiền theo hướng dẫn của đơn
+      vị bảo hiểm. Bạn có thể hỏi bộ phận hỗ trợ sinh viên tại phòng 8.8 về quy trình và nơi nộp hồ sơ cụ thể.
+  utter_faq_giay_to/danh_muc_mau:
+  - text: Học viện có các biểu mẫu phục vụ xác nhận sinh viên, chính sách con thương binh, vay vốn, đăng ký và hủy học phần, cấp lại thẻ sinh viên
+      hoặc thẻ BHYT, bảo lưu, nghỉ học tạm thời, tiếp tục học, thôi học, hoãn thi, phúc khảo, miễn giảm học phí, thanh toán ra trường và giới thiệu
+      thực tập. Bạn có thể tải mẫu tương ứng tại https://actvn.edu.vn, mục Sinh viên → Văn bản – Biểu mẫu. Nếu cho mình biết loại giấy tờ cần làm,
+      mình sẽ hướng dẫn cụ thể.
+  utter_faq_giay_to/don_giai_quyet:
+  - text: Mẫu “03 – Đơn giải quyết công việc” dùng khi sinh viên cần gửi đề nghị hoặc trình bày vấn đề hành chính chưa có mẫu chuyên biệt. Bạn ghi
+      rõ họ tên, mã sinh viên, lớp, nội dung đề nghị, lý do và giấy tờ kèm theo, sau đó mang đơn đến phòng tiếp sinh viên 8.8, tầng 8, tòa TB2 để được
+      hướng dẫn. Với những thủ tục đã có đơn riêng như bảo lưu, phúc khảo hoặc thôi học, bạn cần dùng đúng mẫu chuyên biệt.
+  utter_faq_giay_to/gia_han:
+  - text: Sinh viên cần kéo dài thời gian học có thể xin gia hạn bằng mẫu “21 – Đơn gia hạn học tập”. Bạn nên chuẩn bị bảng kết quả học tập, các môn
+      còn thiếu, lý do chậm tiến độ và kế hoạch hoàn thành chương trình, sau đó nộp đơn theo hướng dẫn của Phòng Đào tạo và Hệ Quản lý sinh viên. Sinh
+      viên quá hạn đào tạo được tiếp tại phòng 8.8, tầng 8, tòa TB2 vào chiều thứ Năm, 14h00–16h30.
+  utter_faq_giay_to/gioi_thieu_thuc_tap:
+  - text: Để xin giấy giới thiệu thực tập, bạn sử dụng mẫu “22 – Phiếu khai thông tin xin giới thiệu thực tập”. Điền thông tin cá nhân, lớp, đơn vị
+      thực tập, địa chỉ, thời gian dự kiến và người tiếp nhận nếu đã có; sau đó gửi theo hướng dẫn của khoa hoặc bộ phận phụ trách thực tập. Nếu đơn
+      vị thực tập yêu cầu giấy giới thiệu có đóng dấu, bạn cần đăng ký nhận giấy theo thời gian khoa thông báo.
+  utter_faq_giay_to/hoan_thanh_ra_truong:
+  - text: 'Khi làm thủ tục tốt nghiệp hoặc thôi học, sinh viên sử dụng phiếu thanh toán ra trường tương ứng: mẫu cá nhân dành cho trường hợp tốt nghiệp
+      hoặc thôi học; mẫu tập thể dành cho đợt tốt nghiệp tập trung. Bạn điền thông tin và hoàn tất các xác nhận liên quan đến học phí, thư viện, hồ
+      sơ hoặc tài sản theo danh sách trên phiếu, rồi nộp lại cho đơn vị tiếp nhận theo hướng dẫn.'
+  utter_faq_giay_to/hoan_thi:
+  - text: Nếu có lý do chính đáng cần hoãn thi, bạn tải mẫu “17 – Đơn xin hoãn thi” trên website Học viện. Điền thông tin cá nhân, môn thi, lịch thi,
+      lý do xin hoãn và nộp kèm minh chứng khi được yêu cầu. Bạn cần gửi đơn cho bộ phận phụ trách trước kỳ thi theo thời hạn công bố; lịch thi thay
+      thế chỉ được áp dụng sau khi đơn được chấp thuận.
+  utter_faq_giay_to/noi_tiep_nhan:
+  - text: 'Bộ phận tiếp sinh viên và phụ huynh của Học viện đặt tại phòng 8.8, tầng 8, tòa TB2. Giờ giải quyết thủ tục hành chính: sáng 7h30–11h30,
+      chiều 13h30–16h30. Sinh viên quá hạn đào tạo được tiếp vào chiều thứ Năm hằng tuần, 14h00–16h30. Khi đến, bạn cần mang thẻ sinh viên, căn cước
+      công dân và chuẩn bị trước đơn từ, hồ sơ theo yêu cầu.'
+  utter_faq_giay_to/phuc_khao:
+  - text: Nếu muốn phúc khảo bài thi, bạn sử dụng mẫu “18 – Đơn xin phúc khảo bài thi” và thực hiện theo thông báo của Phòng Khảo thí và Đảm bảo chất
+      lượng đào tạo. Đơn cần thể hiện họ tên, mã sinh viên, học phần và đợt thi muốn phúc khảo. Bạn có thể tìm biểu mẫu trên https://actvn.edu.vn,
+      mục Sinh viên → Văn bản – Biểu mẫu; sau khi nộp, theo dõi kết quả phúc khảo theo thông báo của Học viện.
+  utter_faq_giay_to/the_bhyt:
+  - text: Nếu cần cấp lại thẻ bảo hiểm y tế, bạn sử dụng mẫu “11 – Đơn xin cấp lại thẻ BHYT” trong kho biểu mẫu Học viện. Chuẩn bị thông tin cá nhân,
+      mã BHYT (nếu có), căn cước và lý do cấp lại, rồi liên hệ bộ phận hỗ trợ sinh viên tại phòng 8.8, tầng 8, tòa TB2. Đây là thẻ bảo hiểm y tế, khác
+      với bảo hiểm thân thể MIC.
+  utter_faq_giay_to/the_sinh_vien:
+  - text: Nếu làm mất hoặc hỏng thẻ sinh viên, bạn tải mẫu “09 – Đơn xin cấp lại thẻ sinh viên” tại mục Sinh viên → Văn bản – Biểu mẫu của Học viện.
+      Điền họ tên, mã sinh viên, lớp, lý do cấp lại và chuẩn bị giấy tờ định danh theo mẫu. Bạn mang đơn đến phòng 8.8, tầng 8, tòa TB2 để được hướng
+      dẫn nộp và nhận thẻ mới.
+  utter_faq_giay_to/tong_quan:
+  - text: Sinh viên KMA có thể xin giấy xác nhận sinh viên, giấy vay vốn, đơn xin bảo lưu hoặc tiếp tục học, đăng ký hoặc hủy học phần, cấp lại thẻ,
+      hoãn thi, phúc khảo, miễn giảm học phí, giới thiệu thực tập và các giấy tờ khác. Bạn tải biểu mẫu tại https://actvn.edu.vn, mục Sinh viên → Văn
+      bản – Biểu mẫu. Bộ phận tiếp nhận thủ tục hành chính dành cho sinh viên tại Hà Nội là phòng 8.8, tầng 8, tòa TB2. Khi đi, bạn mang thẻ sinh viên,
+      căn cước và đơn đã điền đầy đủ.
+  utter_faq_giay_to/vay_von:
+  - text: Để xin xác nhận vay vốn sinh viên, bạn xác định mình làm hồ sơ vay vốn thông thường hay vay theo chính sách dành cho ngành STEM, rồi tải
+      đúng mẫu giấy xác nhận hoặc tờ khai trên website Học viện. Điền thông tin cá nhân, mã sinh viên và chương trình học; chuẩn bị thẻ sinh viên,
+      căn cước và giấy tờ theo yêu cầu của ngân hàng. Bạn có thể đến phòng 8.8, tầng 8, tòa TB2 để xin hướng dẫn xác nhận của Học viện.
+  utter_faq_giay_to/xac_nhan_con_thuong_binh:
+  - text: Sinh viên là con thương binh cần giấy xác nhận đang học để làm chế độ chính sách có thể sử dụng mẫu “02 – Giấy xác nhận dùng cho con thương
+      binh (Mẫu 41)”. Bạn tải mẫu trên website Học viện, điền thông tin sinh viên và chuẩn bị giấy tờ liên quan đến diện người có công khi được yêu
+      cầu. Hồ sơ được hướng dẫn tiếp nhận tại phòng 8.8, tầng 8, tòa TB2. Mẫu này khác với đơn xin miễn giảm học phí.
+  utter_faq_giay_to/xac_nhan_sinh_vien:
+  - text: Để xin giấy xác nhận sinh viên tại KMA, bạn tải mẫu “01 – Giấy xác nhận sinh viên” trong mục Sinh viên → Văn bản – Biểu mẫu trên website
+      https://actvn.edu.vn. Điền họ tên, mã sinh viên, lớp và mục đích xin xác nhận; sau đó mang đơn, thẻ sinh viên và căn cước đến phòng 8.8, tầng
+      8, tòa TB2 để được tiếp nhận, hướng dẫn ký xác nhận.
+  utter_faq_gioi_thieu/co_quan_chu_quan:
+  - text: Học viện Kỹ thuật mật mã là cơ sở giáo dục đại học công lập trực thuộc Ban Cơ yếu Chính phủ. Học viện đào tạo và nghiên cứu trong các lĩnh
+      vực mật mã, cơ yếu, an toàn thông tin và các ngành kỹ thuật – công nghệ. Học viện có hệ đào tạo phục vụ lĩnh vực cơ yếu và hệ đào tạo phục vụ
+      kinh tế – xã hội (hệ dân sự).
+  utter_faq_gioi_thieu/he_va_trinh_do:
+  - text: Học viện đào tạo các chương trình phục vụ lĩnh vực cơ yếu và các chương trình phục vụ kinh tế – xã hội. Đối với hệ đại học dân sự, các ngành
+      tuyển sinh gồm An toàn thông tin, Công nghệ thông tin và Kỹ thuật điện tử – viễn thông; thời gian học và văn bằng phụ thuộc ngành, chương trình
+      và cơ sở. Học viện còn tổ chức đào tạo sau đại học theo các chương trình được cấp phép.
+  utter_faq_gioi_thieu/hop_tac_nghien_cuu:
+  - text: Học viện Kỹ thuật mật mã triển khai nghiên cứu khoa học trong lĩnh vực mật mã, an toàn thông tin, công nghệ thông tin, điện tử và các công
+      nghệ liên quan. Sinh viên có thể tham gia đề tài nghiên cứu, cuộc thi học thuật, hội thảo hoặc hoạt động hợp tác với doanh nghiệp theo kế hoạch
+      của khoa và giảng viên. Bạn có thể liên hệ khoa chuyên môn để tìm đề tài, giảng viên hướng dẫn và cách đăng ký.
+  utter_faq_gioi_thieu/lich_su_thanh_lap:
+  - text: Ngày 15/4/1976, Trường Cán bộ Cơ yếu Trung ương – tiền thân của Học viện Kỹ thuật mật mã – được thành lập. Năm 1985, đơn vị phát triển thành
+      Trường Đại học Kỹ thuật mật mã; đến năm 1995 chính thức mang tên Học viện Kỹ thuật mật mã. Ngày 15/4 hằng năm là mốc truyền thống được Học viện
+      kỷ niệm.
+  utter_faq_gioi_thieu/ten_tieng_anh:
+  - text: Tên tiếng Anh của Học viện Kỹ thuật mật mã là Academy of Cryptography Techniques, viết tắt là ACT. Học viện cũng thường được gọi tắt là KMA
+      trong các hoạt động truyền thông và tuyển sinh.
+  utter_faq_gioi_thieu/tong_quan:
+  - text: 'Học viện Kỹ thuật mật mã (Academy of Cryptography Techniques – ACT, thường gọi KMA) là trường đại học công lập trực thuộc Ban Cơ yếu Chính
+      phủ, chuyên đào tạo và nghiên cứu về mật mã, an toàn thông tin và các ngành công nghệ. Tiền thân của Học viện là Trường Cán bộ Cơ yếu Trung ương,
+      thành lập ngày 15/4/1976; năm 1985 phát triển thành Trường Đại học Kỹ thuật mật mã và năm 1995 mang tên Học viện Kỹ thuật mật mã. Hệ đại học
+      dân sự có các ngành An toàn thông tin, Công nghệ thông tin và Kỹ thuật điện tử – viễn thông. Cơ sở chính đặt tại 141 Chiến Thắng, Thanh Liệt,
+      Hà Nội; Học viện có Phân hiệu tại TP. Hồ Chí Minh. Website: https://actvn.edu.vn.'
+  utter_faq_hoc_bong/kkht_dieu_kien:
+  - text: Theo Điều 3 Quyết định 969/QĐ-HVM, muốn xét học bổng khuyến khích học tập, sinh viên phải học chính quy tập trung, đã hoàn thành nghĩa vụ
+      học phí, không bị kỷ luật từ khiển trách trở lên và có điểm rèn luyện từ loại Khá. Điểm trung bình chung tích lũy của kỳ xét phải từ 3,0/4 trở
+      lên; không có học phần nào dưới D+ (5/10) ở lần thi, kiểm tra hết môn thứ nhất; môn Giáo dục thể chất và Giáo dục quốc phòng – an ninh phải đạt.
+      Số tín chỉ đăng ký tính xét học bổng phải đạt ít nhất kế hoạch học đúng tiến độ của học kỳ, không tính tín chỉ học lại hoặc cải thiện. Đạt điều
+      kiện vẫn phải xếp hạng theo chỉ tiêu học bổng của khóa, ngành.
+  utter_faq_hoc_bong/kkht_hoc_lai:
+  - text: Theo Quyết định 969/QĐ-HVM, số tín chỉ học lại và cải thiện không được tính vào số tín chỉ tối thiểu khi xét học bổng khuyến khích học tập.
+      Ngoài ra, điểm thi hoặc kiểm tra kết thúc học phần lần thứ nhất của tất cả học phần trong kỳ phải đạt từ D+ (5/10) trở lên. Vì vậy, việc học
+      lại một môn để đạt điểm cao hơn không làm thay đổi điều kiện về kết quả thi lần đầu của kỳ xét học bổng.
+  utter_faq_hoc_bong/kkht_hoc_song_nganh:
+  - text: Sinh viên học hai ngành hoặc hai chuyên ngành chỉ được xét học bổng khuyến khích học tập ở ngành, chuyên ngành thứ nhất theo Quyết định 969/QĐ-HVM.
+      Sinh viên học dự thính không thuộc diện xét học bổng này. Nếu đang hưởng học bổng chính sách hoặc trợ cấp xã hội, bạn vẫn có thể được xét học
+      bổng khuyến khích học tập khi đáp ứng đủ các điều kiện học tập và rèn luyện.
+  
+  utter_faq_hoc_bong/kkht_phan_loai:
+  - text: 'Học bổng khuyến khích học tập tại KMA có ba loại: Khá, Giỏi và Xuất sắc. Loại Khá dành cho sinh viên học lực Khá và rèn luyện Khá trở lên,
+      hoặc học lực Giỏi/Xuất sắc nhưng rèn luyện chỉ ở mức Khá. Loại Giỏi dành cho sinh viên học lực Giỏi hoặc Xuất sắc với rèn luyện Tốt trở lên,
+      trừ trường hợp đủ mức Xuất sắc. Loại Xuất sắc yêu cầu cả học tập và rèn luyện đều đạt Xuất sắc. Ngoài xếp loại, sinh viên phải đáp ứng điều kiện
+      về tín chỉ, điểm học phần, học phí và kỷ luật.'
+  
+  utter_faq_hoc_bong/kkht_xep_thu_tu:
+  - text: 'Học viện xét học bổng khuyến khích học tập theo từng khóa, ngành và chỉ tiêu được phân bổ, ưu tiên từ mức Xuất sắc đến Giỏi và Khá. Trong
+      cùng loại học bổng, thứ tự xét là: điểm trung bình chung tích lũy thang 4, tiếp đến điểm rèn luyện, sau đó thành tích được khen thưởng từ Giấy
+      khen trở lên. Vì số suất có giới hạn, hai sinh viên cùng đủ điều kiện có thể có kết quả xét khác nhau.'
+  utter_faq_hoc_bong/nganh_chien_luoc:
+  - text: Học bổng dành cho sinh viên thuộc nhóm ngành khoa học cơ bản, kỹ thuật then chốt và công nghệ chiến lược được quy định tại Điều 5 Quyết định
+      969/QĐ-HVM, căn cứ Nghị định 179/2026/NĐ-CP. Mức hỗ trợ là 3.700.000 đồng/tháng, tối đa 10 tháng/năm và tổng thời gian tối đa 4,5 năm đối với
+      chương trình kỹ sư hoặc 4 năm đối với chương trình cử nhân. Sinh viên năm thứ nhất phải đạt giải học sinh giỏi quốc gia/quốc tế theo điều kiện
+      quy định, hoặc đạt tổng điểm ba môn xét từ 22,50/30 theo tổ hợp được phép và thuộc nhóm 30% thí sinh trúng tuyển cao nhất cùng nhóm ngành. Việc
+      xét cấp căn cứ danh sách ngành và kết quả xác định đối tượng của cơ quan có thẩm quyền.
+  utter_faq_hoc_bong/nganh_duy_tri:
+  - text: Sinh viên đã nhận học bổng ngành khoa học cơ bản, kỹ thuật then chốt hoặc công nghệ chiến lược cần đạt điểm trung bình tích lũy các năm trước
+      từ loại Khá, rèn luyện loại Tốt trở lên và không bị kỷ luật từ khiển trách. Sau năm học thứ nhất phải tích lũy tối thiểu 24 tín chỉ; từ năm học
+      thứ hai, tối thiểu 28 tín chỉ trong một năm học. Đầu mỗi học kỳ, sinh viên nộp bảng điểm, số tín chỉ và kết quả rèn luyện theo thông báo để được
+      xét tiếp tục hưởng học bổng. Nếu chuyển sang ngành không còn thuộc diện chính sách, sinh viên có thể phải hoàn trả khoản hỗ trợ đã nhận theo
+      quy định.
+  utter_faq_hoc_bong/tai_tro:
+  - text: Học bổng tài trợ tại KMA do tổ chức hoặc cá nhân trong và ngoài Học viện hỗ trợ, có thể dưới dạng tiền, hiện vật, khóa học hoặc chương trình
+      đào tạo kỹ năng. Điều kiện, số suất, giá trị và thời hạn đăng ký được công bố theo từng chương trình. Một số trường hợp được ưu tiên gồm sinh
+      viên có hoàn cảnh khó khăn, gặp biến cố gia đình, bệnh nặng, khuyết tật, mồ côi hoặc có thành tích và nỗ lực học tập. Bạn có thể theo dõi thông
+      báo học bổng trên website Học viện và tại Hệ Quản lý sinh viên.
+  utter_faq_hoc_bong/tong_quan:
+  - text: 'Theo Quyết định 969/QĐ-HVM ngày 21/10/2026, sinh viên đại học chính quy hệ đào tạo phục vụ kinh tế – xã hội tại KMA có ba nhóm học bổng:
+      học bổng khuyến khích học tập, học bổng tài trợ và học bổng dành cho một số ngành khoa học cơ bản, kỹ thuật then chốt, công nghệ chiến lược.
+      Học bổng khuyến khích học tập dựa vào kết quả học tập, điểm rèn luyện, số tín chỉ và chỉ tiêu; học bổng tài trợ theo tiêu chí của từng chương
+      trình; học bổng ngành chiến lược có mức 3.700.000 đồng/tháng khi đáp ứng điều kiện. Quy định áp dụng từ học kỳ I năm học 2026–2027.'
+  utter_faq_hoc_phi/han_nop_cham_nop:
+  - text: Thời hạn đóng học phí được Học viện thông báo theo từng học kỳ. Bạn nên xem thông báo thu hoặc tài khoản học tập để biết số tiền, hạn cuối
+      và công nợ. Nếu gặp khó khăn chưa thể đóng đúng hạn, bạn cần liên hệ bộ phận tài chính và giáo viên chủ nhiệm trước hạn để được hướng dẫn thủ
+      tục hoặc phương án xử lý theo quy định của đợt thu.
+  utter_faq_hoc_phi/loi_giao_dich:
+  - text: Nếu đã chuyển học phí nhưng hệ thống chưa ghi nhận, bạn kiểm tra lại số tài khoản thụ hưởng, thời gian giao dịch, số tiền, nội dung chuyển
+      khoản và mã sinh viên. Sau đó lưu biên lai giao dịch và liên hệ bộ phận tài chính của Học viện để tra soát, điều chỉnh. Nếu chuyển nhầm tài khoản
+      hoặc thừa tiền, bạn cần báo ngay cho ngân hàng và bộ phận thu học phí để được hướng dẫn xử lý.
+  utter_faq_hoc_phi/muc_theo_nam:
+  - text: Mức học phí được công bố theo từng năm học. Trong thông tin năm học 2025–2026 của Học viện có mức 525.000 đồng/tín chỉ; thông tin tuyển sinh
+      năm 2026 nêu mức dự kiến khoảng 595.000 đồng/tín chỉ. Mức phải nộp chính thức của từng học kỳ được xác định theo thông báo thu học phí dành cho
+      khóa, chương trình và số tín chỉ của sinh viên.
+  utter_faq_hoc_phi/nop_hoc_phi:
+  - text: Sinh viên nộp học phí theo số tiền, thời hạn và tài khoản ngân hàng ghi trên thông báo thu học phí của Học viện. Khi chuyển khoản, bạn cần
+      nhập đúng nội dung được yêu cầu, đặc biệt là mã sinh viên và kỳ học, sau đó lưu biên lai và kiểm tra tình trạng thanh toán trên hệ thống. Nếu
+      tài khoản chưa cập nhật hoặc chuyển nhầm thông tin, hãy liên hệ bộ phận tài chính kèm chứng từ giao dịch để được kiểm tra.
+  utter_faq_hoc_phi/tinh_so_tien:
+  - text: Học phí theo tín chỉ được tính bằng số tín chỉ phải đóng nhân với đơn giá một tín chỉ của học kỳ. Ví dụ, nếu đăng ký 18 tín chỉ với đơn giá
+      525.000 đồng/tín chỉ thì học phí là 9.450.000 đồng. Các khoản miễn giảm, học phần được miễn, công nợ hoặc khoản thu khác sẽ được điều chỉnh theo
+      thông báo của Học viện.
+  utter_faq_hoc_phi/tong_quan:
+  - text: Học phí hệ đại học chính quy tại KMA được tính theo số tín chỉ phải đóng và đơn giá của năm học, chương trình đào tạo. Dữ liệu học phí năm
+      2025–2026 ghi mức 525.000 đồng/tín chỉ; thông tin tuyển sinh năm 2026 nêu mức dự kiến 595.000 đồng/tín chỉ. Số tiền thực đóng được thể hiện trong
+      thông báo thu học phí của Học viện, có thể khác khi có học phần được miễn, giảm hoặc công nợ. Bạn có thể cho biết năm học và số tín chỉ để mình
+      giúp tính số tiền dự kiến.
+  utter_faq_hoc_vu/bao_luu_tam_nghi:
+  - text: Nếu cần tạm dừng học tại KMA, sinh viên có thể làm thủ tục bảo lưu kết quả học tập hoặc xin nghỉ học tạm thời, tùy lý do và điều kiện theo
+      quy chế. Học viện có mẫu “10 – Đơn xin bảo lưu kết quả học tập” và mẫu “12 – Đơn xin nghỉ học tạm thời”. Bạn chuẩn bị đơn, lý do và giấy tờ minh
+      chứng, nộp theo hướng dẫn của Hệ Quản lý sinh viên và Phòng Đào tạo; chỉ nghỉ sau khi có quyết định chấp thuận.
+  utter_faq_hoc_vu/canh_bao_buoc_thoi_hoc:
+  - text: Cảnh báo học tập là hình thức nhắc nhở và quản lý sinh viên có kết quả học tập hoặc tiến độ không đạt yêu cầu; buộc thôi học là quyết định
+      xử lý khi thuộc trường hợp quy định. Các ngưỡng phụ thuộc quy chế đào tạo áp dụng cho khóa. Nếu nhận cảnh báo, bạn nên kiểm tra GPA, số tín chỉ
+      chưa đạt, môn nợ và liên hệ giáo viên chủ nhiệm hoặc Phòng Đào tạo để xây dựng kế hoạch học lại, cải thiện và tránh bị cảnh báo tiếp.
+  utter_faq_hoc_vu/chung_chi_mien_hoc:
+  - text: Việc miễn học hoặc công nhận tín chỉ đã tích lũy phụ thuộc loại chứng chỉ, chương trình đào tạo và quy định từng học phần. Với tiếng Anh,
+      KMA có quy trình miễn học và đổi điểm theo Quyết định 227/QĐ-HVM ngày 10/4/2025. Với học phần khác, bạn cần nộp chứng chỉ, bảng điểm hoặc giấy
+      tờ chứng minh tương đương để Phòng Đào tạo xem xét theo quy định.
+  utter_faq_hoc_vu/chuyen_can:
+  - text: Sinh viên cần tham dự đủ số buổi học theo quy định của học phần và đề cương môn học. Đi học muộn, nghỉ không phép hoặc vắng quá mức cho phép
+      có thể ảnh hưởng điểm chuyên cần và điều kiện dự thi. Nếu nghỉ vì lý do chính đáng, bạn nên báo giảng viên hoặc giáo viên chủ nhiệm và nộp giấy
+      tờ minh chứng khi được yêu cầu.
+  utter_faq_hoc_vu/chuyen_nganh:
+  - text: Sinh viên muốn chuyển ngành hoặc chương trình đào tạo cần đáp ứng điều kiện theo quy chế, như kết quả tuyển sinh, tình trạng học tập, tiến
+      độ và khả năng tiếp nhận của ngành mới. Bạn cần làm đơn đề nghị, xin ý kiến các đơn vị quản lý và chờ Học viện phê duyệt. Trước khi chuyển, nên
+      tìm hiểu các học phần được công nhận tương đương, số tín chỉ còn phải học, học phí và ảnh hưởng đến học bổng.
+  utter_faq_hoc_vu/dang_ky_hoc_phan:
+  - text: Sinh viên đăng ký học phần theo lịch do Phòng Đào tạo công bố trên hệ thống học tập. Trước khi đăng ký, bạn kiểm tra các môn còn thiếu, học
+      phần tiên quyết, số tín chỉ được phép và thời khóa biểu để tránh trùng lịch. Sau khi chọn lớp học phần, hãy xác nhận đăng ký thành công và lưu
+      danh sách môn. Nếu hệ thống báo lỗi hoặc không có lớp, bạn liên hệ Phòng Đào tạo trong thời gian đăng ký.
+  utter_faq_hoc_vu/diem_ren_luyen:
+  - text: Điểm rèn luyện phản ánh ý thức học tập, chấp hành nội quy, hoạt động tập thể và các tiêu chí do Học viện công bố theo từng học kỳ. Sinh viên
+      tự đánh giá theo khung điểm, nộp minh chứng và chờ lớp, đơn vị quản lý xét duyệt. Kết quả rèn luyện có thể ảnh hưởng xét học bổng; theo Quyết
+      định 969/QĐ-HVM, học bổng khuyến khích học tập yêu cầu điểm rèn luyện tối thiểu loại Khá.
+  utter_faq_hoc_vu/hoc_hai_chuong_trinh:
+  - text: Sinh viên có nhu cầu học đồng thời hai chương trình cần đáp ứng điều kiện học lực, tiến độ và các yêu cầu của quy chế đào tạo. Bạn nên tìm
+      hiểu chương trình thứ hai, khối lượng tín chỉ bổ sung, các học phần có thể được công nhận tương đương và học phí; sau đó đăng ký theo đợt tiếp
+      nhận của Phòng Đào tạo. Đối với học bổng khuyến khích học tập, Quyết định 969/QĐ-HVM quy định sinh viên học hai ngành chỉ được xét tại ngành
+      hoặc chuyên ngành thứ nhất.
+  utter_faq_hoc_vu/hoc_lai_cai_thien:
+  - text: Sinh viên không đạt học phần cần đăng ký học lại khi Học viện mở lớp phù hợp. Nếu đã qua môn nhưng muốn nâng điểm, bạn có thể đăng ký cải
+      thiện theo điều kiện của quy chế đào tạo. Điểm được sử dụng sau học lại hoặc cải thiện, số lần đăng ký và cách tính GPA phụ thuộc quy định của
+      khóa. Bạn nên kiểm tra học phần cần học lại, lịch mở lớp và học phí trước khi đăng ký.
+  utter_faq_hoc_vu/huy_rut_hoc_phan:
+  - text: Nếu muốn hủy hoặc rút một học phần đã đăng ký, sinh viên cần thực hiện trong thời hạn cho phép của học kỳ và đúng thủ tục của Phòng Đào tạo.
+      Học viện có biểu mẫu “08 – Đơn xin hủy học phần”. Bạn cần ghi rõ môn học, lớp học phần, lý do hủy và nộp theo hướng dẫn; sau khi được duyệt,
+      kiểm tra lại số tín chỉ và học phí trên hệ thống.
+  utter_faq_hoc_vu/lich_hoc_lich_thi:
+  - text: Thời khóa biểu và lịch thi của sinh viên KMA được cập nhật trên hệ thống đào tạo và các thông báo của Phòng Đào tạo, Phòng Khảo thí. Bạn
+      nên kiểm tra đúng lớp học phần, phòng học, giảng viên, ngày thi, ca thi và những thay đổi mới nhất. Nếu phát hiện trùng lịch hoặc thiếu môn,
+      hãy liên hệ đơn vị phụ trách trước thời điểm học hoặc thi.
+  utter_faq_hoc_vu/thoi_hoc:
+  - text: Nếu muốn thôi học, sinh viên sử dụng mẫu “14 – Đơn xin thôi học” và trình bày rõ lý do. Bạn liên hệ Hệ Quản lý sinh viên hoặc Phòng Đào tạo
+      để được hướng dẫn hồ sơ, các khoản học phí hoặc công nợ và thủ tục thanh toán ra trường. Việc thôi học chỉ có hiệu lực sau khi được Học viện
+      giải quyết theo quy định.
+  utter_faq_hoc_vu/thuc_tap_do_an:
+  - text: Thực tập và đồ án, khóa luận tốt nghiệp được tổ chức theo kế hoạch của từng ngành và khóa. Sinh viên cần hoàn thành các học phần, tín chỉ
+      tiên quyết, đáp ứng điều kiện học vụ và đăng ký đề tài, đơn vị thực tập đúng thời hạn. Theo Quyết định 227/QĐ-HVM, sinh viên thuộc phạm vi quy
+      định cần đạt chuẩn tiếng Anh tương đương TOEIC 450 trước khi nhận đề tài đồ án hoặc khóa luận. Nếu cần giấy giới thiệu thực tập, bạn sử dụng
+      mẫu “22 – Phiếu khai thông tin xin giới thiệu thực tập”.
+  utter_faq_hoc_vu/tiep_tuc_hoc:
+  - text: Sinh viên muốn trở lại học sau thời gian bảo lưu hoặc nghỉ tạm thời sử dụng mẫu “13 – Đơn xin tiếp tục học (hết thời gian bảo lưu)”. Bạn
+      điền thông tin sinh viên, thời gian đã nghỉ và nguyện vọng tiếp tục học, rồi nộp theo hướng dẫn trước khi học kỳ bắt đầu. Sau khi được chấp thuận,
+      cần kiểm tra lớp học, chương trình còn thiếu và kế hoạch đăng ký học phần.
+  utter_faq_hoc_vu/tin_chi_gioi_han:
+  - text: Số tín chỉ tối thiểu là 13 tín chỉ, tối đa là 25 tín chỉ được đăng ký trong học kỳ phụ thuộc quy chế đào tạo, tiến độ học tập và tình trạng cảnh báo học vụ của sinh
+      viên. Bạn cần đối chiếu kế hoạch đào tạo và thông báo đăng ký học phần của khóa mình. Học lại hoặc cải thiện điểm cũng có thể ảnh hưởng tổng
+      số tín chỉ đăng ký và học phí của kỳ.
+  utter_faq_hoc_vu/tinh_diem_hoc_phan:
+  - text: Điểm tổng kết học phần được tính từ các thành phần đánh giá theo tỷ trọng quy định trong đề cương của môn học, chẳng hạn điểm thường xuyên,
+      kiểm tra giữa kỳ và thi kết thúc học phần. Sau khi tính điểm hệ 10, Học viện quy đổi sang điểm chữ và thang điểm 4 theo quy chế áp dụng. Bạn
+      gửi tên môn, các điểm thành phần và trọng số để mình giúp tính thử điểm tổng kết.
+  utter_faq_hoc_vu/tinh_gpa:
+  - text: 'GPA được tính theo trung bình cộng có trọng số tín chỉ: lấy điểm hệ 4 của mỗi học phần nhân số tín chỉ, cộng tất cả kết quả rồi chia tổng
+      số tín chỉ được tính GPA. Ví dụ, môn 3 tín chỉ đạt 4,0 và môn 2 tín chỉ đạt 3,0 thì GPA của hai môn bằng (3×4,0 + 2×3,0)/5 = 3,60. Khi tính GPA
+      tích lũy phải áp dụng quy định đối với học lại, cải thiện và các học phần không tính điểm.'
+  utter_faq_hoc_vu/tong_quan:
+  - text: Các vấn đề học vụ phổ biến tại KMA gồm đăng ký hoặc hủy học phần, lịch học và lịch thi, học lại, cải thiện điểm, tính GPA, bảo lưu, nghỉ
+      học tạm thời, chuyển ngành, thực tập và xét tốt nghiệp. Thủ tục được thực hiện theo kế hoạch học kỳ và quy chế đào tạo áp dụng cho khóa của sinh
+      viên. Bạn muốn tìm hiểu nội dung nào để mình hướng dẫn cụ thể?
+  utter_faq_hoc_vu/tot_nghiep:
+  - text: Để được xét công nhận tốt nghiệp tại KMA, sinh viên phải hoàn thành chương trình và số tín chỉ bắt buộc, đạt các học phần yêu cầu, đáp ứng
+      chuẩn đầu ra ngoại ngữ và các điều kiện khác theo quy chế đào tạo. Theo Quyết định 227/QĐ-HVM, khóa tuyển sinh từ năm 2025 cần chuẩn tiếng Anh
+      tối thiểu TOEIC 500; khóa từ 2024 trở về trước là TOEIC 450 hai kỹ năng. Khi có thông báo xét tốt nghiệp, bạn kiểm tra bảng điểm, các môn còn
+      thiếu và hoàn tất hồ sơ, thanh toán ra trường.
+  utter_faq_hoc_vu/xep_hang_tot_nghiep:
+  - text: Xếp hạng tốt nghiệp được xác định từ kết quả học tập tích lũy và điều kiện của quy chế đào tạo áp dụng cho khóa. Ngoài mức GPA, một số trường
+      hợp có thể bị điều chỉnh xếp hạng theo quy định về số tín chỉ học lại hoặc kỷ luật. Bạn có thể cung cấp GPA, số tín chỉ học lại và khóa học để
+      mình hỗ trợ đối chiếu với quy chế tương ứng.
+  utter_faq_khao_thi/dieu_kien_du_thi:
+  - text: Để được dự thi kết thúc học phần, sinh viên phải đáp ứng yêu cầu chuyên cần, kết quả đánh giá quá trình và các điều kiện ghi trong đề cương
+      môn học, quy chế khảo thí. Bạn nên kiểm tra danh sách đủ điều kiện dự thi, lịch thi và thông báo của giảng viên trước ngày thi. Nếu có thắc mắc
+      về tình trạng dự thi, liên hệ khoa hoặc Phòng Khảo thí.
+  utter_faq_khao_thi/gian_lan_ky_luat:
+  - text: Sinh viên thi tại KMA phải tuân thủ nội quy phòng thi, không sử dụng tài liệu, thiết bị hoặc trao đổi trái phép. Các hành vi vi phạm như
+      mang tài liệu bị cấm, sử dụng điện thoại, trao đổi bài hoặc nhờ người thi hộ được xử lý theo mức độ và quy chế khảo thí của Học viện. Bạn nên
+      đọc quy định của đợt thi để biết rõ vật dụng được phép mang theo và các hình thức kỷ luật.
+  utter_faq_khao_thi/giay_to_phong_thi:
+  - text: Khi đi thi tại KMA, sinh viên cần mang thẻ sinh viên và giấy tờ định danh theo quy định của kỳ thi, có mặt đúng giờ, đúng phòng và đúng ca
+      thi. Bạn cần tuân thủ hướng dẫn của cán bộ coi thi về đồ dùng được phép mang vào phòng thi. Nếu mất thẻ sinh viên, hãy báo đơn vị tổ chức thi
+      trước để được hướng dẫn sử dụng giấy tờ thay thế hợp lệ.
+  utter_faq_khao_thi/phuc_khao:
+  - text: Sinh viên có quyền đề nghị phúc khảo bài thi theo thời hạn và hình thức Phòng Khảo thí công bố. Bạn tải mẫu “18 – Đơn xin phúc khảo bài thi”
+      hoặc làm thủ tục trực tuyến nếu đợt thi cho phép; điền mã sinh viên, tên học phần và đợt thi. Sau khi nộp, theo dõi thông báo kết quả phúc khảo;
+      điểm có thể được điều chỉnh theo kết luận chấm phúc khảo.
+  utter_faq_khao_thi/sai_diem:
+  - text: Nếu điểm thi hoặc điểm học phần trên hệ thống có sai sót, bạn đối chiếu điểm đã công bố, lưu lại minh chứng và báo sớm cho giảng viên hoặc
+      Phòng Khảo thí và Đảm bảo chất lượng đào tạo. Khi gửi yêu cầu, hãy cung cấp mã sinh viên, lớp, học phần, học kỳ và nội dung cần kiểm tra. Việc
+      điều chỉnh được thực hiện sau khi đơn vị phụ trách xác minh kết quả.
+  utter_faq_khao_thi/thi_lai:
+  - text: Sinh viên thi kết thúc học phần không đạt cần kiểm tra quy định và kế hoạch thi, học lại của học phần đó. Một số học phần có thể có đợt thi
+      bổ sung theo thông báo; các trường hợp khác cần đăng ký học lại trước khi thi. Bạn nên xem kết quả thi, lịch mở lớp và thông báo của Phòng Đào
+      tạo, Phòng Khảo thí để thực hiện đúng thủ tục.
+  utter_faq_khao_thi/thi_may_seb:
+  - text: Với kỳ thi trên máy tính có sử dụng Safe Exam Browser (SEB), sinh viên cần cài đúng phiên bản được Học viện yêu cầu, kiểm tra thiết bị, kết
+      nối mạng và đăng nhập tài khoản trước giờ thi. Trong khi thi, chỉ sử dụng phần mềm và tài liệu được phép. Nếu gặp lỗi kỹ thuật, báo ngay cho
+      cán bộ coi thi để được ghi nhận và hướng dẫn xử lý theo quy trình.
+  utter_faq_khao_thi/thi_tot_nghiep:
+  - text: Thi tốt nghiệp, bảo vệ đồ án hoặc khóa luận được tổ chức theo kế hoạch của ngành, khóa và hội đồng chuyên môn. Sinh viên cần đủ điều kiện
+      học vụ, hoàn thành hồ sơ và đáp ứng chuẩn đầu ra tiếng Anh theo quy định trước khi xét tốt nghiệp. Lịch bảo vệ, hình thức đánh giá và thành phần
+      hồ sơ do Phòng Đào tạo và khoa chuyên môn thông báo cho từng đợt.
+  utter_faq_khao_thi/tong_quan:
+  - text: Phòng Khảo thí và Đảm bảo chất lượng đào tạo của KMA phụ trách tổ chức thi, quản lý kết quả thi và xử lý các nghiệp vụ khảo thí. Sinh viên
+      có thể tra cứu lịch thi, phòng thi, kết quả, đăng ký phúc khảo, xin hoãn thi hoặc hỏi về kỳ thi kết thúc học phần theo thông báo của Học viện.
+      Bạn đang cần hỗ trợ vấn đề thi nào?
+  utter_faq_khao_thi/uu_tien_thanh_tich:
+  - text: Sinh viên có thành tích nghiên cứu khoa học, thi học thuật hoặc các giải thưởng có thể được xem xét ghi nhận, khen thưởng hoặc áp dụng chính
+      sách liên quan theo quy chế cụ thể của từng chương trình. Việc miễn thi, thay thế điểm hay công nhận kết quả học phần không tự động áp dụng cho
+      mọi giải thưởng. Bạn nên cung cấp tên cuộc thi, giải thưởng và học phần muốn xét để Phòng Đào tạo hoặc Phòng Khảo thí hướng dẫn.
+  utter_faq_khao_thi/vang_thi_hoan_thi:
+  - text: Nếu không thể dự thi vì ốm đau hoặc lý do chính đáng, bạn cần thông báo sớm và làm đơn xin hoãn thi theo mẫu số 17, kèm giấy tờ chứng minh
+      nếu được yêu cầu. Hãy nộp đơn đúng thời hạn cho bộ phận phụ trách. Chỉ khi được chấp thuận, bạn mới được bố trí lịch thi khác theo kế hoạch;
+      tự ý vắng thi có thể bị xử lý theo quy chế.
+  utter_faq_lien_he/co_so_ha_noi:
+  - text: Cơ sở chính của Học viện Kỹ thuật mật mã ở số 141 đường Chiến Thắng, phường Thanh Liệt, Hà Nội. Sinh viên đến làm thủ tục giấy tờ có thể
+      liên hệ phòng tiếp sinh viên 8.8, tầng 8, tòa TB2 trong khuôn viên Học viện.
+  utter_faq_lien_he/co_so_hcm:
+  - text: Học viện Kỹ thuật mật mã có Phân hiệu tại TP. Hồ Chí Minh. Thông tin tuyển sinh năm 2026 nêu địa điểm 17A Cộng Hòa, phường Tân Sơn Nhất và
+      Khu chức năng số 13, Khu đô thị mới Nam Thành phố, xã Bình Hưng. Địa điểm nhập học và làm việc được thông báo theo từng đợt, bạn nên xem giấy
+      báo hoặc thông báo của Phân hiệu để đến đúng nơi.
+  utter_faq_lien_he/danh_ba_phong_ban:
+  - text: 'Bạn cần liên hệ Phòng Đào tạo về đăng ký học phần, chương trình học và xét tốt nghiệp; Phòng Khảo thí và Đảm bảo chất lượng đào tạo về điểm
+      thi, lịch thi và phúc khảo; Hệ Quản lý học viên, sinh viên về giấy xác nhận, hồ sơ và chế độ sinh viên. Với thủ tục trực tiếp, nơi tiếp sinh
+      viên là phòng 8.8, tầng 8, tòa TB2. Website Học viện: https://actvn.edu.vn.'
+  utter_faq_lien_he/kenh_chinh_thuc:
+  - text: 'Website chính thức của Học viện Kỹ thuật mật mã là https://actvn.edu.vn; cổng thông tin tuyển sinh là https://tuyensinh.actvn.edu.vn. Fanpage
+      Học viện: https://www.facebook.com/hocvienkythuatmatma. Số tư vấn được công bố trong thông tin tuyển sinh 2026 là 0986 622 772. Sinh viên có
+      thể theo dõi thông báo đào tạo, khảo thí và biểu mẫu trên website Học viện.'
+  utter_faq_lien_he/tong_quan:
+  - text: 'Học viện Kỹ thuật mật mã có cơ sở chính tại số 141 Chiến Thắng, Thanh Liệt, Hà Nội và Phân hiệu tại TP. Hồ Chí Minh. Website chính thức:
+      https://actvn.edu.vn; cổng tuyển sinh: https://tuyensinh.actvn.edu.vn. Sinh viên tại Hà Nội cần làm giấy tờ đến phòng 8.8, tầng 8, tòa TB2, mang
+      theo thẻ sinh viên và căn cước. Giờ tiếp nhận thông thường: 7h30–11h30 và 13h30–16h30.'
+  utter_faq_mien_giam/giam_50:
+  - text: Theo Thông báo 02/TB-HQLHVSV học kỳ I năm học 2026–2027, mức giảm 50% học phí áp dụng cho sinh viên là con của cán bộ, công nhân, viên chức
+      có cha hoặc mẹ bị tai nạn lao động hoặc mắc bệnh nghề nghiệp và đang hưởng trợ cấp thường xuyên của cơ quan bảo hiểm xã hội. Hồ sơ gồm đơn xin
+      miễn giảm, giấy khai sinh và giấy tờ xác nhận chế độ trợ cấp của cha hoặc mẹ.
+  utter_faq_mien_giam/giam_70:
+  - text: Theo Thông báo 02/TB-HQLHVSV học kỳ I năm học 2026–2027, mức giảm 70% học phí áp dụng cho sinh viên dân tộc thiểu số thuộc đối tượng quy
+      định, có nơi thường trú cùng cha hoặc mẹ tại thôn, xã vùng đặc biệt khó khăn theo danh mục hiện hành. Hồ sơ gồm đơn xin giảm học phí, giấy khai
+      sinh, xác nhận cư trú và giấy tờ xác nhận địa bàn thuộc diện chính sách.
+  utter_faq_mien_giam/han_nop_noi_nop:
+  - text: Theo Thông báo số 02/TB-HQLHVSV, sinh viên các khóa đang học nộp hồ sơ miễn giảm học phí học kỳ I năm học 2026–2027 từ ngày 20/8 đến hết
+      28/8/2026, buổi sáng 8h00–11h00, buổi chiều 14h00–16h00. Hồ sơ nộp trực tiếp cho giáo viên chủ nhiệm tại tầng 8 tòa TB2, phòng GVCN số 6 hoặc
+      7. Tân sinh viên các khóa AT23, CT11, DT10 nộp tại bàn chính sách trong ngày nhập học. Các học kỳ tiếp theo thực hiện theo thông báo mới.
+  utter_faq_mien_giam/ho_so:
+  - text: Hồ sơ xin miễn, giảm học phí tại KMA gồm đơn theo mẫu, giấy khai sinh và giấy tờ xác nhận cư trú; tùy diện chính sách cần thêm giấy xác nhận
+      người có công, giấy xác nhận khuyết tật, giấy chứng nhận hộ nghèo/cận nghèo, giấy xác nhận nơi cư trú vùng khó khăn hoặc quyết định hưởng trợ
+      cấp tai nạn lao động, bệnh nghề nghiệp. Theo Thông báo 02/TB-HQLHVSV năm 2026, các bản sao phải được chứng thực trong thời hạn quy định. Bạn
+      thuộc diện chính sách nào để mình hướng dẫn đủ giấy tờ tương ứng?
+  utter_faq_mien_giam/hoan_hoc_phi:
+  - text: Nếu đã nộp học phí nhưng sau đó được xét duyệt miễn hoặc giảm, bạn cần giữ biên lai nộp tiền và thông báo hoặc quyết định xác nhận thuộc
+      diện chính sách. Hãy liên hệ bộ phận tài chính và Hệ Quản lý học viên, sinh viên để được đối chiếu số tiền và hướng dẫn hoàn trả hoặc điều chỉnh
+      công nợ theo quy định của Học viện.
+  utter_faq_mien_giam/mien_100:
+  - text: Theo Thông báo 02/TB-HQLHVSV ngày 19/8/2026, các diện được miễn 100% học phí gồm một số đối tượng con người có công với cách mạng, sinh viên
+      mồ côi cả cha lẫn mẹ không nơi nương tựa, sinh viên khuyết tật đáp ứng điều kiện, sinh viên hệ cử tuyển và các nhóm sinh viên dân tộc thiểu số
+      thuộc diện hộ nghèo/cận nghèo hoặc dân tộc rất ít người ở vùng khó khăn theo quy định. Hồ sơ phải có đơn xin miễn giảm và giấy tờ chứng minh
+      đúng diện chính sách.
+  utter_faq_mien_giam/nguoi_moi:
+  - text: Tân sinh viên thuộc diện miễn giảm học phí cần chuẩn bị đơn xin miễn giảm theo mẫu và giấy tờ chứng minh đối tượng chính sách, như giấy khai
+      sinh, giấy xác nhận cư trú, giấy tờ người có công hoặc xác nhận hộ nghèo tùy trường hợp. Theo thông báo học kỳ I năm học 2026–2027, tân sinh
+      viên khóa AT23, CT11, DT10 nộp hồ sơ tại bàn chính sách trong ngày nhập học.
+  utter_faq_mien_giam/tong_quan:
+  - text: Học viện thực hiện chính sách miễn, giảm học phí đối với sinh viên thuộc diện chính sách theo Nghị định 238/2025/NĐ-CP và thông báo từng
+      học kỳ. Thông báo số 02/TB-HQLHVSV ngày 19/8/2026 chia thành các mức miễn 100%, giảm 70% và giảm 50%, tùy đối tượng. Sinh viên nộp đơn theo mẫu
+      cùng giấy tờ chứng minh diện chính sách và xác nhận cư trú theo yêu cầu. Hồ sơ và thời hạn nộp được thông báo cho từng học kỳ.
+  utter_faq_nhap_hoc/cac_khoan_phi:
+  - text: Khi nhập học, tân sinh viên có thể phải nộp học phí hoặc khoản tạm thu học phí, bảo hiểm y tế và những khoản phí được Học viện thông báo
+      cho khóa nhập học. Số tiền và cách nộp được ghi trong hướng dẫn chính thức, có thể khác nhau theo ngành, chương trình, cơ sở và diện chính sách.
+      Bạn nên đối chiếu bảng thu của đúng khóa để biết khoản bắt buộc, khoản tự nguyện và số tiền phải chuẩn bị.
+  utter_faq_nhap_hoc/ho_so:
+  - text: Hồ sơ nhập học trực tiếp thường gồm giấy báo trúng tuyển, học bạ THPT, bằng tốt nghiệp hoặc giấy chứng nhận tốt nghiệp tạm thời, giấy khai
+      sinh, căn cước và ảnh theo yêu cầu của thông báo nhập học. Thí sinh thuộc diện ưu tiên hoặc miễn giảm học phí cần bổ sung giấy tờ chứng minh
+      chính sách; một số giấy tờ phải là bản sao có chứng thực. Bạn cần kiểm tra danh sách hồ sơ được Học viện công bố cho đúng khóa và cơ sở trước
+      khi đến nộp.
+  utter_faq_nhap_hoc/khai_online:
+  - text: Để nhập học trực tuyến tại KMA, thí sinh đăng nhập cổng nhập học theo đường dẫn được Học viện thông báo, kiểm tra thông tin cá nhân và điền
+      đầy đủ các mục yêu cầu. Chuẩn bị ảnh chân dung và bản chụp giấy tờ rõ nét, đúng định dạng; kiểm tra họ tên, ngày sinh, số căn cước, ngành, mã
+      thí sinh trước khi gửi. Sau khi hoàn thành, lưu lại xác nhận hoặc tài liệu cần mang đến khi nhập học trực tiếp.
+  utter_faq_nhap_hoc/sai_thieu_ho_so:
+  - text: Nếu nhập sai thông tin hoặc thiếu tài liệu trong hồ sơ nhập học, bạn nên đối chiếu với giấy tờ gốc, chuẩn bị ảnh hoặc bản chụp rõ nét rồi
+      kiểm tra xem cổng nhập học có cho chỉnh sửa hay không. Nếu đã gửi hồ sơ và không thể sửa, hãy liên hệ bộ phận tuyển sinh hoặc tiếp nhận nhập
+      học của Học viện, cung cấp mã thí sinh và nội dung cần điều chỉnh để được hướng dẫn bổ sung trước hạn.
+  utter_faq_nhap_hoc/thoi_gian_dia_diem:
+  - text: Thời gian nhập học trực tuyến và trực tiếp được KMA công bố theo từng đợt tuyển sinh. Địa điểm cũng khác nhau giữa cơ sở Hà Nội và Phân hiệu
+      TP. Hồ Chí Minh. Bạn cho mình biết năm tuyển sinh và cơ sở trúng tuyển để mình hướng dẫn đúng lịch; hãy mang theo giấy báo trúng tuyển và bộ
+      hồ sơ theo danh sách của Học viện.
+  utter_faq_nhap_hoc/tong_quan:
+  - text: Sau khi trúng tuyển KMA, thí sinh cần xác nhận nhập học trên hệ thống tuyển sinh của Bộ Giáo dục và Đào tạo đúng thời hạn, sau đó thực hiện
+      khai hồ sơ nhập học trực tuyến và nộp giấy tờ trực tiếp theo hướng dẫn Học viện. Hồ sơ thường gồm giấy báo trúng tuyển, giấy tờ cá nhân, học
+      bạ và giấy chứng nhận tốt nghiệp phù hợp, cùng giấy tờ chính sách nếu có. Bạn nên xem thông báo dành cho đúng khóa, cơ sở để biết thời gian và
+      địa điểm đến trường.
+  utter_faq_noi_quy/deo_the:
+  - text: Sinh viên KMA phải đeo thẻ sinh viên do Học viện cấp khi đến trường theo Điều 3 Quy định văn hóa học đường. Khi làm thủ tục hành chính, bạn
+      còn phải xuất trình thẻ sinh viên và căn cước công dân theo hướng dẫn tiếp nhận. Nếu bị mất thẻ, bạn có thể làm đơn xin cấp lại thẻ sinh viên
+      theo mẫu số 09.
+  utter_faq_noi_quy/di_muon_nghi_hoc:
+  - text: Sinh viên KMA cần đến lớp đúng giờ và tham gia học tập theo thời khóa biểu. Nếu đi muộn, nghỉ học hoặc cần ra ngoài trong giờ, bạn phải báo
+      và xin phép giảng viên theo quy định; việc nghỉ học có thể ảnh hưởng điểm chuyên cần và điều kiện dự thi. Trường hợp nghỉ vì lý do chính đáng
+      nên có giấy tờ minh chứng khi được yêu cầu.
+  utter_faq_noi_quy/dien_thoai_lop:
+  - text: Theo Điều 5 Quy định văn hóa học đường của KMA, sinh viên chỉ sử dụng điện thoại, máy tính cá nhân, internet hoặc thiết bị hỗ trợ trong giờ
+      học khi được giảng viên đồng ý và phục vụ mục đích học tập. Không tự ý chơi điện thoại, gây mất trật tự hoặc làm việc riêng trong giờ.
+  utter_faq_noi_quy/khach_vao_truong:
+  - text: Khách đến Học viện cần chấp hành hướng dẫn của lực lượng bảo vệ và quy định ra vào của từng khu vực. Nếu đến liên hệ công việc hoặc làm thủ
+      tục cùng sinh viên, khách có thể đến bộ phận tiếp sinh viên và phụ huynh tại phòng 8.8, tầng 8, tòa TB2 trong giờ hành chính. Không tự ý vào
+      các phòng làm việc hoặc khu vực hạn chế khi chưa được phép.
+  utter_faq_noi_quy/nhuom_toc:
+  - text: Quy định văn hóa học đường yêu cầu sinh viên có ngoại hình, trang phục và tác phong lịch sự, phù hợp môi trường học tập. Văn bản được cung
+      cấp không nêu một bảng màu tóc bị cấm cụ thể đối với sinh viên hệ dân sự. Khi đến lớp, dự lễ hoặc làm việc với Học viện, bạn nên giữ kiểu tóc
+      gọn gàng và tuân thủ yêu cầu trang phục của hoạt động.
+  utter_faq_noi_quy/tong_quan:
+  - text: Theo Quy định văn hóa học đường ban hành kèm Quyết định 1248/QĐ-HVM ngày 11/8/2015, sinh viên KMA cần đeo thẻ khi đến trường, ăn mặc gọn
+      gàng, lịch sự, đi học đúng giờ, tôn trọng giảng viên và bạn học, giữ gìn trật tự, vệ sinh và tài sản chung. Trong giờ học, không tự ý làm việc
+      riêng hoặc sử dụng điện thoại khi chưa được giảng viên cho phép. Sinh viên phải chấp hành quy định phòng học, giảng đường, khu ký túc xá và khu
+      vực hạn chế.
+  utter_faq_noi_quy/trang_phuc:
+  - text: Theo Điều 3 Quy định văn hóa học đường của KMA, sinh viên hệ dân sự đến trường phải mặc trang phục gọn gàng, lịch sự, kín đáo; áo có cổ và
+      tay áo phù hợp, quần dài, không đi dép lê hoặc dép xỏ ngón. Sinh viên nữ không mặc váy trên đầu gối, váy xẻ cao hoặc trang phục quá mỏng, phản
+      cảm. Học viện khuyến khích mặc áo có logo Học viện hoặc đồng phục lớp khi phù hợp.
+  utter_faq_noi_quy/trang_phuc_le_thi:
+  - text: Khi dự lễ, hội nghị hoặc đại hội tại KMA, sinh viên mặc trang phục theo yêu cầu của ban tổ chức. Nếu không có quy định riêng, cần mặc lịch
+      sự theo nội quy chung; sinh viên nam được khuyến khích mặc áo sơ mi trắng, quần tối màu, cà vạt, sinh viên nữ được khuyến khích mặc áo dài truyền
+      thống. Khi thi thực hành, thể dục thể thao hoặc quốc phòng, sinh viên sử dụng trang phục theo quy định của môn học.
+  utter_faq_noi_quy/ung_xu:
+  - text: Sinh viên KMA phải lễ phép với cán bộ, giảng viên và nhân viên, tôn trọng bạn học, không nói tục, cãi nhau hay xúc phạm người khác. Khi tham
+      gia lớp học, họp hoặc hoạt động tập thể cần đúng giờ, giữ trật tự và chỉ phát biểu khi được đồng ý. Sinh viên có trách nhiệm giữ gìn vệ sinh,
+      tài sản chung và chấp hành hướng dẫn của cán bộ phụ trách.
+  utter_faq_phan_hoi/chat_luong:
+  - text: Nếu muốn góp ý về chất lượng giảng dạy, cơ sở vật chất hoặc hoạt động phục vụ sinh viên, bạn có thể phản ánh qua giáo viên chủ nhiệm, khoa
+      chuyên môn hoặc đơn vị quản lý liên quan. Nội dung góp ý nên nêu rõ môn học hoặc địa điểm, thời gian, vấn đề cụ thể và đề xuất của bạn. Nếu có
+      minh chứng, hãy gửi qua kênh tiếp nhận chính thức để được kiểm tra, giải quyết.
+  utter_faq_phan_hoi/khieu_nai:
+  - text: Nếu muốn khiếu nại hoặc phản ánh một quyết định ảnh hưởng đến quyền lợi học tập, bạn nên chuẩn bị thông tin cá nhân, nội dung sự việc, thời
+      điểm xảy ra và tài liệu liên quan, rồi gửi đến đơn vị phụ trách. Khiếu nại điểm thi cần thực hiện theo thủ tục phúc khảo và thời hạn do Phòng
+      Khảo thí công bố; các vấn đề về học phí, hồ sơ hoặc học vụ cần gửi đúng bộ phận quản lý.
+  utter_faq_tien_ich/do_that_lac:
+  - text: Nếu làm mất đồ trong khuôn viên KMA, bạn nên kiểm tra lại nơi đã đến, liên hệ bảo vệ hoặc cán bộ quản lý giảng đường và hỏi thông tin tại
+      bộ phận hỗ trợ sinh viên. Khi báo mất, hãy mô tả món đồ, thời gian và địa điểm nghi thất lạc để thuận tiện tìm kiếm. Với thẻ sinh viên hoặc giấy
+      tờ định danh bị mất, bạn nên thực hiện thêm thủ tục cấp lại theo quy định.
+  utter_faq_tien_ich/thu_vien:
+  - text: Thư viện Học viện Kỹ thuật mật mã phục vụ nhu cầu đọc, mượn tài liệu, tìm kiếm học liệu và tự học của sinh viên. Bạn có thể liên hệ bộ phận
+      thư viện để đăng ký sử dụng, hỏi điều kiện mượn sách, thời hạn trả và nguồn tài liệu điện tử. Khi sử dụng cần tuân thủ nội quy bảo quản tài liệu
+      và giữ trật tự trong khu vực đọc.
+  utter_faq_tien_ich/wifi_phong_hoc:
+  - text: Học viện có hệ thống giảng đường, phòng thực hành và các khu vực phục vụ học tập, nghiên cứu. Nếu cần sử dụng Wi-Fi, phòng máy, phòng học
+      hoặc thiết bị thực hành, bạn nên hỏi cán bộ phụ trách khu vực hoặc giảng viên để biết tài khoản, thời gian mở cửa và quy định sử dụng. Nếu gặp
+      sự cố thiết bị, hãy báo ngay bộ phận quản lý phòng học.
+  utter_faq_tieng_anh/bang_quy_doi:
+  - text: 'Theo Bảng 3 Quyết định 227/QĐ-HVM, điểm chuyển đổi lần lượt cho Tiếng Anh 1 – Tiếng Anh 2 – Tiếng Anh 3 như sau: TOEIC 450 hoặc IELTS 4.0:
+      9 – 6 – chưa có điểm TA3; TOEIC 500 hoặc IELTS 4.5: 10 – 7 – 6; TOEIC 550 hoặc IELTS 5.0: 10 – 8 – 7; TOEIC 600 hoặc IELTS 5.5: 10 – 9 – 8; TOEIC
+      650 hoặc IELTS 6.0: 10 – 10 – 9; TOEIC từ 705 hoặc IELTS từ 6.5: 10 – 10 – 10. Chứng chỉ phải hợp lệ, còn hạn và được xét đúng thời điểm quy
+      định.'
+  utter_faq_tieng_anh/chuan_do_an:
+  - text: Theo Điều 3 Quy định ban hành kèm Quyết định 227/QĐ-HVM, sinh viên cần đạt chuẩn tiếng Anh tương đương TOEIC tối thiểu 450 trước khi nhận
+      đề tài đồ án hoặc khóa luận tốt nghiệp. Ngoài ngoại ngữ, sinh viên phải đáp ứng các điều kiện về học phần, tín chỉ và đăng ký đề tài của ngành
+      đào tạo.
+  utter_faq_tieng_anh/chuan_tot_nghiep_theo_khoa:
+  - text: Theo Điều 8 Quyết định 227/QĐ-HVM ngày 10/4/2025, khóa tuyển sinh từ năm 2025 trở đi cần đạt chuẩn đầu ra tiếng Anh tương đương TOEIC 500;
+      khóa tuyển sinh từ năm 2024 trở về trước áp dụng tối thiểu TOEIC 450 hai kỹ năng. Sinh viên chưa đạt chuẩn áp dụng cho khóa của mình sẽ chưa
+      đủ điều kiện xét công nhận tốt nghiệp. Bạn đang học khóa nào để mình xác định đúng mức điểm?
+  utter_faq_tieng_anh/chuan_tung_mon:
+  - text: Theo Quyết định 227/QĐ-HVM ngày 10/4/2025, chuẩn Tiếng Anh 1 là TOEIC tối thiểu 300 (3 tín chỉ), Tiếng Anh 2 là 350 (3 tín chỉ) và Tiếng
+      Anh 3 là 450 (4 tín chỉ). Đây là chuẩn năng lực theo từng học phần. Điểm chuyển đổi từ IELTS, TOEIC hoặc chứng chỉ khác sang điểm học phần thang
+      10 được áp dụng theo bảng quy đổi riêng của Học viện.
+  utter_faq_tieng_anh/chung_chi_duoc_cong_nhan:
+  - text: KMA công nhận chứng chỉ TOEIC, TOEFL do đơn vị hợp lệ thuộc ETS cấp; IELTS do British Council hoặc IDP cấp; chứng chỉ Cambridge English và
+      một số chứng chỉ khác theo quy định. Chứng chỉ VSTEP được công nhận nếu do cơ sở được Bộ Giáo dục và Đào tạo cấp phép tổ chức thi. Khi xin miễn
+      học, đổi điểm hoặc xét chuẩn đầu ra, chứng chỉ phải còn hiệu lực và đáp ứng mức điểm tương đương theo Quyết định 227/QĐ-HVM.
+  utter_faq_tieng_anh/chung_chi_het_han:
+  - text: Để xin miễn học, đổi điểm hoặc xét chuẩn tiếng Anh đầu ra bằng chứng chỉ TOEIC, IELTS hay chứng chỉ tương đương, chứng chỉ phải còn hiệu
+      lực tại thời điểm xét theo Quyết định 227/QĐ-HVM. Nếu chứng chỉ đã hết hạn, sinh viên cần thi lấy chứng chỉ hợp lệ mới hoặc dự kỳ thi sát hạch
+      tiếng Anh nội bộ theo thông báo. Kết quả sát hạch nội bộ có giá trị trong 2 năm kể từ ngày ký quyết định công nhận.
+  utter_faq_tieng_anh/han_nop:
+  - text: Theo Điều 5 Quyết định 227/QĐ-HVM, Học viện nhận đơn xin miễn học và đổi điểm tiếng Anh một lần vào tuần lễ trước khi đăng ký học phần của
+      mỗi học kỳ. Đơn nộp sau thời hạn này không được giải quyết theo quy định. Bạn nên chuẩn bị sẵn chứng chỉ còn hạn, đơn đề nghị và theo dõi thông
+      báo Phòng Đào tạo để nộp đúng thời gian.
+  utter_faq_tieng_anh/mien_hoc:
+  - text: Sinh viên KMA có chứng chỉ tiếng Anh hợp lệ, còn hạn và đạt mức điểm theo Quyết định 227/QĐ-HVM có thể xin miễn học Tiếng Anh 1, 2 hoặc 3
+      trước khi đăng ký học phần. Môn được miễn sẽ có điểm quy đổi thang 10 ghi vào bảng điểm, đồng thời không phải đóng học phí môn đó. Bạn cần nộp
+      đơn xin miễn và đổi điểm kèm chứng chỉ vào tuần lễ trước kỳ đăng ký học phần.
+  utter_faq_tieng_anh/sau_doi_diem:
+  - text: Sau khi đã hoàn tất thủ tục miễn học và đổi điểm Tiếng Anh 1, 2 hoặc 3, sinh viên không được đăng ký học lại chính học phần đã đổi điểm để
+      cải thiện theo Quyết định 227/QĐ-HVM. Vì vậy, trước khi nộp đơn bạn nên cân nhắc giữa nhận điểm quy đổi và tiếp tục học, thi để lấy điểm cao
+      hơn. Sau khi duyệt, hãy kiểm tra bảng điểm để bảo đảm kết quả đã được cập nhật chính xác.
+  utter_faq_tieng_anh/thi_noi_bo:
+  - text: Học viện Kỹ thuật mật mã tổ chức tối đa 3 kỳ thi sát hạch tiếng Anh đầu ra nội bộ mỗi năm theo Quyết định 227/QĐ-HVM; Phòng Khảo thí và Đảm
+      bảo chất lượng đào tạo là đơn vị phụ trách. Sinh viên đóng lệ phí theo thông báo từng đợt. Kết quả đạt chuẩn được công nhận bằng quyết định của
+      Giám đốc Học viện và có giá trị trong 2 năm kể từ ngày ký quyết định, sử dụng trong nội bộ Học viện.
+  utter_faq_tieng_anh/thu_tuc_doi_diem:
+  - text: Để đổi điểm tiếng Anh tại KMA, bạn xem Bảng 3 của Quyết định 227/QĐ-HVM để biết mức điểm tương đương, sau đó điền Mẫu 02 – Đơn xin đổi điểm
+      môn tiếng Anh. Trong đơn ghi họ tên, mã sinh viên, lớp, ngành học, tên chứng chỉ, nơi thi, ngày cấp, điểm đạt được và học phần muốn quy đổi.
+      Nộp đơn kèm bản minh chứng chứng chỉ còn hạn theo thông báo của Phòng Đào tạo vào tuần lễ trước khi đăng ký học phần. Sau khi được duyệt, điểm
+      sẽ được chuyển cho Phòng Khảo thí cập nhật; bạn cần kiểm tra lại bảng điểm học kỳ.
+  utter_faq_tieng_anh/tong_quan:
+  - text: 'Theo Quyết định 227/QĐ-HVM ngày 10/4/2025, chuẩn tiếng Anh theo học phần tại KMA là: Tiếng Anh 1 tối thiểu TOEIC 300, Tiếng Anh 2 tối thiểu
+      350 và Tiếng Anh 3 tối thiểu 450; trước khi nhận đề tài đồ án hoặc khóa luận cần đạt 450. Chuẩn đầu ra tốt nghiệp là TOEIC 500 đối với khóa tuyển
+      từ năm 2025, còn các khóa từ 2024 trở về trước là TOEIC 450 hai kỹ năng. Sinh viên có chứng chỉ tiếng Anh hợp lệ, còn hạn có thể xin miễn học
+      và đổi điểm các học phần tiếng Anh theo bảng quy đổi, nộp hồ sơ vào tuần trước đợt đăng ký học phần của mỗi học kỳ.'
+  utter_faq_tro_giup/cam_on_tam_biet:
+  - text: Rất vui vì đã giúp được bạn! Chúc bạn học tập tốt và hẹn gặp lại nhé.
+  utter_faq_tro_giup/chao_hoi:
+  - text: Xin chào! Mình là trợ lý hỗ trợ thông tin về Học viện Kỹ thuật mật mã. Bạn muốn hỏi về tuyển sinh, học tập, học phí, học bổng hay thủ tục
+      giấy tờ?
+  utter_faq_tro_giup/chatbot:
+  - text: Mình là trợ lý AI hỗ trợ giải đáp thông tin về Học viện Kỹ thuật mật mã, bao gồm tuyển sinh, ngành học, học vụ, thi cử, học phí, học bổng,
+      thủ tục giấy tờ, tiếng Anh, nội quy và hoạt động sinh viên. Bạn có thể hỏi bằng ngôn ngữ tự nhiên, mình sẽ trả lời theo từng nội dung cụ thể.
+  utter_faq_tro_giup/khong_hieu:
+  - text: Xin lỗi, mình chưa hiểu đúng câu hỏi. Bạn có thể nói rõ hơn vấn đề mình cần giải đáp không?
+  utter_faq_tuyen_sinh/chi_tieu:
+  - text: Chỉ tiêu tuyển sinh của Học viện Kỹ thuật mật mã được công bố theo từng năm, ngành và cơ sở đào tạo. Bạn có thể xem số lượng tuyển trong
+      đề án tuyển sinh chính thức tại https://tuyensinh.actvn.edu.vn. Bạn muốn hỏi chỉ tiêu năm nào, ngành nào và cơ sở Hà Nội hay TP. Hồ Chí Minh?
+  utter_faq_tuyen_sinh/diem_chuan:
+  - text: Điểm chuẩn KMA là mức điểm trúng tuyển được công bố sau xét tuyển, khác với điểm sàn nhận hồ sơ. Điểm chuẩn có thể khác nhau theo năm, ngành,
+      cơ sở và phương thức xét tuyển. Bạn hãy cho mình biết năm, ngành và cơ sở Hà Nội hay TP. Hồ Chí Minh để mình cung cấp đúng mức điểm.
+  utter_faq_tuyen_sinh/dieu_kien_suc_khoe:
+  - text: Điều kiện sức khỏe khi xét tuyển KMA phụ thuộc hệ và chương trình đào tạo. Thí sinh dự tuyển hệ dân sự cần đáp ứng yêu cầu tuyển sinh và
+      sức khỏe theo thông báo của năm; không áp dụng mặc nhiên các tiêu chuẩn tuyển quân của hệ đào tạo phục vụ lực lượng vũ trang. Bạn muốn hỏi điều
+      kiện sức khỏe của ngành hay hệ đào tạo nào?
+  utter_faq_tuyen_sinh/nganh_va_ma:
+  - text: Các ngành đại học chính quy dân sự của KMA gồm An toàn thông tin, Công nghệ thông tin và Kỹ thuật điện tử – viễn thông. Mã ngành xét tuyển
+      có thể phân biệt theo cơ sở và chương trình tuyển sinh; bạn cần xem bảng mã ngành trong đề án của đúng năm. Bạn dự định xét ngành nào và học
+      tại Hà Nội hay TP. Hồ Chí Minh để mình hỗ trợ xác định mã đăng ký?
+  utter_faq_tuyen_sinh/phuong_thuc:
+  - text: Phương thức xét tuyển vào KMA được công bố theo đề án tuyển sinh từng năm, có thể bao gồm xét kết quả thi tốt nghiệp THPT và các phương thức
+      khác theo quy định của đợt tuyển sinh. Bạn nên kiểm tra phương thức áp dụng cho ngành và cơ sở mình đăng ký, mốc nộp hồ sơ, điều kiện điểm và
+      quy trình đăng ký nguyện vọng tại https://tuyensinh.actvn.edu.vn.
+  utter_faq_tuyen_sinh/to_hop:
+  - text: Tổ hợp xét tuyển KMA được quy định riêng theo ngành, cơ sở và năm tuyển sinh. Thí sinh cần đối chiếu bảng tổ hợp trong đề án năm đăng ký,
+      bởi các tổ hợp có thể thay đổi. Bạn muốn xét An toàn thông tin, Công nghệ thông tin hay Kỹ thuật điện tử – viễn thông và đăng ký năm nào?
+  utter_faq_tuyen_sinh/tong_quan:
+  - text: Học viện Kỹ thuật mật mã tuyển sinh đại học chính quy hệ đào tạo phục vụ kinh tế – xã hội ở các ngành An toàn thông tin, Công nghệ thông
+      tin và Kỹ thuật điện tử – viễn thông. Thí sinh cần xem đề án tuyển sinh theo đúng năm để biết chỉ tiêu, mã ngành, phương thức xét tuyển, tổ hợp
+      môn, điều kiện ngoại ngữ và hồ sơ. Thông tin tuyển sinh được đăng tại https://tuyensinh.actvn.edu.vn; bạn muốn hỏi ngành hoặc năm tuyển sinh
+      nào?
+  utter_faq_tuyen_sinh/tuyen_thang_uu_tien:
+  - text: KMA áp dụng chính sách xét tuyển thẳng và ưu tiên xét tuyển theo quy định tuyển sinh của năm và đối tượng thí sinh. Điều kiện có thể liên
+      quan thành tích học sinh giỏi, giải thưởng hoặc diện ưu tiên được công bố trong đề án; điểm cộng ưu tiên và xét tuyển thẳng là hai hình thức
+      khác nhau. Bạn cho mình biết thành tích hoặc diện ưu tiên và năm đăng ký để kiểm tra điều kiện phù hợp.
+  utter_faq_tuyen_sinh/uu_tien_ngoai_ngu:
+  - text: Thí sinh có chứng chỉ IELTS, TOEIC hoặc chứng chỉ ngoại ngữ khác có thể được cộng điểm trong xét tuyển nếu đáp ứng điều kiện và mức điểm
+      quy định trong đề án tuyển sinh của năm tương ứng. Đây là chính sách cộng điểm khi xét tuyển đại học, khác với quy đổi điểm môn Tiếng Anh 1–3
+      cho sinh viên đang học. Bạn cho mình biết chứng chỉ, điểm đạt được và năm tuyển sinh để xác định mức ưu tiên.
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

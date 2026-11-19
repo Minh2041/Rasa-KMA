@@ -1,0 +1,277 @@
+version: "3.1"
+
+nlu:
+  # 09 · MIỄN GIẢM HỌC PHÍ | intent trong Excel: mien_giam/tong_quan
+  - intent: faq_mien_giam/tong_quan
+    examples: |
+      - Ai được miễn hoặc giảm học phí tại KMA?
+      - Những sinh viên nào được miễn giảm học phí KMA?
+      - Chính sách miễn và giảm học phí tại Học viện?
+      - Cho em hỏi, những sinh viên nào được miễn giảm học phí KMA?
+      - Cho mình hỏi, chính sách miễn và giảm học phí tại Học viện?
+      - Admin ơi, những sinh viên nào được miễn giảm học phí KMA?
+      - Ad cho mình hỏi, chính sách miễn và giảm học phí tại Học viện?
+      - Mình muốn biết: Những sinh viên nào được miễn giảm học phí KMA?
+      - Em đang thắc mắc: Chính sách miễn và giảm học phí tại Học viện?
+      - Cho hỏi một chút, những sinh viên nào được miễn giảm học phí KMA?
+      - Mình hỏi về KMA: Chính sách miễn và giảm học phí tại Học viện?
+      - Về Học viện Kỹ thuật mật mã, những sinh viên nào được miễn giảm học phí KMA?
+      - Ở KMA thì chính sách miễn và giảm học phí tại Học viện?
+      - Khi nào được miễn học phí?
+      - KMA ơi, chính sách miễn và giảm học phí tại Học viện?
+      - Các anh chị cho em hỏi: Những sinh viên nào được miễn giảm học phí KMA?
+      - Cần tư vấn giúp em: Chính sách miễn và giảm học phí tại Học viện?
+      - Giải đáp giúp em: Những sinh viên nào được miễn giảm học phí KMA?
+      - Em cần thông tin cụ thể: Chính sách miễn và giảm học phí tại Học viện?
+      - Who qualifies for tuition waivers or discounts at KMA?
+      - I have a question about KMA: Who qualifies for tuition waivers or discounts at KMA?
+      - Please help me with this question: Who qualifies for tuition waivers or discounts at KMA?
+      - Nhung sinh vien nao duoc mien giam hoc phi KMA?
+      - Chinh sach mien va giam hoc phi tai Hoc vien?
+      - Cho em hoi, nhung sinh vien nao duoc mien giam hoc phi KMA?
+      - Ad oi, chinh sach mien va giam hoc phi tai Hoc vien?
+      - KMA: Nhung sinh vien nao duoc mien giam hoc phi KMA?
+      - Những sv nào dc miễn giảm hp KMA?
+      - Chính sách miễn và giảm hp tại HV?
+      - ad oi, nhung sv nao dc mien giam hp KMA?
+
+  # 09 · MIỄN GIẢM HỌC PHÍ | intent trong Excel: mien_giam/mien_100
+  - intent: faq_mien_giam/mien_100
+    examples: |
+      - Những trường hợp nào được miễn 100% học phí?
+      - Đối tượng được miễn 100 phần trăm học phí KMA?
+      - Điều kiện miễn toàn bộ học phí Học viện?
+      - Cho em hỏi, đối tượng được miễn 100 phần trăm học phí KMA?
+      - Cho mình hỏi, điều kiện miễn toàn bộ học phí Học viện?
+      - Admin ơi, đối tượng được miễn 100 phần trăm học phí KMA?
+      - Ad cho mình hỏi, điều kiện miễn toàn bộ học phí Học viện?
+      - Mình muốn biết: Đối tượng được miễn 100 phần trăm học phí KMA?
+      - Em đang thắc mắc: Điều kiện miễn toàn bộ học phí Học viện?
+      - Cho hỏi một chút, đối tượng được miễn 100 phần trăm học phí KMA?
+      - Mình hỏi về KMA: Điều kiện miễn toàn bộ học phí Học viện?
+      - Về Học viện Kỹ thuật mật mã, đối tượng được miễn 100 phần trăm học phí KMA?
+      - Ở KMA thì điều kiện miễn toàn bộ học phí Học viện?
+      - Em đang tìm hiểu về KMA, đối tượng được miễn 100 phần trăm học phí KMA?
+      - KMA ơi, điều kiện miễn toàn bộ học phí Học viện?
+      - Các anh chị cho em hỏi: Đối tượng được miễn 100 phần trăm học phí KMA?
+      - Cần tư vấn giúp em: Điều kiện miễn toàn bộ học phí Học viện?
+      - Giải đáp giúp em: Đối tượng được miễn 100 phần trăm học phí KMA?
+      - Em cần thông tin cụ thể: Điều kiện miễn toàn bộ học phí Học viện?
+      - Who qualifies for a full 100 percent tuition exemption at KMA?
+      - I have a question about KMA: Who qualifies for a full 100 percent tuition exemption at KMA?
+      - Please help me with this question: Who qualifies for a full 100 percent tuition exemption at KMA?
+      - Doi tuong duoc mien 100 phan tram hoc phi KMA?
+      - Dieu kien mien toan bo hoc phi Hoc vien?
+      - Cho em hoi, doi tuong duoc mien 100 phan tram hoc phi KMA?
+      - Ad oi, dieu kien mien toan bo hoc phi Hoc vien?
+      - KMA: Doi tuong duoc mien 100 phan tram hoc phi KMA?
+      - Đối tượng dc miễn 100 phần trăm hp KMA?
+      - Điều kiện miễn toàn bộ hp HV?
+      - ad oi, doi tuong dc mien 100 phan tram hp KMA?
+
+  # 09 · MIỄN GIẢM HỌC PHÍ | intent trong Excel: mien_giam/giam_70
+  - intent: faq_mien_giam/giam_70
+    examples: |
+      - Ai được giảm 70% học phí?
+      - KMA áp dụng chính sách giảm 70% học phí cho những đối tượng nào?
+      - KMA giảm 70 phần trăm học phí cho ai?
+      - Trường hợp được giảm 70% tiền học ở Học viện?
+      - Cho em hỏi, KMA giảm 70 phần trăm học phí cho ai?
+      - Cho mình hỏi, trường hợp được giảm 70% tiền học ở Học viện?
+      - Admin ơi, KMA giảm 70 phần trăm học phí cho ai?
+      - Ad cho mình hỏi, trường hợp được giảm 70% tiền học ở Học viện?
+      - Mình muốn biết: KMA giảm 70 phần trăm học phí cho ai?
+      - Em đang thắc mắc: Trường hợp được giảm 70% tiền học ở Học viện?
+      - Cho hỏi một chút, KMA giảm 70 phần trăm học phí cho ai?
+      - Mình hỏi về KMA: Trường hợp được giảm 70% tiền học ở Học viện?
+      - Về Học viện Kỹ thuật mật mã, KMA giảm 70 phần trăm học phí cho ai?
+      - Ở KMA thì trường hợp được giảm 70% tiền học ở Học viện?
+      - Trường hợp nào được giảm 70% học phí?
+      - KMA ơi, trường hợp được giảm 70% tiền học ở Học viện?
+      - Các anh chị cho em hỏi: KMA giảm 70 phần trăm học phí cho ai?
+      - Cần tư vấn giúp em: Trường hợp được giảm 70% tiền học ở Học viện?
+      - Giải đáp giúp em: KMA giảm 70 phần trăm học phí cho ai?
+      - Em cần thông tin cụ thể: Trường hợp được giảm 70% tiền học ở Học viện?
+      - Who is eligible for a 70 percent tuition reduction at KMA?
+      - I have a question about KMA: Who is eligible for a 70 percent tuition reduction at KMA?
+      - Please help me with this question: Who is eligible for a 70 percent tuition reduction at KMA?
+      - KMA giam 70 phan tram hoc phi cho ai?
+      - Truong hop duoc giam 70% tien hoc o Hoc vien?
+      - Cho em hoi, KMA giam 70 phan tram hoc phi cho ai?
+      - Ad oi, truong hop duoc giam 70% tien hoc o Hoc vien?
+      - KMA: KMA giam 70 phan tram hoc phi cho ai?
+      - KMA giảm 70 phần trăm hp cho ai?
+      - Trường hợp dc giảm 70% tiền học ở HV?
+      - ad oi, KMA giam 70 phan tram hp cho ai?
+
+  # 09 · MIỄN GIẢM HỌC PHÍ | intent trong Excel: mien_giam/giam_50
+  - intent: faq_mien_giam/giam_50
+    examples: |
+      - Ai được giảm 50% học phí?
+      - KMA giảm 50 phần trăm học phí cho ai?
+      - Những đối tượng được giảm một nửa học phí Học viện?
+      - Cho em hỏi, KMA giảm 50 phần trăm học phí cho ai?
+      - KMA áp dụng chính sách giảm 50% học phí cho những đối tượng nào?
+      - Cho mình hỏi, những đối tượng được giảm một nửa học phí Học viện?
+      - Admin ơi, KMA giảm 50 phần trăm học phí cho ai?
+      - Ad cho mình hỏi, những đối tượng được giảm một nửa học phí Học viện?
+      - Mình muốn biết: KMA giảm 50 phần trăm học phí cho ai?
+      - Em đang thắc mắc: Những đối tượng được giảm một nửa học phí Học viện?
+      - Cho hỏi một chút, KMA giảm 50 phần trăm học phí cho ai?
+      - Mình hỏi về KMA: Những đối tượng được giảm một nửa học phí Học viện?
+      - Về Học viện Kỹ thuật mật mã, KMA giảm 50 phần trăm học phí cho ai?
+      - Ở KMA thì những đối tượng được giảm một nửa học phí Học viện?
+      - Em đang tìm hiểu về KMA, KMA giảm 50 phần trăm học phí cho ai?
+      - KMA ơi, những đối tượng được giảm một nửa học phí Học viện?
+      - Các anh chị cho em hỏi: KMA giảm 50 phần trăm học phí cho ai?
+      - Cần tư vấn giúp em: Những đối tượng được giảm một nửa học phí Học viện?
+      - Giải đáp giúp em: KMA giảm 50 phần trăm học phí cho ai?
+      - Em cần thông tin cụ thể: Những đối tượng được giảm một nửa học phí Học viện?
+      - Who qualifies for a 50 percent tuition reduction at KMA?
+      - I have a question about KMA: Who qualifies for a 50 percent tuition reduction at KMA?
+      - Please help me with this question: Who qualifies for a 50 percent tuition reduction at KMA?
+      - KMA giam 50 phan tram hoc phi cho ai?
+      - Nhung doi tuong duoc giam mot nua hoc phi Hoc vien?
+      - Cho em hoi, KMA giam 50 phan tram hoc phi cho ai?
+      - Ad oi, nhung doi tuong duoc giam mot nua hoc phi Hoc vien?
+      - KMA: KMA giam 50 phan tram hoc phi cho ai?
+      - KMA giảm 50 phần trăm hp cho ai?
+      - Những đối tượng dc giảm một nửa hp HV?
+      - ad oi, KMA giam 50 phan tram hp cho ai?
+
+  # 09 · MIỄN GIẢM HỌC PHÍ | intent trong Excel: mien_giam/ho_so
+  - intent: faq_mien_giam/ho_so
+    examples: |
+      - Xin miễn giảm học phí phải nộp những giấy tờ nào?
+      - Hồ sơ xin miễn giảm học phí KMA gồm gì?
+      - Cần giấy xác nhận nào để làm đơn giảm học phí?
+      - Cho em hỏi, hồ sơ xin miễn giảm học phí KMA gồm gì?
+      - Cho mình hỏi, cần giấy xác nhận nào để làm đơn giảm học phí?
+      - Admin ơi, hồ sơ xin miễn giảm học phí KMA gồm gì?
+      - Ad cho mình hỏi, cần giấy xác nhận nào để làm đơn giảm học phí?
+      - Mình muốn biết: Hồ sơ xin miễn giảm học phí KMA gồm gì?
+      - Em đang thắc mắc: Cần giấy xác nhận nào để làm đơn giảm học phí?
+      - Cho hỏi một chút, hồ sơ xin miễn giảm học phí KMA gồm gì?
+      - Mình hỏi về KMA: Cần giấy xác nhận nào để làm đơn giảm học phí?
+      - Về Học viện Kỹ thuật mật mã, hồ sơ xin miễn giảm học phí KMA gồm gì?
+      - Ở KMA thì cần giấy xác nhận nào để làm đơn giảm học phí?
+      - Em đang tìm hiểu về KMA, hồ sơ xin miễn giảm học phí KMA gồm gì?
+      - KMA ơi, cần giấy xác nhận nào để làm đơn giảm học phí?
+      - Các anh chị cho em hỏi: Hồ sơ xin miễn giảm học phí KMA gồm gì?
+      - Cần tư vấn giúp em: Cần giấy xác nhận nào để làm đơn giảm học phí?
+      - Giải đáp giúp em: Hồ sơ xin miễn giảm học phí KMA gồm gì?
+      - Em cần thông tin cụ thể: Cần giấy xác nhận nào để làm đơn giảm học phí?
+      - What documents are required for a KMA tuition exemption application?
+      - I have a question about KMA: What documents are required for a KMA tuition exemption application?
+      - Please help me with this question: What documents are required for a KMA tuition exemption application?
+      - Ho so xin mien giam hoc phi KMA gom gi?
+      - Can giay xac nhan nao de lam don giam hoc phi?
+      - Cho em hoi, ho so xin mien giam hoc phi KMA gom gi?
+      - Ad oi, can giay xac nhan nao de lam don giam hoc phi?
+      - KMA: Ho so xin mien giam hoc phi KMA gom gi?
+      - Hồ sơ xin miễn giảm hp KMA gồm gì?
+      - Cần giấy xác nhận nào để làm đơn giảm hp?
+      - ad oi, ho so xin mien giam hp KMA gom gi?
+
+  # 09 · MIỄN GIẢM HỌC PHÍ | intent trong Excel: mien_giam/han_nop_noi_nop
+  - intent: faq_mien_giam/han_nop_noi_nop
+    examples: |
+      - Hạn nộp hồ sơ miễn giảm học phí và nộp ở đâu?
+      - Nộp hồ sơ miễn giảm học phí KMA ở phòng nào?
+      - Thời hạn nộp đơn giảm học phí Học viện là lúc nào?
+      - Cho em hỏi, nộp hồ sơ miễn giảm học phí KMA ở phòng nào?
+      - Cho mình hỏi, thời hạn nộp đơn giảm học phí Học viện là lúc nào?
+      - Admin ơi, nộp hồ sơ miễn giảm học phí KMA ở phòng nào?
+      - Ad cho mình hỏi, thời hạn nộp đơn giảm học phí Học viện là lúc nào?
+      - Mình muốn biết: Nộp hồ sơ miễn giảm học phí KMA ở phòng nào?
+      - Em đang thắc mắc: Thời hạn nộp đơn giảm học phí Học viện là lúc nào?
+      - Cho hỏi một chút, nộp hồ sơ miễn giảm học phí KMA ở phòng nào?
+      - Mình hỏi về KMA: Thời hạn nộp đơn giảm học phí Học viện là lúc nào?
+      - Về Học viện Kỹ thuật mật mã, nộp hồ sơ miễn giảm học phí KMA ở phòng nào?
+      - Ở KMA thì thời hạn nộp đơn giảm học phí Học viện là lúc nào?
+      - Em đang tìm hiểu về KMA, nộp hồ sơ miễn giảm học phí KMA ở phòng nào?
+      - KMA ơi, thời hạn nộp đơn giảm học phí Học viện là lúc nào?
+      - Các anh chị cho em hỏi: Nộp hồ sơ miễn giảm học phí KMA ở phòng nào?
+      - Cần tư vấn giúp em: Thời hạn nộp đơn giảm học phí Học viện là lúc nào?
+      - Giải đáp giúp em: Nộp hồ sơ miễn giảm học phí KMA ở phòng nào?
+      - Em cần thông tin cụ thể: Thời hạn nộp đơn giảm học phí Học viện là lúc nào?
+      - Where and when should KMA students submit tuition reduction applications?
+      - I have a question about KMA: Where and when should KMA students submit tuition reduction applications?
+      - Please help me with this question: Where and when should KMA students submit tuition reduction applications?
+      - Nop ho so mien giam hoc phi KMA o phong nao?
+      - Thoi han nop don giam hoc phi Hoc vien la luc nao?
+      - Cho em hoi, nop ho so mien giam hoc phi KMA o phong nao?
+      - Ad oi, thoi han nop don giam hoc phi Hoc vien la luc nao?
+      - KMA: Nop ho so mien giam hoc phi KMA o phong nao?
+      - Nộp hồ sơ miễn giảm hp KMA ở phòng nào?
+      - Thời hạn nộp đơn giảm hp HV là lúc nào?
+      - ad oi, nop ho so mien giam hp KMA o phong nao?
+
+  # 09 · MIỄN GIẢM HỌC PHÍ | intent trong Excel: mien_giam/nguoi_moi
+  - intent: faq_mien_giam/nguoi_moi
+    examples: |
+      - Tân sinh viên có được xin miễn giảm học phí ngay khi nhập học không?
+      - Tân sinh viên KMA xin miễn giảm học phí ngay được không?
+      - Nhập học xong có thể nộp đơn miễn học phí không?
+      - Cho em hỏi, tân sinh viên KMA xin miễn giảm học phí ngay được không?
+      - Cho mình hỏi, nhập học xong có thể nộp đơn miễn học phí không?
+      - Admin ơi, tân sinh viên KMA xin miễn giảm học phí ngay được không?
+      - Ad cho mình hỏi, nhập học xong có thể nộp đơn miễn học phí không?
+      - Mình muốn biết: Tân sinh viên KMA xin miễn giảm học phí ngay được không?
+      - Em đang thắc mắc: Nhập học xong có thể nộp đơn miễn học phí không?
+      - Cho hỏi một chút, tân sinh viên KMA xin miễn giảm học phí ngay được không?
+      - Mình hỏi về KMA: Nhập học xong có thể nộp đơn miễn học phí không?
+      - Về Học viện Kỹ thuật mật mã, tân sinh viên KMA xin miễn giảm học phí ngay được không?
+      - Ở KMA thì nhập học xong có thể nộp đơn miễn học phí không?
+      - Em đang tìm hiểu về KMA, tân sinh viên KMA xin miễn giảm học phí ngay được không?
+      - KMA ơi, nhập học xong có thể nộp đơn miễn học phí không?
+      - Các anh chị cho em hỏi: Tân sinh viên KMA xin miễn giảm học phí ngay được không?
+      - Cần tư vấn giúp em: Nhập học xong có thể nộp đơn miễn học phí không?
+      - Giải đáp giúp em: Tân sinh viên KMA xin miễn giảm học phí ngay được không?
+      - Em cần thông tin cụ thể: Nhập học xong có thể nộp đơn miễn học phí không?
+      - Can freshmen at KMA apply for tuition exemption during enrollment?
+      - I have a question about KMA: Can freshmen at KMA apply for tuition exemption during enrollment?
+      - Please help me with this question: Can freshmen at KMA apply for tuition exemption during enrollment?
+      - Tan sinh vien KMA xin mien giam hoc phi ngay duoc khong?
+      - Nhap hoc xong co the nop don mien hoc phi khong?
+      - Cho em hoi, tan sinh vien KMA xin mien giam hoc phi ngay duoc khong?
+      - Ad oi, nhap hoc xong co the nop don mien hoc phi khong?
+      - KMA: Tan sinh vien KMA xin mien giam hoc phi ngay duoc khong?
+      - Tân sv KMA xin miễn giảm hp ngay dc ko?
+      - Nhập học xong có thể nộp đơn miễn hp ko?
+      - ad oi, tan sv KMA xin mien giam hp ngay dc ko?
+
+  # 09 · MIỄN GIẢM HỌC PHÍ | intent trong Excel: mien_giam/hoan_hoc_phi
+  - intent: faq_mien_giam/hoan_hoc_phi
+    examples: |
+      - Đã đóng học phí rồi mới được duyệt miễn giảm thì xử lý thế nào?
+      - Đã đóng học phí rồi được duyệt miễn giảm KMA thì sao?
+      - Sinh viên KMA đã đóng học phí nhưng sau đó được duyệt miễn giảm thì khoản học phí được xử lý như thế nào?
+      - KMA có hoàn học phí sau khi xét miễn giảm không?
+      - Cho em hỏi, đã đóng học phí rồi được duyệt miễn giảm KMA thì sao?
+      - Cho mình hỏi, KMA có hoàn học phí sau khi xét miễn giảm không?
+      - Admin ơi, đã đóng học phí rồi được duyệt miễn giảm KMA thì sao?
+      - Ad cho mình hỏi, KMA có hoàn học phí sau khi xét miễn giảm không?
+      - Mình muốn biết: Đã đóng học phí rồi được duyệt miễn giảm KMA thì sao?
+      - Em đang thắc mắc: KMA có hoàn học phí sau khi xét miễn giảm không?
+      - Cho hỏi một chút, đã đóng học phí rồi được duyệt miễn giảm KMA thì sao?
+      - Mình hỏi về KMA: KMA có hoàn học phí sau khi xét miễn giảm không?
+      - Về Học viện Kỹ thuật mật mã, đã đóng học phí rồi được duyệt miễn giảm KMA thì sao?
+      - Ở KMA thì KMA có hoàn học phí sau khi xét miễn giảm không?
+      - Em đang tìm hiểu về KMA, đã đóng học phí rồi được duyệt miễn giảm KMA thì sao?
+      - KMA ơi, KMA có hoàn học phí sau khi xét miễn giảm không?
+      - Các anh chị cho em hỏi: Đã đóng học phí rồi được duyệt miễn giảm KMA thì sao?
+      - Cần tư vấn giúp em: KMA có hoàn học phí sau khi xét miễn giảm không?
+      - Giải đáp giúp em: Đã đóng học phí rồi được duyệt miễn giảm KMA thì sao?
+      - Em cần thông tin cụ thể: KMA có hoàn học phí sau khi xét miễn giảm không?
+      - Can paid tuition be refunded after a KMA fee waiver is approved?
+      - I have a question about KMA: Can paid tuition be refunded after a KMA fee waiver is approved?
+      - Please help me with this question: Can paid tuition be refunded after a KMA fee waiver is approved?
+      - Da dong hoc phi roi duoc duyet mien giam KMA thi sao?
+      - KMA co hoan hoc phi sau khi xet mien giam khong?
+      - Cho em hoi, da dong hoc phi roi duoc duyet mien giam KMA thi sao?
+      - Ad oi, KMA co hoan hoc phi sau khi xet mien giam khong?
+      - KMA: Da dong hoc phi roi duoc duyet mien giam KMA thi sao?
+      - Đã đóng hp rồi dc duyệt miễn giảm KMA thì sao?
+      - KMA có hoàn hp sau khi xét miễn giảm ko?
+      - ad oi, da dong hp roi dc duyet mien giam KMA thi sao?

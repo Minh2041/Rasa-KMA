@@ -1,0 +1,206 @@
+version: "3.1"
+
+nlu:
+  # 01 · GIỚI THIỆU HỌC VIỆN | intent trong Excel: gioi_thieu/tong_quan
+  - intent: faq_gioi_thieu/tong_quan
+    examples: |
+      - Học viện Kỹ thuật mật mã là trường gì?
+      - KMA là trường đại học như thế nào?
+      - Giới thiệu chung về Học viện Kỹ thuật mật mã được không?
+      - Cho em hỏi, KMA là trường đại học như thế nào?
+      - Cho mình hỏi, giới thiệu chung về Học viện Kỹ thuật mật mã được không?
+      - Admin ơi, KMA là trường đại học như thế nào?
+      - Ad cho mình hỏi, giới thiệu chung về Học viện Kỹ thuật mật mã được không?
+      - Mình muốn biết: KMA là trường đại học như thế nào?
+      - Em đang thắc mắc: Giới thiệu chung về Học viện Kỹ thuật mật mã được không?
+      - Cho hỏi một chút, KMA là trường đại học như thế nào?
+      - Mình hỏi về KMA: Giới thiệu chung về Học viện Kỹ thuật mật mã được không?
+      - Về Học viện Kỹ thuật mật mã, KMA là trường đại học như thế nào?
+      - Ở KMA thì giới thiệu chung về Học viện Kỹ thuật mật mã được không?
+      - Em đang tìm hiểu về KMA, KMA là trường đại học như thế nào?
+      - KMA ơi, giới thiệu chung về Học viện Kỹ thuật mật mã được không?
+      - Các anh chị cho em hỏi: KMA là trường đại học như thế nào?
+      - Cần tư vấn giúp em: Giới thiệu chung về Học viện Kỹ thuật mật mã được không?
+      - Giải đáp giúp em: KMA là trường đại học như thế nào?
+      - Em cần thông tin cụ thể: Giới thiệu chung về Học viện Kỹ thuật mật mã được không?
+      - What kind of university is the Academy of Cryptography Techniques?
+      - I have a question about KMA: What kind of university is the Academy of Cryptography Techniques?
+      - Please help me with this question: What kind of university is the Academy of Cryptography Techniques?
+      - KMA la truong dai hoc nhu the nao?
+      - Gioi thieu chung ve Hoc vien Ky thuat mat ma duoc khong?
+      - Cho em hoi, KMA la truong dai hoc nhu the nao?
+      - Ad oi, gioi thieu chung ve Hoc vien Ky thuat mat ma duoc khong?
+      - KMA: KMA la truong dai hoc nhu the nao?
+      - KMA là trường đại học ntn?
+      - Giới thiệu chung về KMA dc ko?
+      - ad oi, KMA la truong dai hoc ntn?
+
+  # 01 · GIỚI THIỆU HỌC VIỆN | intent trong Excel: gioi_thieu/ten_tieng_anh
+  - intent: faq_gioi_thieu/ten_tieng_anh
+    examples: |
+      - Tên tiếng Anh của Học viện là gì?
+      - Học viện Kỹ thuật mật mã tên tiếng Anh là gì?
+      - KMA tiếng Anh gọi là gì?
+      - Cho em hỏi, học viện Kỹ thuật mật mã tên tiếng Anh là gì?
+      - Cho mình hỏi, KMA tiếng Anh gọi là gì?
+      - Admin ơi, học viện Kỹ thuật mật mã tên tiếng Anh là gì?
+      - Ad cho mình hỏi, KMA tiếng Anh gọi là gì?
+      - Mình muốn biết: Học viện Kỹ thuật mật mã tên tiếng Anh là gì?
+      - Em đang thắc mắc: KMA tiếng Anh gọi là gì?
+      - Cho hỏi một chút, học viện Kỹ thuật mật mã tên tiếng Anh là gì?
+      - Mình hỏi về KMA: KMA tiếng Anh gọi là gì?
+      - Về Học viện Kỹ thuật mật mã, học viện Kỹ thuật mật mã tên tiếng Anh là gì?
+      - Ở KMA thì KMA tiếng Anh gọi là gì?
+      - Em đang tìm hiểu về KMA, học viện Kỹ thuật mật mã tên tiếng Anh là gì?
+      - KMA ơi, KMA tiếng Anh gọi là gì?
+      - Các anh chị cho em hỏi: Học viện Kỹ thuật mật mã tên tiếng Anh là gì?
+      - Cần tư vấn giúp em: KMA tiếng Anh gọi là gì?
+      - Giải đáp giúp em: Học viện Kỹ thuật mật mã tên tiếng Anh là gì?
+      - Em cần thông tin cụ thể: KMA tiếng Anh gọi là gì?
+      - What is the official English name of KMA?
+      - I have a question about KMA: What is the official English name of KMA?
+      - Please help me with this question: What is the official English name of KMA?
+      - Hoc vien Ky thuat mat ma ten tieng Anh la gi?
+      - KMA tieng Anh goi la gi?
+      - Cho em hoi, hoc vien Ky thuat mat ma ten tieng Anh la gi?
+      - Ad oi, KMA tieng Anh goi la gi?
+      - KMA: Hoc vien Ky thuat mat ma ten tieng Anh la gi?
+      - KMA tên TA là gì?
+      - KMA TA gọi là gì?
+      - ad oi, hoc vien Ky thuat mat ma ten TA la gi?
+
+  # 01 · GIỚI THIỆU HỌC VIỆN | intent trong Excel: gioi_thieu/lich_su_thanh_lap
+  - intent: faq_gioi_thieu/lich_su_thanh_lap
+    examples: |
+      - Học viện được thành lập khi nào?
+      - Học viện Kỹ thuật mật mã thành lập năm nào?
+      - KMA có lịch sử thành lập từ khi nào?
+      - Cho em hỏi, học viện Kỹ thuật mật mã thành lập năm nào?
+      - Cho mình hỏi, KMA có lịch sử thành lập từ khi nào?
+      - Admin ơi, học viện Kỹ thuật mật mã thành lập năm nào?
+      - Ad cho mình hỏi, KMA có lịch sử thành lập từ khi nào?
+      - Mình muốn biết: Học viện Kỹ thuật mật mã thành lập năm nào?
+      - Em đang thắc mắc: KMA có lịch sử thành lập từ khi nào?
+      - Cho hỏi một chút, học viện Kỹ thuật mật mã thành lập năm nào?
+      - Mình hỏi về KMA: KMA có lịch sử thành lập từ khi nào?
+      - Về Học viện Kỹ thuật mật mã, học viện Kỹ thuật mật mã thành lập năm nào?
+      - Ở KMA thì KMA có lịch sử thành lập từ khi nào?
+      - Học viện Kỹ thuật mật mã được thành lập khi nào?
+      - KMA ơi, KMA có lịch sử thành lập từ khi nào?
+      - Các anh chị cho em hỏi: Học viện Kỹ thuật mật mã thành lập năm nào?
+      - Học viện Kỹ thuật mật mã được thành lập trên cơ sở nào?
+      - Giải đáp giúp em: Học viện Kỹ thuật mật mã thành lập năm nào?
+      - Em cần thông tin cụ thể: KMA có lịch sử thành lập từ khi nào?
+      - When was KMA founded?
+      - I have a question about KMA: When was KMA founded?
+      - Please help me with this question: When was KMA founded?
+      - Hoc vien Ky thuat mat ma thanh lap nam nao?
+      - KMA co lich su thanh lap tu khi nao?
+      - Cho em hoi, hoc vien Ky thuat mat ma thanh lap nam nao?
+      - Ad oi, KMA co lich su thanh lap tu khi nao?
+      - KMA: Hoc vien Ky thuat mat ma thanh lap nam nao?
+      - KMA thành lập năm nào?
+      - ad oi, hoc vien Ky thuat mat ma thanh lap nam nao?
+      - Mình xin hỏi thêm: Học viện Kỹ thuật mật mã thành lập năm nào?
+
+  # 01 · GIỚI THIỆU HỌC VIỆN | intent trong Excel: gioi_thieu/co_quan_chu_quan
+  - intent: faq_gioi_thieu/co_quan_chu_quan
+    examples: |
+      - Học viện Kỹ thuật mật mã trực thuộc cơ quan nào?
+      - Học viện Kỹ thuật mật mã trực thuộc đơn vị nào?
+      - KMA thuộc cơ quan quản lý nào?
+      - Cho em hỏi, học viện Kỹ thuật mật mã trực thuộc đơn vị nào?
+      - Cho mình hỏi, KMA thuộc cơ quan quản lý nào?
+      - Admin ơi, học viện Kỹ thuật mật mã trực thuộc đơn vị nào?
+      - Ad cho mình hỏi, KMA thuộc cơ quan quản lý nào?
+      - Mình muốn biết: Học viện Kỹ thuật mật mã trực thuộc đơn vị nào?
+      - Em đang thắc mắc: KMA thuộc cơ quan quản lý nào?
+      - Cho hỏi một chút, học viện Kỹ thuật mật mã trực thuộc đơn vị nào?
+      - Mình hỏi về KMA: KMA thuộc cơ quan quản lý nào?
+      - Về Học viện Kỹ thuật mật mã, học viện Kỹ thuật mật mã trực thuộc đơn vị nào?
+      - Ở KMA thì KMA thuộc cơ quan quản lý nào?
+      - KMA ơi, KMA thuộc cơ quan quản lý nào?
+      - Các anh chị cho em hỏi: Học viện Kỹ thuật mật mã trực thuộc đơn vị nào?
+      - Cần tư vấn giúp em: KMA thuộc cơ quan quản lý nào?
+      - Giải đáp giúp em: Học viện Kỹ thuật mật mã trực thuộc đơn vị nào?
+      - Em cần thông tin cụ thể: KMA thuộc cơ quan quản lý nào?
+      - Which government body oversees KMA?
+      - I have a question about KMA: Which government body oversees KMA?
+      - Please help me with this question: Which government body oversees KMA?
+      - Hoc vien Ky thuat mat ma truc thuoc don vi nao?
+      - KMA thuoc co quan quan ly nao?
+      - Cho em hoi, hoc vien Ky thuat mat ma truc thuoc don vi nao?
+      - Ad oi, KMA thuoc co quan quan ly nao?
+      - KMA: Hoc vien Ky thuat mat ma truc thuoc don vi nao?
+      - KMA trực thuộc đơn vị nào?
+      - ad oi, hoc vien Ky thuat mat ma truc thuoc don vi nao?
+      - Mình xin hỏi thêm: Học viện Kỹ thuật mật mã trực thuộc đơn vị nào?
+      - Mình xin hỏi thêm: KMA thuộc cơ quan quản lý nào?
+
+  # 01 · GIỚI THIỆU HỌC VIỆN | intent trong Excel: gioi_thieu/he_va_trinh_do
+  - intent: faq_gioi_thieu/he_va_trinh_do
+    examples: |
+      - Học viện có những hệ đào tạo, trình độ nào?
+      - KMA đào tạo những hệ nào?
+      - Học viện có đào tạo đại học và sau đại học không?
+      - Cho em hỏi, KMA đào tạo những hệ nào?
+      - Cho mình hỏi, học viện có đào tạo đại học và sau đại học không?
+      - Admin ơi, KMA đào tạo những hệ nào?
+      - Ad cho mình hỏi, học viện có đào tạo đại học và sau đại học không?
+      - Mình muốn biết: KMA đào tạo những hệ nào?
+      - Em đang thắc mắc: Học viện có đào tạo đại học và sau đại học không?
+      - Cho hỏi một chút, KMA đào tạo những hệ nào?
+      - Mình hỏi về KMA: Học viện có đào tạo đại học và sau đại học không?
+      - Về Học viện Kỹ thuật mật mã, KMA đào tạo những hệ nào?
+      - Ở KMA thì học viện có đào tạo đại học và sau đại học không?
+      - Học viện đào tạo những trình độ nào?
+      - KMA ơi, học viện có đào tạo đại học và sau đại học không?
+      - Các anh chị cho em hỏi: KMA đào tạo những hệ nào?
+      - Học viện đào tạo theo những hệ nào?
+      - Giải đáp giúp em: KMA đào tạo những hệ nào?
+      - Em cần thông tin cụ thể: Học viện có đào tạo đại học và sau đại học không?
+      - What education levels and training systems does KMA offer?
+      - I have a question about KMA: What education levels and training systems does KMA offer?
+      - Please help me with this question: What education levels and training systems does KMA offer?
+      - KMA dao tao nhung he nao?
+      - Hoc vien co dao tao dai hoc va sau dai hoc khong?
+      - Cho em hoi, KMA dao tao nhung he nao?
+      - Ad oi, hoc vien co dao tao dai hoc va sau dai hoc khong?
+      - KMA: KMA dao tao nhung he nao?
+      - HV có đào tạo đại học và sau đại học ko?
+      - ad oi, KMA dao tao nhung he nao?
+      - Mình xin hỏi thêm: KMA đào tạo những hệ nào?
+
+  # 01 · GIỚI THIỆU HỌC VIỆN | intent trong Excel: gioi_thieu/hop_tac_nghien_cuu
+  - intent: faq_gioi_thieu/hop_tac_nghien_cuu
+    examples: |
+      - Học viện có nghiên cứu và hợp tác doanh nghiệp không?
+      - KMA có hoạt động nghiên cứu khoa học gì?
+      - Học viện hợp tác với doanh nghiệp để nghiên cứu không?
+      - Cho em hỏi, KMA có hoạt động nghiên cứu khoa học gì?
+      - Cho mình hỏi, học viện hợp tác với doanh nghiệp để nghiên cứu không?
+      - Admin ơi, KMA có hoạt động nghiên cứu khoa học gì?
+      - Ad cho mình hỏi, học viện hợp tác với doanh nghiệp để nghiên cứu không?
+      - Mình muốn biết: KMA có hoạt động nghiên cứu khoa học gì?
+      - Em đang thắc mắc: Học viện hợp tác với doanh nghiệp để nghiên cứu không?
+      - Cho hỏi một chút, KMA có hoạt động nghiên cứu khoa học gì?
+      - Mình hỏi về KMA: Học viện hợp tác với doanh nghiệp để nghiên cứu không?
+      - Về Học viện Kỹ thuật mật mã, KMA có hoạt động nghiên cứu khoa học gì?
+      - Ở KMA thì học viện hợp tác với doanh nghiệp để nghiên cứu không?
+      - Em đang tìm hiểu về KMA, KMA có hoạt động nghiên cứu khoa học gì?
+      - KMA ơi, học viện hợp tác với doanh nghiệp để nghiên cứu không?
+      - Các anh chị cho em hỏi: KMA có hoạt động nghiên cứu khoa học gì?
+      - Cần tư vấn giúp em: Học viện hợp tác với doanh nghiệp để nghiên cứu không?
+      - Giải đáp giúp em: KMA có hoạt động nghiên cứu khoa học gì?
+      - Em cần thông tin cụ thể: Học viện hợp tác với doanh nghiệp để nghiên cứu không?
+      - Does KMA conduct research and collaborate with companies?
+      - I have a question about KMA: Does KMA conduct research and collaborate with companies?
+      - Please help me with this question: Does KMA conduct research and collaborate with companies?
+      - KMA co hoat dong nghien cuu khoa hoc gi?
+      - Hoc vien hop tac voi doanh nghiep de nghien cuu khong?
+      - Cho em hoi, KMA co hoat dong nghien cuu khoa hoc gi?
+      - Ad oi, hoc vien hop tac voi doanh nghiep de nghien cuu khong?
+      - KMA: KMA co hoat dong nghien cuu khoa hoc gi?
+      - HV hợp tác với doanh nghiệp để nghiên cứu ko?
+      - ad oi, KMA co hoat dong nghien cuu khoa hoc gi?
+      - Mình xin hỏi thêm: KMA có hoạt động nghiên cứu khoa học gì?

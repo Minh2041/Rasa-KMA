@@ -1,0 +1,311 @@
+version: "3.1"
+
+nlu:
+  # 13 · ĐOÀN THANH NIÊN & CÂU LẠC BỘ | intent trong Excel: hoat_dong/tong_quan
+  - intent: faq_doan/tong_quan_hoat_dong
+    examples: |
+      - Sinh viên KMA có các hoạt động Đoàn, CLB nào?
+      - Các hoạt động Đoàn và câu lạc bộ tại KMA?
+      - Học viện có phong trào ngoại khóa nào cho sinh viên?
+      - Cho em hỏi, các hoạt động Đoàn và câu lạc bộ tại KMA?
+      - Cho mình hỏi, học viện có phong trào ngoại khóa nào cho sinh viên?
+      - Admin ơi, các hoạt động Đoàn và câu lạc bộ tại KMA?
+      - Ad cho mình hỏi, học viện có phong trào ngoại khóa nào cho sinh viên?
+      - Mình muốn biết: Các hoạt động Đoàn và câu lạc bộ tại KMA?
+      - Em đang thắc mắc: Học viện có phong trào ngoại khóa nào cho sinh viên?
+      - Cho hỏi một chút, các hoạt động Đoàn và câu lạc bộ tại KMA?
+      - Mình hỏi về KMA: Học viện có phong trào ngoại khóa nào cho sinh viên?
+      - Về Học viện Kỹ thuật mật mã, các hoạt động Đoàn và câu lạc bộ tại KMA?
+      - Ở KMA thì học viện có phong trào ngoại khóa nào cho sinh viên?
+      - Em đang tìm hiểu về KMA, các hoạt động Đoàn và câu lạc bộ tại KMA?
+      - KMA ơi, học viện có phong trào ngoại khóa nào cho sinh viên?
+      - Các anh chị cho em hỏi: Các hoạt động Đoàn và câu lạc bộ tại KMA?
+      - Cần tư vấn giúp em: Học viện có phong trào ngoại khóa nào cho sinh viên?
+      - Giải đáp giúp em: Các hoạt động Đoàn và câu lạc bộ tại KMA?
+      - Em cần thông tin cụ thể: Học viện có phong trào ngoại khóa nào cho sinh viên?
+      - What student union and club activities are available at KMA?
+      - I have a question about KMA: What student union and club activities are available at KMA?
+      - Please help me with this question: What student union and club activities are available at KMA?
+      - Cac hoat dong Doan va cau lac bo tai KMA?
+      - Hoc vien co phong trao ngoai khoa nao cho sinh vien?
+      - Cho em hoi, cac hoat dong Doan va cau lac bo tai KMA?
+      - Ad oi, hoc vien co phong trao ngoai khoa nao cho sinh vien?
+      - KMA: Cac hoat dong Doan va cau lac bo tai KMA?
+      - HV có phong trào ngoại khóa nào cho sv?
+      - ad oi, cac hoat dong Doan va cau lac bo tai KMA?
+      - Mình xin hỏi thêm: Các hoạt động Đoàn và câu lạc bộ tại KMA?
+
+  # 13 · ĐOÀN THANH NIÊN & CÂU LẠC BỘ | intent trong Excel: doan/lanh_dao_nhiem_ky
+  - intent: faq_doan/lanh_dao_nhiem_ky
+    examples: |
+      - Bí thư, Phó Bí thư, BCH Đoàn hiện nay là ai?
+      - Lãnh đạo Đoàn Học viện nhiệm kỳ hiện nay gồm ai?
+      - Danh sách bí thư phó bí thư và BCH Đoàn KMA?
+      - Cho em hỏi, lãnh đạo Đoàn Học viện nhiệm kỳ hiện nay gồm ai?
+      - Cho mình hỏi, danh sách bí thư phó bí thư và BCH Đoàn KMA?
+      - Admin ơi, lãnh đạo Đoàn Học viện nhiệm kỳ hiện nay gồm ai?
+      - Ad cho mình hỏi, danh sách bí thư phó bí thư và BCH Đoàn KMA?
+      - Mình muốn biết: Lãnh đạo Đoàn Học viện nhiệm kỳ hiện nay gồm ai?
+      - Em đang thắc mắc: Danh sách bí thư phó bí thư và BCH Đoàn KMA?
+      - Cho hỏi một chút, lãnh đạo Đoàn Học viện nhiệm kỳ hiện nay gồm ai?
+      - Mình hỏi về KMA: Danh sách bí thư phó bí thư và BCH Đoàn KMA?
+      - Về Học viện Kỹ thuật mật mã, lãnh đạo Đoàn Học viện nhiệm kỳ hiện nay gồm ai?
+      - Ở KMA thì danh sách bí thư phó bí thư và BCH Đoàn KMA?
+      - Em đang tìm hiểu về KMA, lãnh đạo Đoàn Học viện nhiệm kỳ hiện nay gồm ai?
+      - KMA ơi, danh sách bí thư phó bí thư và BCH Đoàn KMA?
+      - Các anh chị cho em hỏi: Lãnh đạo Đoàn Học viện nhiệm kỳ hiện nay gồm ai?
+      - Cần tư vấn giúp em: Danh sách bí thư phó bí thư và BCH Đoàn KMA?
+      - Giải đáp giúp em: Lãnh đạo Đoàn Học viện nhiệm kỳ hiện nay gồm ai?
+      - Em cần thông tin cụ thể: Danh sách bí thư phó bí thư và BCH Đoàn KMA?
+      - Who leads the KMA Youth Union in the current term?
+      - I have a question about KMA: Who leads the KMA Youth Union in the current term?
+      - Please help me with this question: Who leads the KMA Youth Union in the current term?
+      - Lanh dao Doan Hoc vien nhiem ky hien nay gom ai?
+      - Danh sach bi thu pho bi thu va BCH Doan KMA?
+      - Cho em hoi, lanh dao Doan Hoc vien nhiem ky hien nay gom ai?
+      - Ad oi, danh sach bi thu pho bi thu va BCH Doan KMA?
+      - KMA: Lanh dao Doan Hoc vien nhiem ky hien nay gom ai?
+      - Lãnh đạo Đoàn HV nhiệm kỳ hiện nay gồm ai?
+      - Danh sách bí thư p. bí thư và BCH Đoàn KMA?
+      - ad oi, lanh dao Doan HV nhiem ky hien nay gom ai?
+
+  # 13 · ĐOÀN THANH NIÊN & CÂU LẠC BỘ | intent trong Excel: doan/to_chuc_cap
+  - intent: faq_doan/to_chuc_cap
+    examples: |
+      - Chi đoàn, Liên chi đoàn, Đoàn Học viện khác nhau thế nào?
+      - Chi đoàn, Liên chi đoàn và Đoàn Học viện Kỹ thuật mật mã khác nhau như thế nào?
+      - Chi đoàn và Liên chi đoàn KMA khác gì nhau?
+      - Cơ cấu tổ chức Đoàn Học viện gồm cấp nào?
+      - Cho em hỏi, chi đoàn và Liên chi đoàn KMA khác gì nhau?
+      - Cho mình hỏi, cơ cấu tổ chức Đoàn Học viện gồm cấp nào?
+      - Admin ơi, chi đoàn và Liên chi đoàn KMA khác gì nhau?
+      - Ad cho mình hỏi, cơ cấu tổ chức Đoàn Học viện gồm cấp nào?
+      - Mình muốn biết: Chi đoàn và Liên chi đoàn KMA khác gì nhau?
+      - Em đang thắc mắc: Cơ cấu tổ chức Đoàn Học viện gồm cấp nào?
+      - Cho hỏi một chút, chi đoàn và Liên chi đoàn KMA khác gì nhau?
+      - Mình hỏi về KMA: Cơ cấu tổ chức Đoàn Học viện gồm cấp nào?
+      - Về Học viện Kỹ thuật mật mã, chi đoàn và Liên chi đoàn KMA khác gì nhau?
+      - Ở KMA thì cơ cấu tổ chức Đoàn Học viện gồm cấp nào?
+      - Em đang tìm hiểu về KMA, chi đoàn và Liên chi đoàn KMA khác gì nhau?
+      - KMA ơi, cơ cấu tổ chức Đoàn Học viện gồm cấp nào?
+      - Các anh chị cho em hỏi: Chi đoàn và Liên chi đoàn KMA khác gì nhau?
+      - Cần tư vấn giúp em: Cơ cấu tổ chức Đoàn Học viện gồm cấp nào?
+      - Giải đáp giúp em: Chi đoàn và Liên chi đoàn KMA khác gì nhau?
+      - Em cần thông tin cụ thể: Cơ cấu tổ chức Đoàn Học viện gồm cấp nào?
+      - How is the KMA Youth Union structured by organizational level?
+      - I have a question about KMA: How is the KMA Youth Union structured by organizational level?
+      - Please help me with this question: How is the KMA Youth Union structured by organizational level?
+      - Chi doan va Lien chi doan KMA khac gi nhau?
+      - Co cau to chuc Doan Hoc vien gom cap nao?
+      - Cho em hoi, chi doan va Lien chi doan KMA khac gi nhau?
+      - Ad oi, co cau to chuc Doan Hoc vien gom cap nao?
+      - KMA: Chi doan va Lien chi doan KMA khac gi nhau?
+      - Cơ cấu tổ chức Đoàn HV gồm cấp nào?
+      - ad oi, chi doan va Lien chi doan KMA khac gi nhau?
+      - Mình xin hỏi thêm: Chi đoàn và Liên chi đoàn KMA khác gì nhau?
+
+  # 13 · ĐOÀN THANH NIÊN & CÂU LẠC BỘ | intent trong Excel: doan/tham_gia_chuyen_sinh_hoat
+  - intent: faq_doan/tham_gia_chuyen_sinh_hoat
+    examples: |
+      - Tân sinh viên chuyển sinh hoạt Đoàn hoặc xin kết nạp thế nào?
+      - Tân sinh viên KMA chuyển sinh hoạt Đoàn ra sao?
+      - Xin kết nạp Đoàn khi vào Học viện cần làm gì?
+      - Cho em hỏi, tân sinh viên KMA chuyển sinh hoạt Đoàn ra sao?
+      - Cho mình hỏi, xin kết nạp Đoàn khi vào Học viện cần làm gì?
+      - Admin ơi, tân sinh viên KMA chuyển sinh hoạt Đoàn ra sao?
+      - Ad cho mình hỏi, xin kết nạp Đoàn khi vào Học viện cần làm gì?
+      - Mình muốn biết: Tân sinh viên KMA chuyển sinh hoạt Đoàn ra sao?
+      - Em đang thắc mắc: Xin kết nạp Đoàn khi vào Học viện cần làm gì?
+      - Cho hỏi một chút, tân sinh viên KMA chuyển sinh hoạt Đoàn ra sao?
+      - Mình hỏi về KMA: Xin kết nạp Đoàn khi vào Học viện cần làm gì?
+      - Về Học viện Kỹ thuật mật mã, tân sinh viên KMA chuyển sinh hoạt Đoàn ra sao?
+      - Ở KMA thì xin kết nạp Đoàn khi vào Học viện cần làm gì?
+      - Đoàn phí nộp khi nào?
+      - KMA ơi, xin kết nạp Đoàn khi vào Học viện cần làm gì?
+      - Các anh chị cho em hỏi: Tân sinh viên KMA chuyển sinh hoạt Đoàn ra sao?
+      - Cần tư vấn giúp em: Xin kết nạp Đoàn khi vào Học viện cần làm gì?
+      - Giải đáp giúp em: Tân sinh viên KMA chuyển sinh hoạt Đoàn ra sao?
+      - Em cần thông tin cụ thể: Xin kết nạp Đoàn khi vào Học viện cần làm gì?
+      - How do new KMA students transfer Youth Union membership?
+      - I have a question about KMA: How do new KMA students transfer Youth Union membership?
+      - Please help me with this question: How do new KMA students transfer Youth Union membership?
+      - Tan sinh vien KMA chuyen sinh hoat Doan ra sao?
+      - Xin ket nap Doan khi vao Hoc vien can lam gi?
+      - Cho em hoi, tan sinh vien KMA chuyen sinh hoat Doan ra sao?
+      - Ad oi, xin ket nap Doan khi vao Hoc vien can lam gi?
+      - KMA: Tan sinh vien KMA chuyen sinh hoat Doan ra sao?
+      - Tân sv KMA chuyển sinh hoạt Đoàn ra sao?
+      - Xin kết nạp Đoàn khi vào HV cần làm gì?
+      - ad oi, tan sv KMA chuyen sinh hoat Doan ra sao?
+
+  # 13 · ĐOÀN THANH NIÊN & CÂU LẠC BỘ | intent trong Excel: doan/diem_ren_luyen
+  - intent: faq_doan/diem_ren_luyen
+    examples: |
+      - Đi tình nguyện, hiến máu có được cộng điểm rèn luyện không?
+      - Hiến máu tại KMA có được cộng điểm rèn luyện không?
+      - Hoạt động tình nguyện Đoàn được tính điểm rèn luyện thế nào?
+      - Cho em hỏi, hiến máu tại KMA có được cộng điểm rèn luyện không?
+      - Cho mình hỏi, hoạt động tình nguyện Đoàn được tính điểm rèn luyện thế nào?
+      - Admin ơi, hiến máu tại KMA có được cộng điểm rèn luyện không?
+      - Ad cho mình hỏi, hoạt động tình nguyện Đoàn được tính điểm rèn luyện thế nào?
+      - Mình muốn biết: Hiến máu tại KMA có được cộng điểm rèn luyện không?
+      - Em đang thắc mắc: Hoạt động tình nguyện Đoàn được tính điểm rèn luyện thế nào?
+      - Cho hỏi một chút, hiến máu tại KMA có được cộng điểm rèn luyện không?
+      - Mình hỏi về KMA: Hoạt động tình nguyện Đoàn được tính điểm rèn luyện thế nào?
+      - Về Học viện Kỹ thuật mật mã, hiến máu tại KMA có được cộng điểm rèn luyện không?
+      - Ở KMA thì hoạt động tình nguyện Đoàn được tính điểm rèn luyện thế nào?
+      - Em đang tìm hiểu về KMA, hiến máu tại KMA có được cộng điểm rèn luyện không?
+      - KMA ơi, hoạt động tình nguyện Đoàn được tính điểm rèn luyện thế nào?
+      - Các anh chị cho em hỏi: Hiến máu tại KMA có được cộng điểm rèn luyện không?
+      - Cần tư vấn giúp em: Hoạt động tình nguyện Đoàn được tính điểm rèn luyện thế nào?
+      - Giải đáp giúp em: Hiến máu tại KMA có được cộng điểm rèn luyện không?
+      - Em cần thông tin cụ thể: Hoạt động tình nguyện Đoàn được tính điểm rèn luyện thế nào?
+      - Do blood donation and volunteer activities earn conduct points at KMA?
+      - I have a question about KMA: Do blood donation and volunteer activities earn conduct points at KMA?
+      - Please help me with this question: Do blood donation and volunteer activities earn conduct points at KMA?
+      - Hien mau tai KMA co duoc cong diem ren luyen khong?
+      - Hoat dong tinh nguyen Doan duoc tinh diem ren luyen the nao?
+      - Cho em hoi, hien mau tai KMA co duoc cong diem ren luyen khong?
+      - Ad oi, hoat dong tinh nguyen Doan duoc tinh diem ren luyen the nao?
+      - KMA: Hien mau tai KMA co duoc cong diem ren luyen khong?
+      - Hiến máu tại KMA có dc cộng điểm rèn luyện ko?
+      - Hoạt động tình nguyện Đoàn dc tính điểm rèn luyện tn?
+      - ad oi, hien mau tai KMA co dc cong diem ren luyen ko?
+
+  # 13 · ĐOÀN THANH NIÊN & CÂU LẠC BỘ | intent trong Excel: doan/lanh_dao_nhiem_ky
+  - intent: faq_doan/ban_chap_hanh
+    examples: |
+      - Ban Chấp hành Đoàn Học viện nhiệm kỳ 2025 2030 gồm những ai?
+      - Danh sách 11 thành viên BCH Đoàn KMA?
+      - Ai là các ủy viên Ban Chấp hành Đoàn Học viện?
+      - Cho em hỏi, danh sách 11 thành viên BCH Đoàn KMA?
+      - Cho mình hỏi, ai là các ủy viên Ban Chấp hành Đoàn Học viện?
+      - Admin ơi, danh sách 11 thành viên BCH Đoàn KMA?
+      - Ad cho mình hỏi, ai là các ủy viên Ban Chấp hành Đoàn Học viện?
+      - Mình muốn biết: Danh sách 11 thành viên BCH Đoàn KMA?
+      - Em đang thắc mắc: Ai là các ủy viên Ban Chấp hành Đoàn Học viện?
+      - Cho hỏi một chút, danh sách 11 thành viên BCH Đoàn KMA?
+      - Mình hỏi về KMA: Ai là các ủy viên Ban Chấp hành Đoàn Học viện?
+      - Về Học viện Kỹ thuật mật mã, danh sách 11 thành viên BCH Đoàn KMA?
+      - Ở KMA thì ai là các ủy viên Ban Chấp hành Đoàn Học viện?
+      - Em đang tìm hiểu về KMA, danh sách 11 thành viên BCH Đoàn KMA?
+      - KMA ơi, ai là các ủy viên Ban Chấp hành Đoàn Học viện?
+      - Các anh chị cho em hỏi: Danh sách 11 thành viên BCH Đoàn KMA?
+      - Cần tư vấn giúp em: Ai là các ủy viên Ban Chấp hành Đoàn Học viện?
+      - Giải đáp giúp em: Danh sách 11 thành viên BCH Đoàn KMA?
+      - Em cần thông tin cụ thể: Ai là các ủy viên Ban Chấp hành Đoàn Học viện?
+      - Who are the executive committee members of the KMA Youth Union?
+      - I have a question about KMA: Who are the executive committee members of the KMA Youth Union?
+      - Please help me with this question: Who are the executive committee members of the KMA Youth Union?
+      - Danh sach 11 thanh vien BCH Doan KMA?
+      - Ai la cac uy vien Ban Chap hanh Doan Hoc vien?
+      - Cho em hoi, danh sach 11 thanh vien BCH Doan KMA?
+      - Ad oi, ai la cac uy vien Ban Chap hanh Doan Hoc vien?
+      - KMA: Danh sach 11 thanh vien BCH Doan KMA?
+      - Ai là các ủy viên BCH Đoàn HV?
+      - ad oi, danh sach 11 thanh vien BCH Doan KMA?
+      - Mình xin hỏi thêm: Danh sách 11 thành viên BCH Đoàn KMA?
+
+  # 13 · ĐOÀN THANH NIÊN & CÂU LẠC BỘ | intent trong Excel: doan/lanh_dao_nhiem_ky
+  - intent: faq_doan/ban_thuong_vu
+    examples: |
+      - Ban Thường vụ Đoàn Học viện Kỹ thuật mật mã có những ai?
+      - Ủy viên Ban Thường vụ Đoàn KMA là ai?
+      - Thông tin BTV Đoàn cơ sở Học viện?
+      - Cho em hỏi, ủy viên Ban Thường vụ Đoàn KMA là ai?
+      - Cho mình hỏi, thông tin BTV Đoàn cơ sở Học viện?
+      - Admin ơi, ủy viên Ban Thường vụ Đoàn KMA là ai?
+      - Ad cho mình hỏi, thông tin BTV Đoàn cơ sở Học viện?
+      - Mình muốn biết: Ủy viên Ban Thường vụ Đoàn KMA là ai?
+      - Em đang thắc mắc: Thông tin BTV Đoàn cơ sở Học viện?
+      - Cho hỏi một chút, ủy viên Ban Thường vụ Đoàn KMA là ai?
+      - Mình hỏi về KMA: Thông tin BTV Đoàn cơ sở Học viện?
+      - Về Học viện Kỹ thuật mật mã, ủy viên Ban Thường vụ Đoàn KMA là ai?
+      - Ở KMA thì thông tin BTV Đoàn cơ sở Học viện?
+      - Em đang tìm hiểu về KMA, ủy viên Ban Thường vụ Đoàn KMA là ai?
+      - KMA ơi, thông tin BTV Đoàn cơ sở Học viện?
+      - Các anh chị cho em hỏi: Ủy viên Ban Thường vụ Đoàn KMA là ai?
+      - Cần tư vấn giúp em: Thông tin BTV Đoàn cơ sở Học viện?
+      - Giải đáp giúp em: Ủy viên Ban Thường vụ Đoàn KMA là ai?
+      - Em cần thông tin cụ thể: Thông tin BTV Đoàn cơ sở Học viện?
+      - Who serves on the standing committee of the KMA Youth Union?
+      - I have a question about KMA: Who serves on the standing committee of the KMA Youth Union?
+      - Please help me with this question: Who serves on the standing committee of the KMA Youth Union?
+      - Uy vien Ban Thuong vu Doan KMA la ai?
+      - Thong tin BTV Doan co so Hoc vien?
+      - Cho em hoi, uy vien Ban Thuong vu Doan KMA la ai?
+      - Ad oi, thong tin BTV Doan co so Hoc vien?
+      - KMA: Uy vien Ban Thuong vu Doan KMA la ai?
+      - Ủy viên BTV Đoàn KMA là ai?
+      - Thông tin BTV Đoàn cơ sở HV?
+      - ad oi, uy vien BTV Doan KMA la ai?
+
+  # 13 · ĐOÀN THANH NIÊN & CÂU LẠC BỘ | intent trong Excel: doan/lanh_dao_nhiem_ky
+  - intent: faq_doan/bi_thu
+    examples: |
+      - Bí thư Đoàn Học viện Kỹ thuật mật mã là ai?
+      - Bí thư Đoàn KMA nhiệm kỳ 2025 2030 tên gì?
+      - Ai là bí thư Đoàn cơ sở Học viện?
+      - Cho em hỏi, bí thư Đoàn KMA nhiệm kỳ 2025 2030 tên gì?
+      - Cho mình hỏi, ai là bí thư Đoàn cơ sở Học viện?
+      - Admin ơi, bí thư Đoàn KMA nhiệm kỳ 2025 2030 tên gì?
+      - Ad cho mình hỏi, ai là bí thư Đoàn cơ sở Học viện?
+      - Mình muốn biết: Bí thư Đoàn KMA nhiệm kỳ 2025 2030 tên gì?
+      - Em đang thắc mắc: Ai là bí thư Đoàn cơ sở Học viện?
+      - Cho hỏi một chút, bí thư Đoàn KMA nhiệm kỳ 2025 2030 tên gì?
+      - Mình hỏi về KMA: Ai là bí thư Đoàn cơ sở Học viện?
+      - Về Học viện Kỹ thuật mật mã, bí thư Đoàn KMA nhiệm kỳ 2025 2030 tên gì?
+      - Ở KMA thì ai là bí thư Đoàn cơ sở Học viện?
+      - Em đang tìm hiểu về KMA, bí thư Đoàn KMA nhiệm kỳ 2025 2030 tên gì?
+      - KMA ơi, ai là bí thư Đoàn cơ sở Học viện?
+      - Các anh chị cho em hỏi: Bí thư Đoàn KMA nhiệm kỳ 2025 2030 tên gì?
+      - Cần tư vấn giúp em: Ai là bí thư Đoàn cơ sở Học viện?
+      - Giải đáp giúp em: Bí thư Đoàn KMA nhiệm kỳ 2025 2030 tên gì?
+      - Em cần thông tin cụ thể: Ai là bí thư Đoàn cơ sở Học viện?
+      - Who is the secretary of the KMA Youth Union?
+      - I have a question about KMA: Who is the secretary of the KMA Youth Union?
+      - Please help me with this question: Who is the secretary of the KMA Youth Union?
+      - Bi thu Doan KMA nhiem ky 2025 2030 ten gi?
+      - Ai la bi thu Doan co so Hoc vien?
+      - Cho em hoi, bi thu Doan KMA nhiem ky 2025 2030 ten gi?
+      - Ad oi, ai la bi thu Doan co so Hoc vien?
+      - KMA: Bi thu Doan KMA nhiem ky 2025 2030 ten gi?
+      - Ai là bí thư Đoàn cơ sở HV?
+      - ad oi, bi thu Doan KMA nhiem ky 2025 2030 ten gi?
+      - Mình xin hỏi thêm: Bí thư Đoàn KMA nhiệm kỳ 2025 2030 tên gì?
+      - BT Đoàn KMA là ai?
+
+  # 13 · ĐOÀN THANH NIÊN & CÂU LẠC BỘ | intent trong Excel: doan/lanh_dao_nhiem_ky
+  - intent: faq_doan/pho_bi_thu
+    examples: |
+      - Phó Bí thư Đoàn Học viện Kỹ thuật mật mã là ai?
+      - Phó bí thư Đoàn KMA nhiệm kỳ 2025 2030?
+      - Ai giữ chức phó bí thư Đoàn cơ sở KMA?
+      - PBT Đoàn KMA là ai?
+      - Cho em hỏi, phó bí thư Đoàn KMA nhiệm kỳ 2025 2030?
+      - Cho mình hỏi, ai giữ chức phó bí thư Đoàn cơ sở KMA?
+      - Admin ơi, phó bí thư Đoàn KMA nhiệm kỳ 2025 2030?
+      - Ad cho mình hỏi, ai giữ chức phó bí thư Đoàn cơ sở KMA?
+      - Mình muốn biết: Phó bí thư Đoàn KMA nhiệm kỳ 2025 2030?
+      - Em đang thắc mắc: Ai giữ chức phó bí thư Đoàn cơ sở KMA?
+      - Cho hỏi một chút, phó bí thư Đoàn KMA nhiệm kỳ 2025 2030?
+      - Mình hỏi về KMA: Ai giữ chức phó bí thư Đoàn cơ sở KMA?
+      - Về Học viện Kỹ thuật mật mã, phó bí thư Đoàn KMA nhiệm kỳ 2025 2030?
+      - Ở KMA thì ai giữ chức phó bí thư Đoàn cơ sở KMA?
+      - Em đang tìm hiểu về KMA, phó bí thư Đoàn KMA nhiệm kỳ 2025 2030?
+      - KMA ơi, ai giữ chức phó bí thư Đoàn cơ sở KMA?
+      - Các anh chị cho em hỏi: Phó bí thư Đoàn KMA nhiệm kỳ 2025 2030?
+      - Cần tư vấn giúp em: Ai giữ chức phó bí thư Đoàn cơ sở KMA?
+      - Giải đáp giúp em: Phó bí thư Đoàn KMA nhiệm kỳ 2025 2030?
+      - Em cần thông tin cụ thể: Ai giữ chức phó bí thư Đoàn cơ sở KMA?
+      - Who is the deputy secretary of the KMA Youth Union?
+      - I have a question about KMA: Who is the deputy secretary of the KMA Youth Union?
+      - Please help me with this question: Who is the deputy secretary of the KMA Youth Union?
+      - Pho bi thu Doan KMA nhiem ky 2025 2030?
+      - Ai giu chuc pho bi thu Doan co so KMA?
+      - Cho em hoi, pho bi thu Doan KMA nhiem ky 2025 2030?
+      - Ad oi, ai giu chuc pho bi thu Doan co so KMA?
+      - KMA: Pho bi thu Doan KMA nhiem ky 2025 2030?
+      - P. bí thư Đoàn KMA nhiệm kỳ 2025 2030?
+      - Ai giữ chức p. bí thư Đoàn cơ sở KMA?
+      - ad oi, p. bi thu Doan KMA nhiem ky 2025 2030?

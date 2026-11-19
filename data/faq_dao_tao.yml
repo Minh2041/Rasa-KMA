@@ -1,0 +1,414 @@
+version: "3.1"
+
+nlu:
+  # 04 · NGÀNH & CHƯƠNG TRÌNH ĐÀO TẠO | intent trong Excel: dao_tao/tong_quan_nganh
+  - intent: faq_dao_tao/tong_quan_nganh
+    examples: |
+      - Học viện có những ngành và chuyên ngành gì?
+      - Các ngành đào tạo chính ở KMA gồm gì?
+      - Học viện có những ngành và chuyên ngành nào?
+      - Cho em hỏi, các ngành đào tạo chính ở KMA gồm gì?
+      - Cho mình hỏi, học viện có những ngành và chuyên ngành nào?
+      - Admin ơi, các ngành đào tạo chính ở KMA gồm gì?
+      - Ad cho mình hỏi, học viện có những ngành và chuyên ngành nào?
+      - Mình muốn biết: Các ngành đào tạo chính ở KMA gồm gì?
+      - Em đang thắc mắc: Học viện có những ngành và chuyên ngành nào?
+      - Cho hỏi một chút, các ngành đào tạo chính ở KMA gồm gì?
+      - Mình hỏi về KMA: Học viện có những ngành và chuyên ngành nào?
+      - Về Học viện Kỹ thuật mật mã, các ngành đào tạo chính ở KMA gồm gì?
+      - Ở KMA thì học viện có những ngành và chuyên ngành nào?
+      - Trường có những chuyên ngành đào tạo nào?
+      - KMA ơi, học viện có những ngành và chuyên ngành nào?
+      - Các anh chị cho em hỏi: Các ngành đào tạo chính ở KMA gồm gì?
+      - Học viện Kỹ thuật mật mã đào tạo những ngành nào?
+      - Giải đáp giúp em: Các ngành đào tạo chính ở KMA gồm gì?
+      - Học viện đào tạo những lĩnh vực nào?
+      - What majors and specializations are taught at KMA?
+      - I have a question about KMA: What majors and specializations are taught at KMA?
+      - Please help me with this question: What majors and specializations are taught at KMA?
+      - Cac nganh dao tao chinh o KMA gom gi?
+      - Hoc vien co nhung nganh va chuyen nganh nao?
+      - Cho em hoi, cac nganh dao tao chinh o KMA gom gi?
+      - Ad oi, hoc vien co nhung nganh va chuyen nganh nao?
+      - KMA: Cac nganh dao tao chinh o KMA gom gi?
+      - HV có những ngành và chuyên ngành nào?
+      - ad oi, cac nganh dao tao chinh o KMA gom gi?
+      - Mình xin hỏi thêm: Các ngành đào tạo chính ở KMA gồm gì?
+
+  # 04 · NGÀNH & CHƯƠNG TRÌNH ĐÀO TẠO | intent trong Excel: dao_tao/attt_gioi_thieu
+  - intent: faq_dao_tao/attt_gioi_thieu
+    examples: |
+      - Ngành An toàn thông tin học gì?
+      - Ngành An toàn thông tin tại KMA học những gì?
+      - Học ATTT ở Học viện có các kiến thức nào?
+      - Cho em hỏi, ngành An toàn thông tin tại KMA học những gì?
+      - Cho mình hỏi, học ATTT ở Học viện có các kiến thức nào?
+      - Admin ơi, ngành An toàn thông tin tại KMA học những gì?
+      - Ad cho mình hỏi, học ATTT ở Học viện có các kiến thức nào?
+      - Mình muốn biết: Ngành An toàn thông tin tại KMA học những gì?
+      - Em đang thắc mắc: Học ATTT ở Học viện có các kiến thức nào?
+      - Cho hỏi một chút, ngành An toàn thông tin tại KMA học những gì?
+      - Mình hỏi về KMA: Học ATTT ở Học viện có các kiến thức nào?
+      - Về Học viện Kỹ thuật mật mã, ngành An toàn thông tin tại KMA học những gì?
+      - Ở KMA thì học ATTT ở Học viện có các kiến thức nào?
+      - Ngành An toàn thông tin là gì?
+      - KMA ơi, học ATTT ở Học viện có các kiến thức nào?
+      - Các anh chị cho em hỏi: Ngành An toàn thông tin tại KMA học những gì?
+      - Người học An toàn hệ thống thông tin được trang bị những kiến thức cốt lõi nào?
+      - Giải đáp giúp em: Ngành An toàn thông tin tại KMA học những gì?
+      - Ngành An toàn thông tin có phù hợp với xu hướng phát triển công nghệ hiện nay không?
+      - What do students study in KMA's information security major?
+      - I have a question about KMA: What do students study in KMA's information security major?
+      - Please help me with this question: What do students study in KMA's information security major?
+      - Nganh An toan thong tin tai KMA hoc nhung gi?
+      - Hoc ATTT o Hoc vien co cac kien thuc nao?
+      - Cho em hoi, nganh An toan thong tin tai KMA hoc nhung gi?
+      - Ad oi, hoc ATTT o Hoc vien co cac kien thuc nao?
+      - KMA: Nganh An toan thong tin tai KMA hoc nhung gi?
+      - Ngành ATTT tại KMA học những gì?
+      - Học ATTT ở HV có các kiến thức nào?
+      - ad oi, nganh ATTT tai KMA hoc nhung gi?
+
+  # 04 · NGÀNH & CHƯƠNG TRÌNH ĐÀO TẠO | intent trong Excel: dao_tao/attt_chuyen_nganh
+  - intent: faq_dao_tao/attt_chuyen_nganh
+    examples: |
+      - Ngành An toàn thông tin có chuyên ngành nào?
+      - An toàn thông tin KMA có mấy chuyên ngành?
+      - Các chuyên ngành thuộc ATTT khác nhau thế nào?
+      - Cho em hỏi, an toàn thông tin KMA có mấy chuyên ngành?
+      - Cho mình hỏi, các chuyên ngành thuộc ATTT khác nhau thế nào?
+      - Admin ơi, an toàn thông tin KMA có mấy chuyên ngành?
+      - Ad cho mình hỏi, các chuyên ngành thuộc ATTT khác nhau thế nào?
+      - Mình muốn biết: An toàn thông tin KMA có mấy chuyên ngành?
+      - Em đang thắc mắc: Các chuyên ngành thuộc ATTT khác nhau thế nào?
+      - Cho hỏi một chút, an toàn thông tin KMA có mấy chuyên ngành?
+      - Mình hỏi về KMA: Các chuyên ngành thuộc ATTT khác nhau thế nào?
+      - Về Học viện Kỹ thuật mật mã, an toàn thông tin KMA có mấy chuyên ngành?
+      - Ở KMA thì các chuyên ngành thuộc ATTT khác nhau thế nào?
+      - Sinh viên chuyên ngành An toàn hệ thống thông tin có thể làm gì khi xảy ra sự cố an toàn thông tin?
+      - KMA ơi, các chuyên ngành thuộc ATTT khác nhau thế nào?
+      - Các anh chị cho em hỏi: An toàn thông tin KMA có mấy chuyên ngành?
+      - Học viện Kỹ thuật Mật mã đào tạo những chuyên ngành nào trong lĩnh vực An toàn thông tin?
+      - Giải đáp giúp em: An toàn thông tin KMA có mấy chuyên ngành?
+      - Chuyên ngành An toàn hệ thống thông tin trang bị cho người học những năng lực gì?
+      - What specializations are available in KMA's information security program?
+      - I have a question about KMA: What specializations are available in KMA's information security program?
+      - Please help me with this question: What specializations are available in KMA's information security program?
+      - An toan thong tin KMA co may chuyen nganh?
+      - Cac chuyen nganh thuoc ATTT khac nhau the nao?
+      - Cho em hoi, an toan thong tin KMA co may chuyen nganh?
+      - Ad oi, cac chuyen nganh thuoc ATTT khac nhau the nao?
+      - KMA: An toan thong tin KMA co may chuyen nganh?
+      - ATTT KMA có mấy chuyên ngành?
+      - Các chuyên ngành thuộc ATTT khác nhau tn?
+      - ad oi, ATTT KMA co may chuyen nganh?
+
+  # 04 · NGÀNH & CHƯƠNG TRÌNH ĐÀO TẠO | intent trong Excel: dao_tao/attt_viec_lam
+  - intent: faq_dao_tao/attt_viec_lam
+    examples: |
+      - Học An toàn thông tin ra trường làm gì?
+      - Tốt nghiệp ngành An toàn thông tin làm nghề gì?
+      - Cơ hội việc làm của sinh viên ATTT KMA?
+      - Cho em hỏi, tốt nghiệp ngành An toàn thông tin làm nghề gì?
+      - Cho mình hỏi, cơ hội việc làm của sinh viên ATTT KMA?
+      - Admin ơi, tốt nghiệp ngành An toàn thông tin làm nghề gì?
+      - Ad cho mình hỏi, cơ hội việc làm của sinh viên ATTT KMA?
+      - Mình muốn biết: Tốt nghiệp ngành An toàn thông tin làm nghề gì?
+      - Em đang thắc mắc: Cơ hội việc làm của sinh viên ATTT KMA?
+      - Cho hỏi một chút, tốt nghiệp ngành An toàn thông tin làm nghề gì?
+      - Mình hỏi về KMA: Cơ hội việc làm của sinh viên ATTT KMA?
+      - Về Học viện Kỹ thuật mật mã, tốt nghiệp ngành An toàn thông tin làm nghề gì?
+      - Ở KMA thì cơ hội việc làm của sinh viên ATTT KMA?
+      - Sinh viên ngành An toàn hệ thống thông tin có cơ hội nghề nghiệp ra sao?
+      - KMA ơi, cơ hội việc làm của sinh viên ATTT KMA?
+      - Các anh chị cho em hỏi: Tốt nghiệp ngành An toàn thông tin làm nghề gì?
+      - Sinh viên ngành An toàn hệ thống thông tin có thể làm việc trong môi trường nào sau khi ra trường?
+      - Giải đáp giúp em: Tốt nghiệp ngành An toàn thông tin làm nghề gì?
+      - Sinh viên Kỹ nghệ an toàn mạng có thể làm những công việc gì?
+      - What jobs can KMA information security graduates pursue?
+      - I have a question about KMA: What jobs can KMA information security graduates pursue?
+      - Please help me with this question: What jobs can KMA information security graduates pursue?
+      - Tot nghiep nganh An toan thong tin lam nghe gi?
+      - Co hoi viec lam cua sinh vien ATTT KMA?
+      - Cho em hoi, tot nghiep nganh An toan thong tin lam nghe gi?
+      - Ad oi, co hoi viec lam cua sinh vien ATTT KMA?
+      - KMA: Tot nghiep nganh An toan thong tin lam nghe gi?
+      - Tốt nghiệp ngành ATTT làm nghề gì?
+      - Cơ hội việc làm của sv ATTT KMA?
+      - ad oi, tot nghiep nganh ATTT lam nghe gi?
+
+  # 04 · NGÀNH & CHƯƠNG TRÌNH ĐÀO TẠO | intent trong Excel: dao_tao/cntt_gioi_thieu
+  - intent: faq_dao_tao/cntt_gioi_thieu
+    examples: |
+      - Ngành Công nghệ thông tin học gì?
+      - Học Công nghệ thông tin ở KMA gồm môn gì?
+      - Ngành CNTT Học viện đào tạo những kiến thức nào?
+      - Cho em hỏi, học Công nghệ thông tin ở KMA gồm môn gì?
+      - Cho mình hỏi, ngành CNTT Học viện đào tạo những kiến thức nào?
+      - Admin ơi, học Công nghệ thông tin ở KMA gồm môn gì?
+      - Ad cho mình hỏi, ngành CNTT Học viện đào tạo những kiến thức nào?
+      - Mình muốn biết: Học Công nghệ thông tin ở KMA gồm môn gì?
+      - Em đang thắc mắc: Ngành CNTT Học viện đào tạo những kiến thức nào?
+      - Cho hỏi một chút, học Công nghệ thông tin ở KMA gồm môn gì?
+      - Mình hỏi về KMA: Ngành CNTT Học viện đào tạo những kiến thức nào?
+      - Về Học viện Kỹ thuật mật mã, học Công nghệ thông tin ở KMA gồm môn gì?
+      - Ở KMA thì ngành CNTT Học viện đào tạo những kiến thức nào?
+      - Ngành Công nghệ thông tin là gì?
+      - KMA ơi, ngành CNTT Học viện đào tạo những kiến thức nào?
+      - Các anh chị cho em hỏi: Học Công nghệ thông tin ở KMA gồm môn gì?
+      - Công nghệ thông tin bao gồm những thành phần nào?
+      - Giải đáp giúp em: Học Công nghệ thông tin ở KMA gồm môn gì?
+      - Chuẩn đầu ra về kiến thức của sinh viên là gì?
+      - What is taught in KMA's computer science program?
+      - I have a question about KMA: What is taught in KMA's computer science program?
+      - Please help me with this question: What is taught in KMA's computer science program?
+      - Hoc Cong nghe thong tin o KMA gom mon gi?
+      - Nganh CNTT Hoc vien dao tao nhung kien thuc nao?
+      - Cho em hoi, hoc Cong nghe thong tin o KMA gom mon gi?
+      - Ad oi, nganh CNTT Hoc vien dao tao nhung kien thuc nao?
+      - KMA: Hoc Cong nghe thong tin o KMA gom mon gi?
+      - Học CNTT ở KMA gồm môn gì?
+      - Ngành CNTT HV đào tạo những kiến thức nào?
+      - ad oi, hoc CNTT o KMA gom mon gi?
+
+  # 04 · NGÀNH & CHƯƠNG TRÌNH ĐÀO TẠO | intent trong Excel: dao_tao/cntt_chuyen_nganh
+  - intent: faq_dao_tao/cntt_chuyen_nganh
+    examples: |
+      - Ngành CNTT có các hướng chuyên ngành nào?
+      - CNTT KMA chia những chuyên ngành nào?
+      - Các hướng chuyên sâu của ngành Công nghệ thông tin Học viện?
+      - Cho em hỏi, CNTT KMA chia những chuyên ngành nào?
+      - Cho mình hỏi, các hướng chuyên sâu của ngành Công nghệ thông tin Học viện?
+      - Admin ơi, CNTT KMA chia những chuyên ngành nào?
+      - Ad cho mình hỏi, các hướng chuyên sâu của ngành Công nghệ thông tin Học viện?
+      - Mình muốn biết: CNTT KMA chia những chuyên ngành nào?
+      - Em đang thắc mắc: Các hướng chuyên sâu của ngành Công nghệ thông tin Học viện?
+      - Cho hỏi một chút, CNTT KMA chia những chuyên ngành nào?
+      - Mình hỏi về KMA: Các hướng chuyên sâu của ngành Công nghệ thông tin Học viện?
+      - Về Học viện Kỹ thuật mật mã, CNTT KMA chia những chuyên ngành nào?
+      - Ở KMA thì các hướng chuyên sâu của ngành Công nghệ thông tin Học viện?
+      - Học viện Kỹ thuật mật mã đào tạo những chuyên ngành nào trong lĩnh vực Công nghệ thông tin?
+      - KMA ơi, các hướng chuyên sâu của ngành Công nghệ thông tin Học viện?
+      - Các anh chị cho em hỏi: CNTT KMA chia những chuyên ngành nào?
+      - Cần tư vấn giúp em: Các hướng chuyên sâu của ngành Công nghệ thông tin Học viện?
+      - Giải đáp giúp em: CNTT KMA chia những chuyên ngành nào?
+      - Em cần thông tin cụ thể: Các hướng chuyên sâu của ngành Công nghệ thông tin Học viện?
+      - What specializations are offered within KMA's IT major?
+      - I have a question about KMA: What specializations are offered within KMA's IT major?
+      - Please help me with this question: What specializations are offered within KMA's IT major?
+      - CNTT KMA chia nhung chuyen nganh nao?
+      - Cac huong chuyen sau cua nganh Cong nghe thong tin Hoc vien?
+      - Cho em hoi, CNTT KMA chia nhung chuyen nganh nao?
+      - Ad oi, cac huong chuyen sau cua nganh Cong nghe thong tin Hoc vien?
+      - KMA: CNTT KMA chia nhung chuyen nganh nao?
+      - Các hướng chuyên sâu của ngành CNTT HV?
+      - ad oi, CNTT KMA chia nhung chuyen nganh nao?
+      - Mình xin hỏi thêm: CNTT KMA chia những chuyên ngành nào?
+
+  # 04 · NGÀNH & CHƯƠNG TRÌNH ĐÀO TẠO | intent trong Excel: dao_tao/cntt_viec_lam
+  - intent: faq_dao_tao/cntt_viec_lam
+    examples: |
+      - Tốt nghiệp CNTT tại KMA làm công việc gì?
+      - Học CNTT KMA ra trường làm ở đâu?
+      - Công việc sau khi tốt nghiệp Công nghệ thông tin Học viện?
+      - Cho em hỏi, học CNTT KMA ra trường làm ở đâu?
+      - Cho mình hỏi, công việc sau khi tốt nghiệp Công nghệ thông tin Học viện?
+      - Admin ơi, học CNTT KMA ra trường làm ở đâu?
+      - Ad cho mình hỏi, công việc sau khi tốt nghiệp Công nghệ thông tin Học viện?
+      - Mình muốn biết: Học CNTT KMA ra trường làm ở đâu?
+      - Em đang thắc mắc: Công việc sau khi tốt nghiệp Công nghệ thông tin Học viện?
+      - Cho hỏi một chút, học CNTT KMA ra trường làm ở đâu?
+      - Mình hỏi về KMA: Công việc sau khi tốt nghiệp Công nghệ thông tin Học viện?
+      - Về Học viện Kỹ thuật mật mã, học CNTT KMA ra trường làm ở đâu?
+      - Ở KMA thì công việc sau khi tốt nghiệp Công nghệ thông tin Học viện?
+      - Sau khi tốt nghiệp, sinh viên có thể làm những vị trí công việc nào?
+      - KMA ơi, công việc sau khi tốt nghiệp Công nghệ thông tin Học viện?
+      - Các anh chị cho em hỏi: Học CNTT KMA ra trường làm ở đâu?
+      - Cần tư vấn giúp em: Công việc sau khi tốt nghiệp Công nghệ thông tin Học viện?
+      - Giải đáp giúp em: Học CNTT KMA ra trường làm ở đâu?
+      - Em cần thông tin cụ thể: Công việc sau khi tốt nghiệp Công nghệ thông tin Học viện?
+      - What careers are available to KMA IT graduates?
+      - I have a question about KMA: What careers are available to KMA IT graduates?
+      - Please help me with this question: What careers are available to KMA IT graduates?
+      - Hoc CNTT KMA ra truong lam o dau?
+      - Cong viec sau khi tot nghiep Cong nghe thong tin Hoc vien?
+      - Cho em hoi, hoc CNTT KMA ra truong lam o dau?
+      - Ad oi, cong viec sau khi tot nghiep Cong nghe thong tin Hoc vien?
+      - KMA: Hoc CNTT KMA ra truong lam o dau?
+      - Công việc sau khi tốt nghiệp CNTT HV?
+      - ad oi, hoc CNTT KMA ra truong lam o dau?
+      - Mình xin hỏi thêm: Học CNTT KMA ra trường làm ở đâu?
+
+  # 04 · NGÀNH & CHƯƠNG TRÌNH ĐÀO TẠO | intent trong Excel: dao_tao/dtvt_gioi_thieu
+  - intent: faq_dao_tao/dtvt_gioi_thieu
+    examples: |
+      - Ngành Kỹ thuật Điện tử - Viễn thông học gì?
+      - Ngành Điện tử Viễn thông KMA học gì?
+      - Sinh viên ĐTVT ở Học viện học những nội dung nào?
+      - Cho em hỏi, ngành Điện tử Viễn thông KMA học gì?
+      - Cho mình hỏi, sinh viên ĐTVT ở Học viện học những nội dung nào?
+      - Admin ơi, ngành Điện tử Viễn thông KMA học gì?
+      - Ad cho mình hỏi, sinh viên ĐTVT ở Học viện học những nội dung nào?
+      - Mình muốn biết: Ngành Điện tử Viễn thông KMA học gì?
+      - Em đang thắc mắc: Sinh viên ĐTVT ở Học viện học những nội dung nào?
+      - Cho hỏi một chút, ngành Điện tử Viễn thông KMA học gì?
+      - Mình hỏi về KMA: Sinh viên ĐTVT ở Học viện học những nội dung nào?
+      - Về Học viện Kỹ thuật mật mã, ngành Điện tử Viễn thông KMA học gì?
+      - Ở KMA thì sinh viên ĐTVT ở Học viện học những nội dung nào?
+      - Ngành Kỹ thuật Điện tử Viễn thông là gì?
+      - KMA ơi, sinh viên ĐTVT ở Học viện học những nội dung nào?
+      - Các anh chị cho em hỏi: Ngành Điện tử Viễn thông KMA học gì?
+      - Ngành Kỹ thuật Điện tử Viễn thông có vai trò như thế nào trong thời đại công nghệ hiện nay?
+      - Giải đáp giúp em: Ngành Điện tử Viễn thông KMA học gì?
+      - Vì sao Kỹ thuật Điện tử Viễn thông được xem là ngành học không thể thiếu trong thế kỷ 21?
+      - What do students study in KMA's electronics and telecommunications major?
+      - I have a question about KMA: What do students study in KMA's electronics and telecommunications major?
+      - Please help me with this question: What do students study in KMA's electronics and telecommunications major?
+      - Nganh Dien tu Vien thong KMA hoc gi?
+      - Sinh vien DTVT o Hoc vien hoc nhung noi dung nao?
+      - Cho em hoi, nganh Dien tu Vien thong KMA hoc gi?
+      - Ad oi, sinh vien DTVT o Hoc vien hoc nhung noi dung nao?
+      - KMA: Nganh Dien tu Vien thong KMA hoc gi?
+      - Ngành ĐTVT KMA học gì?
+      - SV ĐTVT ở HV học những nội dung nào?
+      - ad oi, nganh DTVT KMA hoc gi?
+
+  # 04 · NGÀNH & CHƯƠNG TRÌNH ĐÀO TẠO | intent trong Excel: dao_tao/dtvt_chuyen_nganh
+  - intent: faq_dao_tao/dtvt_chuyen_nganh
+    examples: |
+      - Ngành Kỹ thuật Điện tử - Viễn thông tại KMA có những chuyên ngành nào và chúng khác nhau như thế nào?
+      - ĐTVT có những chuyên ngành nào và khác nhau ra sao?
+      - ĐTVT KMA có những chuyên ngành nào?
+      - Hệ thống nhúng và thiết kế vi mạch ở KMA khác nhau ra sao?
+      - Cho em hỏi, ĐTVT KMA có những chuyên ngành nào?
+      - Cho mình hỏi, hệ thống nhúng và thiết kế vi mạch ở KMA khác nhau ra sao?
+      - Admin ơi, ĐTVT KMA có những chuyên ngành nào?
+      - Ad cho mình hỏi, hệ thống nhúng và thiết kế vi mạch ở KMA khác nhau ra sao?
+      - Mình muốn biết: ĐTVT KMA có những chuyên ngành nào?
+      - Em đang thắc mắc: Hệ thống nhúng và thiết kế vi mạch ở KMA khác nhau ra sao?
+      - Cho hỏi một chút, ĐTVT KMA có những chuyên ngành nào?
+      - Mình hỏi về KMA: Hệ thống nhúng và thiết kế vi mạch ở KMA khác nhau ra sao?
+      - Về Học viện Kỹ thuật mật mã, ĐTVT KMA có những chuyên ngành nào?
+      - Ở KMA thì hệ thống nhúng và thiết kế vi mạch ở KMA khác nhau ra sao?
+      - Chuyên ngành Hệ thống nhúng và Thiết kế vi mạch là gì?
+      - KMA ơi, hệ thống nhúng và thiết kế vi mạch ở KMA khác nhau ra sao?
+      - Các anh chị cho em hỏi: ĐTVT KMA có những chuyên ngành nào?
+      - Sinh viên ngành Hệ thống nhúng và Thiết kế vi mạch được học những kiến thức gì về hệ thống nhúng?
+      - Giải đáp giúp em: ĐTVT KMA có những chuyên ngành nào?
+      - Sinh viên có được học về thiết kế vi mạch không?
+      - Which specializations does KMA's electronics program offer?
+      - I have a question about KMA: Which specializations does KMA's electronics program offer?
+      - Please help me with this question: Which specializations does KMA's electronics program offer?
+      - DTVT KMA co nhung chuyen nganh nao?
+      - He thong nhung va thiet ke vi mach o KMA khac nhau ra sao?
+      - Cho em hoi, DTVT KMA co nhung chuyen nganh nao?
+      - Ad oi, he thong nhung va thiet ke vi mach o KMA khac nhau ra sao?
+      - KMA: DTVT KMA co nhung chuyen nganh nao?
+      - ad oi, DTVT KMA co nhung chuyen nganh nao?
+      - Mình xin hỏi thêm: ĐTVT KMA có những chuyên ngành nào?
+      - Mình xin hỏi thêm: Hệ thống nhúng và thiết kế vi mạch ở KMA khác nhau ra sao?
+
+  # 04 · NGÀNH & CHƯƠNG TRÌNH ĐÀO TẠO | intent trong Excel: dao_tao/dtvt_viec_lam
+  - intent: faq_dao_tao/dtvt_viec_lam
+    examples: |
+      - Sinh viên tốt nghiệp ngành Kỹ thuật Điện tử - Viễn thông tại KMA có thể làm những công việc gì?
+      - Học ĐTVT tại KMA ra trường làm gì?
+      - Học ĐTVT tại KMA có thể làm nghề gì?
+      - Đầu ra việc làm của sinh viên Điện tử Viễn thông Học viện?
+      - Cho em hỏi, học ĐTVT tại KMA có thể làm nghề gì?
+      - Cho mình hỏi, đầu ra việc làm của sinh viên Điện tử Viễn thông Học viện?
+      - Admin ơi, học ĐTVT tại KMA có thể làm nghề gì?
+      - Ad cho mình hỏi, đầu ra việc làm của sinh viên Điện tử Viễn thông Học viện?
+      - Mình muốn biết: Học ĐTVT tại KMA có thể làm nghề gì?
+      - Em đang thắc mắc: Đầu ra việc làm của sinh viên Điện tử Viễn thông Học viện?
+      - Cho hỏi một chút, học ĐTVT tại KMA có thể làm nghề gì?
+      - Mình hỏi về KMA: Đầu ra việc làm của sinh viên Điện tử Viễn thông Học viện?
+      - Về Học viện Kỹ thuật mật mã, học ĐTVT tại KMA có thể làm nghề gì?
+      - Ở KMA thì đầu ra việc làm của sinh viên Điện tử Viễn thông Học viện?
+      - Em đang tìm hiểu về KMA, học ĐTVT tại KMA có thể làm nghề gì?
+      - KMA ơi, đầu ra việc làm của sinh viên Điện tử Viễn thông Học viện?
+      - Các anh chị cho em hỏi: Học ĐTVT tại KMA có thể làm nghề gì?
+      - Cần tư vấn giúp em: Đầu ra việc làm của sinh viên Điện tử Viễn thông Học viện?
+      - Giải đáp giúp em: Học ĐTVT tại KMA có thể làm nghề gì?
+      - Em cần thông tin cụ thể: Đầu ra việc làm của sinh viên Điện tử Viễn thông Học viện?
+      - What jobs can electronics and telecommunications graduates from KMA do?
+      - I have a question about KMA: What jobs can electronics and telecommunications graduates from KMA do?
+      - Please help me with this question: What jobs can electronics and telecommunications graduates from KMA do?
+      - Hoc DTVT tai KMA co the lam nghe gi?
+      - Dau ra viec lam cua sinh vien Dien tu Vien thong Hoc vien?
+      - Cho em hoi, hoc DTVT tai KMA co the lam nghe gi?
+      - Ad oi, dau ra viec lam cua sinh vien Dien tu Vien thong Hoc vien?
+      - KMA: Hoc DTVT tai KMA co the lam nghe gi?
+      - Đầu ra việc làm của sv ĐTVT HV?
+      - ad oi, hoc DTVT tai KMA co the lam nghe gi?
+      - Mình xin hỏi thêm: Học ĐTVT tại KMA có thể làm nghề gì?
+
+  # 04 · NGÀNH & CHƯƠNG TRÌNH ĐÀO TẠO | intent trong Excel: dao_tao/chuong_trinh_tin_chi
+  - intent: faq_dao_tao/chuong_trinh_tin_chi
+    examples: |
+      - Chương trình của ngành em có bao nhiêu tín chỉ, bao nhiêu năm?
+      - Chương trình đào tạo của các ngành tại KMA kéo dài bao nhiêu năm và gồm bao nhiêu tín chỉ?
+      - Ngành CNTT KMA học bao nhiêu tín chỉ?
+      - Chương trình đào tạo tại Học viện kéo dài mấy năm?
+      - Cho em hỏi, ngành CNTT KMA học bao nhiêu tín chỉ?
+      - Cho mình hỏi, chương trình đào tạo tại Học viện kéo dài mấy năm?
+      - Admin ơi, ngành CNTT KMA học bao nhiêu tín chỉ?
+      - Ad cho mình hỏi, chương trình đào tạo tại Học viện kéo dài mấy năm?
+      - Mình muốn biết: Ngành CNTT KMA học bao nhiêu tín chỉ?
+      - Em đang thắc mắc: Chương trình đào tạo tại Học viện kéo dài mấy năm?
+      - Cho hỏi một chút, ngành CNTT KMA học bao nhiêu tín chỉ?
+      - Mình hỏi về KMA: Chương trình đào tạo tại Học viện kéo dài mấy năm?
+      - Về Học viện Kỹ thuật mật mã, ngành CNTT KMA học bao nhiêu tín chỉ?
+      - Ở KMA thì chương trình đào tạo tại Học viện kéo dài mấy năm?
+      - Trình độ đào tạo của chuyên ngành là gì?
+      - KMA ơi, chương trình đào tạo tại Học viện kéo dài mấy năm?
+      - Các anh chị cho em hỏi: Ngành CNTT KMA học bao nhiêu tín chỉ?
+      - Chương trình đào tạo được chia thành bao nhiêu học kỳ?
+      - Giải đáp giúp em: Ngành CNTT KMA học bao nhiêu tín chỉ?
+      - Trình độ đào tạo của hai chuyên ngành là gì?
+      - How many credits and years are required for a KMA degree?
+      - I have a question about KMA: How many credits and years are required for a KMA degree?
+      - Please help me with this question: How many credits and years are required for a KMA degree?
+      - Nganh CNTT KMA hoc bao nhieu tin chi?
+      - Chuong trinh dao tao tai Hoc vien keo dai may nam?
+      - Cho em hoi, nganh CNTT KMA hoc bao nhieu tin chi?
+      - Ad oi, chuong trinh dao tao tai Hoc vien keo dai may nam?
+      - KMA: Nganh CNTT KMA hoc bao nhieu tin chi?
+      - Ngành CNTT KMA học bn tín chỉ?
+      - Chương trình đào tạo tại HV kéo dài mấy năm?
+      - ad oi, nganh CNTT KMA hoc bn tin chi?
+
+  # 04 · NGÀNH & CHƯƠNG TRÌNH ĐÀO TẠO | intent trong Excel: dao_tao/chuong_trinh_hoc_ky
+  - intent: faq_dao_tao/chuong_trinh_hoc_ky
+    examples: |
+      - Em muốn xem các môn học theo học kỳ, học phần tự chọn ở đâu?
+      - Sinh viên KMA có thể xem danh sách học phần theo học kỳ và các học phần tự chọn ở đâu?
+      - Xem chương trình từng học kỳ KMA ở đâu?
+      - Danh sách học phần bắt buộc và tự chọn của ngành em?
+      - Cho em hỏi, xem chương trình từng học kỳ KMA ở đâu?
+      - Cho mình hỏi, danh sách học phần bắt buộc và tự chọn của ngành em?
+      - Admin ơi, xem chương trình từng học kỳ KMA ở đâu?
+      - Ad cho mình hỏi, danh sách học phần bắt buộc và tự chọn của ngành em?
+      - Mình muốn biết: Xem chương trình từng học kỳ KMA ở đâu?
+      - Em đang thắc mắc: Danh sách học phần bắt buộc và tự chọn của ngành em?
+      - Cho hỏi một chút, xem chương trình từng học kỳ KMA ở đâu?
+      - Mình hỏi về KMA: Danh sách học phần bắt buộc và tự chọn của ngành em?
+      - Về Học viện Kỹ thuật mật mã, xem chương trình từng học kỳ KMA ở đâu?
+      - Ở KMA thì danh sách học phần bắt buộc và tự chọn của ngành em?
+      - Sinh viên có thể lựa chọn học phần tự chọn không?
+      - KMA ơi, danh sách học phần bắt buộc và tự chọn của ngành em?
+      - Các anh chị cho em hỏi: Xem chương trình từng học kỳ KMA ở đâu?
+      - Cần tư vấn giúp em: Danh sách học phần bắt buộc và tự chọn của ngành em?
+      - Giải đáp giúp em: Xem chương trình từng học kỳ KMA ở đâu?
+      - Em cần thông tin cụ thể: Danh sách học phần bắt buộc và tự chọn của ngành em?
+      - Where can KMA students see the semester course plan and electives?
+      - I have a question about KMA: Where can KMA students see the semester course plan and electives?
+      - Please help me with this question: Where can KMA students see the semester course plan and electives?
+      - Xem chuong trinh tung hoc ky KMA o dau?
+      - Danh sach hoc phan bat buoc va tu chon cua nganh em?
+      - Cho em hoi, xem chuong trinh tung hoc ky KMA o dau?
+      - Ad oi, danh sach hoc phan bat buoc va tu chon cua nganh em?
+      - KMA: Xem chuong trinh tung hoc ky KMA o dau?
+      - ad oi, xem chuong trinh tung hoc ky KMA o dau?
+      - Mình xin hỏi thêm: Xem chương trình từng học kỳ KMA ở đâu?
+      - Mình xin hỏi thêm: Danh sách học phần bắt buộc và tự chọn của ngành em?

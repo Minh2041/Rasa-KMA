@@ -1,0 +1,411 @@
+version: "3.1"
+
+nlu:
+  # 07 · TIẾNG ANH & ĐỔI ĐIỂM | intent trong Excel: tieng_anh/tong_quan
+  - intent: faq_tieng_anh/tong_quan
+    examples: |
+      - KMA yêu cầu tiếng Anh như thế nào và có được đổi điểm không?
+      - Yêu cầu tiếng Anh chung của KMA là gì?
+      - Sinh viên Học viện được miễn học hoặc đổi điểm tiếng Anh không?
+      - Cho em hỏi, yêu cầu tiếng Anh chung của KMA là gì?
+      - Cho mình hỏi, sinh viên Học viện được miễn học hoặc đổi điểm tiếng Anh không?
+      - Admin ơi, yêu cầu tiếng Anh chung của KMA là gì?
+      - Ad cho mình hỏi, sinh viên Học viện được miễn học hoặc đổi điểm tiếng Anh không?
+      - Mình muốn biết: Yêu cầu tiếng Anh chung của KMA là gì?
+      - Em đang thắc mắc: Sinh viên Học viện được miễn học hoặc đổi điểm tiếng Anh không?
+      - Cho hỏi một chút, yêu cầu tiếng Anh chung của KMA là gì?
+      - Mình hỏi về KMA: Sinh viên Học viện được miễn học hoặc đổi điểm tiếng Anh không?
+      - Về Học viện Kỹ thuật mật mã, yêu cầu tiếng Anh chung của KMA là gì?
+      - Ở KMA thì sinh viên Học viện được miễn học hoặc đổi điểm tiếng Anh không?
+      - Điểm tiếng Anh có ảnh hưởng đến học bổng không?
+      - KMA ơi, sinh viên Học viện được miễn học hoặc đổi điểm tiếng Anh không?
+      - Các anh chị cho em hỏi: Yêu cầu tiếng Anh chung của KMA là gì?
+      - Điểm tiếng Anh có tính vào GPA không?
+      - Giải đáp giúp em: Yêu cầu tiếng Anh chung của KMA là gì?
+      - Em cần thông tin cụ thể: Sinh viên Học viện được miễn học hoặc đổi điểm tiếng Anh không?
+      - What English language requirements and exemptions apply at KMA?
+      - I have a question about KMA: What English language requirements and exemptions apply at KMA?
+      - Please help me with this question: What English language requirements and exemptions apply at KMA?
+      - Yeu cau tieng Anh chung cua KMA la gi?
+      - Sinh vien Hoc vien duoc mien hoc hoac doi diem tieng Anh khong?
+      - Cho em hoi, yeu cau tieng Anh chung cua KMA la gi?
+      - Ad oi, sinh vien Hoc vien duoc mien hoc hoac doi diem tieng Anh khong?
+      - KMA: Yeu cau tieng Anh chung cua KMA la gi?
+      - Yêu cầu TA chung của KMA là gì?
+      - SV HV dc miễn học hoặc đổi điểm TA ko?
+      - ad oi, yeu cau TA chung cua KMA la gi?
+
+  # 07 · TIẾNG ANH & ĐỔI ĐIỂM | intent trong Excel: tieng_anh/chuan_tung_mon
+  - intent: faq_tieng_anh/chuan_tung_mon
+    examples: |
+      - TA1, TA2, TA3 cần TOEIC bao nhiêu?
+      - TA1 TA2 TA3 ở KMA yêu cầu TOEIC bao nhiêu?
+      - Chuẩn tiếng Anh cho từng học phần tại Học viện?
+      - Cho em hỏi, tA1 TA2 TA3 ở KMA yêu cầu TOEIC bao nhiêu?
+      - Cho mình hỏi, chuẩn tiếng Anh cho từng học phần tại Học viện?
+      - Admin ơi, tA1 TA2 TA3 ở KMA yêu cầu TOEIC bao nhiêu?
+      - Ad cho mình hỏi, chuẩn tiếng Anh cho từng học phần tại Học viện?
+      - Mình muốn biết: TA1 TA2 TA3 ở KMA yêu cầu TOEIC bao nhiêu?
+      - Em đang thắc mắc: Chuẩn tiếng Anh cho từng học phần tại Học viện?
+      - Cho hỏi một chút, tA1 TA2 TA3 ở KMA yêu cầu TOEIC bao nhiêu?
+      - Mình hỏi về KMA: Chuẩn tiếng Anh cho từng học phần tại Học viện?
+      - Về Học viện Kỹ thuật mật mã, tA1 TA2 TA3 ở KMA yêu cầu TOEIC bao nhiêu?
+      - Ở KMA thì chuẩn tiếng Anh cho từng học phần tại Học viện?
+      - Tiếng Anh 3 cần bao nhiêu điểm TOEIC?
+      - KMA ơi, chuẩn tiếng Anh cho từng học phần tại Học viện?
+      - Các anh chị cho em hỏi: TA1 TA2 TA3 ở KMA yêu cầu TOEIC bao nhiêu?
+      - Tiếng Anh 2 cần bao nhiêu điểm TOEIC?
+      - Giải đáp giúp em: TA1 TA2 TA3 ở KMA yêu cầu TOEIC bao nhiêu?
+      - Tiếng Anh 1 cần bao nhiêu điểm TOEIC?
+      - What TOEIC levels are required for English 1 2 and 3 at KMA?
+      - I have a question about KMA: What TOEIC levels are required for English 1 2 and 3 at KMA?
+      - Please help me with this question: What TOEIC levels are required for English 1 2 and 3 at KMA?
+      - TA1 TA2 TA3 o KMA yeu cau TOEIC bao nhieu?
+      - Chuan tieng Anh cho tung hoc phan tai Hoc vien?
+      - Cho em hoi, tA1 TA2 TA3 o KMA yeu cau TOEIC bao nhieu?
+      - Ad oi, chuan tieng Anh cho tung hoc phan tai Hoc vien?
+      - KMA: TA1 TA2 TA3 o KMA yeu cau TOEIC bao nhieu?
+      - TA1 TA2 TA3 ở KMA yêu cầu TOEIC bn?
+      - Chuẩn TA cho từng học phần tại HV?
+      - ad oi, tA1 TA2 TA3 o KMA yeu cau TOEIC bn?
+
+  # 07 · TIẾNG ANH & ĐỔI ĐIỂM | intent trong Excel: tieng_anh/chuan_do_an
+  - intent: faq_tieng_anh/chuan_do_an
+    examples: |
+      - Cần TOEIC bao nhiêu để được nhận đồ án?
+      - Nhận đồ án KMA cần đạt TOEIC mấy?
+      - Chuẩn tiếng Anh tối thiểu để được làm đồ án ở Học viện?
+      - Cho em hỏi, nhận đồ án KMA cần đạt TOEIC mấy?
+      - Cho mình hỏi, chuẩn tiếng Anh tối thiểu để được làm đồ án ở Học viện?
+      - Admin ơi, nhận đồ án KMA cần đạt TOEIC mấy?
+      - Ad cho mình hỏi, chuẩn tiếng Anh tối thiểu để được làm đồ án ở Học viện?
+      - Mình muốn biết: Nhận đồ án KMA cần đạt TOEIC mấy?
+      - Em đang thắc mắc: Chuẩn tiếng Anh tối thiểu để được làm đồ án ở Học viện?
+      - Cho hỏi một chút, nhận đồ án KMA cần đạt TOEIC mấy?
+      - Mình hỏi về KMA: Chuẩn tiếng Anh tối thiểu để được làm đồ án ở Học viện?
+      - Về Học viện Kỹ thuật mật mã, nhận đồ án KMA cần đạt TOEIC mấy?
+      - Ở KMA thì chuẩn tiếng Anh tối thiểu để được làm đồ án ở Học viện?
+      - Em đang tìm hiểu về KMA, nhận đồ án KMA cần đạt TOEIC mấy?
+      - KMA ơi, chuẩn tiếng Anh tối thiểu để được làm đồ án ở Học viện?
+      - Các anh chị cho em hỏi: Nhận đồ án KMA cần đạt TOEIC mấy?
+      - Cần tư vấn giúp em: Chuẩn tiếng Anh tối thiểu để được làm đồ án ở Học viện?
+      - Giải đáp giúp em: Nhận đồ án KMA cần đạt TOEIC mấy?
+      - Em cần thông tin cụ thể: Chuẩn tiếng Anh tối thiểu để được làm đồ án ở Học viện?
+      - What TOEIC score is required before starting a KMA graduation project?
+      - I have a question about KMA: What TOEIC score is required before starting a KMA graduation project?
+      - Please help me with this question: What TOEIC score is required before starting a KMA graduation project?
+      - Nhan do an KMA can dat TOEIC may?
+      - Chuan tieng Anh toi thieu de duoc lam do an o Hoc vien?
+      - Cho em hoi, nhan do an KMA can dat TOEIC may?
+      - Ad oi, chuan tieng Anh toi thieu de duoc lam do an o Hoc vien?
+      - KMA: Nhan do an KMA can dat TOEIC may?
+      - Chuẩn TA tối thiểu để dc làm đồ án ở HV?
+      - ad oi, nhan do an KMA can dat TOEIC may?
+      - Mình xin hỏi thêm: Nhận đồ án KMA cần đạt TOEIC mấy?
+
+  # 07 · TIẾNG ANH & ĐỔI ĐIỂM | intent trong Excel: tieng_anh/chuan_tot_nghiep_theo_khoa
+  - intent: faq_tieng_anh/chuan_tot_nghiep_theo_khoa
+    examples: |
+      - Khóa em cần TOEIC bao nhiêu để tốt nghiệp?
+      - Chuẩn đầu ra tiếng Anh theo khóa KMA bao nhiêu?
+      - TOEIC mấy điểm thì được tốt nghiệp Học viện?
+      - Cho em hỏi, chuẩn đầu ra tiếng Anh theo khóa KMA bao nhiêu?
+      - Cho mình hỏi, TOEIC mấy điểm thì được tốt nghiệp Học viện?
+      - Admin ơi, chuẩn đầu ra tiếng Anh theo khóa KMA bao nhiêu?
+      - Ad cho mình hỏi, TOEIC mấy điểm thì được tốt nghiệp Học viện?
+      - Mình muốn biết: Chuẩn đầu ra tiếng Anh theo khóa KMA bao nhiêu?
+      - Em đang thắc mắc: TOEIC mấy điểm thì được tốt nghiệp Học viện?
+      - Cho hỏi một chút, chuẩn đầu ra tiếng Anh theo khóa KMA bao nhiêu?
+      - Mình hỏi về KMA: TOEIC mấy điểm thì được tốt nghiệp Học viện?
+      - Về Học viện Kỹ thuật mật mã, chuẩn đầu ra tiếng Anh theo khóa KMA bao nhiêu?
+      - Ở KMA thì TOEIC mấy điểm thì được tốt nghiệp Học viện?
+      - Chuẩn tiếng Anh đầu ra của Học viện là bao nhiêu?
+      - KMA ơi, TOEIC mấy điểm thì được tốt nghiệp Học viện?
+      - Các anh chị cho em hỏi: Chuẩn đầu ra tiếng Anh theo khóa KMA bao nhiêu?
+      - Chuẩn tiếng Anh có áp dụng cho khóa cũ không?
+      - Giải đáp giúp em: Chuẩn đầu ra tiếng Anh theo khóa KMA bao nhiêu?
+      - Chuẩn tiếng Anh có thay đổi theo khóa không?
+      - What English proficiency score is required to graduate from KMA by cohort?
+      - I have a question about KMA: What English proficiency score is required to graduate from KMA by cohort?
+      - Please help me with this question: What English proficiency score is required to graduate from KMA by cohort?
+      - Chuan dau ra tieng Anh theo khoa KMA bao nhieu?
+      - TOEIC may diem thi duoc tot nghiep Hoc vien?
+      - Cho em hoi, chuan dau ra tieng Anh theo khoa KMA bao nhieu?
+      - Ad oi, TOEIC may diem thi duoc tot nghiep Hoc vien?
+      - KMA: Chuan dau ra tieng Anh theo khoa KMA bao nhieu?
+      - Chuẩn đầu ra TA theo khóa KMA bn?
+      - TOEIC mấy điểm thì dc tốt nghiệp HV?
+      - ad oi, chuan dau ra TA theo khoa KMA bn?
+
+  # 07 · TIẾNG ANH & ĐỔI ĐIỂM | intent trong Excel: tieng_anh/chung_chi_duoc_cong_nhan
+  - intent: faq_tieng_anh/chung_chi_duoc_cong_nhan
+    examples: |
+      - IELTS, TOEFL, TOEIC, VSTEP được KMA chấp nhận không?
+      - KMA chấp nhận những chứng chỉ tiếng Anh nào?
+      - IELTS TOEFL VSTEP TOEIC có được công nhận ở Học viện không?
+      - Cho em hỏi, KMA chấp nhận những chứng chỉ tiếng Anh nào?
+      - Cho mình hỏi, IELTS TOEFL VSTEP TOEIC có được công nhận ở Học viện không?
+      - Admin ơi, KMA chấp nhận những chứng chỉ tiếng Anh nào?
+      - Ad cho mình hỏi, IELTS TOEFL VSTEP TOEIC có được công nhận ở Học viện không?
+      - Mình muốn biết: KMA chấp nhận những chứng chỉ tiếng Anh nào?
+      - Em đang thắc mắc: IELTS TOEFL VSTEP TOEIC có được công nhận ở Học viện không?
+      - Cho hỏi một chút, KMA chấp nhận những chứng chỉ tiếng Anh nào?
+      - Mình hỏi về KMA: IELTS TOEFL VSTEP TOEIC có được công nhận ở Học viện không?
+      - Về Học viện Kỹ thuật mật mã, KMA chấp nhận những chứng chỉ tiếng Anh nào?
+      - Ở KMA thì IELTS TOEFL VSTEP TOEIC có được công nhận ở Học viện không?
+      - Có VSTEP thì có được miễn học tiếng Anh không?
+      - KMA ơi, IELTS TOEFL VSTEP TOEIC có được công nhận ở Học viện không?
+      - Các anh chị cho em hỏi: KMA chấp nhận những chứng chỉ tiếng Anh nào?
+      - Cần tư vấn giúp em: IELTS TOEFL VSTEP TOEIC có được công nhận ở Học viện không?
+      - Giải đáp giúp em: KMA chấp nhận những chứng chỉ tiếng Anh nào?
+      - Em cần thông tin cụ thể: IELTS TOEFL VSTEP TOEIC có được công nhận ở Học viện không?
+      - Which English certificates does KMA officially accept?
+      - I have a question about KMA: Which English certificates does KMA officially accept?
+      - Please help me with this question: Which English certificates does KMA officially accept?
+      - KMA chap nhan nhung chung chi tieng Anh nao?
+      - IELTS TOEFL VSTEP TOEIC co duoc cong nhan o Hoc vien khong?
+      - Cho em hoi, KMA chap nhan nhung chung chi tieng Anh nao?
+      - Ad oi, IELTS TOEFL VSTEP TOEIC co duoc cong nhan o Hoc vien khong?
+      - KMA: KMA chap nhan nhung chung chi tieng Anh nao?
+      - KMA chấp nhận những chứng chỉ TA nào?
+      - IELTS TOEFL VSTEP TOEIC có dc công nhận ở HV ko?
+      - ad oi, KMA chap nhan nhung chung chi TA nao?
+
+  # 07 · TIẾNG ANH & ĐỔI ĐIỂM | intent trong Excel: tieng_anh/bang_quy_doi
+  - intent: faq_tieng_anh/bang_quy_doi
+    examples: |
+      - Có IELTS 6.0 hay TOEIC 550 thì đổi TA1–3 được mấy điểm?
+      - IELTS 6.5 đổi được mấy điểm TA3 tại KMA?
+      - Sinh viên KMA có thể quy đổi chứng chỉ IELTS hoặc TOEIC sang điểm các học phần Tiếng Anh 1, 2 và 3 như thế nào?
+      - TOEIC 550 quy đổi sang điểm TA1 TA2 TA3 thế nào?
+      - Cho em hỏi, IELTS 6.5 đổi được mấy điểm TA3 tại KMA?
+      - Cho mình hỏi, TOEIC 550 quy đổi sang điểm TA1 TA2 TA3 thế nào?
+      - Admin ơi, IELTS 6.5 đổi được mấy điểm TA3 tại KMA?
+      - Ad cho mình hỏi, TOEIC 550 quy đổi sang điểm TA1 TA2 TA3 thế nào?
+      - Mình muốn biết: IELTS 6.5 đổi được mấy điểm TA3 tại KMA?
+      - Em đang thắc mắc: TOEIC 550 quy đổi sang điểm TA1 TA2 TA3 thế nào?
+      - Cho hỏi một chút, IELTS 6.5 đổi được mấy điểm TA3 tại KMA?
+      - Mình hỏi về KMA: TOEIC 550 quy đổi sang điểm TA1 TA2 TA3 thế nào?
+      - Về Học viện Kỹ thuật mật mã, IELTS 6.5 đổi được mấy điểm TA3 tại KMA?
+      - Ở KMA thì TOEIC 550 quy đổi sang điểm TA1 TA2 TA3 thế nào?
+      - IELTS 5.0 đổi được mấy điểm?
+      - KMA ơi, TOEIC 550 quy đổi sang điểm TA1 TA2 TA3 thế nào?
+      - Các anh chị cho em hỏi: IELTS 6.5 đổi được mấy điểm TA3 tại KMA?
+      - TOEIC 550 thì Tiếng Anh 1,2,3 được mấy điểm?
+      - Giải đáp giúp em: IELTS 6.5 đổi được mấy điểm TA3 tại KMA?
+      - IELTS 6.0 thì Tiếng Anh 3 được mấy điểm?
+      - How are IELTS and TOEIC scores converted into KMA English course grades?
+      - I have a question about KMA: How are IELTS and TOEIC scores converted into KMA English course grades?
+      - Please help me with this question: How are IELTS and TOEIC scores converted into KMA English course grades?
+      - IELTS 6.5 doi duoc may diem TA3 tai KMA?
+      - TOEIC 550 quy doi sang diem TA1 TA2 TA3 the nao?
+      - Cho em hoi, IELTS 6.5 doi duoc may diem TA3 tai KMA?
+      - Ad oi, TOEIC 550 quy doi sang diem TA1 TA2 TA3 the nao?
+      - KMA: IELTS 6.5 doi duoc may diem TA3 tai KMA?
+      - IELTS 6.5 đổi dc mấy điểm TA3 tại KMA?
+      - TOEIC 550 quy đổi sang điểm TA1 TA2 TA3 tn?
+      - ad oi, IELTS 6.5 doi dc may diem TA3 tai KMA?
+
+  # 07 · TIẾNG ANH & ĐỔI ĐIỂM | intent trong Excel: tieng_anh/mien_hoc
+  - intent: faq_tieng_anh/mien_hoc
+    examples: |
+      - Có chứng chỉ tiếng Anh thì có được miễn TA1–3 không?
+      - Có IELTS được miễn học Tiếng Anh 1 2 3 KMA không?
+      - Xin miễn các học phần tiếng Anh bằng TOEIC thế nào?
+      - Cho em hỏi, có IELTS được miễn học Tiếng Anh 1 2 3 KMA không?
+      - Cho mình hỏi, xin miễn các học phần tiếng Anh bằng TOEIC thế nào?
+      - Admin ơi, có IELTS được miễn học Tiếng Anh 1 2 3 KMA không?
+      - Ad cho mình hỏi, xin miễn các học phần tiếng Anh bằng TOEIC thế nào?
+      - Mình muốn biết: Có IELTS được miễn học Tiếng Anh 1 2 3 KMA không?
+      - Em đang thắc mắc: Xin miễn các học phần tiếng Anh bằng TOEIC thế nào?
+      - Cho hỏi một chút, có IELTS được miễn học Tiếng Anh 1 2 3 KMA không?
+      - Mình hỏi về KMA: Xin miễn các học phần tiếng Anh bằng TOEIC thế nào?
+      - Về Học viện Kỹ thuật mật mã, có IELTS được miễn học Tiếng Anh 1 2 3 KMA không?
+      - Ở KMA thì xin miễn các học phần tiếng Anh bằng TOEIC thế nào?
+      - Miễn học tiếng Anh có bị mất điểm không?
+      - KMA ơi, xin miễn các học phần tiếng Anh bằng TOEIC thế nào?
+      - Các anh chị cho em hỏi: Có IELTS được miễn học Tiếng Anh 1 2 3 KMA không?
+      - Được miễn học tiếng Anh có phải đóng học phí không?
+      - Giải đáp giúp em: Có IELTS được miễn học Tiếng Anh 1 2 3 KMA không?
+      - Em cần thông tin cụ thể: Xin miễn các học phần tiếng Anh bằng TOEIC thế nào?
+      - Can KMA students get English course exemptions with language certificates?
+      - I have a question about KMA: Can KMA students get English course exemptions with language certificates?
+      - Please help me with this question: Can KMA students get English course exemptions with language certificates?
+      - Co IELTS duoc mien hoc Tieng Anh 1 2 3 KMA khong?
+      - Xin mien cac hoc phan tieng Anh bang TOEIC the nao?
+      - Cho em hoi, co IELTS duoc mien hoc Tieng Anh 1 2 3 KMA khong?
+      - Ad oi, xin mien cac hoc phan tieng Anh bang TOEIC the nao?
+      - KMA: Co IELTS duoc mien hoc Tieng Anh 1 2 3 KMA khong?
+      - Có IELTS dc miễn học TA 1 2 3 KMA ko?
+      - Xin miễn các học phần TA bằng TOEIC tn?
+      - ad oi, co IELTS dc mien hoc TA 1 2 3 KMA ko?
+
+  # 07 · TIẾNG ANH & ĐỔI ĐIỂM | intent trong Excel: tieng_anh/thu_tuc_doi_diem
+  - intent: faq_tieng_anh/thu_tuc_doi_diem
+    examples: |
+      - Muốn nộp đơn đổi điểm tiếng Anh cần giấy tờ gì, ở đâu?
+      - Nộp đơn đổi điểm tiếng Anh KMA ở đâu?
+      - Thủ tục và giấy tờ quy đổi IELTS sang điểm học phần?
+      - Cho em hỏi, nộp đơn đổi điểm tiếng Anh KMA ở đâu?
+      - Cho mình hỏi, thủ tục và giấy tờ quy đổi IELTS sang điểm học phần?
+      - Admin ơi, nộp đơn đổi điểm tiếng Anh KMA ở đâu?
+      - Ad cho mình hỏi, thủ tục và giấy tờ quy đổi IELTS sang điểm học phần?
+      - Mình muốn biết: Nộp đơn đổi điểm tiếng Anh KMA ở đâu?
+      - Em đang thắc mắc: Thủ tục và giấy tờ quy đổi IELTS sang điểm học phần?
+      - Cho hỏi một chút, nộp đơn đổi điểm tiếng Anh KMA ở đâu?
+      - Mình hỏi về KMA: Thủ tục và giấy tờ quy đổi IELTS sang điểm học phần?
+      - Về Học viện Kỹ thuật mật mã, nộp đơn đổi điểm tiếng Anh KMA ở đâu?
+      - Ở KMA thì thủ tục và giấy tờ quy đổi IELTS sang điểm học phần?
+      - Trường có hỗ trợ đổi điểm Tiếng anh không?
+      - KMA ơi, thủ tục và giấy tờ quy đổi IELTS sang điểm học phần?
+      - Các anh chị cho em hỏi: Nộp đơn đổi điểm tiếng Anh KMA ở đâu?
+      - Muốn xin miễn học tiếng Anh thì làm thế nào?
+      - Giải đáp giúp em: Nộp đơn đổi điểm tiếng Anh KMA ở đâu?
+      - Em cần thông tin cụ thể: Thủ tục và giấy tờ quy đổi IELTS sang điểm học phần?
+      - How can students apply to convert English certificate scores at KMA?
+      - I have a question about KMA: How can students apply to convert English certificate scores at KMA?
+      - Please help me with this question: How can students apply to convert English certificate scores at KMA?
+      - Nop don doi diem tieng Anh KMA o dau?
+      - Thu tuc va giay to quy doi IELTS sang diem hoc phan?
+      - Cho em hoi, nop don doi diem tieng Anh KMA o dau?
+      - Ad oi, thu tuc va giay to quy doi IELTS sang diem hoc phan?
+      - KMA: Nop don doi diem tieng Anh KMA o dau?
+      - Nộp đơn đổi điểm TA KMA ở đâu?
+      - ad oi, nop don doi diem TA KMA o dau?
+      - Mình xin hỏi thêm: Nộp đơn đổi điểm tiếng Anh KMA ở đâu?
+
+  # 07 · TIẾNG ANH & ĐỔI ĐIỂM | intent trong Excel: tieng_anh/han_nop
+  - intent: faq_tieng_anh/han_nop
+    examples: |
+      - Nộp đơn đổi điểm tiếng Anh khi nào, trễ có được không?
+      - Khi nào hết hạn đăng ký đổi điểm tiếng Anh KMA?
+      - Nộp hồ sơ quy đổi TOEIC quá hạn có được không?
+      - Cho em hỏi, khi nào hết hạn đăng ký đổi điểm tiếng Anh KMA?
+      - Cho mình hỏi, nộp hồ sơ quy đổi TOEIC quá hạn có được không?
+      - Admin ơi, khi nào hết hạn đăng ký đổi điểm tiếng Anh KMA?
+      - Ad cho mình hỏi, nộp hồ sơ quy đổi TOEIC quá hạn có được không?
+      - Mình muốn biết: Khi nào hết hạn đăng ký đổi điểm tiếng Anh KMA?
+      - Em đang thắc mắc: Nộp hồ sơ quy đổi TOEIC quá hạn có được không?
+      - Cho hỏi một chút, khi nào hết hạn đăng ký đổi điểm tiếng Anh KMA?
+      - Mình hỏi về KMA: Nộp hồ sơ quy đổi TOEIC quá hạn có được không?
+      - Về Học viện Kỹ thuật mật mã, khi nào hết hạn đăng ký đổi điểm tiếng Anh KMA?
+      - Ở KMA thì nộp hồ sơ quy đổi TOEIC quá hạn có được không?
+      - Nộp đơn xin miễn học trễ có được giải quyết không?
+      - KMA ơi, nộp hồ sơ quy đổi TOEIC quá hạn có được không?
+      - Các anh chị cho em hỏi: Khi nào hết hạn đăng ký đổi điểm tiếng Anh KMA?
+      - Cần tư vấn giúp em: Nộp hồ sơ quy đổi TOEIC quá hạn có được không?
+      - Giải đáp giúp em: Khi nào hết hạn đăng ký đổi điểm tiếng Anh KMA?
+      - Em cần thông tin cụ thể: Nộp hồ sơ quy đổi TOEIC quá hạn có được không?
+      - What is the deadline for English score conversion applications at KMA?
+      - I have a question about KMA: What is the deadline for English score conversion applications at KMA?
+      - Please help me with this question: What is the deadline for English score conversion applications at KMA?
+      - Khi nao het han dang ky doi diem tieng Anh KMA?
+      - Nop ho so quy doi TOEIC qua han co duoc khong?
+      - Cho em hoi, khi nao het han dang ky doi diem tieng Anh KMA?
+      - Ad oi, nop ho so quy doi TOEIC qua han co duoc khong?
+      - KMA: Khi nao het han dang ky doi diem tieng Anh KMA?
+      - Khi nào hết hạn đk đổi điểm TA KMA?
+      - Nộp hồ sơ quy đổi TOEIC quá hạn có dc ko?
+      - ad oi, khi nao het han dk doi diem TA KMA?
+
+  # 07 · TIẾNG ANH & ĐỔI ĐIỂM | intent trong Excel: tieng_anh/chung_chi_het_han
+  - intent: faq_tieng_anh/chung_chi_het_han
+    examples: |
+      - Chứng chỉ tiếng Anh hết hạn có dùng để đổi điểm/đầu ra được không?
+      - IELTS hết hạn có đổi điểm tiếng Anh KMA được không?
+      - TOEIC quá hạn còn dùng xét chuẩn đầu ra không?
+      - Cho em hỏi, IELTS hết hạn có đổi điểm tiếng Anh KMA được không?
+      - Cho mình hỏi, TOEIC quá hạn còn dùng xét chuẩn đầu ra không?
+      - Admin ơi, IELTS hết hạn có đổi điểm tiếng Anh KMA được không?
+      - Ad cho mình hỏi, TOEIC quá hạn còn dùng xét chuẩn đầu ra không?
+      - Mình muốn biết: IELTS hết hạn có đổi điểm tiếng Anh KMA được không?
+      - Em đang thắc mắc: TOEIC quá hạn còn dùng xét chuẩn đầu ra không?
+      - Cho hỏi một chút, IELTS hết hạn có đổi điểm tiếng Anh KMA được không?
+      - Mình hỏi về KMA: TOEIC quá hạn còn dùng xét chuẩn đầu ra không?
+      - Về Học viện Kỹ thuật mật mã, IELTS hết hạn có đổi điểm tiếng Anh KMA được không?
+      - Ở KMA thì TOEIC quá hạn còn dùng xét chuẩn đầu ra không?
+      - IELTS hết hạn có dùng để miễn học không?
+      - KMA ơi, TOEIC quá hạn còn dùng xét chuẩn đầu ra không?
+      - Các anh chị cho em hỏi: IELTS hết hạn có đổi điểm tiếng Anh KMA được không?
+      - Cần tư vấn giúp em: TOEIC quá hạn còn dùng xét chuẩn đầu ra không?
+      - Giải đáp giúp em: IELTS hết hạn có đổi điểm tiếng Anh KMA được không?
+      - Em cần thông tin cụ thể: TOEIC quá hạn còn dùng xét chuẩn đầu ra không?
+      - Can expired language certificates be used for KMA English requirements?
+      - I have a question about KMA: Can expired language certificates be used for KMA English requirements?
+      - Please help me with this question: Can expired language certificates be used for KMA English requirements?
+      - IELTS het han co doi diem tieng Anh KMA duoc khong?
+      - TOEIC qua han con dung xet chuan dau ra khong?
+      - Cho em hoi, IELTS het han co doi diem tieng Anh KMA duoc khong?
+      - Ad oi, TOEIC qua han con dung xet chuan dau ra khong?
+      - KMA: IELTS het han co doi diem tieng Anh KMA duoc khong?
+      - IELTS hết hạn có đổi điểm TA KMA dc ko?
+      - TOEIC quá hạn còn dùng xét chuẩn đầu ra ko?
+      - ad oi, IELTS het han co doi diem TA KMA dc ko?
+
+  # 07 · TIẾNG ANH & ĐỔI ĐIỂM | intent trong Excel: tieng_anh/thi_noi_bo
+  - intent: faq_tieng_anh/thi_noi_bo
+    examples: |
+      - KMA có thi chuẩn tiếng Anh nội bộ không, có mấy lần?
+      - KMA có kỳ thi tiếng Anh nội bộ không?
+      - Thi đánh giá chuẩn đầu ra tiếng Anh tại Học viện mấy lần?
+      - Cho em hỏi, KMA có kỳ thi tiếng Anh nội bộ không?
+      - Cho mình hỏi, thi đánh giá chuẩn đầu ra tiếng Anh tại Học viện mấy lần?
+      - Admin ơi, KMA có kỳ thi tiếng Anh nội bộ không?
+      - Ad cho mình hỏi, thi đánh giá chuẩn đầu ra tiếng Anh tại Học viện mấy lần?
+      - Mình muốn biết: KMA có kỳ thi tiếng Anh nội bộ không?
+      - Em đang thắc mắc: Thi đánh giá chuẩn đầu ra tiếng Anh tại Học viện mấy lần?
+      - Cho hỏi một chút, KMA có kỳ thi tiếng Anh nội bộ không?
+      - Mình hỏi về KMA: Thi đánh giá chuẩn đầu ra tiếng Anh tại Học viện mấy lần?
+      - Về Học viện Kỹ thuật mật mã, KMA có kỳ thi tiếng Anh nội bộ không?
+      - Ở KMA thì thi đánh giá chuẩn đầu ra tiếng Anh tại Học viện mấy lần?
+      - Thi tiếng Anh tại trường có mất phí không?
+      - KMA ơi, thi đánh giá chuẩn đầu ra tiếng Anh tại Học viện mấy lần?
+      - Các anh chị cho em hỏi: KMA có kỳ thi tiếng Anh nội bộ không?
+      - Thi tiếng Anh tại trường có được công nhận không?
+      - Giải đáp giúp em: KMA có kỳ thi tiếng Anh nội bộ không?
+      - Thi chuẩn tiếng Anh ở trường theo dạng đề gì?
+      - Does KMA offer internal English proficiency examinations?
+      - I have a question about KMA: Does KMA offer internal English proficiency examinations?
+      - Please help me with this question: Does KMA offer internal English proficiency examinations?
+      - KMA co ky thi tieng Anh noi bo khong?
+      - Thi danh gia chuan dau ra tieng Anh tai Hoc vien may lan?
+      - Cho em hoi, KMA co ky thi tieng Anh noi bo khong?
+      - Ad oi, thi danh gia chuan dau ra tieng Anh tai Hoc vien may lan?
+      - KMA: KMA co ky thi tieng Anh noi bo khong?
+      - KMA có kỳ thi TA nội bộ ko?
+      - Thi đánh giá chuẩn đầu ra TA tại HV mấy lần?
+      - ad oi, KMA co ky thi TA noi bo ko?
+
+  # 07 · TIẾNG ANH & ĐỔI ĐIỂM | intent trong Excel: tieng_anh/sau_doi_diem
+  - intent: faq_tieng_anh/sau_doi_diem
+    examples: |
+      - Đổi điểm xong có được học lại để cải thiện không?
+      - Sau khi quy đổi TA3 có được học cải thiện không?
+      - Đã đổi điểm IELTS rồi có được thi lại môn tiếng Anh không?
+      - Cho em hỏi, sau khi quy đổi TA3 có được học cải thiện không?
+      - Cho mình hỏi, đã đổi điểm IELTS rồi có được thi lại môn tiếng Anh không?
+      - Admin ơi, sau khi quy đổi TA3 có được học cải thiện không?
+      - Ad cho mình hỏi, đã đổi điểm IELTS rồi có được thi lại môn tiếng Anh không?
+      - Mình muốn biết: Sau khi quy đổi TA3 có được học cải thiện không?
+      - Em đang thắc mắc: Đã đổi điểm IELTS rồi có được thi lại môn tiếng Anh không?
+      - Cho hỏi một chút, sau khi quy đổi TA3 có được học cải thiện không?
+      - Mình hỏi về KMA: Đã đổi điểm IELTS rồi có được thi lại môn tiếng Anh không?
+      - Về Học viện Kỹ thuật mật mã, sau khi quy đổi TA3 có được học cải thiện không?
+      - Ở KMA thì đã đổi điểm IELTS rồi có được thi lại môn tiếng Anh không?
+      - Sau khi đổi điểm rồi có xin học lại được không?
+      - KMA ơi, đã đổi điểm IELTS rồi có được thi lại môn tiếng Anh không?
+      - Các anh chị cho em hỏi: Sau khi quy đổi TA3 có được học cải thiện không?
+      - Cần tư vấn giúp em: Đã đổi điểm IELTS rồi có được thi lại môn tiếng Anh không?
+      - Giải đáp giúp em: Sau khi quy đổi TA3 có được học cải thiện không?
+      - Em cần thông tin cụ thể: Đã đổi điểm IELTS rồi có được thi lại môn tiếng Anh không?
+      - Can KMA students retake English courses after certificate score conversion?
+      - I have a question about KMA: Can KMA students retake English courses after certificate score conversion?
+      - Please help me with this question: Can KMA students retake English courses after certificate score conversion?
+      - Sau khi quy doi TA3 co duoc hoc cai thien khong?
+      - Da doi diem IELTS roi co duoc thi lai mon tieng Anh khong?
+      - Cho em hoi, sau khi quy doi TA3 co duoc hoc cai thien khong?
+      - Ad oi, da doi diem IELTS roi co duoc thi lai mon tieng Anh khong?
+      - KMA: Sau khi quy doi TA3 co duoc hoc cai thien khong?
+      - Sau khi quy đổi TA3 có dc học cải thiện ko?
+      - Đã đổi điểm IELTS rồi có dc thi lại môn TA ko?
+      - ad oi, sau khi quy doi TA3 co dc hoc cai thien ko?

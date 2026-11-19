@@ -1,0 +1,685 @@
+version: "3.1"
+
+nlu:
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/tong_quan
+  - intent: faq_hoc_vu/tong_quan
+    examples: |
+      - Sinh viên KMA cần biết những quy định học vụ nào?
+      - Quy chế học vụ chung dành cho sinh viên KMA?
+      - Các quy định học tập cần biết khi học Học viện?
+      - Cho em hỏi, quy chế học vụ chung dành cho sinh viên KMA?
+      - Cho mình hỏi, các quy định học tập cần biết khi học Học viện?
+      - Admin ơi, quy chế học vụ chung dành cho sinh viên KMA?
+      - Ad cho mình hỏi, các quy định học tập cần biết khi học Học viện?
+      - Mình muốn biết: Quy chế học vụ chung dành cho sinh viên KMA?
+      - Em đang thắc mắc: Các quy định học tập cần biết khi học Học viện?
+      - Cho hỏi một chút, quy chế học vụ chung dành cho sinh viên KMA?
+      - Mình hỏi về KMA: Các quy định học tập cần biết khi học Học viện?
+      - Về Học viện Kỹ thuật mật mã, quy chế học vụ chung dành cho sinh viên KMA?
+      - Ở KMA thì các quy định học tập cần biết khi học Học viện?
+      - Em đang tìm hiểu về KMA, quy chế học vụ chung dành cho sinh viên KMA?
+      - KMA ơi, các quy định học tập cần biết khi học Học viện?
+      - Các anh chị cho em hỏi: Quy chế học vụ chung dành cho sinh viên KMA?
+      - Cần tư vấn giúp em: Các quy định học tập cần biết khi học Học viện?
+      - Giải đáp giúp em: Quy chế học vụ chung dành cho sinh viên KMA?
+      - Em cần thông tin cụ thể: Các quy định học tập cần biết khi học Học viện?
+      - What academic regulations should KMA students know?
+      - I have a question about KMA: What academic regulations should KMA students know?
+      - Please help me with this question: What academic regulations should KMA students know?
+      - Quy che hoc vu chung danh cho sinh vien KMA?
+      - Cac quy dinh hoc tap can biet khi hoc Hoc vien?
+      - Cho em hoi, quy che hoc vu chung danh cho sinh vien KMA?
+      - Ad oi, cac quy dinh hoc tap can biet khi hoc Hoc vien?
+      - KMA: Quy che hoc vu chung danh cho sinh vien KMA?
+      - Quy chế học vụ chung dành cho sv KMA?
+      - Các quy định học tập cần biết khi học HV?
+      - ad oi, quy che hoc vu chung danh cho sv KMA?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/dang_ky_hoc_phan
+  - intent: faq_hoc_vu/dang_ky_hoc_phan
+    examples: |
+      - Đăng ký học phần, học vượt hoặc học kỳ hè thế nào?
+      - Đăng ký tín chỉ KMA như thế nào?
+      - Sinh viên muốn học vượt hoặc đăng ký học kỳ hè thì sao?
+      - Cho em hỏi, đăng ký tín chỉ KMA như thế nào?
+      - Cho mình hỏi, sinh viên muốn học vượt hoặc đăng ký học kỳ hè thì sao?
+      - Admin ơi, đăng ký tín chỉ KMA như thế nào?
+      - Ad cho mình hỏi, sinh viên muốn học vượt hoặc đăng ký học kỳ hè thì sao?
+      - Mình muốn biết: Đăng ký tín chỉ KMA như thế nào?
+      - Em đang thắc mắc: Sinh viên muốn học vượt hoặc đăng ký học kỳ hè thì sao?
+      - Cho hỏi một chút, đăng ký tín chỉ KMA như thế nào?
+      - Mình hỏi về KMA: Sinh viên muốn học vượt hoặc đăng ký học kỳ hè thì sao?
+      - Về Học viện Kỹ thuật mật mã, đăng ký tín chỉ KMA như thế nào?
+      - Ở KMA thì sinh viên muốn học vượt hoặc đăng ký học kỳ hè thì sao?
+      - Sinh viên được đăng ký tối đa bao nhiêu tín chỉ/kỳ?
+      - KMA ơi, sinh viên muốn học vượt hoặc đăng ký học kỳ hè thì sao?
+      - Các anh chị cho em hỏi: Đăng ký tín chỉ KMA như thế nào?
+      - Học kỳ hè được đăng ký tối đa bao nhiêu tín chỉ?
+      - Giải đáp giúp em: Đăng ký tín chỉ KMA như thế nào?
+      - Không đăng ký học phần thì bị xử lý thế nào?
+      - How can KMA students register for courses or summer classes?
+      - I have a question about KMA: How can KMA students register for courses or summer classes?
+      - Please help me with this question: How can KMA students register for courses or summer classes?
+      - Dang ky tin chi KMA nhu the nao?
+      - Sinh vien muon hoc vuot hoac dang ky hoc ky he thi sao?
+      - Cho em hoi, dang ky tin chi KMA nhu the nao?
+      - Ad oi, sinh vien muon hoc vuot hoac dang ky hoc ky he thi sao?
+      - KMA: Dang ky tin chi KMA nhu the nao?
+      - Đăng ký tín chỉ KMA ntn?
+      - SV muốn học vượt hoặc đk học kỳ hè thì sao?
+      - ad oi, dk tin chi KMA ntn?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/huy_rut_hoc_phan
+  - intent: faq_hoc_vu/huy_rut_hoc_phan
+    examples: |
+      - Đã đăng ký môn rồi có được hủy/rút học phần không?
+      - Đã đăng ký học phần KMA có rút được không?
+      - Cách hủy môn hoặc rút tín chỉ ở Học viện?
+      - Cho em hỏi, đã đăng ký học phần KMA có rút được không?
+      - Cho mình hỏi, cách hủy môn hoặc rút tín chỉ ở Học viện?
+      - Admin ơi, đã đăng ký học phần KMA có rút được không?
+      - Ad cho mình hỏi, cách hủy môn hoặc rút tín chỉ ở Học viện?
+      - Mình muốn biết: Đã đăng ký học phần KMA có rút được không?
+      - Em đang thắc mắc: Cách hủy môn hoặc rút tín chỉ ở Học viện?
+      - Cho hỏi một chút, đã đăng ký học phần KMA có rút được không?
+      - Mình hỏi về KMA: Cách hủy môn hoặc rút tín chỉ ở Học viện?
+      - Về Học viện Kỹ thuật mật mã, đã đăng ký học phần KMA có rút được không?
+      - Ở KMA thì cách hủy môn hoặc rút tín chỉ ở Học viện?
+      - Sinh viên có được rút học phần đã đăng ký không?
+      - KMA ơi, cách hủy môn hoặc rút tín chỉ ở Học viện?
+      - Các anh chị cho em hỏi: Đã đăng ký học phần KMA có rút được không?
+      - Cần tư vấn giúp em: Cách hủy môn hoặc rút tín chỉ ở Học viện?
+      - Giải đáp giúp em: Đã đăng ký học phần KMA có rút được không?
+      - Em cần thông tin cụ thể: Cách hủy môn hoặc rút tín chỉ ở Học viện?
+      - Can KMA students drop or withdraw from a registered course?
+      - I have a question about KMA: Can KMA students drop or withdraw from a registered course?
+      - Please help me with this question: Can KMA students drop or withdraw from a registered course?
+      - Da dang ky hoc phan KMA co rut duoc khong?
+      - Cach huy mon hoac rut tin chi o Hoc vien?
+      - Cho em hoi, da dang ky hoc phan KMA co rut duoc khong?
+      - Ad oi, cach huy mon hoac rut tin chi o Hoc vien?
+      - KMA: Da dang ky hoc phan KMA co rut duoc khong?
+      - Đã đk học phần KMA có rút dc ko?
+      - Cách hủy môn hoặc rút tín chỉ ở HV?
+      - ad oi, da dk hoc phan KMA co rut dc ko?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/hoc_lai_cai_thien
+  - intent: faq_hoc_vu/hoc_lai_cai_thien
+    examples: |
+      - Trượt môn, học lại hay học cải thiện điểm cần làm gì?
+      - Rớt môn KMA thì học lại thế nào?
+      - Muốn học cải thiện điểm học phần ở Học viện phải làm gì?
+      - Cho em hỏi, rớt môn KMA thì học lại thế nào?
+      - Cho mình hỏi, muốn học cải thiện điểm học phần ở Học viện phải làm gì?
+      - Admin ơi, rớt môn KMA thì học lại thế nào?
+      - Ad cho mình hỏi, muốn học cải thiện điểm học phần ở Học viện phải làm gì?
+      - Mình muốn biết: Rớt môn KMA thì học lại thế nào?
+      - Em đang thắc mắc: Muốn học cải thiện điểm học phần ở Học viện phải làm gì?
+      - Cho hỏi một chút, rớt môn KMA thì học lại thế nào?
+      - Mình hỏi về KMA: Muốn học cải thiện điểm học phần ở Học viện phải làm gì?
+      - Về Học viện Kỹ thuật mật mã, rớt môn KMA thì học lại thế nào?
+      - Ở KMA thì muốn học cải thiện điểm học phần ở Học viện phải làm gì?
+      - Sinh viên có thể cải thiện điểm bằng cách nào?
+      - KMA ơi, muốn học cải thiện điểm học phần ở Học viện phải làm gì?
+      - Các anh chị cho em hỏi: Rớt môn KMA thì học lại thế nào?
+      - Khi nào thì tính là trượt môn?
+      - Giải đáp giúp em: Rớt môn KMA thì học lại thế nào?
+      - Có được đăng ký học cải thiện không?
+      - How do KMA students retake a failed course or improve a grade?
+      - I have a question about KMA: How do KMA students retake a failed course or improve a grade?
+      - Please help me with this question: How do KMA students retake a failed course or improve a grade?
+      - Rot mon KMA thi hoc lai the nao?
+      - Muon hoc cai thien diem hoc phan o Hoc vien phai lam gi?
+      - Cho em hoi, rot mon KMA thi hoc lai the nao?
+      - Ad oi, muon hoc cai thien diem hoc phan o Hoc vien phai lam gi?
+      - KMA: Rot mon KMA thi hoc lai the nao?
+      - Rớt môn KMA thì học lại tn?
+      - Muốn học cải thiện điểm học phần ở HV phải làm gì?
+      - ad oi, rot mon KMA thi hoc lai tn?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/tin_chi_gioi_han
+  - intent: faq_hoc_vu/tin_chi_gioi_han
+    examples: |
+      - Một kỳ được đăng ký tối đa/tối thiểu bao nhiêu tín chỉ?
+      - Sinh viên KMA được đăng ký tối thiểu và tối đa bao nhiêu tín chỉ trong một học kỳ?
+      - KMA giới hạn đăng ký bao nhiêu tín chỉ mỗi kỳ?
+      - Tín chỉ tối đa và tối thiểu trong một học kỳ Học viện?
+      - Cho em hỏi, KMA giới hạn đăng ký bao nhiêu tín chỉ mỗi kỳ?
+      - Cho mình hỏi, tín chỉ tối đa và tối thiểu trong một học kỳ Học viện?
+      - Admin ơi, KMA giới hạn đăng ký bao nhiêu tín chỉ mỗi kỳ?
+      - Ad cho mình hỏi, tín chỉ tối đa và tối thiểu trong một học kỳ Học viện?
+      - Mình muốn biết: KMA giới hạn đăng ký bao nhiêu tín chỉ mỗi kỳ?
+      - Em đang thắc mắc: Tín chỉ tối đa và tối thiểu trong một học kỳ Học viện?
+      - Cho hỏi một chút, KMA giới hạn đăng ký bao nhiêu tín chỉ mỗi kỳ?
+      - Mình hỏi về KMA: Tín chỉ tối đa và tối thiểu trong một học kỳ Học viện?
+      - Về Học viện Kỹ thuật mật mã, KMA giới hạn đăng ký bao nhiêu tín chỉ mỗi kỳ?
+      - Ở KMA thì tín chỉ tối đa và tối thiểu trong một học kỳ Học viện?
+      - Chương trình kỹ sư cần tối thiểu bao nhiêu tín chỉ?
+      - KMA ơi, tín chỉ tối đa và tối thiểu trong một học kỳ Học viện?
+      - Các anh chị cho em hỏi: KMA giới hạn đăng ký bao nhiêu tín chỉ mỗi kỳ?
+      - Chương trình cử nhân cần tối thiểu bao nhiêu tín chỉ?
+      - Giải đáp giúp em: KMA giới hạn đăng ký bao nhiêu tín chỉ mỗi kỳ?
+      - Em cần thông tin cụ thể: Tín chỉ tối đa và tối thiểu trong một học kỳ Học viện?
+      - What are the maximum and minimum credits per semester at KMA?
+      - I have a question about KMA: What are the maximum and minimum credits per semester at KMA?
+      - Please help me with this question: What are the maximum and minimum credits per semester at KMA?
+      - KMA gioi han dang ky bao nhieu tin chi moi ky?
+      - Tin chi toi da va toi thieu trong mot hoc ky Hoc vien?
+      - Cho em hoi, KMA gioi han dang ky bao nhieu tin chi moi ky?
+      - Ad oi, tin chi toi da va toi thieu trong mot hoc ky Hoc vien?
+      - KMA: KMA gioi han dang ky bao nhieu tin chi moi ky?
+      - KMA giới hạn đk bn tín chỉ mỗi kỳ?
+      - Tín chỉ tối đa và tối thiểu trong một học kỳ HV?
+      - ad oi, KMA gioi han dk bn tin chi moi ky?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/chuyen_can
+  - intent: faq_hoc_vu/chuyen_can
+    examples: |
+      - Nghỉ học bao nhiêu buổi thì mất chuyên cần hoặc không được thi?
+      - Nghỉ học bao nhiêu buổi thì mất điểm chuyên cần KMA?
+      - Nghỉ quá số tiết cho phép có bị cấm thi không?
+      - Cho em hỏi, nghỉ học bao nhiêu buổi thì mất điểm chuyên cần KMA?
+      - Cho mình hỏi, nghỉ quá số tiết cho phép có bị cấm thi không?
+      - Admin ơi, nghỉ học bao nhiêu buổi thì mất điểm chuyên cần KMA?
+      - Ad cho mình hỏi, nghỉ quá số tiết cho phép có bị cấm thi không?
+      - Mình muốn biết: Nghỉ học bao nhiêu buổi thì mất điểm chuyên cần KMA?
+      - Em đang thắc mắc: Nghỉ quá số tiết cho phép có bị cấm thi không?
+      - Cho hỏi một chút, nghỉ học bao nhiêu buổi thì mất điểm chuyên cần KMA?
+      - Mình hỏi về KMA: Nghỉ quá số tiết cho phép có bị cấm thi không?
+      - Về Học viện Kỹ thuật mật mã, nghỉ học bao nhiêu buổi thì mất điểm chuyên cần KMA?
+      - Ở KMA thì nghỉ quá số tiết cho phép có bị cấm thi không?
+      - Nghỉ quá 25% số buổi thì có được thi không?
+      - KMA ơi, nghỉ quá số tiết cho phép có bị cấm thi không?
+      - Các anh chị cho em hỏi: Nghỉ học bao nhiêu buổi thì mất điểm chuyên cần KMA?
+      - Nghỉ quá bao nhiêu thì không được thi?
+      - Giải đáp giúp em: Nghỉ học bao nhiêu buổi thì mất điểm chuyên cần KMA?
+      - Nghỉ học có phép có được tính chuyên cần không?
+      - How many absences are allowed before attendance penalties at KMA?
+      - I have a question about KMA: How many absences are allowed before attendance penalties at KMA?
+      - Please help me with this question: How many absences are allowed before attendance penalties at KMA?
+      - Nghi hoc bao nhieu buoi thi mat diem chuyen can KMA?
+      - Nghi qua so tiet cho phep co bi cam thi khong?
+      - Cho em hoi, nghi hoc bao nhieu buoi thi mat diem chuyen can KMA?
+      - Ad oi, nghi qua so tiet cho phep co bi cam thi khong?
+      - KMA: Nghi hoc bao nhieu buoi thi mat diem chuyen can KMA?
+      - Nghỉ học bn buổi thì mất điểm chuyên cần KMA?
+      - Nghỉ quá số tiết cho phép có bị cấm thi ko?
+      - ad oi, nghi hoc bn buoi thi mat diem chuyen can KMA?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/tinh_diem_hoc_phan
+  - intent: faq_hoc_vu/tinh_diem_hoc_phan
+    examples: |
+      - Điểm học phần tính theo TP1, TP2 và thi cuối kỳ ra sao?
+      - KMA tính điểm TP1 TP2 và cuối kỳ thế nào?
+      - Công thức tính điểm tổng kết môn học ở Học viện?
+      - Cho em hỏi, KMA tính điểm TP1 TP2 và cuối kỳ thế nào?
+      - Cho mình hỏi, công thức tính điểm tổng kết môn học ở Học viện?
+      - Admin ơi, KMA tính điểm TP1 TP2 và cuối kỳ thế nào?
+      - Ad cho mình hỏi, công thức tính điểm tổng kết môn học ở Học viện?
+      - Mình muốn biết: KMA tính điểm TP1 TP2 và cuối kỳ thế nào?
+      - Em đang thắc mắc: Công thức tính điểm tổng kết môn học ở Học viện?
+      - Cho hỏi một chút, KMA tính điểm TP1 TP2 và cuối kỳ thế nào?
+      - Mình hỏi về KMA: Công thức tính điểm tổng kết môn học ở Học viện?
+      - Về Học viện Kỹ thuật mật mã, KMA tính điểm TP1 TP2 và cuối kỳ thế nào?
+      - Ở KMA thì công thức tính điểm tổng kết môn học ở Học viện?
+      - Cách tính điểm học phần?
+      - KMA ơi, công thức tính điểm tổng kết môn học ở Học viện?
+      - Các anh chị cho em hỏi: KMA tính điểm TP1 TP2 và cuối kỳ thế nào?
+      - Điểm thi kết thúc học phần chiếm bao nhiêu phần trăm?
+      - Giải đáp giúp em: KMA tính điểm TP1 TP2 và cuối kỳ thế nào?
+      - Học viện tính điểm học phần theo cấu trúc nào?
+      - How is the final course grade calculated from assessments at KMA?
+      - I have a question about KMA: How is the final course grade calculated from assessments at KMA?
+      - Please help me with this question: How is the final course grade calculated from assessments at KMA?
+      - KMA tinh diem TP1 TP2 va cuoi ky the nao?
+      - Cong thuc tinh diem tong ket mon hoc o Hoc vien?
+      - Cho em hoi, KMA tinh diem TP1 TP2 va cuoi ky the nao?
+      - Ad oi, cong thuc tinh diem tong ket mon hoc o Hoc vien?
+      - KMA: KMA tinh diem TP1 TP2 va cuoi ky the nao?
+      - KMA tính điểm TP1 TP2 và cuối kỳ tn?
+      - Công thức tính điểm tổng kết môn học ở HV?
+      - ad oi, KMA tinh diem TP1 TP2 va cuoi ky tn?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/tinh_gpa
+  - intent: faq_hoc_vu/tinh_gpa
+    examples: |
+      - GPA học kỳ, tích lũy và xếp loại học lực tính thế nào?
+      - Cách tính GPA hệ 4 tại KMA?
+      - Điểm trung bình tích lũy và GPA học kỳ tính sao?
+      - Cho em hỏi, cách tính GPA hệ 4 tại KMA?
+      - Cho mình hỏi, điểm trung bình tích lũy và GPA học kỳ tính sao?
+      - Admin ơi, cách tính GPA hệ 4 tại KMA?
+      - Ad cho mình hỏi, điểm trung bình tích lũy và GPA học kỳ tính sao?
+      - Mình muốn biết: Cách tính GPA hệ 4 tại KMA?
+      - Em đang thắc mắc: Điểm trung bình tích lũy và GPA học kỳ tính sao?
+      - Cho hỏi một chút, cách tính GPA hệ 4 tại KMA?
+      - Mình hỏi về KMA: Điểm trung bình tích lũy và GPA học kỳ tính sao?
+      - Về Học viện Kỹ thuật mật mã, cách tính GPA hệ 4 tại KMA?
+      - Ở KMA thì điểm trung bình tích lũy và GPA học kỳ tính sao?
+      - Điểm trung bình hệ 10 được xếp loại ra sao?
+      - KMA ơi, điểm trung bình tích lũy và GPA học kỳ tính sao?
+      - Các anh chị cho em hỏi: Cách tính GPA hệ 4 tại KMA?
+      - Điểm trung bình tích lũy là gì?
+      - Giải đáp giúp em: Cách tính GPA hệ 4 tại KMA?
+      - Điểm trung bình học kỳ tính thế nào?
+      - How does KMA calculate semester and cumulative GPA?
+      - I have a question about KMA: How does KMA calculate semester and cumulative GPA?
+      - Please help me with this question: How does KMA calculate semester and cumulative GPA?
+      - Cach tinh GPA he 4 tai KMA?
+      - Diem trung binh tich luy va GPA hoc ky tinh sao?
+      - Cho em hoi, cach tinh GPA he 4 tai KMA?
+      - Ad oi, diem trung binh tich luy va GPA hoc ky tinh sao?
+      - KMA: Cach tinh GPA he 4 tai KMA?
+      - ad oi, cach tinh GPA he 4 tai KMA?
+      - Mình xin hỏi thêm: Cách tính GPA hệ 4 tại KMA?
+      - Mình xin hỏi thêm: Điểm trung bình tích lũy và GPA học kỳ tính sao?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/diem_ren_luyen
+  - intent: faq_hoc_vu/diem_ren_luyen
+    examples: |
+      - Điểm rèn luyện đánh giá, xếp loại và phúc tra thế nào?
+      - Điểm rèn luyện KMA được chấm thế nào?
+      - Cách tính và phúc tra điểm rèn luyện sinh viên?
+      - Cho em hỏi, điểm rèn luyện KMA được chấm thế nào?
+      - Cho mình hỏi, cách tính và phúc tra điểm rèn luyện sinh viên?
+      - Admin ơi, điểm rèn luyện KMA được chấm thế nào?
+      - Ad cho mình hỏi, cách tính và phúc tra điểm rèn luyện sinh viên?
+      - Mình muốn biết: Điểm rèn luyện KMA được chấm thế nào?
+      - Em đang thắc mắc: Cách tính và phúc tra điểm rèn luyện sinh viên?
+      - Cho hỏi một chút, điểm rèn luyện KMA được chấm thế nào?
+      - Mình hỏi về KMA: Cách tính và phúc tra điểm rèn luyện sinh viên?
+      - Về Học viện Kỹ thuật mật mã, điểm rèn luyện KMA được chấm thế nào?
+      - Ở KMA thì cách tính và phúc tra điểm rèn luyện sinh viên?
+      - Ai là người đánh giá điểm rèn luyện của sinh viên?
+      - KMA ơi, cách tính và phúc tra điểm rèn luyện sinh viên?
+      - Các anh chị cho em hỏi: Điểm rèn luyện KMA được chấm thế nào?
+      - Sinh viên có bị đánh giá điểm rèn luyện không?
+      - Giải đáp giúp em: Điểm rèn luyện KMA được chấm thế nào?
+      - Điểm rèn luyện dùng để làm gì?
+      - How is student conduct or training score evaluated at KMA?
+      - I have a question about KMA: How is student conduct or training score evaluated at KMA?
+      - Please help me with this question: How is student conduct or training score evaluated at KMA?
+      - Diem ren luyen KMA duoc cham the nao?
+      - Cach tinh va phuc tra diem ren luyen sinh vien?
+      - Cho em hoi, diem ren luyen KMA duoc cham the nao?
+      - Ad oi, cach tinh va phuc tra diem ren luyen sinh vien?
+      - KMA: Diem ren luyen KMA duoc cham the nao?
+      - Điểm rèn luyện KMA dc chấm tn?
+      - Cách tính và phúc tra điểm rèn luyện sv?
+      - ad oi, diem ren luyen KMA dc cham tn?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/canh_bao_buoc_thoi_hoc
+  - intent: faq_hoc_vu/canh_bao_buoc_thoi_hoc
+    examples: |
+      - Khi nào bị cảnh báo học tập hoặc buộc thôi học?
+      - GPA bao nhiêu bị cảnh báo học tập KMA?
+      - Khi nào sinh viên Học viện bị buộc thôi học?
+      - Cho em hỏi, GPA bao nhiêu bị cảnh báo học tập KMA?
+      - Cho mình hỏi, khi nào sinh viên Học viện bị buộc thôi học?
+      - Admin ơi, GPA bao nhiêu bị cảnh báo học tập KMA?
+      - Ad cho mình hỏi, khi nào sinh viên Học viện bị buộc thôi học?
+      - Mình muốn biết: GPA bao nhiêu bị cảnh báo học tập KMA?
+      - Em đang thắc mắc: Khi nào sinh viên Học viện bị buộc thôi học?
+      - Cho hỏi một chút, GPA bao nhiêu bị cảnh báo học tập KMA?
+      - Mình hỏi về KMA: Khi nào sinh viên Học viện bị buộc thôi học?
+      - Về Học viện Kỹ thuật mật mã, GPA bao nhiêu bị cảnh báo học tập KMA?
+      - Ở KMA thì khi nào sinh viên Học viện bị buộc thôi học?
+      - Khi nào sinh viên bị cảnh báo học tập?
+      - KMA ơi, khi nào sinh viên Học viện bị buộc thôi học?
+      - Các anh chị cho em hỏi: GPA bao nhiêu bị cảnh báo học tập KMA?
+      - Cần tư vấn giúp em: Khi nào sinh viên Học viện bị buộc thôi học?
+      - Giải đáp giúp em: GPA bao nhiêu bị cảnh báo học tập KMA?
+      - Em cần thông tin cụ thể: Khi nào sinh viên Học viện bị buộc thôi học?
+      - When does KMA issue an academic warning or dismissal?
+      - I have a question about KMA: When does KMA issue an academic warning or dismissal?
+      - Please help me with this question: When does KMA issue an academic warning or dismissal?
+      - GPA bao nhieu bi canh bao hoc tap KMA?
+      - Khi nao sinh vien Hoc vien bi buoc thoi hoc?
+      - Cho em hoi, GPA bao nhieu bi canh bao hoc tap KMA?
+      - Ad oi, khi nao sinh vien Hoc vien bi buoc thoi hoc?
+      - KMA: GPA bao nhieu bi canh bao hoc tap KMA?
+      - GPA bn bị cảnh báo học tập KMA?
+      - Khi nào sv HV bị buộc thôi học?
+      - ad oi, GPA bn bi canh bao hoc tap KMA?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/bao_luu_tam_nghi
+  - intent: faq_hoc_vu/bao_luu_tam_nghi
+    examples: |
+      - Muốn bảo lưu kết quả học tập hoặc tạm nghỉ học phải làm sao?
+      - Sinh viên KMA muốn bảo lưu học tập phải làm gì?
+      - Thủ tục tạm nghỉ học có bảo lưu kết quả tại Học viện?
+      - Cho em hỏi, sinh viên KMA muốn bảo lưu học tập phải làm gì?
+      - Cho mình hỏi, thủ tục tạm nghỉ học có bảo lưu kết quả tại Học viện?
+      - Admin ơi, sinh viên KMA muốn bảo lưu học tập phải làm gì?
+      - Ad cho mình hỏi, thủ tục tạm nghỉ học có bảo lưu kết quả tại Học viện?
+      - Mình muốn biết: Sinh viên KMA muốn bảo lưu học tập phải làm gì?
+      - Em đang thắc mắc: Thủ tục tạm nghỉ học có bảo lưu kết quả tại Học viện?
+      - Cho hỏi một chút, sinh viên KMA muốn bảo lưu học tập phải làm gì?
+      - Mình hỏi về KMA: Thủ tục tạm nghỉ học có bảo lưu kết quả tại Học viện?
+      - Về Học viện Kỹ thuật mật mã, sinh viên KMA muốn bảo lưu học tập phải làm gì?
+      - Ở KMA thì thủ tục tạm nghỉ học có bảo lưu kết quả tại Học viện?
+      - Sinh viên có được nghỉ học tạm thời không?
+      - KMA ơi, thủ tục tạm nghỉ học có bảo lưu kết quả tại Học viện?
+      - Các anh chị cho em hỏi: Sinh viên KMA muốn bảo lưu học tập phải làm gì?
+      - Nghỉ học có được bảo lưu điểm không?
+      - Giải đáp giúp em: Sinh viên KMA muốn bảo lưu học tập phải làm gì?
+      - Nghỉ học tạm thời tối đa bao lâu?
+      - How can KMA students request an academic leave of absence?
+      - I have a question about KMA: How can KMA students request an academic leave of absence?
+      - Please help me with this question: How can KMA students request an academic leave of absence?
+      - Sinh vien KMA muon bao luu hoc tap phai lam gi?
+      - Thu tuc tam nghi hoc co bao luu ket qua tai Hoc vien?
+      - Cho em hoi, sinh vien KMA muon bao luu hoc tap phai lam gi?
+      - Ad oi, thu tuc tam nghi hoc co bao luu ket qua tai Hoc vien?
+      - KMA: Sinh vien KMA muon bao luu hoc tap phai lam gi?
+      - SV KMA muốn bảo lưu học tập phải làm gì?
+      - Thủ tục tạm nghỉ học có bảo lưu kết quả tại HV?
+      - ad oi, sv KMA muon bao luu hoc tap phai lam gi?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/tiep_tuc_hoc
+  - intent: faq_hoc_vu/tiep_tuc_hoc
+    examples: |
+      - Hết thời gian bảo lưu muốn quay lại học thì làm gì?
+      - Hết thời gian bảo lưu quay lại KMA thế nào?
+      - Thủ tục xin tiếp tục học sau tạm nghỉ ở Học viện?
+      - Cho em hỏi, hết thời gian bảo lưu quay lại KMA thế nào?
+      - Cho mình hỏi, thủ tục xin tiếp tục học sau tạm nghỉ ở Học viện?
+      - Admin ơi, hết thời gian bảo lưu quay lại KMA thế nào?
+      - Ad cho mình hỏi, thủ tục xin tiếp tục học sau tạm nghỉ ở Học viện?
+      - Mình muốn biết: Hết thời gian bảo lưu quay lại KMA thế nào?
+      - Em đang thắc mắc: Thủ tục xin tiếp tục học sau tạm nghỉ ở Học viện?
+      - Cho hỏi một chút, hết thời gian bảo lưu quay lại KMA thế nào?
+      - Mình hỏi về KMA: Thủ tục xin tiếp tục học sau tạm nghỉ ở Học viện?
+      - Về Học viện Kỹ thuật mật mã, hết thời gian bảo lưu quay lại KMA thế nào?
+      - Ở KMA thì thủ tục xin tiếp tục học sau tạm nghỉ ở Học viện?
+      - Em đang tìm hiểu về KMA, hết thời gian bảo lưu quay lại KMA thế nào?
+      - KMA ơi, thủ tục xin tiếp tục học sau tạm nghỉ ở Học viện?
+      - Các anh chị cho em hỏi: Hết thời gian bảo lưu quay lại KMA thế nào?
+      - Cần tư vấn giúp em: Thủ tục xin tiếp tục học sau tạm nghỉ ở Học viện?
+      - Giải đáp giúp em: Hết thời gian bảo lưu quay lại KMA thế nào?
+      - Em cần thông tin cụ thể: Thủ tục xin tiếp tục học sau tạm nghỉ ở Học viện?
+      - How can students resume studies at KMA after an approved leave?
+      - I have a question about KMA: How can students resume studies at KMA after an approved leave?
+      - Please help me with this question: How can students resume studies at KMA after an approved leave?
+      - Het thoi gian bao luu quay lai KMA the nao?
+      - Thu tuc xin tiep tuc hoc sau tam nghi o Hoc vien?
+      - Cho em hoi, het thoi gian bao luu quay lai KMA the nao?
+      - Ad oi, thu tuc xin tiep tuc hoc sau tam nghi o Hoc vien?
+      - KMA: Het thoi gian bao luu quay lai KMA the nao?
+      - Hết thời gian bảo lưu quay lại KMA tn?
+      - Thủ tục xin tiếp tục học sau tạm nghỉ ở HV?
+      - ad oi, het thoi gian bao luu quay lai KMA tn?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/thoi_hoc
+  - intent: faq_hoc_vu/thoi_hoc
+    examples: |
+      - Sinh viên muốn thôi học tự nguyện thì làm thủ tục gì?
+      - Muốn xin thôi học KMA cần thủ tục gì?
+      - Sinh viên KMA cần làm thủ tục gì nếu muốn tự nguyện thôi học?
+      - Sinh viên Học viện tự nguyện nghỉ học phải làm đơn gì?
+      - Cho em hỏi, muốn xin thôi học KMA cần thủ tục gì?
+      - Cho mình hỏi, sinh viên Học viện tự nguyện nghỉ học phải làm đơn gì?
+      - Admin ơi, muốn xin thôi học KMA cần thủ tục gì?
+      - Ad cho mình hỏi, sinh viên Học viện tự nguyện nghỉ học phải làm đơn gì?
+      - Mình muốn biết: Muốn xin thôi học KMA cần thủ tục gì?
+      - Em đang thắc mắc: Sinh viên Học viện tự nguyện nghỉ học phải làm đơn gì?
+      - Cho hỏi một chút, muốn xin thôi học KMA cần thủ tục gì?
+      - Mình hỏi về KMA: Sinh viên Học viện tự nguyện nghỉ học phải làm đơn gì?
+      - Về Học viện Kỹ thuật mật mã, muốn xin thôi học KMA cần thủ tục gì?
+      - Ở KMA thì sinh viên Học viện tự nguyện nghỉ học phải làm đơn gì?
+      - Em đang tìm hiểu về KMA, muốn xin thôi học KMA cần thủ tục gì?
+      - KMA ơi, sinh viên Học viện tự nguyện nghỉ học phải làm đơn gì?
+      - Các anh chị cho em hỏi: Muốn xin thôi học KMA cần thủ tục gì?
+      - Cần tư vấn giúp em: Sinh viên Học viện tự nguyện nghỉ học phải làm đơn gì?
+      - Giải đáp giúp em: Muốn xin thôi học KMA cần thủ tục gì?
+      - Em cần thông tin cụ thể: Sinh viên Học viện tự nguyện nghỉ học phải làm đơn gì?
+      - How can a KMA student formally withdraw from the academy?
+      - I have a question about KMA: How can a KMA student formally withdraw from the academy?
+      - Please help me with this question: How can a KMA student formally withdraw from the academy?
+      - Muon xin thoi hoc KMA can thu tuc gi?
+      - Sinh vien Hoc vien tu nguyen nghi hoc phai lam don gi?
+      - Cho em hoi, muon xin thoi hoc KMA can thu tuc gi?
+      - Ad oi, sinh vien Hoc vien tu nguyen nghi hoc phai lam don gi?
+      - KMA: Muon xin thoi hoc KMA can thu tuc gi?
+      - SV HV tự nguyện nghỉ học phải làm đơn gì?
+      - ad oi, muon xin thoi hoc KMA can thu tuc gi?
+      - Mình xin hỏi thêm: Muốn xin thôi học KMA cần thủ tục gì?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/chuyen_nganh
+  - intent: faq_hoc_vu/chuyen_nganh
+    examples: |
+      - Sinh viên có được chuyển ngành/chương trình đào tạo không?
+      - Có chuyển ngành trong KMA được không?
+      - Điều kiện xin đổi chuyên ngành hoặc chương trình đào tạo?
+      - Cho em hỏi, có chuyển ngành trong KMA được không?
+      - Cho mình hỏi, điều kiện xin đổi chuyên ngành hoặc chương trình đào tạo?
+      - Admin ơi, có chuyển ngành trong KMA được không?
+      - Ad cho mình hỏi, điều kiện xin đổi chuyên ngành hoặc chương trình đào tạo?
+      - Mình muốn biết: Có chuyển ngành trong KMA được không?
+      - Em đang thắc mắc: Điều kiện xin đổi chuyên ngành hoặc chương trình đào tạo?
+      - Cho hỏi một chút, có chuyển ngành trong KMA được không?
+      - Mình hỏi về KMA: Điều kiện xin đổi chuyên ngành hoặc chương trình đào tạo?
+      - Về Học viện Kỹ thuật mật mã, có chuyển ngành trong KMA được không?
+      - Ở KMA thì điều kiện xin đổi chuyên ngành hoặc chương trình đào tạo?
+      - Sinh viên có được chuyển ngành không?
+      - KMA ơi, điều kiện xin đổi chuyên ngành hoặc chương trình đào tạo?
+      - Các anh chị cho em hỏi: Có chuyển ngành trong KMA được không?
+      - Có được chuyển ngành không?
+      - Giải đáp giúp em: Có chuyển ngành trong KMA được không?
+      - Sinh viên năm nhất có được chuyển ngành không?
+      - Can KMA students change majors or academic programs?
+      - I have a question about KMA: Can KMA students change majors or academic programs?
+      - Please help me with this question: Can KMA students change majors or academic programs?
+      - Co chuyen nganh trong KMA duoc khong?
+      - Dieu kien xin doi chuyen nganh hoac chuong trinh dao tao?
+      - Cho em hoi, co chuyen nganh trong KMA duoc khong?
+      - Ad oi, dieu kien xin doi chuyen nganh hoac chuong trinh dao tao?
+      - KMA: Co chuyen nganh trong KMA duoc khong?
+      - Có chuyển ngành trong KMA dc ko?
+      - ad oi, co chuyen nganh trong KMA dc ko?
+      - Mình xin hỏi thêm: Có chuyển ngành trong KMA được không?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/chung_chi_mien_hoc
+  - intent: faq_hoc_vu/chung_chi_mien_hoc
+    examples: |
+      - Chứng chỉ tin học hay văn bằng khác có được miễn học phần không?
+      - Có chứng chỉ tin học được miễn môn tại KMA không?
+      - KMA có công nhận học phần tương đương từ văn bằng khác không?
+      - Cho em hỏi, có chứng chỉ tin học được miễn môn tại KMA không?
+      - Cho mình hỏi, KMA có công nhận học phần tương đương từ văn bằng khác không?
+      - Admin ơi, có chứng chỉ tin học được miễn môn tại KMA không?
+      - Ad cho mình hỏi, KMA có công nhận học phần tương đương từ văn bằng khác không?
+      - Mình muốn biết: Có chứng chỉ tin học được miễn môn tại KMA không?
+      - Em đang thắc mắc: KMA có công nhận học phần tương đương từ văn bằng khác không?
+      - Cho hỏi một chút, có chứng chỉ tin học được miễn môn tại KMA không?
+      - Mình hỏi về KMA: KMA có công nhận học phần tương đương từ văn bằng khác không?
+      - Về Học viện Kỹ thuật mật mã, có chứng chỉ tin học được miễn môn tại KMA không?
+      - Ở KMA thì KMA có công nhận học phần tương đương từ văn bằng khác không?
+      - Em đang tìm hiểu về KMA, có chứng chỉ tin học được miễn môn tại KMA không?
+      - KMA ơi, KMA có công nhận học phần tương đương từ văn bằng khác không?
+      - Các anh chị cho em hỏi: Có chứng chỉ tin học được miễn môn tại KMA không?
+      - Cần tư vấn giúp em: KMA có công nhận học phần tương đương từ văn bằng khác không?
+      - Giải đáp giúp em: Có chứng chỉ tin học được miễn môn tại KMA không?
+      - Em cần thông tin cụ thể: KMA có công nhận học phần tương đương từ văn bằng khác không?
+      - Can external certificates or prior qualifications exempt KMA courses?
+      - I have a question about KMA: Can external certificates or prior qualifications exempt KMA courses?
+      - Please help me with this question: Can external certificates or prior qualifications exempt KMA courses?
+      - Co chung chi tin hoc duoc mien mon tai KMA khong?
+      - KMA co cong nhan hoc phan tuong duong tu van bang khac khong?
+      - Cho em hoi, co chung chi tin hoc duoc mien mon tai KMA khong?
+      - Ad oi, KMA co cong nhan hoc phan tuong duong tu van bang khac khong?
+      - KMA: Co chung chi tin hoc duoc mien mon tai KMA khong?
+      - Có chứng chỉ tin học dc miễn môn tại KMA ko?
+      - KMA có công nhận học phần tương đương từ văn bằng khác ko?
+      - ad oi, co chung chi tin hoc dc mien mon tai KMA ko?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/thuc_tap_do_an
+  - intent: faq_hoc_vu/thuc_tap_do_an
+    examples: |
+      - Điều kiện thực tập, nhận đồ án và khóa luận tốt nghiệp là gì?
+      - Điều kiện nhận đồ án tốt nghiệp KMA là gì?
+      - Muốn thực tập tốt nghiệp tại Học viện cần đạt gì?
+      - Cho em hỏi, điều kiện nhận đồ án tốt nghiệp KMA là gì?
+      - Cho mình hỏi, muốn thực tập tốt nghiệp tại Học viện cần đạt gì?
+      - Admin ơi, điều kiện nhận đồ án tốt nghiệp KMA là gì?
+      - Ad cho mình hỏi, muốn thực tập tốt nghiệp tại Học viện cần đạt gì?
+      - Mình muốn biết: Điều kiện nhận đồ án tốt nghiệp KMA là gì?
+      - Em đang thắc mắc: Muốn thực tập tốt nghiệp tại Học viện cần đạt gì?
+      - Cho hỏi một chút, điều kiện nhận đồ án tốt nghiệp KMA là gì?
+      - Mình hỏi về KMA: Muốn thực tập tốt nghiệp tại Học viện cần đạt gì?
+      - Về Học viện Kỹ thuật mật mã, điều kiện nhận đồ án tốt nghiệp KMA là gì?
+      - Ở KMA thì muốn thực tập tốt nghiệp tại Học viện cần đạt gì?
+      - Điều kiện đi thực tập tốt nghiệp là gì?
+      - KMA ơi, muốn thực tập tốt nghiệp tại Học viện cần đạt gì?
+      - Các anh chị cho em hỏi: Điều kiện nhận đồ án tốt nghiệp KMA là gì?
+      - Làm đồ án tốt nghiệp cần điều kiện gì?
+      - Giải đáp giúp em: Điều kiện nhận đồ án tốt nghiệp KMA là gì?
+      - Điều kiện làm đồ án tốt nghiệp là gì?
+      - What are KMA's internship and graduation project eligibility requirements?
+      - I have a question about KMA: What are KMA's internship and graduation project eligibility requirements?
+      - Please help me with this question: What are KMA's internship and graduation project eligibility requirements?
+      - Dieu kien nhan do an tot nghiep KMA la gi?
+      - Muon thuc tap tot nghiep tai Hoc vien can dat gi?
+      - Cho em hoi, dieu kien nhan do an tot nghiep KMA la gi?
+      - Ad oi, muon thuc tap tot nghiep tai Hoc vien can dat gi?
+      - KMA: Dieu kien nhan do an tot nghiep KMA la gi?
+      - Muốn thực tập tốt nghiệp tại HV cần đạt gì?
+      - ad oi, dieu kien nhan do an tot nghiep KMA la gi?
+      - Mình xin hỏi thêm: Điều kiện nhận đồ án tốt nghiệp KMA là gì?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/tot_nghiep
+  - intent: faq_hoc_vu/tot_nghiep
+    examples: |
+      - Điều kiện xét công nhận tốt nghiệp gồm những gì?
+      - KMA xét tốt nghiệp cần điều kiện nào?
+      - Sinh viên đủ tín chỉ GPA và chuẩn đầu ra để ra trường chưa?
+      - Cho em hỏi, KMA xét tốt nghiệp cần điều kiện nào?
+      - Cho mình hỏi, sinh viên đủ tín chỉ GPA và chuẩn đầu ra để ra trường chưa?
+      - Admin ơi, KMA xét tốt nghiệp cần điều kiện nào?
+      - Ad cho mình hỏi, sinh viên đủ tín chỉ GPA và chuẩn đầu ra để ra trường chưa?
+      - Mình muốn biết: KMA xét tốt nghiệp cần điều kiện nào?
+      - Em đang thắc mắc: Sinh viên đủ tín chỉ GPA và chuẩn đầu ra để ra trường chưa?
+      - Cho hỏi một chút, KMA xét tốt nghiệp cần điều kiện nào?
+      - Mình hỏi về KMA: Sinh viên đủ tín chỉ GPA và chuẩn đầu ra để ra trường chưa?
+      - Về Học viện Kỹ thuật mật mã, KMA xét tốt nghiệp cần điều kiện nào?
+      - Ở KMA thì sinh viên đủ tín chỉ GPA và chuẩn đầu ra để ra trường chưa?
+      - Điều kiện để được xét tốt nghiệp là gì?
+      - KMA ơi, sinh viên đủ tín chỉ GPA và chuẩn đầu ra để ra trường chưa?
+      - Các anh chị cho em hỏi: KMA xét tốt nghiệp cần điều kiện nào?
+      - Khi nào sinh viên được xét tốt nghiệp?
+      - Giải đáp giúp em: KMA xét tốt nghiệp cần điều kiện nào?
+      - Ai quyết định công nhận tốt nghiệp?
+      - What requirements must KMA students meet to graduate?
+      - I have a question about KMA: What requirements must KMA students meet to graduate?
+      - Please help me with this question: What requirements must KMA students meet to graduate?
+      - KMA xet tot nghiep can dieu kien nao?
+      - Sinh vien du tin chi GPA va chuan dau ra de ra truong chua?
+      - Cho em hoi, KMA xet tot nghiep can dieu kien nao?
+      - Ad oi, sinh vien du tin chi GPA va chuan dau ra de ra truong chua?
+      - KMA: KMA xet tot nghiep can dieu kien nao?
+      - SV đủ tín chỉ GPA và chuẩn đầu ra để ra trường chưa?
+      - ad oi, KMA xet tot nghiep can dieu kien nao?
+      - Mình xin hỏi thêm: KMA xét tốt nghiệp cần điều kiện nào?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/xep_hang_tot_nghiep
+  - intent: faq_hoc_vu/xep_hang_tot_nghiep
+    examples: |
+      - Xếp loại bằng và trường hợp hạ hạng tốt nghiệp thế nào?
+      - Bằng tốt nghiệp KMA xếp loại thế nào?
+      - Những trường hợp nào bị hạ hạng tốt nghiệp Học viện?
+      - Cho em hỏi, bằng tốt nghiệp KMA xếp loại thế nào?
+      - Cho mình hỏi, những trường hợp nào bị hạ hạng tốt nghiệp Học viện?
+      - Admin ơi, bằng tốt nghiệp KMA xếp loại thế nào?
+      - Ad cho mình hỏi, những trường hợp nào bị hạ hạng tốt nghiệp Học viện?
+      - Mình muốn biết: Bằng tốt nghiệp KMA xếp loại thế nào?
+      - Em đang thắc mắc: Những trường hợp nào bị hạ hạng tốt nghiệp Học viện?
+      - Cho hỏi một chút, bằng tốt nghiệp KMA xếp loại thế nào?
+      - Mình hỏi về KMA: Những trường hợp nào bị hạ hạng tốt nghiệp Học viện?
+      - Về Học viện Kỹ thuật mật mã, bằng tốt nghiệp KMA xếp loại thế nào?
+      - Ở KMA thì những trường hợp nào bị hạ hạng tốt nghiệp Học viện?
+      - Khi nào bị giảm hạng tốt nghiệp?
+      - KMA ơi, những trường hợp nào bị hạ hạng tốt nghiệp Học viện?
+      - Các anh chị cho em hỏi: Bằng tốt nghiệp KMA xếp loại thế nào?
+      - Xếp hạng tốt nghiệp: ngưỡng điểm như thế nào?
+      - Giải đáp giúp em: Bằng tốt nghiệp KMA xếp loại thế nào?
+      - Em cần thông tin cụ thể: Những trường hợp nào bị hạ hạng tốt nghiệp Học viện?
+      - How does KMA classify graduation honors and lower degree classifications?
+      - I have a question about KMA: How does KMA classify graduation honors and lower degree classifications?
+      - Please help me with this question: How does KMA classify graduation honors and lower degree classifications?
+      - Bang tot nghiep KMA xep loai the nao?
+      - Nhung truong hop nao bi ha hang tot nghiep Hoc vien?
+      - Cho em hoi, bang tot nghiep KMA xep loai the nao?
+      - Ad oi, nhung truong hop nao bi ha hang tot nghiep Hoc vien?
+      - KMA: Bang tot nghiep KMA xep loai the nao?
+      - Bằng tốt nghiệp KMA xếp loại tn?
+      - Những trường hợp nào bị hạ hạng tốt nghiệp HV?
+      - ad oi, bang tot nghiep KMA xep loai tn?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/hoc_hai_chuong_trinh
+  - intent: faq_hoc_vu/hoc_hai_chuong_trinh
+    examples: |
+      - Có được học song ngành hoặc chương trình thứ hai không?
+      - KMA có cho học song ngành không?
+      - Điều kiện học chương trình thứ hai tại Học viện?
+      - Cho em hỏi, KMA có cho học song ngành không?
+      - Cho mình hỏi, điều kiện học chương trình thứ hai tại Học viện?
+      - Admin ơi, KMA có cho học song ngành không?
+      - Ad cho mình hỏi, điều kiện học chương trình thứ hai tại Học viện?
+      - Mình muốn biết: KMA có cho học song ngành không?
+      - Em đang thắc mắc: Điều kiện học chương trình thứ hai tại Học viện?
+      - Cho hỏi một chút, KMA có cho học song ngành không?
+      - Mình hỏi về KMA: Điều kiện học chương trình thứ hai tại Học viện?
+      - Về Học viện Kỹ thuật mật mã, KMA có cho học song ngành không?
+      - Ở KMA thì điều kiện học chương trình thứ hai tại Học viện?
+      - Sinh viên có thể học chương trình thứ hai không?
+      - KMA ơi, điều kiện học chương trình thứ hai tại Học viện?
+      - Các anh chị cho em hỏi: KMA có cho học song ngành không?
+      - Có được học cùng lúc hai chương trình không?
+      - Giải đáp giúp em: KMA có cho học song ngành không?
+      - Em cần thông tin cụ thể: Điều kiện học chương trình thứ hai tại Học viện?
+      - Can KMA students enroll in a second degree program?
+      - I have a question about KMA: Can KMA students enroll in a second degree program?
+      - Please help me with this question: Can KMA students enroll in a second degree program?
+      - KMA co cho hoc song nganh khong?
+      - Dieu kien hoc chuong trinh thu hai tai Hoc vien?
+      - Cho em hoi, KMA co cho hoc song nganh khong?
+      - Ad oi, dieu kien hoc chuong trinh thu hai tai Hoc vien?
+      - KMA: KMA co cho hoc song nganh khong?
+      - KMA có cho học song ngành ko?
+      - Điều kiện học chương trình thứ hai tại HV?
+      - ad oi, KMA co cho hoc song nganh ko?
+
+  # 05 · HỌC VỤ, ĐĂNG KÝ HỌC PHẦN | intent trong Excel: hoc_vu/lich_hoc_lich_thi
+  - intent: faq_hoc_vu/lich_hoc_lich_thi
+    examples: |
+      - Em xem lịch học và lịch thi ở đâu?
+      - Xem thời khóa biểu sinh viên KMA ở đâu?
+      - Sinh viên KMA có thể tra cứu lịch học và lịch thi của mình ở đâu?
+      - Tra lịch thi và lịch học trong hệ thống Học viện?
+      - Cho em hỏi, xem thời khóa biểu sinh viên KMA ở đâu?
+      - Cho mình hỏi, tra lịch thi và lịch học trong hệ thống Học viện?
+      - Admin ơi, xem thời khóa biểu sinh viên KMA ở đâu?
+      - Ad cho mình hỏi, tra lịch thi và lịch học trong hệ thống Học viện?
+      - Mình muốn biết: Xem thời khóa biểu sinh viên KMA ở đâu?
+      - Em đang thắc mắc: Tra lịch thi và lịch học trong hệ thống Học viện?
+      - Cho hỏi một chút, xem thời khóa biểu sinh viên KMA ở đâu?
+      - Mình hỏi về KMA: Tra lịch thi và lịch học trong hệ thống Học viện?
+      - Về Học viện Kỹ thuật mật mã, xem thời khóa biểu sinh viên KMA ở đâu?
+      - Ở KMA thì tra lịch thi và lịch học trong hệ thống Học viện?
+      - Em đang tìm hiểu về KMA, xem thời khóa biểu sinh viên KMA ở đâu?
+      - KMA ơi, tra lịch thi và lịch học trong hệ thống Học viện?
+      - Các anh chị cho em hỏi: Xem thời khóa biểu sinh viên KMA ở đâu?
+      - Cần tư vấn giúp em: Tra lịch thi và lịch học trong hệ thống Học viện?
+      - Giải đáp giúp em: Xem thời khóa biểu sinh viên KMA ở đâu?
+      - Em cần thông tin cụ thể: Tra lịch thi và lịch học trong hệ thống Học viện?
+      - Where can KMA students check class and exam schedules?
+      - I have a question about KMA: Where can KMA students check class and exam schedules?
+      - Please help me with this question: Where can KMA students check class and exam schedules?
+      - Xem thoi khoa bieu sinh vien KMA o dau?
+      - Tra lich thi va lich hoc trong he thong Hoc vien?
+      - Cho em hoi, xem thoi khoa bieu sinh vien KMA o dau?
+      - Ad oi, tra lich thi va lich hoc trong he thong Hoc vien?
+      - KMA: Xem thoi khoa bieu sinh vien KMA o dau?
+      - Xem thời khóa biểu sv KMA ở đâu?
+      - Tra lịch thi và lịch học trong hệ thống HV?
+      - ad oi, xem thoi khoa bieu sv KMA o dau?

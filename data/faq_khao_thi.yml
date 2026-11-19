@@ -1,0 +1,377 @@
+version: "3.1"
+
+nlu:
+  # 06 · THI CỬ & KHẢO THÍ | intent trong Excel: khao_thi/tong_quan
+  - intent: faq_khao_thi/tong_quan
+    examples: |
+      - Quy định thi cử của KMA như thế nào?
+      - Quy chế thi cử KMA gồm những gì?
+      - Các nội quy cần biết khi dự thi ở Học viện?
+      - Cho em hỏi, quy chế thi cử KMA gồm những gì?
+      - Cho mình hỏi, các nội quy cần biết khi dự thi ở Học viện?
+      - Admin ơi, quy chế thi cử KMA gồm những gì?
+      - Ad cho mình hỏi, các nội quy cần biết khi dự thi ở Học viện?
+      - Mình muốn biết: Quy chế thi cử KMA gồm những gì?
+      - Em đang thắc mắc: Các nội quy cần biết khi dự thi ở Học viện?
+      - Cho hỏi một chút, quy chế thi cử KMA gồm những gì?
+      - Mình hỏi về KMA: Các nội quy cần biết khi dự thi ở Học viện?
+      - Về Học viện Kỹ thuật mật mã, quy chế thi cử KMA gồm những gì?
+      - Ở KMA thì các nội quy cần biết khi dự thi ở Học viện?
+      - Kỳ thi phụ được tổ chức khi nào?
+      - KMA ơi, các nội quy cần biết khi dự thi ở Học viện?
+      - Các anh chị cho em hỏi: Quy chế thi cử KMA gồm những gì?
+      - Cần tư vấn giúp em: Các nội quy cần biết khi dự thi ở Học viện?
+      - Giải đáp giúp em: Quy chế thi cử KMA gồm những gì?
+      - Em cần thông tin cụ thể: Các nội quy cần biết khi dự thi ở Học viện?
+      - What exam regulations apply to KMA students?
+      - I have a question about KMA: What exam regulations apply to KMA students?
+      - Please help me with this question: What exam regulations apply to KMA students?
+      - Quy che thi cu KMA gom nhung gi?
+      - Cac noi quy can biet khi du thi o Hoc vien?
+      - Cho em hoi, quy che thi cu KMA gom nhung gi?
+      - Ad oi, cac noi quy can biet khi du thi o Hoc vien?
+      - KMA: Quy che thi cu KMA gom nhung gi?
+      - Các nội quy cần biết khi dự thi ở HV?
+      - ad oi, quy che thi cu KMA gom nhung gi?
+      - Mình xin hỏi thêm: Quy chế thi cử KMA gồm những gì?
+
+  # 06 · THI CỬ & KHẢO THÍ | intent trong Excel: khao_thi/dieu_kien_du_thi
+  - intent: faq_khao_thi/dieu_kien_du_thi
+    examples: |
+      - Điều kiện để được dự thi kết thúc học phần là gì?
+      - Điều kiện được thi cuối kỳ ở KMA?
+      - Học phần cần đạt yêu cầu gì để được dự thi kết thúc?
+      - Cho em hỏi, điều kiện được thi cuối kỳ ở KMA?
+      - Cho mình hỏi, học phần cần đạt yêu cầu gì để được dự thi kết thúc?
+      - Admin ơi, điều kiện được thi cuối kỳ ở KMA?
+      - Ad cho mình hỏi, học phần cần đạt yêu cầu gì để được dự thi kết thúc?
+      - Mình muốn biết: Điều kiện được thi cuối kỳ ở KMA?
+      - Em đang thắc mắc: Học phần cần đạt yêu cầu gì để được dự thi kết thúc?
+      - Cho hỏi một chút, điều kiện được thi cuối kỳ ở KMA?
+      - Mình hỏi về KMA: Học phần cần đạt yêu cầu gì để được dự thi kết thúc?
+      - Về Học viện Kỹ thuật mật mã, điều kiện được thi cuối kỳ ở KMA?
+      - Ở KMA thì học phần cần đạt yêu cầu gì để được dự thi kết thúc?
+      - KMA ơi, học phần cần đạt yêu cầu gì để được dự thi kết thúc?
+      - Các anh chị cho em hỏi: Điều kiện được thi cuối kỳ ở KMA?
+      - Sinh viên cần đáp ứng điều kiện gì để được dự thi kết thúc học phần?
+      - Giải đáp giúp em: Điều kiện được thi cuối kỳ ở KMA?
+      - Ai quyết định sinh viên đủ điều kiện dự thi?
+      - What conditions must KMA students meet to sit a final exam?
+      - I have a question about KMA: What conditions must KMA students meet to sit a final exam?
+      - Please help me with this question: What conditions must KMA students meet to sit a final exam?
+      - Dieu kien duoc thi cuoi ky o KMA?
+      - Hoc phan can dat yeu cau gi de duoc du thi ket thuc?
+      - Cho em hoi, dieu kien duoc thi cuoi ky o KMA?
+      - Ad oi, hoc phan can dat yeu cau gi de duoc du thi ket thuc?
+      - KMA: Dieu kien duoc thi cuoi ky o KMA?
+      - Điều kiện dc thi cuối kỳ ở KMA?
+      - Học phần cần đạt yêu cầu gì để dc dự thi kết thúc?
+      - ad oi, dieu kien dc thi cuoi ky o KMA?
+      - Mình xin hỏi thêm: Điều kiện được thi cuối kỳ ở KMA?
+
+  # 06 · THI CỬ & KHẢO THÍ | intent trong Excel: khao_thi/thi_lai
+  - intent: faq_khao_thi/thi_lai
+    examples: |
+      - Thi trượt thì được thi lại mấy lần, điểm tối đa bao nhiêu?
+      - Sinh viên KMA thi trượt được thi lại bao nhiêu lần và điểm tối đa của lần thi lại là bao nhiêu?
+      - Rớt thi cuối kỳ KMA được thi lại mấy lần?
+      - Điểm thi lại tại Học viện tối đa là bao nhiêu?
+      - Cho em hỏi, rớt thi cuối kỳ KMA được thi lại mấy lần?
+      - Cho mình hỏi, điểm thi lại tại Học viện tối đa là bao nhiêu?
+      - Admin ơi, rớt thi cuối kỳ KMA được thi lại mấy lần?
+      - Ad cho mình hỏi, điểm thi lại tại Học viện tối đa là bao nhiêu?
+      - Mình muốn biết: Rớt thi cuối kỳ KMA được thi lại mấy lần?
+      - Em đang thắc mắc: Điểm thi lại tại Học viện tối đa là bao nhiêu?
+      - Cho hỏi một chút, rớt thi cuối kỳ KMA được thi lại mấy lần?
+      - Mình hỏi về KMA: Điểm thi lại tại Học viện tối đa là bao nhiêu?
+      - Về Học viện Kỹ thuật mật mã, rớt thi cuối kỳ KMA được thi lại mấy lần?
+      - Ở KMA thì điểm thi lại tại Học viện tối đa là bao nhiêu?
+      - Điểm thi lần 2 tối đa là bao nhiêu?
+      - KMA ơi, điểm thi lại tại Học viện tối đa là bao nhiêu?
+      - Các anh chị cho em hỏi: Rớt thi cuối kỳ KMA được thi lại mấy lần?
+      - Lệ phí thi lại là bao nhiêu?
+      - Giải đáp giúp em: Rớt thi cuối kỳ KMA được thi lại mấy lần?
+      - Một học phần được thi tối đa mấy lần?
+      - How many retake exams does KMA allow and what grade cap applies?
+      - I have a question about KMA: How many retake exams does KMA allow and what grade cap applies?
+      - Please help me with this question: How many retake exams does KMA allow and what grade cap applies?
+      - Rot thi cuoi ky KMA duoc thi lai may lan?
+      - Diem thi lai tai Hoc vien toi da la bao nhieu?
+      - Cho em hoi, rot thi cuoi ky KMA duoc thi lai may lan?
+      - Ad oi, diem thi lai tai Hoc vien toi da la bao nhieu?
+      - KMA: Rot thi cuoi ky KMA duoc thi lai may lan?
+      - Rớt thi cuối kỳ KMA dc thi lại mấy lần?
+      - Điểm thi lại tại HV tối đa là bn?
+      - ad oi, rot thi cuoi ky KMA dc thi lai may lan?
+
+  # 06 · THI CỬ & KHẢO THÍ | intent trong Excel: khao_thi/vang_thi_hoan_thi
+  - intent: faq_khao_thi/vang_thi_hoan_thi
+    examples: |
+      - Vắng thi hoặc muốn hoãn thi phải làm gì?
+      - Bị ốm vắng thi KMA phải xin hoãn thế nào?
+      - Quy trình xin thi bù hoặc hoãn thi học phần Học viện?
+      - Cho em hỏi, bị ốm vắng thi KMA phải xin hoãn thế nào?
+      - Cho mình hỏi, quy trình xin thi bù hoặc hoãn thi học phần Học viện?
+      - Admin ơi, bị ốm vắng thi KMA phải xin hoãn thế nào?
+      - Ad cho mình hỏi, quy trình xin thi bù hoặc hoãn thi học phần Học viện?
+      - Mình muốn biết: Bị ốm vắng thi KMA phải xin hoãn thế nào?
+      - Em đang thắc mắc: Quy trình xin thi bù hoặc hoãn thi học phần Học viện?
+      - Cho hỏi một chút, bị ốm vắng thi KMA phải xin hoãn thế nào?
+      - Mình hỏi về KMA: Quy trình xin thi bù hoặc hoãn thi học phần Học viện?
+      - Về Học viện Kỹ thuật mật mã, bị ốm vắng thi KMA phải xin hoãn thế nào?
+      - Ở KMA thì quy trình xin thi bù hoặc hoãn thi học phần Học viện?
+      - Vắng thi không lý do thì bị xử lý thế nào?
+      - KMA ơi, quy trình xin thi bù hoặc hoãn thi học phần Học viện?
+      - Các anh chị cho em hỏi: Bị ốm vắng thi KMA phải xin hoãn thế nào?
+      - Hoãn thi thì phải làm đơn khi nào?
+      - Giải đáp giúp em: Bị ốm vắng thi KMA phải xin hoãn thế nào?
+      - Nếu vắng thi không lý do thì bị xử lý thế nào?
+      - How can a KMA student request a deferred exam after missing a test?
+      - I have a question about KMA: How can a KMA student request a deferred exam after missing a test?
+      - Please help me with this question: How can a KMA student request a deferred exam after missing a test?
+      - Bi om vang thi KMA phai xin hoan the nao?
+      - Quy trinh xin thi bu hoac hoan thi hoc phan Hoc vien?
+      - Cho em hoi, bi om vang thi KMA phai xin hoan the nao?
+      - Ad oi, quy trinh xin thi bu hoac hoan thi hoc phan Hoc vien?
+      - KMA: Bi om vang thi KMA phai xin hoan the nao?
+      - Bị ốm vắng thi KMA phải xin hoãn tn?
+      - Quy trình xin thi bù hoặc hoãn thi học phần HV?
+      - ad oi, bi om vang thi KMA phai xin hoan tn?
+
+  # 06 · THI CỬ & KHẢO THÍ | intent trong Excel: khao_thi/phuc_khao
+  - intent: faq_khao_thi/phuc_khao
+    examples: |
+      - Làm đơn phúc khảo bài thi như thế nào?
+      - Muốn phúc khảo bài thi KMA cần làm gì?
+      - Nộp đơn xem lại điểm thi cuối kỳ Học viện ra sao?
+      - Cho em hỏi, muốn phúc khảo bài thi KMA cần làm gì?
+      - Cho mình hỏi, nộp đơn xem lại điểm thi cuối kỳ Học viện ra sao?
+      - Admin ơi, muốn phúc khảo bài thi KMA cần làm gì?
+      - Ad cho mình hỏi, nộp đơn xem lại điểm thi cuối kỳ Học viện ra sao?
+      - Mình muốn biết: Muốn phúc khảo bài thi KMA cần làm gì?
+      - Em đang thắc mắc: Nộp đơn xem lại điểm thi cuối kỳ Học viện ra sao?
+      - Cho hỏi một chút, muốn phúc khảo bài thi KMA cần làm gì?
+      - Mình hỏi về KMA: Nộp đơn xem lại điểm thi cuối kỳ Học viện ra sao?
+      - Về Học viện Kỹ thuật mật mã, muốn phúc khảo bài thi KMA cần làm gì?
+      - Ở KMA thì nộp đơn xem lại điểm thi cuối kỳ Học viện ra sao?
+      - Làm thế nào để phúc khảo?
+      - KMA ơi, nộp đơn xem lại điểm thi cuối kỳ Học viện ra sao?
+      - Các anh chị cho em hỏi: Muốn phúc khảo bài thi KMA cần làm gì?
+      - Sinh viên có được phúc khảo bài thi không?
+      - Giải đáp giúp em: Muốn phúc khảo bài thi KMA cần làm gì?
+      - Có được phúc khảo bài thi không?
+      - How do KMA students request an exam regrade or appeal?
+      - I have a question about KMA: How do KMA students request an exam regrade or appeal?
+      - Please help me with this question: How do KMA students request an exam regrade or appeal?
+      - Muon phuc khao bai thi KMA can lam gi?
+      - Nop don xem lai diem thi cuoi ky Hoc vien ra sao?
+      - Cho em hoi, muon phuc khao bai thi KMA can lam gi?
+      - Ad oi, nop don xem lai diem thi cuoi ky Hoc vien ra sao?
+      - KMA: Muon phuc khao bai thi KMA can lam gi?
+      - Nộp đơn xem lại điểm thi cuối kỳ HV ra sao?
+      - ad oi, muon phuc khao bai thi KMA can lam gi?
+      - Mình xin hỏi thêm: Muốn phúc khảo bài thi KMA cần làm gì?
+
+  # 06 · THI CỬ & KHẢO THÍ | intent trong Excel: khao_thi/sai_diem
+  - intent: faq_khao_thi/sai_diem
+    examples: |
+      - Điểm trên hệ thống khác điểm giảng viên thông báo thì xử lý sao?
+      - Điểm thi KMA nhập sai thì báo ai?
+      - Điểm trên cổng đào tạo khác điểm giảng viên cho thì sửa sao?
+      - Cho em hỏi, điểm thi KMA nhập sai thì báo ai?
+      - Cho mình hỏi, điểm trên cổng đào tạo khác điểm giảng viên cho thì sửa sao?
+      - Admin ơi, điểm thi KMA nhập sai thì báo ai?
+      - Ad cho mình hỏi, điểm trên cổng đào tạo khác điểm giảng viên cho thì sửa sao?
+      - Mình muốn biết: Điểm thi KMA nhập sai thì báo ai?
+      - Em đang thắc mắc: Điểm trên cổng đào tạo khác điểm giảng viên cho thì sửa sao?
+      - Cho hỏi một chút, điểm thi KMA nhập sai thì báo ai?
+      - Mình hỏi về KMA: Điểm trên cổng đào tạo khác điểm giảng viên cho thì sửa sao?
+      - Về Học viện Kỹ thuật mật mã, điểm thi KMA nhập sai thì báo ai?
+      - Ở KMA thì điểm trên cổng đào tạo khác điểm giảng viên cho thì sửa sao?
+      - Nếu giảng viên công bố một điểm mà hệ thống hiển thị điểm khác thì sao?
+      - KMA ơi, điểm trên cổng đào tạo khác điểm giảng viên cho thì sửa sao?
+      - Các anh chị cho em hỏi: Điểm thi KMA nhập sai thì báo ai?
+      - Cần tư vấn giúp em: Điểm trên cổng đào tạo khác điểm giảng viên cho thì sửa sao?
+      - Giải đáp giúp em: Điểm thi KMA nhập sai thì báo ai?
+      - Em cần thông tin cụ thể: Điểm trên cổng đào tạo khác điểm giảng viên cho thì sửa sao?
+      - Who should KMA students contact about an incorrect posted exam grade?
+      - I have a question about KMA: Who should KMA students contact about an incorrect posted exam grade?
+      - Please help me with this question: Who should KMA students contact about an incorrect posted exam grade?
+      - Diem thi KMA nhap sai thi bao ai?
+      - Diem tren cong dao tao khac diem giang vien cho thi sua sao?
+      - Cho em hoi, diem thi KMA nhap sai thi bao ai?
+      - Ad oi, diem tren cong dao tao khac diem giang vien cho thi sua sao?
+      - KMA: Diem thi KMA nhap sai thi bao ai?
+      - ad oi, diem thi KMA nhap sai thi bao ai?
+      - Mình xin hỏi thêm: Điểm thi KMA nhập sai thì báo ai?
+      - Mình xin hỏi thêm: Điểm trên cổng đào tạo khác điểm giảng viên cho thì sửa sao?
+
+  # 06 · THI CỬ & KHẢO THÍ | intent trong Excel: khao_thi/giay_to_phong_thi
+  - intent: faq_khao_thi/giay_to_phong_thi
+    examples: |
+      - Đi thi cần mang gì, đi trễ có được vào không?
+      - Đi thi KMA phải mang giấy tờ gì?
+      - Vào thi muộn ở Học viện có được dự thi không?
+      - Cho em hỏi, đi thi KMA phải mang giấy tờ gì?
+      - Cho mình hỏi, vào thi muộn ở Học viện có được dự thi không?
+      - Admin ơi, đi thi KMA phải mang giấy tờ gì?
+      - Ad cho mình hỏi, vào thi muộn ở Học viện có được dự thi không?
+      - Mình muốn biết: Đi thi KMA phải mang giấy tờ gì?
+      - Em đang thắc mắc: Vào thi muộn ở Học viện có được dự thi không?
+      - Cho hỏi một chút, đi thi KMA phải mang giấy tờ gì?
+      - Mình hỏi về KMA: Vào thi muộn ở Học viện có được dự thi không?
+      - Về Học viện Kỹ thuật mật mã, đi thi KMA phải mang giấy tờ gì?
+      - Ở KMA thì vào thi muộn ở Học viện có được dự thi không?
+      - Sinh viên đến muộn có được vào phòng thi không?
+      - KMA ơi, vào thi muộn ở Học viện có được dự thi không?
+      - Các anh chị cho em hỏi: Đi thi KMA phải mang giấy tờ gì?
+      - Vào phòng thi cần mang theo gì?
+      - Giải đáp giúp em: Đi thi KMA phải mang giấy tờ gì?
+      - Có được mang điện thoại vào phòng thi không?
+      - What identification is needed for a KMA exam and are late arrivals allowed?
+      - I have a question about KMA: What identification is needed for a KMA exam and are late arrivals allowed?
+      - Please help me with this question: What identification is needed for a KMA exam and are late arrivals allowed?
+      - Di thi KMA phai mang giay to gi?
+      - Vao thi muon o Hoc vien co duoc du thi khong?
+      - Cho em hoi, di thi KMA phai mang giay to gi?
+      - Ad oi, vao thi muon o Hoc vien co duoc du thi khong?
+      - KMA: Di thi KMA phai mang giay to gi?
+      - Vào thi muộn ở HV có dc dự thi ko?
+      - ad oi, di thi KMA phai mang giay to gi?
+      - Mình xin hỏi thêm: Đi thi KMA phải mang giấy tờ gì?
+
+  # 06 · THI CỬ & KHẢO THÍ | intent trong Excel: khao_thi/thi_may_seb
+  - intent: faq_khao_thi/thi_may_seb
+    examples: |
+      - Cách tải và dùng SEB, thi trắc nghiệm trên máy ra sao?
+      - Cài Safe Exam Browser thi KMA như thế nào?
+      - Hướng dẫn sử dụng SEB khi làm bài thi trên máy tính?
+      - Cho em hỏi, cài Safe Exam Browser thi KMA như thế nào?
+      - Cho mình hỏi, hướng dẫn sử dụng SEB khi làm bài thi trên máy tính?
+      - Admin ơi, cài Safe Exam Browser thi KMA như thế nào?
+      - Ad cho mình hỏi, hướng dẫn sử dụng SEB khi làm bài thi trên máy tính?
+      - Mình muốn biết: Cài Safe Exam Browser thi KMA như thế nào?
+      - Em đang thắc mắc: Hướng dẫn sử dụng SEB khi làm bài thi trên máy tính?
+      - Cho hỏi một chút, cài Safe Exam Browser thi KMA như thế nào?
+      - Mình hỏi về KMA: Hướng dẫn sử dụng SEB khi làm bài thi trên máy tính?
+      - Về Học viện Kỹ thuật mật mã, cài Safe Exam Browser thi KMA như thế nào?
+      - Ở KMA thì hướng dẫn sử dụng SEB khi làm bài thi trên máy tính?
+      - Có được thi trên máy không?
+      - KMA ơi, hướng dẫn sử dụng SEB khi làm bài thi trên máy tính?
+      - Các anh chị cho em hỏi: Cài Safe Exam Browser thi KMA như thế nào?
+      - Sinh viên có bị ảnh hưởng khi trường ngắt Internet trong giờ thi trên máy không?
+      - Giải đáp giúp em: Cài Safe Exam Browser thi KMA như thế nào?
+      - Em cần thông tin cụ thể: Hướng dẫn sử dụng SEB khi làm bài thi trên máy tính?
+      - How do KMA students install and use Safe Exam Browser for online exams?
+      - I have a question about KMA: How do KMA students install and use Safe Exam Browser for online exams?
+      - Please help me with this question: How do KMA students install and use Safe Exam Browser for online exams?
+      - Cai Safe Exam Browser thi KMA nhu the nao?
+      - Huong dan su dung SEB khi lam bai thi tren may tinh?
+      - Cho em hoi, cai Safe Exam Browser thi KMA nhu the nao?
+      - Ad oi, huong dan su dung SEB khi lam bai thi tren may tinh?
+      - KMA: Cai Safe Exam Browser thi KMA nhu the nao?
+      - Cài Safe Exam Browser thi KMA ntn?
+      - ad oi, cai Safe Exam Browser thi KMA ntn?
+      - Mình xin hỏi thêm: Cài Safe Exam Browser thi KMA như thế nào?
+
+  # 06 · THI CỬ & KHẢO THÍ | intent trong Excel: khao_thi/gian_lan_ky_luat
+  - intent: faq_khao_thi/gian_lan_ky_luat
+    examples: |
+      - Gian lận, thi hộ, mang điện thoại bị xử lý thế nào?
+      - Mang điện thoại vào phòng thi KMA bị xử lý gì?
+      - Hình thức kỷ luật với gian lận thi cử và thi hộ ở Học viện?
+      - Cho em hỏi, mang điện thoại vào phòng thi KMA bị xử lý gì?
+      - Cho mình hỏi, hình thức kỷ luật với gian lận thi cử và thi hộ ở Học viện?
+      - Admin ơi, mang điện thoại vào phòng thi KMA bị xử lý gì?
+      - Ad cho mình hỏi, hình thức kỷ luật với gian lận thi cử và thi hộ ở Học viện?
+      - Mình muốn biết: Mang điện thoại vào phòng thi KMA bị xử lý gì?
+      - Em đang thắc mắc: Hình thức kỷ luật với gian lận thi cử và thi hộ ở Học viện?
+      - Cho hỏi một chút, mang điện thoại vào phòng thi KMA bị xử lý gì?
+      - Mình hỏi về KMA: Hình thức kỷ luật với gian lận thi cử và thi hộ ở Học viện?
+      - Về Học viện Kỹ thuật mật mã, mang điện thoại vào phòng thi KMA bị xử lý gì?
+      - Ở KMA thì hình thức kỷ luật với gian lận thi cử và thi hộ ở Học viện?
+      - Gian lận trong thi cử bị xử lý thế nào?
+      - KMA ơi, hình thức kỷ luật với gian lận thi cử và thi hộ ở Học viện?
+      - Các anh chị cho em hỏi: Mang điện thoại vào phòng thi KMA bị xử lý gì?
+      - Gian lận thi cử bị xử lý thế nào?
+      - Giải đáp giúp em: Mang điện thoại vào phòng thi KMA bị xử lý gì?
+      - Em cần thông tin cụ thể: Hình thức kỷ luật với gian lận thi cử và thi hộ ở Học viện?
+      - What are the penalties for cheating or using phones during KMA exams?
+      - I have a question about KMA: What are the penalties for cheating or using phones during KMA exams?
+      - Please help me with this question: What are the penalties for cheating or using phones during KMA exams?
+      - Mang dien thoai vao phong thi KMA bi xu ly gi?
+      - Hinh thuc ky luat voi gian lan thi cu va thi ho o Hoc vien?
+      - Cho em hoi, mang dien thoai vao phong thi KMA bi xu ly gi?
+      - Ad oi, hinh thuc ky luat voi gian lan thi cu va thi ho o Hoc vien?
+      - KMA: Mang dien thoai vao phong thi KMA bi xu ly gi?
+      - Hình thức kỷ luật với gian lận thi cử và thi hộ ở HV?
+      - ad oi, mang dien thoai vao phong thi KMA bi xu ly gi?
+      - Mình xin hỏi thêm: Mang điện thoại vào phòng thi KMA bị xử lý gì?
+
+  # 06 · THI CỬ & KHẢO THÍ | intent trong Excel: khao_thi/thi_tot_nghiep
+  - intent: faq_khao_thi/thi_tot_nghiep
+    examples: |
+      - Trường có tổ chức thi tốt nghiệp thay đồ án không?
+      - KMA có thi tốt nghiệp thay đồ án được không?
+      - Có lựa chọn thi tốt nghiệp thay khóa luận tại Học viện không?
+      - Cho em hỏi, KMA có thi tốt nghiệp thay đồ án được không?
+      - Cho mình hỏi, có lựa chọn thi tốt nghiệp thay khóa luận tại Học viện không?
+      - Admin ơi, KMA có thi tốt nghiệp thay đồ án được không?
+      - Ad cho mình hỏi, có lựa chọn thi tốt nghiệp thay khóa luận tại Học viện không?
+      - Mình muốn biết: KMA có thi tốt nghiệp thay đồ án được không?
+      - Em đang thắc mắc: Có lựa chọn thi tốt nghiệp thay khóa luận tại Học viện không?
+      - Cho hỏi một chút, KMA có thi tốt nghiệp thay đồ án được không?
+      - Mình hỏi về KMA: Có lựa chọn thi tốt nghiệp thay khóa luận tại Học viện không?
+      - Về Học viện Kỹ thuật mật mã, KMA có thi tốt nghiệp thay đồ án được không?
+      - Ở KMA thì có lựa chọn thi tốt nghiệp thay khóa luận tại Học viện không?
+      - Có được thi tốt nghiệp thay cho làm đồ án không?
+      - KMA ơi, có lựa chọn thi tốt nghiệp thay khóa luận tại Học viện không?
+      - Các anh chị cho em hỏi: KMA có thi tốt nghiệp thay đồ án được không?
+      - Điểm thi tốt nghiệp đạt là bao nhiêu?
+      - Giải đáp giúp em: KMA có thi tốt nghiệp thay đồ án được không?
+      - Một năm tổ chức mấy kỳ thi tốt nghiệp?
+      - Does KMA offer a graduation exam as an alternative to the final project?
+      - I have a question about KMA: Does KMA offer a graduation exam as an alternative to the final project?
+      - Please help me with this question: Does KMA offer a graduation exam as an alternative to the final project?
+      - KMA co thi tot nghiep thay do an duoc khong?
+      - Co lua chon thi tot nghiep thay khoa luan tai Hoc vien khong?
+      - Cho em hoi, KMA co thi tot nghiep thay do an duoc khong?
+      - Ad oi, co lua chon thi tot nghiep thay khoa luan tai Hoc vien khong?
+      - KMA: KMA co thi tot nghiep thay do an duoc khong?
+      - KMA có thi tốt nghiệp thay đồ án dc ko?
+      - Có lựa chọn thi tốt nghiệp thay khóa luận tại HV ko?
+      - ad oi, KMA co thi tot nghiep thay do an dc ko?
+
+  # 06 · THI CỬ & KHẢO THÍ | intent trong Excel: khao_thi/uu_tien_thanh_tich
+  - intent: faq_khao_thi/uu_tien_thanh_tich
+    examples: |
+      - Đạt giải Olympic, NCKH có được miễn thi hay cộng điểm không?
+      - Đạt giải Olympic được miễn thi môn nào tại KMA?
+      - Thành tích nghiên cứu khoa học có được cộng điểm thi Học viện?
+      - Cho em hỏi, đạt giải Olympic được miễn thi môn nào tại KMA?
+      - Cho mình hỏi, thành tích nghiên cứu khoa học có được cộng điểm thi Học viện?
+      - Admin ơi, đạt giải Olympic được miễn thi môn nào tại KMA?
+      - Ad cho mình hỏi, thành tích nghiên cứu khoa học có được cộng điểm thi Học viện?
+      - Mình muốn biết: Đạt giải Olympic được miễn thi môn nào tại KMA?
+      - Em đang thắc mắc: Thành tích nghiên cứu khoa học có được cộng điểm thi Học viện?
+      - Cho hỏi một chút, đạt giải Olympic được miễn thi môn nào tại KMA?
+      - Mình hỏi về KMA: Thành tích nghiên cứu khoa học có được cộng điểm thi Học viện?
+      - Về Học viện Kỹ thuật mật mã, đạt giải Olympic được miễn thi môn nào tại KMA?
+      - Ở KMA thì thành tích nghiên cứu khoa học có được cộng điểm thi Học viện?
+      - Đạt giải nghiên cứu khoa học có được cộng điểm không?
+      - KMA ơi, thành tích nghiên cứu khoa học có được cộng điểm thi Học viện?
+      - Các anh chị cho em hỏi: Đạt giải Olympic được miễn thi môn nào tại KMA?
+      - Có được cộng điểm khi đạt giải cuộc thi không?
+      - Giải đáp giúp em: Đạt giải Olympic được miễn thi môn nào tại KMA?
+      - Sinh viên đạt giải Olympic được ưu tiên gì?
+      - Can academic competitions or research awards grant exam exemptions at KMA?
+      - I have a question about KMA: Can academic competitions or research awards grant exam exemptions at KMA?
+      - Please help me with this question: Can academic competitions or research awards grant exam exemptions at KMA?
+      - Dat giai Olympic duoc mien thi mon nao tai KMA?
+      - Thanh tich nghien cuu khoa hoc co duoc cong diem thi Hoc vien?
+      - Cho em hoi, dat giai Olympic duoc mien thi mon nao tai KMA?
+      - Ad oi, thanh tich nghien cuu khoa hoc co duoc cong diem thi Hoc vien?
+      - KMA: Dat giai Olympic duoc mien thi mon nao tai KMA?
+      - Đạt giải Olympic dc miễn thi môn nào tại KMA?
+      - Thành tích nghiên cứu khoa học có dc cộng điểm thi HV?
+      - ad oi, dat giai Olympic dc mien thi mon nao tai KMA?

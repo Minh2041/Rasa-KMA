@@ -1,0 +1,71 @@
+version: "3.1"
+
+nlu:
+  # 14 · PHẢN HỒI, TRỢ LÝ & TÌNH HUỐNG KHÁC | intent trong Excel: phan_hoi/chat_luong
+  - intent: faq_phan_hoi/chat_luong
+    examples: |
+      - Sinh viên góp ý về giảng viên, học phần hoặc cơ sở vật chất ở đâu?
+      - Góp ý về giảng viên hoặc môn học KMA ở đâu?
+      - Sinh viên phản hồi cơ sở vật chất Học viện bằng cách nào?
+      - Cho em hỏi, góp ý về giảng viên hoặc môn học KMA ở đâu?
+      - Cho mình hỏi, sinh viên phản hồi cơ sở vật chất Học viện bằng cách nào?
+      - Admin ơi, góp ý về giảng viên hoặc môn học KMA ở đâu?
+      - Ad cho mình hỏi, sinh viên phản hồi cơ sở vật chất Học viện bằng cách nào?
+      - Sinh viên KMA cần liên hệ đơn vị nào để phản ánh sự cố về học tập hoặc thủ tục hành chính?
+      - Mình muốn biết: Góp ý về giảng viên hoặc môn học KMA ở đâu?
+      - Em đang thắc mắc: Sinh viên phản hồi cơ sở vật chất Học viện bằng cách nào?
+      - Cho hỏi một chút, góp ý về giảng viên hoặc môn học KMA ở đâu?
+      - Mình hỏi về KMA: Sinh viên phản hồi cơ sở vật chất Học viện bằng cách nào?
+      - Về Học viện Kỹ thuật mật mã, góp ý về giảng viên hoặc môn học KMA ở đâu?
+      - Ở KMA thì sinh viên phản hồi cơ sở vật chất Học viện bằng cách nào?
+      - Em đang tìm hiểu về KMA, góp ý về giảng viên hoặc môn học KMA ở đâu?
+      - KMA ơi, sinh viên phản hồi cơ sở vật chất Học viện bằng cách nào?
+      - Các anh chị cho em hỏi: Góp ý về giảng viên hoặc môn học KMA ở đâu?
+      - Cần tư vấn giúp em: Sinh viên phản hồi cơ sở vật chất Học viện bằng cách nào?
+      - Giải đáp giúp em: Góp ý về giảng viên hoặc môn học KMA ở đâu?
+      - Em cần thông tin cụ thể: Sinh viên phản hồi cơ sở vật chất Học viện bằng cách nào?
+      - How can KMA students submit feedback about teaching or facilities?
+      - I have a question about KMA: How can KMA students submit feedback about teaching or facilities?
+      - Please help me with this question: How can KMA students submit feedback about teaching or facilities?
+      - Gop y ve giang vien hoac mon hoc KMA o dau?
+      - Sinh vien phan hoi co so vat chat Hoc vien bang cach nao?
+      - Cho em hoi, gop y ve giang vien hoac mon hoc KMA o dau?
+      - Ad oi, sinh vien phan hoi co so vat chat Hoc vien bang cach nao?
+      - KMA: Gop y ve giang vien hoac mon hoc KMA o dau?
+      - SV phản hồi cơ sở vật chất HV bằng cách nào?
+      - ad oi, gop y ve giang vien hoac mon hoc KMA o dau?
+      - Mình xin hỏi thêm: Góp ý về giảng viên hoặc môn học KMA ở đâu?
+
+  # 14 · PHẢN HỒI, TRỢ LÝ & TÌNH HUỐNG KHÁC | intent trong Excel: phan_hoi/khieu_nai
+  - intent: faq_phan_hoi/khieu_nai
+    examples: |
+      - Em muốn phản ánh sự cố về học tập, hành chính thì liên hệ ai?
+      - Khiếu nại sự cố hành chính KMA liên hệ ai?
+      - Muốn phản ánh vấn đề học vụ lên Học viện như thế nào?
+      - Cho em hỏi, khiếu nại sự cố hành chính KMA liên hệ ai?
+      - Cho mình hỏi, muốn phản ánh vấn đề học vụ lên Học viện như thế nào?
+      - Admin ơi, khiếu nại sự cố hành chính KMA liên hệ ai?
+      - Ad cho mình hỏi, muốn phản ánh vấn đề học vụ lên Học viện như thế nào?
+      - Mình muốn biết: Khiếu nại sự cố hành chính KMA liên hệ ai?
+      - Em đang thắc mắc: Muốn phản ánh vấn đề học vụ lên Học viện như thế nào?
+      - Cho hỏi một chút, khiếu nại sự cố hành chính KMA liên hệ ai?
+      - Mình hỏi về KMA: Muốn phản ánh vấn đề học vụ lên Học viện như thế nào?
+      - Về Học viện Kỹ thuật mật mã, khiếu nại sự cố hành chính KMA liên hệ ai?
+      - Ở KMA thì muốn phản ánh vấn đề học vụ lên Học viện như thế nào?
+      - Em đang tìm hiểu về KMA, khiếu nại sự cố hành chính KMA liên hệ ai?
+      - KMA ơi, muốn phản ánh vấn đề học vụ lên Học viện như thế nào?
+      - Các anh chị cho em hỏi: Khiếu nại sự cố hành chính KMA liên hệ ai?
+      - Cần tư vấn giúp em: Muốn phản ánh vấn đề học vụ lên Học viện như thế nào?
+      - Giải đáp giúp em: Khiếu nại sự cố hành chính KMA liên hệ ai?
+      - Em cần thông tin cụ thể: Muốn phản ánh vấn đề học vụ lên Học viện như thế nào?
+      - Where should KMA students report academic or administrative issues?
+      - I have a question about KMA: Where should KMA students report academic or administrative issues?
+      - Please help me with this question: Where should KMA students report academic or administrative issues?
+      - Khieu nai su co hanh chinh KMA lien he ai?
+      - Muon phan anh van de hoc vu len Hoc vien nhu the nao?
+      - Cho em hoi, khieu nai su co hanh chinh KMA lien he ai?
+      - Ad oi, muon phan anh van de hoc vu len Hoc vien nhu the nao?
+      - KMA: Khieu nai su co hanh chinh KMA lien he ai?
+      - Muốn phản ánh vấn đề học vụ lên HV ntn?
+      - ad oi, khieu nai su co hanh chinh KMA lien he ai?
+      - Mình xin hỏi thêm: Khiếu nại sự cố hành chính KMA liên hệ ai?

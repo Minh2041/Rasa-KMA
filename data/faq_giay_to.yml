@@ -1,0 +1,514 @@
+version: "3.1"
+
+nlu:
+  # 11 · GIẤY TỜ, BIỂU MẪU & THỦ TỤC | intent trong Excel: giay_to/tong_quan
+  - intent: faq_giay_to/tong_quan
+    examples: |
+      - Sinh viên muốn xin giấy tờ, làm đơn ở trường thì phải làm gì?
+      - Thủ tục hành chính giấy tờ sinh viên KMA như thế nào?
+      - Hướng dẫn chung khi sinh viên cần xin giấy xác nhận hoặc làm đơn?
+      - Cho em hỏi, thủ tục hành chính giấy tờ sinh viên KMA như thế nào?
+      - Cho mình hỏi, hướng dẫn chung khi sinh viên cần xin giấy xác nhận hoặc làm đơn?
+      - Admin ơi, thủ tục hành chính giấy tờ sinh viên KMA như thế nào?
+      - Ad cho mình hỏi, hướng dẫn chung khi sinh viên cần xin giấy xác nhận hoặc làm đơn?
+      - Mình muốn biết: Thủ tục hành chính giấy tờ sinh viên KMA như thế nào?
+      - Em đang thắc mắc: Hướng dẫn chung khi sinh viên cần xin giấy xác nhận hoặc làm đơn?
+      - Cho hỏi một chút, thủ tục hành chính giấy tờ sinh viên KMA như thế nào?
+      - Mình hỏi về KMA: Hướng dẫn chung khi sinh viên cần xin giấy xác nhận hoặc làm đơn?
+      - Về Học viện Kỹ thuật mật mã, thủ tục hành chính giấy tờ sinh viên KMA như thế nào?
+      - Ở KMA thì hướng dẫn chung khi sinh viên cần xin giấy xác nhận hoặc làm đơn?
+      - Em đang tìm hiểu về KMA, thủ tục hành chính giấy tờ sinh viên KMA như thế nào?
+      - KMA ơi, hướng dẫn chung khi sinh viên cần xin giấy xác nhận hoặc làm đơn?
+      - Các anh chị cho em hỏi: Thủ tục hành chính giấy tờ sinh viên KMA như thế nào?
+      - Cần tư vấn giúp em: Hướng dẫn chung khi sinh viên cần xin giấy xác nhận hoặc làm đơn?
+      - Giải đáp giúp em: Thủ tục hành chính giấy tờ sinh viên KMA như thế nào?
+      - Em cần thông tin cụ thể: Hướng dẫn chung khi sinh viên cần xin giấy xác nhận hoặc làm đơn?
+      - How can KMA students request official certificates and forms?
+      - I have a question about KMA: How can KMA students request official certificates and forms?
+      - Please help me with this question: How can KMA students request official certificates and forms?
+      - Thu tuc hanh chinh giay to sinh vien KMA nhu the nao?
+      - Huong dan chung khi sinh vien can xin giay xac nhan hoac lam don?
+      - Cho em hoi, thu tuc hanh chinh giay to sinh vien KMA nhu the nao?
+      - Ad oi, huong dan chung khi sinh vien can xin giay xac nhan hoac lam don?
+      - KMA: Thu tuc hanh chinh giay to sinh vien KMA nhu the nao?
+      - Thủ tục hành chính giấy tờ sv KMA ntn?
+      - Hướng dẫn chung khi sv cần xin giấy xác nhận hoặc làm đơn?
+      - ad oi, thu tuc hanh chinh giay to sv KMA ntn?
+
+  # 11 · GIẤY TỜ, BIỂU MẪU & THỦ TỤC | intent trong Excel: giay_to/danh_muc_mau
+  - intent: faq_giay_to/danh_muc_mau
+    examples: |
+      - Trường có các mẫu đơn nào và tải mẫu ở đâu?
+      - Tải mẫu đơn sinh viên KMA ở đâu?
+      - Học viện Kỹ thuật mật mã cung cấp những mẫu đơn nào và sinh viên có thể tải chúng ở đâu?
+      - Học viện có những biểu mẫu hành chính nào?
+      - Cho em hỏi, tải mẫu đơn sinh viên KMA ở đâu?
+      - Cho mình hỏi, học viện có những biểu mẫu hành chính nào?
+      - Admin ơi, tải mẫu đơn sinh viên KMA ở đâu?
+      - Ad cho mình hỏi, học viện có những biểu mẫu hành chính nào?
+      - Mình muốn biết: Tải mẫu đơn sinh viên KMA ở đâu?
+      - Em đang thắc mắc: Học viện có những biểu mẫu hành chính nào?
+      - Cho hỏi một chút, tải mẫu đơn sinh viên KMA ở đâu?
+      - Mình hỏi về KMA: Học viện có những biểu mẫu hành chính nào?
+      - Về Học viện Kỹ thuật mật mã, tải mẫu đơn sinh viên KMA ở đâu?
+      - Ở KMA thì học viện có những biểu mẫu hành chính nào?
+      - Em đang tìm hiểu về KMA, tải mẫu đơn sinh viên KMA ở đâu?
+      - KMA ơi, học viện có những biểu mẫu hành chính nào?
+      - Các anh chị cho em hỏi: Tải mẫu đơn sinh viên KMA ở đâu?
+      - Cần tư vấn giúp em: Học viện có những biểu mẫu hành chính nào?
+      - Giải đáp giúp em: Tải mẫu đơn sinh viên KMA ở đâu?
+      - Em cần thông tin cụ thể: Học viện có những biểu mẫu hành chính nào?
+      - Where can students download KMA administrative application forms?
+      - I have a question about KMA: Where can students download KMA administrative application forms?
+      - Please help me with this question: Where can students download KMA administrative application forms?
+      - Tai mau don sinh vien KMA o dau?
+      - Hoc vien co nhung bieu mau hanh chinh nao?
+      - Cho em hoi, tai mau don sinh vien KMA o dau?
+      - Ad oi, hoc vien co nhung bieu mau hanh chinh nao?
+      - KMA: Tai mau don sinh vien KMA o dau?
+      - Tải mẫu đơn sv KMA ở đâu?
+      - HV có những biểu mẫu hành chính nào?
+      - ad oi, tai mau don sv KMA o dau?
+
+  # 11 · GIẤY TỜ, BIỂU MẪU & THỦ TỤC | intent trong Excel: giay_to/noi_tiep_nhan
+  - intent: faq_giay_to/noi_tiep_nhan
+    examples: |
+      - Phòng tiếp sinh viên ở đâu và giờ làm việc thế nào?
+      - Phòng tiếp nhận hồ sơ sinh viên KMA ở đâu?
+      - Giờ làm việc của bộ phận giải quyết giấy tờ Học viện?
+      - Cho em hỏi, phòng tiếp nhận hồ sơ sinh viên KMA ở đâu?
+      - Cho mình hỏi, giờ làm việc của bộ phận giải quyết giấy tờ Học viện?
+      - Admin ơi, phòng tiếp nhận hồ sơ sinh viên KMA ở đâu?
+      - Ad cho mình hỏi, giờ làm việc của bộ phận giải quyết giấy tờ Học viện?
+      - Mình muốn biết: Phòng tiếp nhận hồ sơ sinh viên KMA ở đâu?
+      - Em đang thắc mắc: Giờ làm việc của bộ phận giải quyết giấy tờ Học viện?
+      - Cho hỏi một chút, phòng tiếp nhận hồ sơ sinh viên KMA ở đâu?
+      - Mình hỏi về KMA: Giờ làm việc của bộ phận giải quyết giấy tờ Học viện?
+      - Về Học viện Kỹ thuật mật mã, phòng tiếp nhận hồ sơ sinh viên KMA ở đâu?
+      - Ở KMA thì giờ làm việc của bộ phận giải quyết giấy tờ Học viện?
+      - Em đang tìm hiểu về KMA, phòng tiếp nhận hồ sơ sinh viên KMA ở đâu?
+      - KMA ơi, giờ làm việc của bộ phận giải quyết giấy tờ Học viện?
+      - Các anh chị cho em hỏi: Phòng tiếp nhận hồ sơ sinh viên KMA ở đâu?
+      - Cần tư vấn giúp em: Giờ làm việc của bộ phận giải quyết giấy tờ Học viện?
+      - Giải đáp giúp em: Phòng tiếp nhận hồ sơ sinh viên KMA ở đâu?
+      - Em cần thông tin cụ thể: Giờ làm việc của bộ phận giải quyết giấy tờ Học viện?
+      - Where is the KMA student service counter and what are its opening hours?
+      - I have a question about KMA: Where is the KMA student service counter and what are its opening hours?
+      - Please help me with this question: Where is the KMA student service counter and what are its opening hours?
+      - Phong tiep nhan ho so sinh vien KMA o dau?
+      - Gio lam viec cua bo phan giai quyet giay to Hoc vien?
+      - Cho em hoi, phong tiep nhan ho so sinh vien KMA o dau?
+      - Ad oi, gio lam viec cua bo phan giai quyet giay to Hoc vien?
+      - KMA: Phong tiep nhan ho so sinh vien KMA o dau?
+      - Phòng tiếp nhận hồ sơ sv KMA ở đâu?
+      - Giờ làm việc của bộ phận giải quyết giấy tờ HV?
+      - ad oi, phong tiep nhan ho so sv KMA o dau?
+
+  # 11 · GIẤY TỜ, BIỂU MẪU & THỦ TỤC | intent trong Excel: giay_to/xac_nhan_sinh_vien
+  - intent: faq_giay_to/xac_nhan_sinh_vien
+    examples: |
+      - Xin giấy xác nhận đang là sinh viên để làm thủ tục thế nào?
+      - Xin giấy xác nhận sinh viên KMA thế nào?
+      - Giấy xác nhận đang học tại Học viện làm ở phòng nào?
+      - Cho em hỏi, xin giấy xác nhận sinh viên KMA thế nào?
+      - Cho mình hỏi, giấy xác nhận đang học tại Học viện làm ở phòng nào?
+      - Admin ơi, xin giấy xác nhận sinh viên KMA thế nào?
+      - Ad cho mình hỏi, giấy xác nhận đang học tại Học viện làm ở phòng nào?
+      - Mình muốn biết: Xin giấy xác nhận sinh viên KMA thế nào?
+      - Em đang thắc mắc: Giấy xác nhận đang học tại Học viện làm ở phòng nào?
+      - Cho hỏi một chút, xin giấy xác nhận sinh viên KMA thế nào?
+      - Mình hỏi về KMA: Giấy xác nhận đang học tại Học viện làm ở phòng nào?
+      - Về Học viện Kỹ thuật mật mã, xin giấy xác nhận sinh viên KMA thế nào?
+      - Ở KMA thì giấy xác nhận đang học tại Học viện làm ở phòng nào?
+      - Em đang tìm hiểu về KMA, xin giấy xác nhận sinh viên KMA thế nào?
+      - KMA ơi, giấy xác nhận đang học tại Học viện làm ở phòng nào?
+      - Các anh chị cho em hỏi: Xin giấy xác nhận sinh viên KMA thế nào?
+      - Cần tư vấn giúp em: Giấy xác nhận đang học tại Học viện làm ở phòng nào?
+      - Giải đáp giúp em: Xin giấy xác nhận sinh viên KMA thế nào?
+      - Em cần thông tin cụ thể: Giấy xác nhận đang học tại Học viện làm ở phòng nào?
+      - How can I obtain a student enrollment verification letter from KMA?
+      - I have a question about KMA: How can I obtain a student enrollment verification letter from KMA?
+      - Please help me with this question: How can I obtain a student enrollment verification letter from KMA?
+      - Xin giay xac nhan sinh vien KMA the nao?
+      - Giay xac nhan dang hoc tai Hoc vien lam o phong nao?
+      - Cho em hoi, xin giay xac nhan sinh vien KMA the nao?
+      - Ad oi, giay xac nhan dang hoc tai Hoc vien lam o phong nao?
+      - KMA: Xin giay xac nhan sinh vien KMA the nao?
+      - Xin giấy xác nhận sv KMA tn?
+      - Giấy xác nhận đang học tại HV làm ở phòng nào?
+      - ad oi, xin giay xac nhan sv KMA tn?
+
+  # 11 · GIẤY TỜ, BIỂU MẪU & THỦ TỤC | intent trong Excel: giay_to/xac_nhan_con_thuong_binh
+  - intent: faq_giay_to/xac_nhan_con_thuong_binh
+    examples: |
+      - Xin giấy xác nhận diện con thương binh (Mẫu 41) ở đâu?
+      - Xin mẫu 41 xác nhận con thương binh KMA ở đâu?
+      - Thủ tục giấy xác nhận diện con thương binh tại Học viện?
+      - Cho em hỏi, xin mẫu 41 xác nhận con thương binh KMA ở đâu?
+      - Cho mình hỏi, thủ tục giấy xác nhận diện con thương binh tại Học viện?
+      - Admin ơi, xin mẫu 41 xác nhận con thương binh KMA ở đâu?
+      - Ad cho mình hỏi, thủ tục giấy xác nhận diện con thương binh tại Học viện?
+      - Mình muốn biết: Xin mẫu 41 xác nhận con thương binh KMA ở đâu?
+      - Em đang thắc mắc: Thủ tục giấy xác nhận diện con thương binh tại Học viện?
+      - Cho hỏi một chút, xin mẫu 41 xác nhận con thương binh KMA ở đâu?
+      - Mình hỏi về KMA: Thủ tục giấy xác nhận diện con thương binh tại Học viện?
+      - Về Học viện Kỹ thuật mật mã, xin mẫu 41 xác nhận con thương binh KMA ở đâu?
+      - Ở KMA thì thủ tục giấy xác nhận diện con thương binh tại Học viện?
+      - Em đang tìm hiểu về KMA, xin mẫu 41 xác nhận con thương binh KMA ở đâu?
+      - KMA ơi, thủ tục giấy xác nhận diện con thương binh tại Học viện?
+      - Các anh chị cho em hỏi: Xin mẫu 41 xác nhận con thương binh KMA ở đâu?
+      - Cần tư vấn giúp em: Thủ tục giấy xác nhận diện con thương binh tại Học viện?
+      - Giải đáp giúp em: Xin mẫu 41 xác nhận con thương binh KMA ở đâu?
+      - Em cần thông tin cụ thể: Thủ tục giấy xác nhận diện con thương binh tại Học viện?
+      - How do I request KMA's Form 41 for children of war veterans?
+      - I have a question about KMA: How do I request KMA's Form 41 for children of war veterans?
+      - Please help me with this question: How do I request KMA's Form 41 for children of war veterans?
+      - Xin mau 41 xac nhan con thuong binh KMA o dau?
+      - Thu tuc giay xac nhan dien con thuong binh tai Hoc vien?
+      - Cho em hoi, xin mau 41 xac nhan con thuong binh KMA o dau?
+      - Ad oi, thu tuc giay xac nhan dien con thuong binh tai Hoc vien?
+      - KMA: Xin mau 41 xac nhan con thuong binh KMA o dau?
+      - Thủ tục giấy xác nhận diện con thương binh tại HV?
+      - ad oi, xin mau 41 xac nhan con thuong binh KMA o dau?
+      - Mình xin hỏi thêm: Xin mẫu 41 xác nhận con thương binh KMA ở đâu?
+
+  # 11 · GIẤY TỜ, BIỂU MẪU & THỦ TỤC | intent trong Excel: giay_to/vay_von
+  - intent: faq_giay_to/vay_von
+    examples: |
+      - Sinh viên cần giấy xác nhận vay vốn ngân hàng hay vay STEM thế nào?
+      - Xin giấy xác nhận vay vốn sinh viên KMA như thế nào?
+      - Giấy vay ngân hàng hoặc vay STEM của sinh viên Học viện?
+      - Cho em hỏi, xin giấy xác nhận vay vốn sinh viên KMA như thế nào?
+      - Cho mình hỏi, giấy vay ngân hàng hoặc vay STEM của sinh viên Học viện?
+      - Admin ơi, xin giấy xác nhận vay vốn sinh viên KMA như thế nào?
+      - Ad cho mình hỏi, giấy vay ngân hàng hoặc vay STEM của sinh viên Học viện?
+      - Mình muốn biết: Xin giấy xác nhận vay vốn sinh viên KMA như thế nào?
+      - Em đang thắc mắc: Giấy vay ngân hàng hoặc vay STEM của sinh viên Học viện?
+      - Cho hỏi một chút, xin giấy xác nhận vay vốn sinh viên KMA như thế nào?
+      - Mình hỏi về KMA: Giấy vay ngân hàng hoặc vay STEM của sinh viên Học viện?
+      - Về Học viện Kỹ thuật mật mã, xin giấy xác nhận vay vốn sinh viên KMA như thế nào?
+      - Ở KMA thì giấy vay ngân hàng hoặc vay STEM của sinh viên Học viện?
+      - Em đang tìm hiểu về KMA, xin giấy xác nhận vay vốn sinh viên KMA như thế nào?
+      - KMA ơi, giấy vay ngân hàng hoặc vay STEM của sinh viên Học viện?
+      - Các anh chị cho em hỏi: Xin giấy xác nhận vay vốn sinh viên KMA như thế nào?
+      - Cần tư vấn giúp em: Giấy vay ngân hàng hoặc vay STEM của sinh viên Học viện?
+      - Giải đáp giúp em: Xin giấy xác nhận vay vốn sinh viên KMA như thế nào?
+      - Em cần thông tin cụ thể: Giấy vay ngân hàng hoặc vay STEM của sinh viên Học viện?
+      - How can KMA students request certificates for education loans?
+      - I have a question about KMA: How can KMA students request certificates for education loans?
+      - Please help me with this question: How can KMA students request certificates for education loans?
+      - Xin giay xac nhan vay von sinh vien KMA nhu the nao?
+      - Giay vay ngan hang hoac vay STEM cua sinh vien Hoc vien?
+      - Cho em hoi, xin giay xac nhan vay von sinh vien KMA nhu the nao?
+      - Ad oi, giay vay ngan hang hoac vay STEM cua sinh vien Hoc vien?
+      - KMA: Xin giay xac nhan vay von sinh vien KMA nhu the nao?
+      - Xin giấy xác nhận vay vốn sv KMA ntn?
+      - Giấy vay ngân hàng hoặc vay STEM của sv HV?
+      - ad oi, xin giay xac nhan vay von sv KMA ntn?
+
+  # 11 · GIẤY TỜ, BIỂU MẪU & THỦ TỤC | intent trong Excel: giay_to/the_sinh_vien
+  - intent: faq_giay_to/the_sinh_vien
+    examples: |
+      - Mất thẻ sinh viên thì xin cấp lại như thế nào?
+      - Mất thẻ sinh viên KMA xin cấp lại ở đâu?
+      - Thủ tục làm lại thẻ SV của Học viện?
+      - Cho em hỏi, mất thẻ sinh viên KMA xin cấp lại ở đâu?
+      - Cho mình hỏi, thủ tục làm lại thẻ SV của Học viện?
+      - Admin ơi, mất thẻ sinh viên KMA xin cấp lại ở đâu?
+      - Ad cho mình hỏi, thủ tục làm lại thẻ SV của Học viện?
+      - Mình muốn biết: Mất thẻ sinh viên KMA xin cấp lại ở đâu?
+      - Em đang thắc mắc: Thủ tục làm lại thẻ SV của Học viện?
+      - Cho hỏi một chút, mất thẻ sinh viên KMA xin cấp lại ở đâu?
+      - Mình hỏi về KMA: Thủ tục làm lại thẻ SV của Học viện?
+      - Về Học viện Kỹ thuật mật mã, mất thẻ sinh viên KMA xin cấp lại ở đâu?
+      - Ở KMA thì thủ tục làm lại thẻ SV của Học viện?
+      - Em đang tìm hiểu về KMA, mất thẻ sinh viên KMA xin cấp lại ở đâu?
+      - KMA ơi, thủ tục làm lại thẻ SV của Học viện?
+      - Các anh chị cho em hỏi: Mất thẻ sinh viên KMA xin cấp lại ở đâu?
+      - Cần tư vấn giúp em: Thủ tục làm lại thẻ SV của Học viện?
+      - Giải đáp giúp em: Mất thẻ sinh viên KMA xin cấp lại ở đâu?
+      - Em cần thông tin cụ thể: Thủ tục làm lại thẻ SV của Học viện?
+      - How can I replace a lost KMA student ID card?
+      - I have a question about KMA: How can I replace a lost KMA student ID card?
+      - Please help me with this question: How can I replace a lost KMA student ID card?
+      - Mat the sinh vien KMA xin cap lai o dau?
+      - Thu tuc lam lai the SV cua Hoc vien?
+      - Cho em hoi, mat the sinh vien KMA xin cap lai o dau?
+      - Ad oi, thu tuc lam lai the SV cua Hoc vien?
+      - KMA: Mat the sinh vien KMA xin cap lai o dau?
+      - Mất thẻ sv KMA xin cấp lại ở đâu?
+      - Thủ tục làm lại thẻ SV của HV?
+      - ad oi, mat the sv KMA xin cap lai o dau?
+
+  # 11 · GIẤY TỜ, BIỂU MẪU & THỦ TỤC | intent trong Excel: giay_to/the_bhyt
+  - intent: faq_giay_to/the_bhyt
+    examples: |
+      - Mất thẻ BHYT thì xin cấp lại như thế nào?
+      - Mất thẻ BHYT KMA làm lại thế nào?
+      - Thủ tục xin cấp lại thẻ bảo hiểm y tế của sinh viên?
+      - Cho em hỏi, mất thẻ BHYT KMA làm lại thế nào?
+      - Cho mình hỏi, thủ tục xin cấp lại thẻ bảo hiểm y tế của sinh viên?
+      - Admin ơi, mất thẻ BHYT KMA làm lại thế nào?
+      - Ad cho mình hỏi, thủ tục xin cấp lại thẻ bảo hiểm y tế của sinh viên?
+      - Mình muốn biết: Mất thẻ BHYT KMA làm lại thế nào?
+      - Em đang thắc mắc: Thủ tục xin cấp lại thẻ bảo hiểm y tế của sinh viên?
+      - Cho hỏi một chút, mất thẻ BHYT KMA làm lại thế nào?
+      - Mình hỏi về KMA: Thủ tục xin cấp lại thẻ bảo hiểm y tế của sinh viên?
+      - Về Học viện Kỹ thuật mật mã, mất thẻ BHYT KMA làm lại thế nào?
+      - Ở KMA thì thủ tục xin cấp lại thẻ bảo hiểm y tế của sinh viên?
+      - Em đang tìm hiểu về KMA, mất thẻ BHYT KMA làm lại thế nào?
+      - KMA ơi, thủ tục xin cấp lại thẻ bảo hiểm y tế của sinh viên?
+      - Các anh chị cho em hỏi: Mất thẻ BHYT KMA làm lại thế nào?
+      - Cần tư vấn giúp em: Thủ tục xin cấp lại thẻ bảo hiểm y tế của sinh viên?
+      - Giải đáp giúp em: Mất thẻ BHYT KMA làm lại thế nào?
+      - Em cần thông tin cụ thể: Thủ tục xin cấp lại thẻ bảo hiểm y tế của sinh viên?
+      - How can KMA students replace a lost health insurance card?
+      - I have a question about KMA: How can KMA students replace a lost health insurance card?
+      - Please help me with this question: How can KMA students replace a lost health insurance card?
+      - Mat the BHYT KMA lam lai the nao?
+      - Thu tuc xin cap lai the bao hiem y te cua sinh vien?
+      - Cho em hoi, mat the BHYT KMA lam lai the nao?
+      - Ad oi, thu tuc xin cap lai the bao hiem y te cua sinh vien?
+      - KMA: Mat the BHYT KMA lam lai the nao?
+      - Mất thẻ BHYT KMA làm lại tn?
+      - Thủ tục xin cấp lại thẻ bảo hiểm y tế của sv?
+      - ad oi, mat the BHYT KMA lam lai tn?
+
+  # 11 · GIẤY TỜ, BIỂU MẪU & THỦ TỤC | intent trong Excel: giay_to/bao_hiem_mic
+  - intent: faq_giay_to/bao_hiem_mic
+    examples: |
+      - Làm đơn thanh toán bảo hiểm MIC như thế nào?
+      - Muốn thanh toán bảo hiểm MIC KMA cần mẫu đơn nào?
+      - Thủ tục làm hồ sơ yêu cầu chi trả bảo hiểm MIC?
+      - Cho em hỏi, muốn thanh toán bảo hiểm MIC KMA cần mẫu đơn nào?
+      - Cho mình hỏi, thủ tục làm hồ sơ yêu cầu chi trả bảo hiểm MIC?
+      - Admin ơi, muốn thanh toán bảo hiểm MIC KMA cần mẫu đơn nào?
+      - Ad cho mình hỏi, thủ tục làm hồ sơ yêu cầu chi trả bảo hiểm MIC?
+      - Mình muốn biết: Muốn thanh toán bảo hiểm MIC KMA cần mẫu đơn nào?
+      - Em đang thắc mắc: Thủ tục làm hồ sơ yêu cầu chi trả bảo hiểm MIC?
+      - Cho hỏi một chút, muốn thanh toán bảo hiểm MIC KMA cần mẫu đơn nào?
+      - Mình hỏi về KMA: Thủ tục làm hồ sơ yêu cầu chi trả bảo hiểm MIC?
+      - Về Học viện Kỹ thuật mật mã, muốn thanh toán bảo hiểm MIC KMA cần mẫu đơn nào?
+      - Ở KMA thì thủ tục làm hồ sơ yêu cầu chi trả bảo hiểm MIC?
+      - Em đang tìm hiểu về KMA, muốn thanh toán bảo hiểm MIC KMA cần mẫu đơn nào?
+      - KMA ơi, thủ tục làm hồ sơ yêu cầu chi trả bảo hiểm MIC?
+      - Các anh chị cho em hỏi: Muốn thanh toán bảo hiểm MIC KMA cần mẫu đơn nào?
+      - Cần tư vấn giúp em: Thủ tục làm hồ sơ yêu cầu chi trả bảo hiểm MIC?
+      - Giải đáp giúp em: Muốn thanh toán bảo hiểm MIC KMA cần mẫu đơn nào?
+      - Em cần thông tin cụ thể: Thủ tục làm hồ sơ yêu cầu chi trả bảo hiểm MIC?
+      - How can students make an MIC insurance claim at KMA?
+      - I have a question about KMA: How can students make an MIC insurance claim at KMA?
+      - Please help me with this question: How can students make an MIC insurance claim at KMA?
+      - Muon thanh toan bao hiem MIC KMA can mau don nao?
+      - Thu tuc lam ho so yeu cau chi tra bao hiem MIC?
+      - Cho em hoi, muon thanh toan bao hiem MIC KMA can mau don nao?
+      - Ad oi, thu tuc lam ho so yeu cau chi tra bao hiem MIC?
+      - KMA: Muon thanh toan bao hiem MIC KMA can mau don nao?
+      - ad oi, muon thanh toan bao hiem MIC KMA can mau don nao?
+      - Mình xin hỏi thêm: Muốn thanh toán bảo hiểm MIC KMA cần mẫu đơn nào?
+      - Mình xin hỏi thêm: Thủ tục làm hồ sơ yêu cầu chi trả bảo hiểm MIC?
+
+  # 11 · GIẤY TỜ, BIỂU MẪU & THỦ TỤC | intent trong Excel: giay_to/don_giai_quyet
+  - intent: faq_giay_to/don_giai_quyet
+    examples: |
+      - Đơn giải quyết công việc sinh viên dùng cho tình huống nào?
+      - Đơn giải quyết công việc sinh viên KMA dùng khi nào?
+      - Mẫu đơn yêu cầu Học viện giải quyết việc cá nhân?
+      - Cho em hỏi, đơn giải quyết công việc sinh viên KMA dùng khi nào?
+      - Cho mình hỏi, mẫu đơn yêu cầu Học viện giải quyết việc cá nhân?
+      - Admin ơi, đơn giải quyết công việc sinh viên KMA dùng khi nào?
+      - Ad cho mình hỏi, mẫu đơn yêu cầu Học viện giải quyết việc cá nhân?
+      - Mình muốn biết: Đơn giải quyết công việc sinh viên KMA dùng khi nào?
+      - Em đang thắc mắc: Mẫu đơn yêu cầu Học viện giải quyết việc cá nhân?
+      - Cho hỏi một chút, đơn giải quyết công việc sinh viên KMA dùng khi nào?
+      - Mình hỏi về KMA: Mẫu đơn yêu cầu Học viện giải quyết việc cá nhân?
+      - Về Học viện Kỹ thuật mật mã, đơn giải quyết công việc sinh viên KMA dùng khi nào?
+      - Ở KMA thì mẫu đơn yêu cầu Học viện giải quyết việc cá nhân?
+      - Em đang tìm hiểu về KMA, đơn giải quyết công việc sinh viên KMA dùng khi nào?
+      - KMA ơi, mẫu đơn yêu cầu Học viện giải quyết việc cá nhân?
+      - Các anh chị cho em hỏi: Đơn giải quyết công việc sinh viên KMA dùng khi nào?
+      - Cần tư vấn giúp em: Mẫu đơn yêu cầu Học viện giải quyết việc cá nhân?
+      - Giải đáp giúp em: Đơn giải quyết công việc sinh viên KMA dùng khi nào?
+      - Em cần thông tin cụ thể: Mẫu đơn yêu cầu Học viện giải quyết việc cá nhân?
+      - When should KMA students use the general student request form?
+      - I have a question about KMA: When should KMA students use the general student request form?
+      - Please help me with this question: When should KMA students use the general student request form?
+      - Don giai quyet cong viec sinh vien KMA dung khi nao?
+      - Mau don yeu cau Hoc vien giai quyet viec ca nhan?
+      - Cho em hoi, don giai quyet cong viec sinh vien KMA dung khi nao?
+      - Ad oi, mau don yeu cau Hoc vien giai quyet viec ca nhan?
+      - KMA: Don giai quyet cong viec sinh vien KMA dung khi nao?
+      - Đơn giải quyết công việc sv KMA dùng khi nào?
+      - Mẫu đơn yêu cầu HV giải quyết việc cá nhân?
+      - ad oi, don giai quyet cong viec sv KMA dung khi nao?
+
+  # 11 · GIẤY TỜ, BIỂU MẪU & THỦ TỤC | intent trong Excel: giay_to/gia_han
+  - intent: faq_giay_to/gia_han
+    examples: |
+      - Hết thời gian đào tạo, muốn xin gia hạn học tập làm gì?
+      - Xin gia hạn thời gian đào tạo KMA như thế nào?
+      - Hết hạn học ở Học viện cần làm đơn gia hạn gì?
+      - Cho em hỏi, xin gia hạn thời gian đào tạo KMA như thế nào?
+      - Cho mình hỏi, hết hạn học ở Học viện cần làm đơn gia hạn gì?
+      - Admin ơi, xin gia hạn thời gian đào tạo KMA như thế nào?
+      - Ad cho mình hỏi, hết hạn học ở Học viện cần làm đơn gia hạn gì?
+      - Mình muốn biết: Xin gia hạn thời gian đào tạo KMA như thế nào?
+      - Em đang thắc mắc: Hết hạn học ở Học viện cần làm đơn gia hạn gì?
+      - Cho hỏi một chút, xin gia hạn thời gian đào tạo KMA như thế nào?
+      - Mình hỏi về KMA: Hết hạn học ở Học viện cần làm đơn gia hạn gì?
+      - Về Học viện Kỹ thuật mật mã, xin gia hạn thời gian đào tạo KMA như thế nào?
+      - Ở KMA thì hết hạn học ở Học viện cần làm đơn gia hạn gì?
+      - Em đang tìm hiểu về KMA, xin gia hạn thời gian đào tạo KMA như thế nào?
+      - KMA ơi, hết hạn học ở Học viện cần làm đơn gia hạn gì?
+      - Các anh chị cho em hỏi: Xin gia hạn thời gian đào tạo KMA như thế nào?
+      - Cần tư vấn giúp em: Hết hạn học ở Học viện cần làm đơn gia hạn gì?
+      - Giải đáp giúp em: Xin gia hạn thời gian đào tạo KMA như thế nào?
+      - Em cần thông tin cụ thể: Hết hạn học ở Học viện cần làm đơn gia hạn gì?
+      - How can KMA students request an extension of their study period?
+      - I have a question about KMA: How can KMA students request an extension of their study period?
+      - Please help me with this question: How can KMA students request an extension of their study period?
+      - Xin gia han thoi gian dao tao KMA nhu the nao?
+      - Het han hoc o Hoc vien can lam don gia han gi?
+      - Cho em hoi, xin gia han thoi gian dao tao KMA nhu the nao?
+      - Ad oi, het han hoc o Hoc vien can lam don gia han gi?
+      - KMA: Xin gia han thoi gian dao tao KMA nhu the nao?
+      - Xin gia hạn thời gian đào tạo KMA ntn?
+      - Hết hạn học ở HV cần làm đơn gia hạn gì?
+      - ad oi, xin gia han thoi gian dao tao KMA ntn?
+
+  # 11 · GIẤY TỜ, BIỂU MẪU & THỦ TỤC | intent trong Excel: giay_to/hoan_thanh_ra_truong
+  - intent: faq_giay_to/hoan_thanh_ra_truong
+    examples: |
+      - Ra trường/thôi học cần phiếu thanh toán gì?
+      - Ra trường KMA cần phiếu thanh toán gì?
+      - Thủ tục hoàn tất công nợ khi tốt nghiệp hoặc thôi học?
+      - Cho em hỏi, ra trường KMA cần phiếu thanh toán gì?
+      - Cho mình hỏi, thủ tục hoàn tất công nợ khi tốt nghiệp hoặc thôi học?
+      - Admin ơi, ra trường KMA cần phiếu thanh toán gì?
+      - Ad cho mình hỏi, thủ tục hoàn tất công nợ khi tốt nghiệp hoặc thôi học?
+      - Mình muốn biết: Ra trường KMA cần phiếu thanh toán gì?
+      - Em đang thắc mắc: Thủ tục hoàn tất công nợ khi tốt nghiệp hoặc thôi học?
+      - Cho hỏi một chút, ra trường KMA cần phiếu thanh toán gì?
+      - Mình hỏi về KMA: Thủ tục hoàn tất công nợ khi tốt nghiệp hoặc thôi học?
+      - Về Học viện Kỹ thuật mật mã, ra trường KMA cần phiếu thanh toán gì?
+      - Ở KMA thì thủ tục hoàn tất công nợ khi tốt nghiệp hoặc thôi học?
+      - Em đang tìm hiểu về KMA, ra trường KMA cần phiếu thanh toán gì?
+      - KMA ơi, thủ tục hoàn tất công nợ khi tốt nghiệp hoặc thôi học?
+      - Các anh chị cho em hỏi: Ra trường KMA cần phiếu thanh toán gì?
+      - Cần tư vấn giúp em: Thủ tục hoàn tất công nợ khi tốt nghiệp hoặc thôi học?
+      - Giải đáp giúp em: Ra trường KMA cần phiếu thanh toán gì?
+      - Em cần thông tin cụ thể: Thủ tục hoàn tất công nợ khi tốt nghiệp hoặc thôi học?
+      - What clearance form is required when leaving or graduating from KMA?
+      - I have a question about KMA: What clearance form is required when leaving or graduating from KMA?
+      - Please help me with this question: What clearance form is required when leaving or graduating from KMA?
+      - Ra truong KMA can phieu thanh toan gi?
+      - Thu tuc hoan tat cong no khi tot nghiep hoac thoi hoc?
+      - Cho em hoi, ra truong KMA can phieu thanh toan gi?
+      - Ad oi, thu tuc hoan tat cong no khi tot nghiep hoac thoi hoc?
+      - KMA: Ra truong KMA can phieu thanh toan gi?
+      - ad oi, ra truong KMA can phieu thanh toan gi?
+      - Mình xin hỏi thêm: Ra trường KMA cần phiếu thanh toán gì?
+      - Mình xin hỏi thêm: Thủ tục hoàn tất công nợ khi tốt nghiệp hoặc thôi học?
+
+  # 11 · GIẤY TỜ, BIỂU MẪU & THỦ TỤC | intent trong Excel: giay_to/hoan_thi
+  - intent: faq_giay_to/hoan_thi
+    examples: |
+      - Muốn xin mẫu đơn hoãn thi ở đâu?
+      - Sinh viên KMA có thể lấy mẫu đơn xin hoãn thi ở đâu?
+      - Tải mẫu đơn hoãn thi KMA ở đâu?
+      - Xin biểu mẫu đề nghị dời lịch thi học phần?
+      - Cho em hỏi, tải mẫu đơn hoãn thi KMA ở đâu?
+      - Cho mình hỏi, xin biểu mẫu đề nghị dời lịch thi học phần?
+      - Admin ơi, tải mẫu đơn hoãn thi KMA ở đâu?
+      - Ad cho mình hỏi, xin biểu mẫu đề nghị dời lịch thi học phần?
+      - Mình muốn biết: Tải mẫu đơn hoãn thi KMA ở đâu?
+      - Em đang thắc mắc: Xin biểu mẫu đề nghị dời lịch thi học phần?
+      - Cho hỏi một chút, tải mẫu đơn hoãn thi KMA ở đâu?
+      - Mình hỏi về KMA: Xin biểu mẫu đề nghị dời lịch thi học phần?
+      - Về Học viện Kỹ thuật mật mã, tải mẫu đơn hoãn thi KMA ở đâu?
+      - Ở KMA thì xin biểu mẫu đề nghị dời lịch thi học phần?
+      - Em đang tìm hiểu về KMA, tải mẫu đơn hoãn thi KMA ở đâu?
+      - KMA ơi, xin biểu mẫu đề nghị dời lịch thi học phần?
+      - Các anh chị cho em hỏi: Tải mẫu đơn hoãn thi KMA ở đâu?
+      - Cần tư vấn giúp em: Xin biểu mẫu đề nghị dời lịch thi học phần?
+      - Giải đáp giúp em: Tải mẫu đơn hoãn thi KMA ở đâu?
+      - Em cần thông tin cụ thể: Xin biểu mẫu đề nghị dời lịch thi học phần?
+      - Where can I obtain the KMA exam postponement request form?
+      - I have a question about KMA: Where can I obtain the KMA exam postponement request form?
+      - Please help me with this question: Where can I obtain the KMA exam postponement request form?
+      - Tai mau don hoan thi KMA o dau?
+      - Xin bieu mau de nghi doi lich thi hoc phan?
+      - Cho em hoi, tai mau don hoan thi KMA o dau?
+      - Ad oi, xin bieu mau de nghi doi lich thi hoc phan?
+      - KMA: Tai mau don hoan thi KMA o dau?
+      - ad oi, tai mau don hoan thi KMA o dau?
+      - Mình xin hỏi thêm: Tải mẫu đơn hoãn thi KMA ở đâu?
+      - Mình xin hỏi thêm: Xin biểu mẫu đề nghị dời lịch thi học phần?
+
+  # 11 · GIẤY TỜ, BIỂU MẪU & THỦ TỤC | intent trong Excel: giay_to/phuc_khao
+  - intent: faq_giay_to/phuc_khao
+    examples: |
+      - Mẫu đơn phúc khảo bài thi lấy ở đâu?
+      - Mẫu đơn phúc khảo bài thi KMA lấy ở đâu?
+      - Xin biểu mẫu yêu cầu chấm lại điểm thi Học viện?
+      - Cho em hỏi, mẫu đơn phúc khảo bài thi KMA lấy ở đâu?
+      - Cho mình hỏi, xin biểu mẫu yêu cầu chấm lại điểm thi Học viện?
+      - Admin ơi, mẫu đơn phúc khảo bài thi KMA lấy ở đâu?
+      - Ad cho mình hỏi, xin biểu mẫu yêu cầu chấm lại điểm thi Học viện?
+      - Mình muốn biết: Mẫu đơn phúc khảo bài thi KMA lấy ở đâu?
+      - Em đang thắc mắc: Xin biểu mẫu yêu cầu chấm lại điểm thi Học viện?
+      - Cho hỏi một chút, mẫu đơn phúc khảo bài thi KMA lấy ở đâu?
+      - Mình hỏi về KMA: Xin biểu mẫu yêu cầu chấm lại điểm thi Học viện?
+      - Về Học viện Kỹ thuật mật mã, mẫu đơn phúc khảo bài thi KMA lấy ở đâu?
+      - Ở KMA thì xin biểu mẫu yêu cầu chấm lại điểm thi Học viện?
+      - Em đang tìm hiểu về KMA, mẫu đơn phúc khảo bài thi KMA lấy ở đâu?
+      - KMA ơi, xin biểu mẫu yêu cầu chấm lại điểm thi Học viện?
+      - Các anh chị cho em hỏi: Mẫu đơn phúc khảo bài thi KMA lấy ở đâu?
+      - Cần tư vấn giúp em: Xin biểu mẫu yêu cầu chấm lại điểm thi Học viện?
+      - Giải đáp giúp em: Mẫu đơn phúc khảo bài thi KMA lấy ở đâu?
+      - Em cần thông tin cụ thể: Xin biểu mẫu yêu cầu chấm lại điểm thi Học viện?
+      - Where can I download the KMA exam regrading request form?
+      - I have a question about KMA: Where can I download the KMA exam regrading request form?
+      - Please help me with this question: Where can I download the KMA exam regrading request form?
+      - Mau don phuc khao bai thi KMA lay o dau?
+      - Xin bieu mau yeu cau cham lai diem thi Hoc vien?
+      - Cho em hoi, mau don phuc khao bai thi KMA lay o dau?
+      - Ad oi, xin bieu mau yeu cau cham lai diem thi Hoc vien?
+      - KMA: Mau don phuc khao bai thi KMA lay o dau?
+      - Xin biểu mẫu yêu cầu chấm lại điểm thi HV?
+      - ad oi, mau don phuc khao bai thi KMA lay o dau?
+      - Mình xin hỏi thêm: Mẫu đơn phúc khảo bài thi KMA lấy ở đâu?
+
+  # 11 · GIẤY TỜ, BIỂU MẪU & THỦ TỤC | intent trong Excel: giay_to/gioi_thieu_thuc_tap
+  - intent: faq_giay_to/gioi_thieu_thuc_tap
+    examples: |
+      - Xin giấy giới thiệu thực tập tại doanh nghiệp thế nào?
+      - Xin giấy giới thiệu đi thực tập KMA thế nào?
+      - Mẫu đơn giới thiệu thực tập sinh viên Học viện lấy ở đâu?
+      - Cho em hỏi, xin giấy giới thiệu đi thực tập KMA thế nào?
+      - Cho mình hỏi, mẫu đơn giới thiệu thực tập sinh viên Học viện lấy ở đâu?
+      - Admin ơi, xin giấy giới thiệu đi thực tập KMA thế nào?
+      - Ad cho mình hỏi, mẫu đơn giới thiệu thực tập sinh viên Học viện lấy ở đâu?
+      - Mình muốn biết: Xin giấy giới thiệu đi thực tập KMA thế nào?
+      - Em đang thắc mắc: Mẫu đơn giới thiệu thực tập sinh viên Học viện lấy ở đâu?
+      - Cho hỏi một chút, xin giấy giới thiệu đi thực tập KMA thế nào?
+      - Mình hỏi về KMA: Mẫu đơn giới thiệu thực tập sinh viên Học viện lấy ở đâu?
+      - Về Học viện Kỹ thuật mật mã, xin giấy giới thiệu đi thực tập KMA thế nào?
+      - Ở KMA thì mẫu đơn giới thiệu thực tập sinh viên Học viện lấy ở đâu?
+      - Em đang tìm hiểu về KMA, xin giấy giới thiệu đi thực tập KMA thế nào?
+      - KMA ơi, mẫu đơn giới thiệu thực tập sinh viên Học viện lấy ở đâu?
+      - Các anh chị cho em hỏi: Xin giấy giới thiệu đi thực tập KMA thế nào?
+      - Cần tư vấn giúp em: Mẫu đơn giới thiệu thực tập sinh viên Học viện lấy ở đâu?
+      - Giải đáp giúp em: Xin giấy giới thiệu đi thực tập KMA thế nào?
+      - Em cần thông tin cụ thể: Mẫu đơn giới thiệu thực tập sinh viên Học viện lấy ở đâu?
+      - How can KMA students request an internship introduction letter?
+      - I have a question about KMA: How can KMA students request an internship introduction letter?
+      - Please help me with this question: How can KMA students request an internship introduction letter?
+      - Xin giay gioi thieu di thuc tap KMA the nao?
+      - Mau don gioi thieu thuc tap sinh vien Hoc vien lay o dau?
+      - Cho em hoi, xin giay gioi thieu di thuc tap KMA the nao?
+      - Ad oi, mau don gioi thieu thuc tap sinh vien Hoc vien lay o dau?
+      - KMA: Xin giay gioi thieu di thuc tap KMA the nao?
+      - Xin giấy giới thiệu đi thực tập KMA tn?
+      - Mẫu đơn giới thiệu thực tập sv HV lấy ở đâu?
+      - ad oi, xin giay gioi thieu di thuc tap KMA tn?

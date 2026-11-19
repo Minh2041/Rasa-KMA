@@ -1,0 +1,208 @@
+version: "3.1"
+
+nlu:
+  # 08 · HỌC PHÍ & THANH TOÁN | intent trong Excel: hoc_phi/tong_quan
+  - intent: faq_hoc_phi/tong_quan
+    examples: |
+      - Học phí của KMA là bao nhiêu, đóng thế nào?
+      - Thông tin tổng quan về học phí KMA?
+      - Học phí Học viện đóng theo học kỳ như thế nào?
+      - Cho em hỏi, thông tin tổng quan về học phí KMA?
+      - Cho mình hỏi, học phí Học viện đóng theo học kỳ như thế nào?
+      - Admin ơi, thông tin tổng quan về học phí KMA?
+      - Ad cho mình hỏi, học phí Học viện đóng theo học kỳ như thế nào?
+      - Mình muốn biết: Thông tin tổng quan về học phí KMA?
+      - Em đang thắc mắc: Học phí Học viện đóng theo học kỳ như thế nào?
+      - Cho hỏi một chút, thông tin tổng quan về học phí KMA?
+      - Mình hỏi về KMA: Học phí Học viện đóng theo học kỳ như thế nào?
+      - Về Học viện Kỹ thuật mật mã, thông tin tổng quan về học phí KMA?
+      - Ở KMA thì học phí Học viện đóng theo học kỳ như thế nào?
+      - Em đang tìm hiểu về KMA, thông tin tổng quan về học phí KMA?
+      - KMA ơi, học phí Học viện đóng theo học kỳ như thế nào?
+      - Các anh chị cho em hỏi: Thông tin tổng quan về học phí KMA?
+      - Cần tư vấn giúp em: Học phí Học viện đóng theo học kỳ như thế nào?
+      - Giải đáp giúp em: Thông tin tổng quan về học phí KMA?
+      - Em cần thông tin cụ thể: Học phí Học viện đóng theo học kỳ như thế nào?
+      - How does tuition payment work at KMA?
+      - I have a question about KMA: How does tuition payment work at KMA?
+      - Please help me with this question: How does tuition payment work at KMA?
+      - Thong tin tong quan ve hoc phi KMA?
+      - Hoc phi Hoc vien dong theo hoc ky nhu the nao?
+      - Cho em hoi, thong tin tong quan ve hoc phi KMA?
+      - Ad oi, hoc phi Hoc vien dong theo hoc ky nhu the nao?
+      - KMA: Thong tin tong quan ve hoc phi KMA?
+      - Thông tin tổng quan về hp KMA?
+      - HP HV đóng theo học kỳ ntn?
+      - ad oi, thong tin tong quan ve hp KMA?
+
+  # 08 · HỌC PHÍ & THANH TOÁN | intent trong Excel: hoc_phi/muc_theo_nam
+  - intent: faq_hoc_phi/muc_theo_nam
+    examples: |
+      - Một tín chỉ ở KMA bao nhiêu tiền học phí?
+      - Sinh viên KMA phải đóng học phí bao nhiêu và thực hiện thanh toán bằng cách nào?
+      - Một tín chỉ KMA bao nhiêu tiền?
+      - Mức thu học phí tín chỉ Học viện theo năm học?
+      - Cho em hỏi, một tín chỉ KMA bao nhiêu tiền?
+      - Cho mình hỏi, mức thu học phí tín chỉ Học viện theo năm học?
+      - Admin ơi, một tín chỉ KMA bao nhiêu tiền?
+      - Ad cho mình hỏi, mức thu học phí tín chỉ Học viện theo năm học?
+      - Mình muốn biết: Một tín chỉ KMA bao nhiêu tiền?
+      - Em đang thắc mắc: Mức thu học phí tín chỉ Học viện theo năm học?
+      - Cho hỏi một chút, một tín chỉ KMA bao nhiêu tiền?
+      - Mình hỏi về KMA: Mức thu học phí tín chỉ Học viện theo năm học?
+      - Về Học viện Kỹ thuật mật mã, một tín chỉ KMA bao nhiêu tiền?
+      - Ở KMA thì mức thu học phí tín chỉ Học viện theo năm học?
+      - Học phí của Học viện có tăng theo từng năm không?
+      - KMA ơi, mức thu học phí tín chỉ Học viện theo năm học?
+      - Các anh chị cho em hỏi: Một tín chỉ KMA bao nhiêu tiền?
+      - Cần tư vấn giúp em: Mức thu học phí tín chỉ Học viện theo năm học?
+      - Giải đáp giúp em: Một tín chỉ KMA bao nhiêu tiền?
+      - Em cần thông tin cụ thể: Mức thu học phí tín chỉ Học viện theo năm học?
+      - What is the tuition fee per credit at KMA?
+      - I have a question about KMA: What is the tuition fee per credit at KMA?
+      - Please help me with this question: What is the tuition fee per credit at KMA?
+      - Mot tin chi KMA bao nhieu tien?
+      - Muc thu hoc phi tin chi Hoc vien theo nam hoc?
+      - Cho em hoi, mot tin chi KMA bao nhieu tien?
+      - Ad oi, muc thu hoc phi tin chi Hoc vien theo nam hoc?
+      - KMA: Mot tin chi KMA bao nhieu tien?
+      - Một tín chỉ KMA bn tiền?
+      - Mức thu hp tín chỉ HV theo năm học?
+      - ad oi, mot tin chi KMA bn tien?
+
+  # 08 · HỌC PHÍ & THANH TOÁN | intent trong Excel: hoc_phi/tinh_so_tien
+  - intent: faq_hoc_phi/tinh_so_tien
+    examples: |
+      - Em đăng ký X tín chỉ thì học phí phải nộp bao nhiêu?
+      - Đăng ký 20 tín chỉ KMA phải đóng bao nhiêu học phí?
+      - Cách tính tổng tiền học phí dựa trên số tín chỉ?
+      - Cho em hỏi, đăng ký 20 tín chỉ KMA phải đóng bao nhiêu học phí?
+      - Cho mình hỏi, cách tính tổng tiền học phí dựa trên số tín chỉ?
+      - Admin ơi, đăng ký 20 tín chỉ KMA phải đóng bao nhiêu học phí?
+      - Ad cho mình hỏi, cách tính tổng tiền học phí dựa trên số tín chỉ?
+      - Mình muốn biết: Đăng ký 20 tín chỉ KMA phải đóng bao nhiêu học phí?
+      - Em đang thắc mắc: Cách tính tổng tiền học phí dựa trên số tín chỉ?
+      - Cho hỏi một chút, đăng ký 20 tín chỉ KMA phải đóng bao nhiêu học phí?
+      - Mình hỏi về KMA: Cách tính tổng tiền học phí dựa trên số tín chỉ?
+      - Về Học viện Kỹ thuật mật mã, đăng ký 20 tín chỉ KMA phải đóng bao nhiêu học phí?
+      - Ở KMA thì cách tính tổng tiền học phí dựa trên số tín chỉ?
+      - Em đang tìm hiểu về KMA, đăng ký 20 tín chỉ KMA phải đóng bao nhiêu học phí?
+      - KMA ơi, cách tính tổng tiền học phí dựa trên số tín chỉ?
+      - Các anh chị cho em hỏi: Đăng ký 20 tín chỉ KMA phải đóng bao nhiêu học phí?
+      - Cần tư vấn giúp em: Cách tính tổng tiền học phí dựa trên số tín chỉ?
+      - Giải đáp giúp em: Đăng ký 20 tín chỉ KMA phải đóng bao nhiêu học phí?
+      - Em cần thông tin cụ thể: Cách tính tổng tiền học phí dựa trên số tín chỉ?
+      - How can I calculate KMA tuition from registered credits?
+      - I have a question about KMA: How can I calculate KMA tuition from registered credits?
+      - Please help me with this question: How can I calculate KMA tuition from registered credits?
+      - Dang ky 20 tin chi KMA phai dong bao nhieu hoc phi?
+      - Cach tinh tong tien hoc phi dua tren so tin chi?
+      - Cho em hoi, dang ky 20 tin chi KMA phai dong bao nhieu hoc phi?
+      - Ad oi, cach tinh tong tien hoc phi dua tren so tin chi?
+      - KMA: Dang ky 20 tin chi KMA phai dong bao nhieu hoc phi?
+      - Đăng ký 20 tín chỉ KMA phải đóng bn hp?
+      - Cách tính tổng tiền hp dựa trên số tín chỉ?
+      - ad oi, dk 20 tin chi KMA phai dong bn hp?
+
+  # 08 · HỌC PHÍ & THANH TOÁN | intent trong Excel: hoc_phi/nop_hoc_phi
+  - intent: faq_hoc_phi/nop_hoc_phi
+    examples: |
+      - Học phí nộp vào đâu, nội dung chuyển khoản thế nào?
+      - Chuyển khoản học phí KMA vào ngân hàng nào?
+      - Hướng dẫn nộp tiền học phí và nội dung chuyển khoản?
+      - Cho em hỏi, chuyển khoản học phí KMA vào ngân hàng nào?
+      - Cho mình hỏi, hướng dẫn nộp tiền học phí và nội dung chuyển khoản?
+      - Admin ơi, chuyển khoản học phí KMA vào ngân hàng nào?
+      - Ad cho mình hỏi, hướng dẫn nộp tiền học phí và nội dung chuyển khoản?
+      - Mình muốn biết: Chuyển khoản học phí KMA vào ngân hàng nào?
+      - Em đang thắc mắc: Hướng dẫn nộp tiền học phí và nội dung chuyển khoản?
+      - Cho hỏi một chút, chuyển khoản học phí KMA vào ngân hàng nào?
+      - Mình hỏi về KMA: Hướng dẫn nộp tiền học phí và nội dung chuyển khoản?
+      - Về Học viện Kỹ thuật mật mã, chuyển khoản học phí KMA vào ngân hàng nào?
+      - Ở KMA thì hướng dẫn nộp tiền học phí và nội dung chuyển khoản?
+      - Em đang tìm hiểu về KMA, chuyển khoản học phí KMA vào ngân hàng nào?
+      - KMA ơi, hướng dẫn nộp tiền học phí và nội dung chuyển khoản?
+      - Các anh chị cho em hỏi: Chuyển khoản học phí KMA vào ngân hàng nào?
+      - Cần tư vấn giúp em: Hướng dẫn nộp tiền học phí và nội dung chuyển khoản?
+      - Giải đáp giúp em: Chuyển khoản học phí KMA vào ngân hàng nào?
+      - Em cần thông tin cụ thể: Hướng dẫn nộp tiền học phí và nội dung chuyển khoản?
+      - Where and how should KMA students pay tuition fees?
+      - I have a question about KMA: Where and how should KMA students pay tuition fees?
+      - Please help me with this question: Where and how should KMA students pay tuition fees?
+      - Chuyen khoan hoc phi KMA vao ngan hang nao?
+      - Huong dan nop tien hoc phi va noi dung chuyen khoan?
+      - Cho em hoi, chuyen khoan hoc phi KMA vao ngan hang nao?
+      - Ad oi, huong dan nop tien hoc phi va noi dung chuyen khoan?
+      - KMA: Chuyen khoan hoc phi KMA vao ngan hang nao?
+      - Chuyển khoản hp KMA vào ngân hàng nào?
+      - Hướng dẫn nộp tiền hp và nội dung chuyển khoản?
+      - ad oi, chuyen khoan hp KMA vao ngan hang nao?
+
+  # 08 · HỌC PHÍ & THANH TOÁN | intent trong Excel: hoc_phi/han_nop_cham_nop
+  - intent: faq_hoc_phi/han_nop_cham_nop
+    examples: |
+      - Khi nào phải đóng học phí, chậm đóng thì sao?
+      - Hạn đóng học phí KMA đến ngày nào?
+      - Sinh viên KMA phải nộp học phí vào thời điểm nào và sẽ bị xử lý thế nào nếu nộp chậm?
+      - Đóng học phí muộn ở Học viện có bị sao không?
+      - Cho em hỏi, hạn đóng học phí KMA đến ngày nào?
+      - Cho mình hỏi, đóng học phí muộn ở Học viện có bị sao không?
+      - Admin ơi, hạn đóng học phí KMA đến ngày nào?
+      - Ad cho mình hỏi, đóng học phí muộn ở Học viện có bị sao không?
+      - Mình muốn biết: Hạn đóng học phí KMA đến ngày nào?
+      - Em đang thắc mắc: Đóng học phí muộn ở Học viện có bị sao không?
+      - Cho hỏi một chút, hạn đóng học phí KMA đến ngày nào?
+      - Mình hỏi về KMA: Đóng học phí muộn ở Học viện có bị sao không?
+      - Về Học viện Kỹ thuật mật mã, hạn đóng học phí KMA đến ngày nào?
+      - Ở KMA thì đóng học phí muộn ở Học viện có bị sao không?
+      - Em đang tìm hiểu về KMA, hạn đóng học phí KMA đến ngày nào?
+      - KMA ơi, đóng học phí muộn ở Học viện có bị sao không?
+      - Các anh chị cho em hỏi: Hạn đóng học phí KMA đến ngày nào?
+      - Cần tư vấn giúp em: Đóng học phí muộn ở Học viện có bị sao không?
+      - Giải đáp giúp em: Hạn đóng học phí KMA đến ngày nào?
+      - Em cần thông tin cụ thể: Đóng học phí muộn ở Học viện có bị sao không?
+      - What is the KMA tuition payment deadline and late-payment policy?
+      - I have a question about KMA: What is the KMA tuition payment deadline and late-payment policy?
+      - Please help me with this question: What is the KMA tuition payment deadline and late-payment policy?
+      - Han dong hoc phi KMA den ngay nao?
+      - Dong hoc phi muon o Hoc vien co bi sao khong?
+      - Cho em hoi, han dong hoc phi KMA den ngay nao?
+      - Ad oi, dong hoc phi muon o Hoc vien co bi sao khong?
+      - KMA: Han dong hoc phi KMA den ngay nao?
+      - Hạn đóng hp KMA đến ngày nào?
+      - Đóng hp muộn ở HV có bị sao ko?
+      - ad oi, han dong hp KMA den ngay nao?
+
+  # 08 · HỌC PHÍ & THANH TOÁN | intent trong Excel: hoc_phi/loi_giao_dich
+  - intent: faq_hoc_phi/loi_giao_dich
+    examples: |
+      - Chuyển học phí sai thông tin hoặc chưa cập nhật thì làm gì?
+      - Đã chuyển học phí mà KMA chưa cập nhật thì sao?
+      - Chuyển nhầm nội dung thanh toán học phí xử lý thế nào?
+      - Cho em hỏi, đã chuyển học phí mà KMA chưa cập nhật thì sao?
+      - Cho mình hỏi, chuyển nhầm nội dung thanh toán học phí xử lý thế nào?
+      - Admin ơi, đã chuyển học phí mà KMA chưa cập nhật thì sao?
+      - Ad cho mình hỏi, chuyển nhầm nội dung thanh toán học phí xử lý thế nào?
+      - Mình muốn biết: Đã chuyển học phí mà KMA chưa cập nhật thì sao?
+      - Em đang thắc mắc: Chuyển nhầm nội dung thanh toán học phí xử lý thế nào?
+      - Cho hỏi một chút, đã chuyển học phí mà KMA chưa cập nhật thì sao?
+      - Mình hỏi về KMA: Chuyển nhầm nội dung thanh toán học phí xử lý thế nào?
+      - Về Học viện Kỹ thuật mật mã, đã chuyển học phí mà KMA chưa cập nhật thì sao?
+      - Ở KMA thì chuyển nhầm nội dung thanh toán học phí xử lý thế nào?
+      - Em đang tìm hiểu về KMA, đã chuyển học phí mà KMA chưa cập nhật thì sao?
+      - KMA ơi, chuyển nhầm nội dung thanh toán học phí xử lý thế nào?
+      - Các anh chị cho em hỏi: Đã chuyển học phí mà KMA chưa cập nhật thì sao?
+      - Cần tư vấn giúp em: Chuyển nhầm nội dung thanh toán học phí xử lý thế nào?
+      - Giải đáp giúp em: Đã chuyển học phí mà KMA chưa cập nhật thì sao?
+      - Em cần thông tin cụ thể: Chuyển nhầm nội dung thanh toán học phí xử lý thế nào?
+      - How can I fix a missing or incorrect KMA tuition payment record?
+      - I have a question about KMA: How can I fix a missing or incorrect KMA tuition payment record?
+      - Please help me with this question: How can I fix a missing or incorrect KMA tuition payment record?
+      - Da chuyen hoc phi ma KMA chua cap nhat thi sao?
+      - Chuyen nham noi dung thanh toan hoc phi xu ly the nao?
+      - Cho em hoi, da chuyen hoc phi ma KMA chua cap nhat thi sao?
+      - Ad oi, chuyen nham noi dung thanh toan hoc phi xu ly the nao?
+      - KMA: Da chuyen hoc phi ma KMA chua cap nhat thi sao?
+      - Đã chuyển hp mà KMA chưa cập nhật thì sao?
+      - Chuyển nhầm nội dung thanh toán hp xử lý tn?
+      - ad oi, da chuyen hp ma KMA chua cap nhat thi sao?

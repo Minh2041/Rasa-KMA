@@ -1,0 +1,138 @@
+version: "3.1"
+
+nlu:
+  # 14 · PHẢN HỒI, TRỢ LÝ & TÌNH HUỐNG KHÁC | intent trong Excel: tro_giup/chatbot
+  - intent: faq_tro_giup/chatbot
+    examples: |
+      - Chatbot KMA giúp được những việc gì?
+      - Chatbot hỗ trợ sinh viên KMA làm được gì?
+      - Trợ lý ảo Học viện giải đáp những vấn đề nào?
+      - Cho em hỏi, chatbot hỗ trợ sinh viên KMA làm được gì?
+      - Cho mình hỏi, trợ lý ảo Học viện giải đáp những vấn đề nào?
+      - Admin ơi, chatbot hỗ trợ sinh viên KMA làm được gì?
+      - Ad cho mình hỏi, trợ lý ảo Học viện giải đáp những vấn đề nào?
+      - Mình muốn biết: Chatbot hỗ trợ sinh viên KMA làm được gì?
+      - Em đang thắc mắc: Trợ lý ảo Học viện giải đáp những vấn đề nào?
+      - Cho hỏi một chút, chatbot hỗ trợ sinh viên KMA làm được gì?
+      - Mình hỏi về KMA: Trợ lý ảo Học viện giải đáp những vấn đề nào?
+      - Về Học viện Kỹ thuật mật mã, chatbot hỗ trợ sinh viên KMA làm được gì?
+      - Ở KMA thì trợ lý ảo Học viện giải đáp những vấn đề nào?
+      - Em đang tìm hiểu về KMA, chatbot hỗ trợ sinh viên KMA làm được gì?
+      - KMA ơi, trợ lý ảo Học viện giải đáp những vấn đề nào?
+      - Các anh chị cho em hỏi: Chatbot hỗ trợ sinh viên KMA làm được gì?
+      - Cần tư vấn giúp em: Trợ lý ảo Học viện giải đáp những vấn đề nào?
+      - Giải đáp giúp em: Chatbot hỗ trợ sinh viên KMA làm được gì?
+      - Em cần thông tin cụ thể: Trợ lý ảo Học viện giải đáp những vấn đề nào?
+      - What questions can the KMA student support chatbot answer?
+      - I have a question about KMA: What questions can the KMA student support chatbot answer?
+      - Please help me with this question: What questions can the KMA student support chatbot answer?
+      - Chatbot ho tro sinh vien KMA lam duoc gi?
+      - Tro ly ao Hoc vien giai dap nhung van de nao?
+      - Cho em hoi, chatbot ho tro sinh vien KMA lam duoc gi?
+      - Ad oi, tro ly ao Hoc vien giai dap nhung van de nao?
+      - KMA: Chatbot ho tro sinh vien KMA lam duoc gi?
+      - Chatbot hỗ trợ sv KMA làm dc gì?
+      - Trợ lý ảo HV giải đáp những vấn đề nào?
+      - ad oi, chatbot ho tro sv KMA lam dc gi?
+
+  # 14 · PHẢN HỒI, TRỢ LÝ & TÌNH HUỐNG KHÁC | intent trong Excel: tro_giup/chao_hoi
+  - intent: faq_tro_giup/chao_hoi
+    examples: |
+      - Xin chào
+      - Chào bạn
+      - Chào chatbot KMA
+      - Hello bot
+      - Hi KMA
+      - Hello
+      - Hi there
+      - Good morning KMA chatbot
+      - Good evening KMA bot
+      - Xin chào trợ lý ảo
+      - Chào bot nha
+      - Chào admin
+      - Chào bạn, mình có câu hỏi
+      - Alo chatbot ơi
+      - Alo KMA
+      - Ad ơi, chào nhé
+      - Em chào bot ạ
+      - Bot ơi, xin chào
+      - Chào trợ lý sinh viên KMA
+      - Mình xin chào nha
+      - Hello trợ lý KMA
+      - hi bot kma
+      - chao bot nha
+      - xin chao kma
+      - chao tro ly ao
+      - alo ad oi
+      - Hi chatbot
+      - Chào buổi sáng bot KMA
+      - Chào buổi tối trợ lý ảo
+      - Chào anh chị chatbot
+
+  # 14 · PHẢN HỒI, TRỢ LÝ & TÌNH HUỐNG KHÁC | intent trong Excel: tro_giup/cam_on_tam_biet
+  - intent: faq_tro_giup/cam_on_tam_biet
+    examples: |
+      - Cảm ơn bạn
+      - Cảm ơn chatbot
+      - Cảm ơn bot KMA
+      - Cảm ơn nhiều nhé
+      - Thank you
+      - Thanks KMA bot
+      - Thanks for your help
+      - Goodbye chatbot
+      - Bye KMA
+      - Tạm biệt
+      - Chào tạm biệt nha
+      - Mình cảm ơn nhé
+      - Em cảm ơn ạ
+      - Cảm ơn ad nhiều
+      - Bot trả lời hữu ích, cảm ơn
+      - Cảm ơn và chào nhé
+      - Bye bye bot
+      - Tks bot
+      - Thank you very much
+      - Thanks goodbye
+      - Thanks a lot KMA chatbot
+      - cam on chatbot
+      - cam on ad
+      - tam biet nha
+      - bye bot kma
+      - cảm ơn, hẹn gặp lại
+      - Thôi mình chào nhé
+      - Hẹn gặp lại bot
+      - Tạm biệt trợ lý ảo KMA
+      - Ok cảm ơn nhiều
+
+  # 14 · PHẢN HỒI, TRỢ LÝ & TÌNH HUỐNG KHÁC | intent trong Excel: tro_giup/khong_hieu
+  - intent: faq_tro_giup/khong_hieu
+    examples: |
+      - Chatbot trả lời sai rồi
+      - Bạn hiểu nhầm ý mình rồi
+      - Không đúng câu mình hỏi
+      - Bot hiểu sai câu hỏi của em
+      - Câu trả lời này không đúng ý em
+      - Bạn đang trả lời nhầm chủ đề
+      - Thông tin bạn trả lời không khớp câu hỏi
+      - Không phải nội dung mình cần hỏi
+      - Bạn bắt sai intent rồi
+      - Bot nhầm câu hỏi rồi
+      - Mình hỏi một đằng bạn trả lời một nẻo
+      - Bạn trả lời sai chủ đề
+      - Đây không phải đáp án cho câu hỏi của tôi
+      - Mình không hỏi về vấn đề này
+      - Bạn có thể đọc lại đúng câu hỏi không
+      - I think you misunderstood my question
+      - Your answer is about the wrong topic
+      - This is not what I asked
+      - That answer seems incorrect
+      - Please correct your interpretation
+      - Bạn ơi hình như hiểu sai
+      - Sai rồi bot ơi
+      - sai y minh roi
+      - bot hieu nham roi
+      - tra loi nham noi dung
+      - khong dung cau hoi
+      - ad ơi trả lời lệch ý mất rồi
+      - Mình muốn sửa lại câu hỏi vì bot đang nhầm
+      - Tại sao bot trả lời sang chuyện khác
+      - Bot có thể trả lời đúng trọng tâm không

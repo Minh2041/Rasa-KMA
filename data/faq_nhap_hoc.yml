@@ -1,0 +1,208 @@
+version: "3.1"
+
+nlu:
+  # 03 · TUYỂN SINH & NHẬP HỌC | intent trong Excel: nhap_hoc/tong_quan
+  - intent: faq_nhap_hoc/tong_quan
+    examples: |
+      - Trúng tuyển KMA cần làm những bước nhập học gì?
+      - Trúng tuyển KMA thì nhập học như thế nào?
+      - Quy trình xác nhận và làm thủ tục nhập học Học viện?
+      - Cho em hỏi, trúng tuyển KMA thì nhập học như thế nào?
+      - Cho mình hỏi, quy trình xác nhận và làm thủ tục nhập học Học viện?
+      - Admin ơi, trúng tuyển KMA thì nhập học như thế nào?
+      - Ad cho mình hỏi, quy trình xác nhận và làm thủ tục nhập học Học viện?
+      - Mình muốn biết: Trúng tuyển KMA thì nhập học như thế nào?
+      - Em đang thắc mắc: Quy trình xác nhận và làm thủ tục nhập học Học viện?
+      - Cho hỏi một chút, trúng tuyển KMA thì nhập học như thế nào?
+      - Mình hỏi về KMA: Quy trình xác nhận và làm thủ tục nhập học Học viện?
+      - Về Học viện Kỹ thuật mật mã, trúng tuyển KMA thì nhập học như thế nào?
+      - Ở KMA thì quy trình xác nhận và làm thủ tục nhập học Học viện?
+      - Nội dung nhập học cho thí sinh trúng tuyển?
+      - KMA ơi, quy trình xác nhận và làm thủ tục nhập học Học viện?
+      - Các anh chị cho em hỏi: Trúng tuyển KMA thì nhập học như thế nào?
+      - Quy trình nhập học trực tuyến được áp dụng cho đối tượng nào?
+      - Giải đáp giúp em: Trúng tuyển KMA thì nhập học như thế nào?
+      - Em cần thông tin cụ thể: Quy trình xác nhận và làm thủ tục nhập học Học viện?
+      - What steps must admitted students take to enroll at KMA?
+      - I have a question about KMA: What steps must admitted students take to enroll at KMA?
+      - Please help me with this question: What steps must admitted students take to enroll at KMA?
+      - Trung tuyen KMA thi nhap hoc nhu the nao?
+      - Quy trinh xac nhan va lam thu tuc nhap hoc Hoc vien?
+      - Cho em hoi, trung tuyen KMA thi nhap hoc nhu the nao?
+      - Ad oi, quy trinh xac nhan va lam thu tuc nhap hoc Hoc vien?
+      - KMA: Trung tuyen KMA thi nhap hoc nhu the nao?
+      - Trúng tuyển KMA thì nhập học ntn?
+      - Quy trình xác nhận và làm thủ tục nhập học HV?
+      - ad oi, trung tuyen KMA thi nhap hoc ntn?
+
+  # 03 · TUYỂN SINH & NHẬP HỌC | intent trong Excel: nhap_hoc/ho_so
+  - intent: faq_nhap_hoc/ho_so
+    examples: |
+      - Hồ sơ nhập học gồm những giấy tờ nào?
+      - Bộ hồ sơ nhập học KMA cần giấy tờ gì?
+      - Tân sinh viên phải chuẩn bị giấy tờ nào khi nhập học?
+      - Cho em hỏi, bộ hồ sơ nhập học KMA cần giấy tờ gì?
+      - Cho mình hỏi, tân sinh viên phải chuẩn bị giấy tờ nào khi nhập học?
+      - Admin ơi, bộ hồ sơ nhập học KMA cần giấy tờ gì?
+      - Ad cho mình hỏi, tân sinh viên phải chuẩn bị giấy tờ nào khi nhập học?
+      - Mình muốn biết: Bộ hồ sơ nhập học KMA cần giấy tờ gì?
+      - Em đang thắc mắc: Tân sinh viên phải chuẩn bị giấy tờ nào khi nhập học?
+      - Cho hỏi một chút, bộ hồ sơ nhập học KMA cần giấy tờ gì?
+      - Mình hỏi về KMA: Tân sinh viên phải chuẩn bị giấy tờ nào khi nhập học?
+      - Về Học viện Kỹ thuật mật mã, bộ hồ sơ nhập học KMA cần giấy tờ gì?
+      - Ở KMA thì tân sinh viên phải chuẩn bị giấy tờ nào khi nhập học?
+      - Khi nhập học cần chuẩn bị những gì?
+      - KMA ơi, tân sinh viên phải chuẩn bị giấy tờ nào khi nhập học?
+      - Các anh chị cho em hỏi: Bộ hồ sơ nhập học KMA cần giấy tờ gì?
+      - Cần tư vấn giúp em: Tân sinh viên phải chuẩn bị giấy tờ nào khi nhập học?
+      - Giải đáp giúp em: Bộ hồ sơ nhập học KMA cần giấy tờ gì?
+      - Em cần thông tin cụ thể: Tân sinh viên phải chuẩn bị giấy tờ nào khi nhập học?
+      - What documents are needed for enrollment at KMA?
+      - I have a question about KMA: What documents are needed for enrollment at KMA?
+      - Please help me with this question: What documents are needed for enrollment at KMA?
+      - Bo ho so nhap hoc KMA can giay to gi?
+      - Tan sinh vien phai chuan bi giay to nao khi nhap hoc?
+      - Cho em hoi, bo ho so nhap hoc KMA can giay to gi?
+      - Ad oi, tan sinh vien phai chuan bi giay to nao khi nhap hoc?
+      - KMA: Bo ho so nhap hoc KMA can giay to gi?
+      - Tân sv phải chuẩn bị giấy tờ nào khi nhập học?
+      - ad oi, bo ho so nhap hoc KMA can giay to gi?
+      - Mình xin hỏi thêm: Bộ hồ sơ nhập học KMA cần giấy tờ gì?
+
+  # 03 · TUYỂN SINH & NHẬP HỌC | intent trong Excel: nhap_hoc/khai_online
+  - intent: faq_nhap_hoc/khai_online
+    examples: |
+      - Cách đăng nhập và khai hệ thống nhập học trực tuyến?
+      - Khai nhập học online KMA bằng cách nào?
+      - Đăng nhập hệ thống nhập học trực tuyến Học viện ra sao?
+      - Cho em hỏi, khai nhập học online KMA bằng cách nào?
+      - Cho mình hỏi, đăng nhập hệ thống nhập học trực tuyến Học viện ra sao?
+      - Admin ơi, khai nhập học online KMA bằng cách nào?
+      - Ad cho mình hỏi, đăng nhập hệ thống nhập học trực tuyến Học viện ra sao?
+      - Mình muốn biết: Khai nhập học online KMA bằng cách nào?
+      - Em đang thắc mắc: Đăng nhập hệ thống nhập học trực tuyến Học viện ra sao?
+      - Cho hỏi một chút, khai nhập học online KMA bằng cách nào?
+      - Mình hỏi về KMA: Đăng nhập hệ thống nhập học trực tuyến Học viện ra sao?
+      - Về Học viện Kỹ thuật mật mã, khai nhập học online KMA bằng cách nào?
+      - Ở KMA thì đăng nhập hệ thống nhập học trực tuyến Học viện ra sao?
+      - Tên đăng nhập hệ thống nhập học trực tuyến là gì?
+      - KMA ơi, đăng nhập hệ thống nhập học trực tuyến Học viện ra sao?
+      - Các anh chị cho em hỏi: Khai nhập học online KMA bằng cách nào?
+      - Mật khẩu đăng nhập hệ thống nhập học trực tuyến là gì?
+      - Giải đáp giúp em: Khai nhập học online KMA bằng cách nào?
+      - Tài khoản đăng nhập hệ thống nhập học trực tuyến được cung cấp ở đâu?
+      - How do new students complete online enrollment at KMA?
+      - I have a question about KMA: How do new students complete online enrollment at KMA?
+      - Please help me with this question: How do new students complete online enrollment at KMA?
+      - Khai nhap hoc online KMA bang cach nao?
+      - Dang nhap he thong nhap hoc truc tuyen Hoc vien ra sao?
+      - Cho em hoi, khai nhap hoc online KMA bang cach nao?
+      - Ad oi, dang nhap he thong nhap hoc truc tuyen Hoc vien ra sao?
+      - KMA: Khai nhap hoc online KMA bang cach nao?
+      - Đăng nhập hệ thống nhập học trực tuyến HV ra sao?
+      - ad oi, khai nhap hoc online KMA bang cach nao?
+      - Mình xin hỏi thêm: Khai nhập học online KMA bằng cách nào?
+
+  # 03 · TUYỂN SINH & NHẬP HỌC | intent trong Excel: nhap_hoc/thoi_gian_dia_diem
+  - intent: faq_nhap_hoc/thoi_gian_dia_diem
+    examples: |
+      - Ngày giờ, địa điểm nhập học trực tiếp ở đâu?
+      - Khi nào nhập học trực tiếp ở KMA?
+      - Tân sinh viên KMA có thể tra cứu thời gian và địa điểm nhập học trực tiếp ở đâu?
+      - Địa điểm tiếp nhận tân sinh viên Học viện ở đâu?
+      - Cho em hỏi, khi nào nhập học trực tiếp ở KMA?
+      - Cho mình hỏi, địa điểm tiếp nhận tân sinh viên Học viện ở đâu?
+      - Admin ơi, khi nào nhập học trực tiếp ở KMA?
+      - Ad cho mình hỏi, địa điểm tiếp nhận tân sinh viên Học viện ở đâu?
+      - Mình muốn biết: Khi nào nhập học trực tiếp ở KMA?
+      - Em đang thắc mắc: Địa điểm tiếp nhận tân sinh viên Học viện ở đâu?
+      - Cho hỏi một chút, khi nào nhập học trực tiếp ở KMA?
+      - Mình hỏi về KMA: Địa điểm tiếp nhận tân sinh viên Học viện ở đâu?
+      - Về Học viện Kỹ thuật mật mã, khi nào nhập học trực tiếp ở KMA?
+      - Ở KMA thì địa điểm tiếp nhận tân sinh viên Học viện ở đâu?
+      - Địa điểm nhập học trực tiếp ở đâu?
+      - KMA ơi, địa điểm tiếp nhận tân sinh viên Học viện ở đâu?
+      - Các anh chị cho em hỏi: Khi nào nhập học trực tiếp ở KMA?
+      - Cần tư vấn giúp em: Địa điểm tiếp nhận tân sinh viên Học viện ở đâu?
+      - Giải đáp giúp em: Khi nào nhập học trực tiếp ở KMA?
+      - Em cần thông tin cụ thể: Địa điểm tiếp nhận tân sinh viên Học viện ở đâu?
+      - When and where is the in-person enrollment day at KMA?
+      - I have a question about KMA: When and where is the in-person enrollment day at KMA?
+      - Please help me with this question: When and where is the in-person enrollment day at KMA?
+      - Khi nao nhap hoc truc tiep o KMA?
+      - Dia diem tiep nhan tan sinh vien Hoc vien o dau?
+      - Cho em hoi, khi nao nhap hoc truc tiep o KMA?
+      - Ad oi, dia diem tiep nhan tan sinh vien Hoc vien o dau?
+      - KMA: Khi nao nhap hoc truc tiep o KMA?
+      - Địa điểm tiếp nhận tân sv HV ở đâu?
+      - ad oi, khi nao nhap hoc truc tiep o KMA?
+      - Mình xin hỏi thêm: Khi nào nhập học trực tiếp ở KMA?
+
+  # 03 · TUYỂN SINH & NHẬP HỌC | intent trong Excel: nhap_hoc/cac_khoan_phi
+  - intent: faq_nhap_hoc/cac_khoan_phi
+    examples: |
+      - Nhập học cần nộp những khoản phí nào và như thế nào?
+      - Các khoản tiền cần đóng lúc nhập học KMA?
+      - Tân sinh viên nộp lệ phí và bảo hiểm nhập học thế nào?
+      - Cho em hỏi, các khoản tiền cần đóng lúc nhập học KMA?
+      - Cho mình hỏi, tân sinh viên nộp lệ phí và bảo hiểm nhập học thế nào?
+      - Admin ơi, các khoản tiền cần đóng lúc nhập học KMA?
+      - Ad cho mình hỏi, tân sinh viên nộp lệ phí và bảo hiểm nhập học thế nào?
+      - Mình muốn biết: Các khoản tiền cần đóng lúc nhập học KMA?
+      - Em đang thắc mắc: Tân sinh viên nộp lệ phí và bảo hiểm nhập học thế nào?
+      - Cho hỏi một chút, các khoản tiền cần đóng lúc nhập học KMA?
+      - Mình hỏi về KMA: Tân sinh viên nộp lệ phí và bảo hiểm nhập học thế nào?
+      - Về Học viện Kỹ thuật mật mã, các khoản tiền cần đóng lúc nhập học KMA?
+      - Ở KMA thì tân sinh viên nộp lệ phí và bảo hiểm nhập học thế nào?
+      - Em đang tìm hiểu về KMA, các khoản tiền cần đóng lúc nhập học KMA?
+      - KMA ơi, tân sinh viên nộp lệ phí và bảo hiểm nhập học thế nào?
+      - Các anh chị cho em hỏi: Các khoản tiền cần đóng lúc nhập học KMA?
+      - Cần tư vấn giúp em: Tân sinh viên nộp lệ phí và bảo hiểm nhập học thế nào?
+      - Giải đáp giúp em: Các khoản tiền cần đóng lúc nhập học KMA?
+      - Em cần thông tin cụ thể: Tân sinh viên nộp lệ phí và bảo hiểm nhập học thế nào?
+      - What fees must new KMA students pay during enrollment?
+      - I have a question about KMA: What fees must new KMA students pay during enrollment?
+      - Please help me with this question: What fees must new KMA students pay during enrollment?
+      - Cac khoan tien can dong luc nhap hoc KMA?
+      - Tan sinh vien nop le phi va bao hiem nhap hoc the nao?
+      - Cho em hoi, cac khoan tien can dong luc nhap hoc KMA?
+      - Ad oi, tan sinh vien nop le phi va bao hiem nhap hoc the nao?
+      - KMA: Cac khoan tien can dong luc nhap hoc KMA?
+      - Tân sv nộp lệ phí và bảo hiểm nhập học tn?
+      - ad oi, cac khoan tien can dong luc nhap hoc KMA?
+      - Mình xin hỏi thêm: Các khoản tiền cần đóng lúc nhập học KMA?
+
+  # 03 · TUYỂN SINH & NHẬP HỌC | intent trong Excel: nhap_hoc/sai_thieu_ho_so
+  - intent: faq_nhap_hoc/sai_thieu_ho_so
+    examples: |
+      - Sai thông tin hoặc thiếu giấy tờ nhập học xử lý thế nào?
+      - Nhập học KMA bị thiếu hồ sơ thì sao?
+      - Tân sinh viên KMA cần làm gì khi nhập sai thông tin hoặc thiếu giấy tờ trong hồ sơ nhập học?
+      - Điền sai thông tin nhập học online phải sửa thế nào?
+      - Cho em hỏi, nhập học KMA bị thiếu hồ sơ thì sao?
+      - Cho mình hỏi, điền sai thông tin nhập học online phải sửa thế nào?
+      - Admin ơi, nhập học KMA bị thiếu hồ sơ thì sao?
+      - Ad cho mình hỏi, điền sai thông tin nhập học online phải sửa thế nào?
+      - Mình muốn biết: Nhập học KMA bị thiếu hồ sơ thì sao?
+      - Em đang thắc mắc: Điền sai thông tin nhập học online phải sửa thế nào?
+      - Cho hỏi một chút, nhập học KMA bị thiếu hồ sơ thì sao?
+      - Mình hỏi về KMA: Điền sai thông tin nhập học online phải sửa thế nào?
+      - Về Học viện Kỹ thuật mật mã, nhập học KMA bị thiếu hồ sơ thì sao?
+      - Ở KMA thì điền sai thông tin nhập học online phải sửa thế nào?
+      - Nếu thông tin điền sẵn bị sai thì xử lý thế nào?
+      - KMA ơi, điền sai thông tin nhập học online phải sửa thế nào?
+      - Các anh chị cho em hỏi: Nhập học KMA bị thiếu hồ sơ thì sao?
+      - Cần tư vấn giúp em: Điền sai thông tin nhập học online phải sửa thế nào?
+      - Giải đáp giúp em: Nhập học KMA bị thiếu hồ sơ thì sao?
+      - Em cần thông tin cụ thể: Điền sai thông tin nhập học online phải sửa thế nào?
+      - How can I correct mistakes or missing documents during KMA enrollment?
+      - I have a question about KMA: How can I correct mistakes or missing documents during KMA enrollment?
+      - Please help me with this question: How can I correct mistakes or missing documents during KMA enrollment?
+      - Nhap hoc KMA bi thieu ho so thi sao?
+      - Dien sai thong tin nhap hoc online phai sua the nao?
+      - Cho em hoi, nhap hoc KMA bi thieu ho so thi sao?
+      - Ad oi, dien sai thong tin nhap hoc online phai sua the nao?
+      - KMA: Nhap hoc KMA bi thieu ho so thi sao?
+      - Điền sai thông tin nhập học online phải sửa tn?
+      - ad oi, nhap hoc KMA bi thieu ho so thi sao?
+      - Mình xin hỏi thêm: Nhập học KMA bị thiếu hồ sơ thì sao?

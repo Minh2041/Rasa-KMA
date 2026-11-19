@@ -1,0 +1,105 @@
+version: "3.1"
+
+nlu:
+  # 02 · LIÊN HỆ & CƠ SỞ VẬT CHẤT | intent trong Excel: tien_ich/thu_vien
+  - intent: faq_tien_ich/thu_vien
+    examples: |
+      - Thư viện ở đâu, giờ mở cửa và mượn tài liệu thế nào?
+      - Thư viện KMA ở tầng mấy?
+      - Giờ mở cửa và cách mượn sách ở thư viện Học viện?
+      - Cho em hỏi, thư viện KMA ở tầng mấy?
+      - Cho mình hỏi, giờ mở cửa và cách mượn sách ở thư viện Học viện?
+      - Admin ơi, thư viện KMA ở tầng mấy?
+      - Ad cho mình hỏi, giờ mở cửa và cách mượn sách ở thư viện Học viện?
+      - Mình muốn biết: Thư viện KMA ở tầng mấy?
+      - Em đang thắc mắc: Giờ mở cửa và cách mượn sách ở thư viện Học viện?
+      - Cho hỏi một chút, thư viện KMA ở tầng mấy?
+      - Mình hỏi về KMA: Giờ mở cửa và cách mượn sách ở thư viện Học viện?
+      - Về Học viện Kỹ thuật mật mã, thư viện KMA ở tầng mấy?
+      - Ở KMA thì giờ mở cửa và cách mượn sách ở thư viện Học viện?
+      - Em đang tìm hiểu về KMA, thư viện KMA ở tầng mấy?
+      - KMA ơi, giờ mở cửa và cách mượn sách ở thư viện Học viện?
+      - Các anh chị cho em hỏi: Thư viện KMA ở tầng mấy?
+      - Cần tư vấn giúp em: Giờ mở cửa và cách mượn sách ở thư viện Học viện?
+      - Giải đáp giúp em: Thư viện KMA ở tầng mấy?
+      - Em cần thông tin cụ thể: Giờ mở cửa và cách mượn sách ở thư viện Học viện?
+      - Where is the KMA library and how can students borrow books?
+      - I have a question about KMA: Where is the KMA library and how can students borrow books?
+      - Please help me with this question: Where is the KMA library and how can students borrow books?
+      - Thu vien KMA o tang may?
+      - Gio mo cua va cach muon sach o thu vien Hoc vien?
+      - Cho em hoi, thu vien KMA o tang may?
+      - Ad oi, gio mo cua va cach muon sach o thu vien Hoc vien?
+      - KMA: Thu vien KMA o tang may?
+      - Giờ mở cửa và cách mượn sách ở thư viện HV?
+      - ad oi, thu vien KMA o tang may?
+      - Mình xin hỏi thêm: Thư viện KMA ở tầng mấy?
+
+  # 02 · LIÊN HỆ & CƠ SỞ VẬT CHẤT | intent trong Excel: tien_ich/wifi_phong_hoc
+  - intent: faq_tien_ich/wifi_phong_hoc
+    examples: |
+      - Trường có wifi, phòng tự học và khu thể thao không?
+      - KMA có wifi cho sinh viên không?
+      - KMA có cung cấp wifi, phòng tự học và khu thể thao cho sinh viên không?
+      - Trường có phòng tự học và sân thể thao không?
+      - Cho em hỏi, KMA có wifi cho sinh viên không?
+      - Cho mình hỏi, trường có phòng tự học và sân thể thao không?
+      - Admin ơi, KMA có wifi cho sinh viên không?
+      - Ad cho mình hỏi, trường có phòng tự học và sân thể thao không?
+      - Mình muốn biết: KMA có wifi cho sinh viên không?
+      - Em đang thắc mắc: Trường có phòng tự học và sân thể thao không?
+      - Cho hỏi một chút, KMA có wifi cho sinh viên không?
+      - Mình hỏi về KMA: Trường có phòng tự học và sân thể thao không?
+      - Về Học viện Kỹ thuật mật mã, KMA có wifi cho sinh viên không?
+      - Ở KMA thì trường có phòng tự học và sân thể thao không?
+      - Em đang tìm hiểu về KMA, KMA có wifi cho sinh viên không?
+      - KMA ơi, trường có phòng tự học và sân thể thao không?
+      - Các anh chị cho em hỏi: KMA có wifi cho sinh viên không?
+      - Cần tư vấn giúp em: Trường có phòng tự học và sân thể thao không?
+      - Giải đáp giúp em: KMA có wifi cho sinh viên không?
+      - Em cần thông tin cụ thể: Trường có phòng tự học và sân thể thao không?
+      - Does KMA provide Wi-Fi, study rooms and sports facilities?
+      - I have a question about KMA: Does KMA provide Wi-Fi, study rooms and sports facilities?
+      - Please help me with this question: Does KMA provide Wi-Fi, study rooms and sports facilities?
+      - KMA co wifi cho sinh vien khong?
+      - Truong co phong tu hoc va san the thao khong?
+      - Cho em hoi, KMA co wifi cho sinh vien khong?
+      - Ad oi, truong co phong tu hoc va san the thao khong?
+      - KMA: KMA co wifi cho sinh vien khong?
+      - KMA có wifi cho sv ko?
+      - Trường có phòng tự học và sân thể thao ko?
+      - ad oi, KMA co wifi cho sv ko?
+
+  # 02 · LIÊN HỆ & CƠ SỞ VẬT CHẤT | intent trong Excel: tien_ich/do_that_lac
+  - intent: faq_tien_ich/do_that_lac
+    examples: |
+      - Em bị mất đồ ở trường thì liên hệ đâu?
+      - Mất đồ trong Học viện thì hỏi ai?
+      - KMA có chỗ nhận đồ thất lạc không?
+      - Cho em hỏi, mất đồ trong Học viện thì hỏi ai?
+      - Cho mình hỏi, KMA có chỗ nhận đồ thất lạc không?
+      - Admin ơi, mất đồ trong Học viện thì hỏi ai?
+      - Ad cho mình hỏi, KMA có chỗ nhận đồ thất lạc không?
+      - Mình muốn biết: Mất đồ trong Học viện thì hỏi ai?
+      - Em đang thắc mắc: KMA có chỗ nhận đồ thất lạc không?
+      - Cho hỏi một chút, mất đồ trong Học viện thì hỏi ai?
+      - Mình hỏi về KMA: KMA có chỗ nhận đồ thất lạc không?
+      - Về Học viện Kỹ thuật mật mã, mất đồ trong Học viện thì hỏi ai?
+      - Ở KMA thì KMA có chỗ nhận đồ thất lạc không?
+      - Em đang tìm hiểu về KMA, mất đồ trong Học viện thì hỏi ai?
+      - KMA ơi, KMA có chỗ nhận đồ thất lạc không?
+      - Các anh chị cho em hỏi: Mất đồ trong Học viện thì hỏi ai?
+      - Cần tư vấn giúp em: KMA có chỗ nhận đồ thất lạc không?
+      - Giải đáp giúp em: Mất đồ trong Học viện thì hỏi ai?
+      - Em cần thông tin cụ thể: KMA có chỗ nhận đồ thất lạc không?
+      - What should I do if I lose something on the KMA campus?
+      - I have a question about KMA: What should I do if I lose something on the KMA campus?
+      - Please help me with this question: What should I do if I lose something on the KMA campus?
+      - Mat do trong Hoc vien thi hoi ai?
+      - KMA co cho nhan do that lac khong?
+      - Cho em hoi, mat do trong Hoc vien thi hoi ai?
+      - Ad oi, KMA co cho nhan do that lac khong?
+      - KMA: Mat do trong Hoc vien thi hoi ai?
+      - Mất đồ trong HV thì hỏi ai?
+      - KMA có chỗ nhận đồ thất lạc ko?
+      - ad oi, mat do trong HV thi hoi ai?

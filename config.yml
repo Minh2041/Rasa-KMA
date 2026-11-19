@@ -1,50 +1,116 @@
-# The config recipe.
-# https://rasa.com/docs/rasa/model-configuration/
+# Rasa Open Source 3.x | KMA FAQ + giao tiep + RAG fallback
 recipe: default.v1
-
-# The assistant project unique identifier
-# This default value must be replaced with a unique assistant name within your deployment
-assistant_id: placeholder_default
-
-# Configuration for Rasa NLU.
-# https://rasa.com/docs/rasa/nlu/components/
-language: en
+assistant_id: kma_student_support_expanded_2026
+language: vi
 
 pipeline:
-# # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
-# # If you'd like to customize it, uncomment and adjust the pipeline.
-# # See https://rasa.com/docs/rasa/tuning-your-model for more information.
-#   - name: WhitespaceTokenizer
-#   - name: RegexFeaturizer
-#   - name: LexicalSyntacticFeaturizer
-#   - name: CountVectorsFeaturizer
-#   - name: CountVectorsFeaturizer
-#     analyzer: char_wb
-#     min_ngram: 1
-#     max_ngram: 4
-#   - name: DIETClassifier
-#     epochs: 100
-#     constrain_similarities: true
-#   - name: EntitySynonymMapper
-#   - name: ResponseSelector
-#     epochs: 100
-#     constrain_similarities: true
-#   - name: FallbackClassifier
-#     threshold: 0.3
-#     ambiguity_threshold: 0.1
+  - name: WhitespaceTokenizer
+  - name: RegexFeaturizer
+    case_sensitive: false
+  - name: CountVectorsFeaturizer
+    analyzer: word
+    min_ngram: 1
+    max_ngram: 2
+    lowercase: true
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 2
+    max_ngram: 5
+    lowercase: true
+  - name: DIETClassifier
+    epochs: 100
+    batch_size: [32, 128]
+    constrain_similarities: true
+    entity_recognition: false
+  # Moi chu de co ResponseSelector rieng tranh so sanh qua 169 intent con.
+  - name: ResponseSelector
+    retrieval_intent: faq_clb
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_dao_tao
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_doan
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_giaotiep
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_giay_to
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_gioi_thieu
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_hoc_bong
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_hoc_phi
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_hoc_vu
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_khao_thi
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_lanhdao
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_lien_he
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_mien_giam
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_nhap_hoc
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_noi_quy
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_phan_hoi
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_tien_ich
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_tieng_anh
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_tro_giup
+    epochs: 100
+    constrain_similarities: true
+  - name: ResponseSelector
+    retrieval_intent: faq_tuyen_sinh
+    epochs: 100
+    constrain_similarities: true
+  # FallbackClassifier xet confidence intent CHA, khong kiem tra confidence intent CON.
+  - name: FallbackClassifier
+    threshold: 0.82
+    ambiguity_threshold: 0.20
 
-# Configuration for Rasa Core.
-# https://rasa.com/docs/rasa/core/policies/
 policies:
-# # No configuration for policies was provided. The following default policies were used to train your model.
-# # If you'd like to customize them, uncomment and adjust the policies.
-# # See https://rasa.com/docs/rasa/policies for more information.
-#   - name: MemoizationPolicy
-#   - name: RulePolicy
-#   - name: UnexpecTEDIntentPolicy
-#     max_history: 5
-#     epochs: 100
-#   - name: TEDPolicy
-#     max_history: 5
-#     epochs: 100
-#     constrain_similarities: true
+  - name: MemoizationPolicy
+  - name: RulePolicy
+    core_fallback_threshold: 0.4
+    core_fallback_action_name: action_kma_rag
+    enable_fallback_prediction: true

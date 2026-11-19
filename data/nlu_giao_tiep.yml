@@ -1,0 +1,428 @@
+version: "3.1"
+nlu:
+- intent: faq_giaotiep/greet
+  examples: |
+    - Xin chào
+    - Chào bạn
+    - Hello chatbot KMA
+    - Hi trợ lý
+    - Chào buổi sáng
+    - Chào buổi chiều
+    - Chào buổi tối
+    - Xin chào trợ lý Học viện
+    - Chào chatbot KMA
+    - Alo, chatbot có ở đây không?
+    - Em chào anh chị
+    - Mình muốn bắt đầu trò chuyện
+    - Chào bạn, mình có thể hỏi chút được không?
+    - Em xin chào trợ lý hỗ trợ sinh viên ạ
+    - Xin kính chào bộ phận hỗ trợ trực tuyến của Học viện
+    - Chào anh chị, cho em xin phép đặt câu hỏi ạ
+    - Dạ em chào ạ
+    - Chào trợ lý, hôm nay bạn có trực không?
+    - Mình mới vào, xin chào mọi người
+    - Chào nhé chatbot, mình cần nói chuyện một chút
+    - Chào buổi trưa chatbot
+    - Chào đầu tuần nha trợ lý KMA
+    - Chào một ngày mới
+    - Có ai ở đây không nhỉ?
+    - Alo alo, có bot nào online không?
+    - Ê bot ơi
+    - Bot ơi cho mình hỏi
+    - Hi KMA
+    - Hello there, KMA assistant!
+    - Good morning, KMA chatbot!
+    - Good afternoon, are you available?
+    - Good evening, assistant!
+    - Hi, I would like to start a conversation.
+    - Hey, is anyone there?
+    - Xin chao chatbot
+    - Chao ban nha
+    - Chao buoi sang a
+    - Alo ban oi
+    - E chao a chi
+    - Xin chàoo
+    - Chaoo bot oi
+    - Heloo trợ lý
+    - Hi bạn nha
+    - Chào ad ạ
+    - KMA ơi, chào bạn
+    - Em chào chatbot hỗ trợ học tập của trường ạ
+    - Chào, bạn nghe mình nói chứ?
+    - Mình vừa mở chat, chào bot nha
+    - Chào bạn ơi
+    - Bạn ơi, xin chào
+- intent: faq_giaotiep/goodbye
+  examples: |
+    - Tạm biệt
+    - Hẹn gặp lại
+    - Bye nhé
+    - Chào nhé, hẹn gặp lại
+    - Mình kết thúc ở đây
+    - Cảm ơn, mình xin phép kết thúc
+    - Thôi mình đi đây
+    - Hẹn lần sau hỏi tiếp
+    - Kết thúc cuộc trò chuyện nhé
+    - Tạm biệt chatbot KMA
+    - Tạm biệt bạn, mình không còn câu hỏi nào nữa
+    - Dạ em xin phép dừng cuộc trò chuyện tại đây ạ
+    - Em chào anh chị, em đi trước ạ
+    - Mình xin kết thúc buổi trao đổi hôm nay
+    - Cảm ơn trợ lý, mình sẽ quay lại sau nhé
+    - Chào bạn, hẹn buổi khác
+    - Mình phải đi học rồi, chào nha
+    - Đến đây thôi nhé
+    - Mình out đây
+    - Thế nhé, mình off đây
+    - Chúc bạn một ngày tốt lành, tạm biệt
+    - Bye bye chatbot
+    - Hẹn gặp lại lần tới nhé
+    - Không còn gì cần hỏi nữa, chào bạn
+    - Giờ mình đóng cuộc chat nha
+    - Thôi nhé bot ơi
+    - Goodbye, KMA assistant.
+    - See you next time!
+    - Bye, I have to go now.
+    - That is all for today, goodbye.
+    - I am ending this chat now.
+    - Talk to you later!
+    - Tam biet nhe
+    - Hen gap lai lan sau
+    - Minh ket thuc cuoc chat nha
+    - Bye nha bot
+    - Thoi minh di day
+    - Tam biettt
+    - Hẹn gặp laị nha
+    - Bai bai
+    - Ok mình đi đây nhé
+    - Tui thoát chat đây
+    - Em xin phép chào ạ
+    - Cuộc trò chuyện đến đây là xong rồi
+    - Cho mình dừng chat ở đây nha
+    - Mình kết thúc nhé, hẹn hôm khác
+    - Lúc khác mình hỏi tiếp nhé, bye
+    - Mình xin tạm dừng trao đổi tại đây
+    - Chào tạm biệt trợ lý của trường
+    - Gặp lại sau bot ơi
+- intent: faq_giaotiep/thanks
+  examples: |
+    - Cảm ơn bạn
+    - Cảm ơn nhiều nha
+    - Thanks chatbot
+    - Em cảm ơn ạ
+    - Cảm ơn vì thông tin
+    - Mình đã hiểu rồi, cảm ơn nhé
+    - Cảm ơn đã giải đáp
+    - Bạn hỗ trợ tốt quá, cảm ơn
+    - Cảm ơn rất nhiều
+    - Cảm ơn đã hướng dẫn mình
+    - Em xin chân thành cảm ơn anh chị đã hỗ trợ ạ
+    - Cảm ơn trợ lý đã giải thích rất rõ ràng
+    - Dạ cảm ơn bạn đã phản hồi nhanh ạ
+    - Mình rất biết ơn vì bạn đã dành thời gian giúp đỡ
+    - Cảm ơn vì đã cung cấp thông tin hữu ích
+    - Em cảm ơn chatbot KMA nhiều lắm ạ
+    - Xin cảm ơn về câu trả lời vừa rồi
+    - Cảm ơn bạn, hướng dẫn này rất có ích
+    - Mình nhận được thông tin rồi, cảm ơn bạn
+    - Cảm ơn đã hỗ trợ mình trong việc tra cứu
+    - Tuyệt vời, cảm ơn nha
+    - Đỉnh quá, cảm ơn bot
+    - Cảm ơn nha ad
+    - Tks bạn
+    - Thks nhiều
+    - Thank you for your help!
+    - Thanks a lot, KMA bot!
+    - I appreciate your assistance.
+    - Thank you for the explanation.
+    - Many thanks for the information.
+    - That was helpful, thank you.
+    - Cam on ban nhe
+    - E cam on a
+    - Cam on nhiu
+    - Cam on tro ly KMA
+    - Tks ad nha
+    - Cam ơn nhìu
+    - Cám ơnnn
+    - Biết ơn bạn nhiều
+    - Rất cảm kích sự hỗ trợ của bạn
+    - Nhờ bạn mà mình hiểu rõ hơn, cảm ơn nhé
+    - Cảm ơn đã giải thích thắc mắc giúp em
+    - Dạ vâng, em cảm ơn nhiều ạ
+    - Bạn nhiệt tình quá, cảm ơn nhiều
+    - Ok cảm ơn bạn nhé
+    - Cảm ơn vì bạn đã giải đáp câu hỏi của mình
+    - Tuyệt, mình xin cảm ơn
+    - Cảm ơn trợ lý rất nhiều ạ
+    - Thông tin rất hữu ích, cảm ơn bot
+    - Xin gửi lời cảm ơn tới chatbot
+- intent: faq_giaotiep/bot_challenge
+  examples: |
+    - Bạn là chatbot hay người thật?
+    - Bạn có phải trợ lý của KMA?
+    - Giới thiệu về bản thân đi
+    - Đây có phải là chatbot không?
+    - Ai đang trả lời mình vậy?
+    - Bạn là người hay AI?
+    - Bạn có phải nhân viên của Học viện không?
+    - Chatbot này do ai vận hành?
+    - Mình đang nói chuyện với ai?
+    - Cho mình hỏi bạn là chương trình AI hay cán bộ hỗ trợ ạ?
+    - Bạn vui lòng giới thiệu tên và vai trò của mình được không?
+    - Em đang trao đổi với người thật hay hệ thống tự động vậy ạ?
+    - Trợ lý này có phải do Học viện Kỹ thuật mật mã xây dựng không?
+    - Bạn có phải bot trả lời tự động của trường không?
+    - Ai đứng sau hệ thống trả lời này?
+    - Bên kia màn hình là ai thế?
+    - Bạn tên gì vậy?
+    - Cho mình biết danh tính của trợ lý đang trả lời
+    - Bạn đóng vai trò gì trong trang này?
+    - Đây là AI hay tư vấn viên?
+    - Có nhân viên thật đang trả lời mình không?
+    - Chatbot KMA là phần mềm hay người trực?
+    - Bot này của trường hả?
+    - Bạn được tạo ra bởi ai?
+    - Bạn là ai?
+    - Bạn có phải mô hình ngôn ngữ không?
+    - Are you a human or a chatbot?
+    - Who am I chatting with?
+    - Please introduce yourself.
+    - Are you an AI assistant for KMA?
+    - Is this an automated support bot?
+    - Who operates this chatbot?
+    - Day la bot hay nguoi
+    - Tro ly cua KMA phai ko
+    - Ai dang rep minh the
+    - Bot nay do ai van hanh
+    - Ban la nguoi that ha
+    - Chào, bạn là AI à?
+    - B là bot thật hả
+    - Người hay máy vậy?
+    - Tài khoản đang nhắn với mình là ai?
+    - Mình muốn biết trợ lý này thuộc đơn vị nào
+    - KMA bot là trợ lý ảo đúng không?
+    - Bạn có thuộc hệ thống tư vấn của trường không?
+    - Giới thiệu ngắn gọn về bạn được chứ?
+    - Bạn đang đại diện cho ai trả lời vậy?
+    - Bot ơi, tự giới thiệu đi
+    - Có phải chatbot chuyên hỗ trợ sinh viên KMA không?
+    - Tên của hệ thống chatbot này là gì?
+- intent: faq_giaotiep/ask_capabilities
+  examples: |
+    - Bạn có thể giúp mình những gì?
+    - Chatbot có những chức năng gì?
+    - Bạn tư vấn được các chủ đề nào?
+    - Mình có thể hỏi thông tin gì về KMA?
+    - Bạn hỗ trợ những nội dung gì cho sinh viên?
+    - Cho biết phạm vi hỗ trợ của chatbot
+    - Có thể hỏi bạn về học bổng và học vụ không?
+    - Chatbot KMA trả lời được những vấn đề nào?
+    - Mình được hỏi những gì ở đây?
+    - Bạn giúp tra cứu được thông tin gì?
+    - Bạn vui lòng cho em biết những nội dung có thể hỗ trợ được không ạ?
+    - Chatbot có thể hỗ trợ sinh viên KMA trong những trường hợp nào?
+    - Mình muốn biết danh sách tính năng của trợ lý này
+    - Em có thể nhờ bạn tra cứu các quy định học vụ được không ạ?
+    - Bạn có hỗ trợ giải đáp thông tin tuyển sinh không?
+    - Những loại câu hỏi nào nằm trong phạm vi giải đáp của bạn?
+    - Trợ lý có thể hướng dẫn các thủ tục nhập học không?
+    - Chatbot giúp mình tìm thông tin môn học được chứ?
+    - Bạn có thể giải đáp về hoạt động Đoàn không?
+    - Em cần biết chatbot hỗ trợ những dịch vụ sinh viên nào
+    - Bạn có thể hỗ trợ mình tra cứu học bổng không?
+    - Chatbot có trả lời thắc mắc về tiếng Anh đầu ra không?
+    - Bạn làm được những việc gì?
+    - Bot có chức năng gì vậy?
+    - Hỏi gì được ở đây?
+    - Bot giải đáp vấn đề nào?
+    - Bạn tra cứu được gì?
+    - What can you help me with?
+    - What topics does the KMA chatbot cover?
+    - Can you explain your features?
+    - What student services can you support?
+    - What questions can I ask you?
+    - Are admissions and academic policies within your scope?
+    - Ban ho tro dc gi
+    - Bot co nhung tinh nang nao
+    - Minh hoi dc gi o day
+    - KMA chatbot giup gi
+    - Ho tro hoc vu dc ko
+    - Co the hoi hoc bong k
+    - Bạn hỗ chợ những gì?
+    - Bot giải đáp đc vđ gì
+    - Em muốn biết những chức năng chính của hệ thống trợ lý ảo
+    - Nhờ bạn mô tả phạm vi tư vấn cho sinh viên giúp em
+    - Tính năng của chatbot gồm những mục nào?
+    - Bạn có thể hỗ trợ câu hỏi ngoài tuyển sinh không?
+    - Trợ lý có thể tra cứu cả thông tin đào tạo và tổ chức không?
+    - Bạn hỗ trợ mảng nào của học viện?
+    - Chatbot này sử dụng để làm gì?
+    - Mình nên hỏi những chủ đề nào để bạn trả lời tốt?
+    - Cho em biết chatbot có thể giúp được gì ạ
+- intent: faq_giaotiep/affirm
+  examples: |
+    - Đúng rồi
+    - Dạ vâng, đúng rồi
+    - Chính xác
+    - Đúng vậy
+    - Bạn hiểu đúng ý mình
+    - Thông tin đó đúng
+    - Đúng ý mình rồi
+    - Vâng, chính là như thế
+    - Bạn nói đúng
+    - Mình xác nhận là đúng
+    - Dạ đúng ạ, đó chính là vấn đề em đang hỏi
+    - Mình xác nhận thông tin bạn vừa nhắc tới là chính xác
+    - Vâng, bạn đã hiểu đúng mong muốn của mình rồi
+    - Đúng rồi ạ, cứ tiếp tục theo hướng đó giúp em
+    - Đúng, đó là lựa chọn của mình
+    - Chính xác là ý đó, cảm ơn bạn
+    - Mình đồng ý với thông tin bạn nêu
+    - Đúng như bạn vừa tóm tắt
+    - Em xác nhận là đúng như vậy ạ
+    - Bạn diễn đạt đúng điều mình muốn nói
+    - Ừ đúng rồi nha
+    - Chuẩn luôn
+    - Chính nó
+    - Đúng đó
+    - Đúng ý
+    - Ừm chuẩn
+    - Ok đúng
+    - Phải rồi
+    - Yes, that is correct.
+    - Exactly what I meant.
+    - That is right.
+    - Yes, you understood me correctly.
+    - I confirm that is accurate.
+    - Correct, please proceed.
+    - Dung roi
+    - Chuan luon ban
+    - Vang dung a
+    - Y dung day
+    - Ok chinh xac
+    - Phai vay do
+    - Đúg rồi
+    - Dúng ý mình
+    - Đúng nhá
+    - Yes đúng đấy
+    - Dạ đúng, trường hợp của em là vậy
+    - Đúng ạ, bạn nói trúng ý mình
+    - Vâng, câu bạn vừa xác nhận là đúng
+    - Đúng rồi, không cần sửa gì thêm
+    - Bạn đã nắm đúng thông tin rồi
+    - Vâng ạ, chính xác như thế
+- intent: faq_giaotiep/deny
+  examples: |
+    - Không đúng
+    - Sai rồi
+    - Chưa đúng
+    - Không phải vậy
+    - Bạn hiểu nhầm ý mình
+    - Câu trả lời này không đúng
+    - Mình không hỏi vấn đề đó
+    - Không phải nội dung mình cần
+    - Bạn trả lời sai rồi
+    - Mình đang hỏi vấn đề khác
+    - Dạ không ạ, điều em muốn hỏi không phải như vậy
+    - Mình xin đính chính là bạn đang hiểu sai ý mình
+    - Không phải trường hợp mà mình đang đề cập
+    - Rất tiếc, câu trả lời chưa khớp với câu hỏi của mình
+    - Không, mình không xác nhận thông tin vừa nêu
+    - Bạn vui lòng kiểm tra lại vì nội dung này chưa đúng
+    - Dạ em muốn nói đến một vấn đề khác ạ
+    - Bạn đang trả lời nhầm chủ đề rồi
+    - Mình cần sửa lại thông tin đó vì chưa chính xác
+    - Không phải ý mình đâu
+    - Không nha
+    - Chưa phải
+    - Không nhé
+    - Sai ý rồi
+    - Nhầm rồi bạn
+    - Không hề
+    - Chưa chuẩn
+    - Không, khác cơ
+    - No, that is incorrect.
+    - That is not what I meant.
+    - You misunderstood my question.
+    - No, please check again.
+    - That answer is not accurate.
+    - I am asking about something else.
+    - Khong dung dau
+    - Sai roi ban oi
+    - Ko phai vay
+    - Ban hieu nham y minh
+    - Chua chinh xac
+    - K phai y nay
+    - Ko đúng nha
+    - Chưaa đúng
+    - Saii rồi bot
+    - Không phải câu đó
+    - Mình phủ nhận thông tin bạn vừa xác nhận
+    - Em không đồng ý với câu trả lời này ạ
+    - Không đúng với tình huống mình đang gặp
+    - Bạn hiểu lệch ý mình rồi
+    - Câu đó không liên quan đến điều mình hỏi
+    - Vẫn chưa đúng nội dung bạn ơi
+- intent: faq_giaotiep/mood_unhappy
+  examples: |
+    - Mình đang lo lắng vì thi cử
+    - Mình stress vì bài vở
+    - Mình buồn vì học không tốt
+    - Dạo này mình áp lực học tập quá
+    - Mình lo quá vì sắp thi
+    - Học nhiều quá làm mình căng thẳng
+    - Mình đang nản việc học
+    - Kết quả học của mình không tốt nên mình buồn
+    - Mình thấy mệt mỏi vì bài tập
+    - Mình lo không theo kịp chương trình
+    - Em cảm thấy áp lực vì điểm số học kỳ này quá ạ
+    - Mình đang rất buồn vì vừa thi không đạt
+    - Gần đây mình mất động lực học tập
+    - Em hơi hoang mang vì chưa ôn kịp các môn
+    - Mình đang căng thẳng vì lịch kiểm tra dày đặc
+    - Áp lực deadline khiến mình kiệt sức
+    - Mình thấy nản khi phải học lại môn
+    - Em buồn vì kết quả học tập chưa như mong đợi
+    - Mình sợ không theo kịp tiến độ của lớp
+    - Em thấy lo vì có quá nhiều bài tập cần hoàn thành
+    - Chán quá, học mãi không vào
+    - Mình áp lực ghê
+    - Buồn vì điểm kém quá
+    - Mệt thật sự vì học
+    - Lo quá trời luôn
+    - Nản học ghê
+    - Thi cử căng quá
+    - Mất tinh thần rồi
+    - I feel stressed about my exams.
+    - I am anxious about my grades.
+    - I feel down because I failed a test.
+    - I am overwhelmed by coursework.
+    - I am worried that I am falling behind.
+    - Studying has been exhausting lately.
+    - Minh stress vi thi cu
+    - Em buon vi diem kem
+    - Ap luc hoc hanh qua
+    - Minh lo ko kip deadline
+    - Chan hoc qua troi
+    - Met moi vi bai tap
+    - Stresss quá
+    - E lo thi quá
+    - Buồnn vì bài kiểm tra
+    - Mình không vui vì chuyện học tập
+    - Kỳ này em học sa sút nên thấy chán nản
+    - Dạo này kết quả học chưa tốt làm mình lo âu
+    - Em đang áp lực vì nhiều môn khó quá
+    - Không hiểu bài nên mình thấy tự ti
+    - Mình thấy buồn vì không đạt mục tiêu học kỳ
+    - Em đang lo lắng chuyện thi lại
+
+- intent: out_of_scope
+  examples: |
+    - Học phí Đại học ABC là bao nhiêu?
+    - Thông tin về một người không liên quan tới KMA
+    - Thời tiết Hà Nội ngày mai ra sao?
+    - Đặt vé máy bay giúp tôi
+    - Giá vàng hôm nay thế nào?
+    - Tôi muốn hỏi một trường khác, không phải KMA
+    - Danh sách nhân viên của công ty XYZ có ai?
+    - Ai là chủ tịch một công ty không thuộc Học viện?

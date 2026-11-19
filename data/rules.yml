@@ -1,13 +1,108 @@
 version: "3.1"
 
 rules:
+  - rule: Tra loi truc tiep faq_clb
+    steps:
+      - intent: faq_clb
+      - action: action_kma_faq_gate
 
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
+  - rule: Tra loi truc tiep faq_dao_tao
+    steps:
+      - intent: faq_dao_tao
+      - action: action_kma_faq_gate
 
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - rule: Tra loi truc tiep faq_doan
+    steps:
+      - intent: faq_doan
+      - action: action_kma_faq_gate
+
+  - rule: Kiem tra faq_giaotiep
+    steps:
+      - intent: faq_giaotiep
+      - action: action_kma_faq_gate
+
+  - rule: Tra loi truc tiep faq_giay_to
+    steps:
+      - intent: faq_giay_to
+      - action: action_kma_faq_gate
+
+  - rule: Tra loi truc tiep faq_gioi_thieu
+    steps:
+      - intent: faq_gioi_thieu
+      - action: action_kma_faq_gate
+
+  - rule: Tra loi truc tiep faq_hoc_bong
+    steps:
+      - intent: faq_hoc_bong
+      - action: action_kma_faq_gate
+
+  - rule: Tra loi truc tiep faq_hoc_phi
+    steps:
+      - intent: faq_hoc_phi
+      - action: action_kma_faq_gate
+
+  - rule: Tra loi truc tiep faq_hoc_vu
+    steps:
+      - intent: faq_hoc_vu
+      - action: action_kma_faq_gate
+
+  - rule: Tra loi truc tiep faq_khao_thi
+    steps:
+      - intent: faq_khao_thi
+      - action: action_kma_faq_gate
+
+  - rule: Tra loi truc tiep faq_lien_he
+    steps:
+      - intent: faq_lien_he
+      - action: action_kma_faq_gate
+
+  - rule: Tra loi truc tiep faq_mien_giam
+    steps:
+      - intent: faq_mien_giam
+      - action: action_kma_faq_gate
+
+  - rule: Tra loi truc tiep faq_nhap_hoc
+    steps:
+      - intent: faq_nhap_hoc
+      - action: action_kma_faq_gate
+
+  - rule: Tra loi truc tiep faq_noi_quy
+    steps:
+      - intent: faq_noi_quy
+      - action: action_kma_faq_gate
+
+  - rule: Tra loi truc tiep faq_phan_hoi
+    steps:
+      - intent: faq_phan_hoi
+      - action: action_kma_faq_gate
+
+  - rule: Tra loi truc tiep faq_tien_ich
+    steps:
+      - intent: faq_tien_ich
+      - action: action_kma_faq_gate
+
+  - rule: Tra loi truc tiep faq_tieng_anh
+    steps:
+      - intent: faq_tieng_anh
+      - action: action_kma_faq_gate
+
+  - rule: Tra loi truc tiep faq_tro_giup
+    steps:
+      - intent: faq_tro_giup
+      - action: action_kma_faq_gate
+
+  - rule: Tra loi truc tiep faq_tuyen_sinh
+    steps:
+      - intent: faq_tuyen_sinh
+      - action: action_kma_faq_gate
+
+  - rule: Fallback Rasa -> RAG
+    steps:
+      - intent: nlu_fallback
+      - action: action_kma_rag
+
+  - rule: Câu ngoài miền -> RAG
+    steps:
+      - intent: out_of_scope
+      - action: action_kma_rag
+

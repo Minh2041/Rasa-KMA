@@ -1,0 +1,311 @@
+version: "3.1"
+
+nlu:
+  # 12 · TRANG PHỤC & VĂN HÓA HỌC ĐƯỜNG | intent trong Excel: noi_quy/tong_quan
+  - intent: faq_noi_quy/tong_quan
+    examples: |
+      - Sinh viên KMA cần tuân thủ nội quy và tác phong gì?
+      - Nội quy sinh viên KMA gồm những quy định gì?
+      - Tác phong và văn hóa học đường tại Học viện?
+      - Cho em hỏi, nội quy sinh viên KMA gồm những quy định gì?
+      - Cho mình hỏi, tác phong và văn hóa học đường tại Học viện?
+      - Admin ơi, nội quy sinh viên KMA gồm những quy định gì?
+      - Ad cho mình hỏi, tác phong và văn hóa học đường tại Học viện?
+      - Mình muốn biết: Nội quy sinh viên KMA gồm những quy định gì?
+      - Em đang thắc mắc: Tác phong và văn hóa học đường tại Học viện?
+      - Cho hỏi một chút, nội quy sinh viên KMA gồm những quy định gì?
+      - Mình hỏi về KMA: Tác phong và văn hóa học đường tại Học viện?
+      - Về Học viện Kỹ thuật mật mã, nội quy sinh viên KMA gồm những quy định gì?
+      - Ở KMA thì tác phong và văn hóa học đường tại Học viện?
+      - Sinh viên ra vào Học viện có quy định gì không?
+      - KMA ơi, tác phong và văn hóa học đường tại Học viện?
+      - Các anh chị cho em hỏi: Nội quy sinh viên KMA gồm những quy định gì?
+      - Cần tư vấn giúp em: Tác phong và văn hóa học đường tại Học viện?
+      - Giải đáp giúp em: Nội quy sinh viên KMA gồm những quy định gì?
+      - Em cần thông tin cụ thể: Tác phong và văn hóa học đường tại Học viện?
+      - What are the general student conduct rules at KMA?
+      - I have a question about KMA: What are the general student conduct rules at KMA?
+      - Please help me with this question: What are the general student conduct rules at KMA?
+      - Noi quy sinh vien KMA gom nhung quy dinh gi?
+      - Tac phong va van hoa hoc duong tai Hoc vien?
+      - Cho em hoi, noi quy sinh vien KMA gom nhung quy dinh gi?
+      - Ad oi, tac phong va van hoa hoc duong tai Hoc vien?
+      - KMA: Noi quy sinh vien KMA gom nhung quy dinh gi?
+      - Nội quy sv KMA gồm những quy định gì?
+      - Tác phong và văn hóa học đường tại HV?
+      - ad oi, noi quy sv KMA gom nhung quy dinh gi?
+
+  # 12 · TRANG PHỤC & VĂN HÓA HỌC ĐƯỜNG | intent trong Excel: noi_quy/trang_phuc
+  - intent: faq_noi_quy/trang_phuc
+    examples: |
+      - Đi học có bắt buộc áo có cổ, quần dài, giày dép không?
+      - Đi học KMA có phải mặc áo có cổ không?
+      - Trang phục sinh viên Học viện đi học hằng ngày?
+      - Cho em hỏi, đi học KMA có phải mặc áo có cổ không?
+      - Cho mình hỏi, trang phục sinh viên Học viện đi học hằng ngày?
+      - Admin ơi, đi học KMA có phải mặc áo có cổ không?
+      - Ad cho mình hỏi, trang phục sinh viên Học viện đi học hằng ngày?
+      - Mình muốn biết: Đi học KMA có phải mặc áo có cổ không?
+      - Em đang thắc mắc: Trang phục sinh viên Học viện đi học hằng ngày?
+      - Cho hỏi một chút, đi học KMA có phải mặc áo có cổ không?
+      - Mình hỏi về KMA: Trang phục sinh viên Học viện đi học hằng ngày?
+      - Về Học viện Kỹ thuật mật mã, đi học KMA có phải mặc áo có cổ không?
+      - Ở KMA thì trang phục sinh viên Học viện đi học hằng ngày?
+      - Em đang tìm hiểu về KMA, đi học KMA có phải mặc áo có cổ không?
+      - KMA ơi, trang phục sinh viên Học viện đi học hằng ngày?
+      - Các anh chị cho em hỏi: Đi học KMA có phải mặc áo có cổ không?
+      - Cần tư vấn giúp em: Trang phục sinh viên Học viện đi học hằng ngày?
+      - Giải đáp giúp em: Đi học KMA có phải mặc áo có cổ không?
+      - Em cần thông tin cụ thể: Trang phục sinh viên Học viện đi học hằng ngày?
+      - What is the regular dress code for KMA students?
+      - I have a question about KMA: What is the regular dress code for KMA students?
+      - Please help me with this question: What is the regular dress code for KMA students?
+      - Di hoc KMA co phai mac ao co co khong?
+      - Trang phuc sinh vien Hoc vien di hoc hang ngay?
+      - Cho em hoi, di hoc KMA co phai mac ao co co khong?
+      - Ad oi, trang phuc sinh vien Hoc vien di hoc hang ngay?
+      - KMA: Di hoc KMA co phai mac ao co co khong?
+      - Đi học KMA có phải mặc áo có cổ ko?
+      - Trang phục sv HV đi học hằng ngày?
+      - ad oi, di hoc KMA co phai mac ao co co ko?
+
+  # 12 · TRANG PHỤC & VĂN HÓA HỌC ĐƯỜNG | intent trong Excel: noi_quy/deo_the
+  - intent: faq_noi_quy/deo_the
+    examples: |
+      - Sinh viên có phải đeo thẻ khi vào trường không?
+      - Vào trường KMA có cần đeo thẻ SV không?
+      - Sinh viên KMA có bắt buộc đeo thẻ sinh viên khi vào Học viện không?
+      - Quên thẻ sinh viên khi qua cổng Học viện có sao không?
+      - Cho em hỏi, vào trường KMA có cần đeo thẻ SV không?
+      - Cho mình hỏi, quên thẻ sinh viên khi qua cổng Học viện có sao không?
+      - Admin ơi, vào trường KMA có cần đeo thẻ SV không?
+      - Ad cho mình hỏi, quên thẻ sinh viên khi qua cổng Học viện có sao không?
+      - Mình muốn biết: Vào trường KMA có cần đeo thẻ SV không?
+      - Em đang thắc mắc: Quên thẻ sinh viên khi qua cổng Học viện có sao không?
+      - Cho hỏi một chút, vào trường KMA có cần đeo thẻ SV không?
+      - Mình hỏi về KMA: Quên thẻ sinh viên khi qua cổng Học viện có sao không?
+      - Về Học viện Kỹ thuật mật mã, vào trường KMA có cần đeo thẻ SV không?
+      - Ở KMA thì quên thẻ sinh viên khi qua cổng Học viện có sao không?
+      - Em đang tìm hiểu về KMA, vào trường KMA có cần đeo thẻ SV không?
+      - KMA ơi, quên thẻ sinh viên khi qua cổng Học viện có sao không?
+      - Các anh chị cho em hỏi: Vào trường KMA có cần đeo thẻ SV không?
+      - Cần tư vấn giúp em: Quên thẻ sinh viên khi qua cổng Học viện có sao không?
+      - Giải đáp giúp em: Vào trường KMA có cần đeo thẻ SV không?
+      - Em cần thông tin cụ thể: Quên thẻ sinh viên khi qua cổng Học viện có sao không?
+      - Must KMA students wear identification cards on campus?
+      - I have a question about KMA: Must KMA students wear identification cards on campus?
+      - Please help me with this question: Must KMA students wear identification cards on campus?
+      - Vao truong KMA co can deo the SV khong?
+      - Quen the sinh vien khi qua cong Hoc vien co sao khong?
+      - Cho em hoi, vao truong KMA co can deo the SV khong?
+      - Ad oi, quen the sinh vien khi qua cong Hoc vien co sao khong?
+      - KMA: Vao truong KMA co can deo the SV khong?
+      - Vào trường KMA có cần đeo thẻ SV ko?
+      - Quên thẻ sv khi qua cổng HV có sao ko?
+      - ad oi, vao truong KMA co can deo the SV ko?
+
+  # 12 · TRANG PHỤC & VĂN HÓA HỌC ĐƯỜNG | intent trong Excel: noi_quy/trang_phuc_le_thi
+  - intent: faq_noi_quy/trang_phuc_le_thi
+    examples: |
+      - Đi thi, dự lễ, vào phòng thực hành cần mặc gì?
+      - KMA quy định trang phục khi thi như thế nào?
+      - Đi dự lễ hoặc thực hành ở Học viện phải mặc gì?
+      - Cho em hỏi, KMA quy định trang phục khi thi như thế nào?
+      - Cho mình hỏi, đi dự lễ hoặc thực hành ở Học viện phải mặc gì?
+      - Admin ơi, KMA quy định trang phục khi thi như thế nào?
+      - Ad cho mình hỏi, đi dự lễ hoặc thực hành ở Học viện phải mặc gì?
+      - Mình muốn biết: KMA quy định trang phục khi thi như thế nào?
+      - Em đang thắc mắc: Đi dự lễ hoặc thực hành ở Học viện phải mặc gì?
+      - Cho hỏi một chút, KMA quy định trang phục khi thi như thế nào?
+      - Mình hỏi về KMA: Đi dự lễ hoặc thực hành ở Học viện phải mặc gì?
+      - Về Học viện Kỹ thuật mật mã, KMA quy định trang phục khi thi như thế nào?
+      - Ở KMA thì đi dự lễ hoặc thực hành ở Học viện phải mặc gì?
+      - Em đang tìm hiểu về KMA, KMA quy định trang phục khi thi như thế nào?
+      - KMA ơi, đi dự lễ hoặc thực hành ở Học viện phải mặc gì?
+      - Các anh chị cho em hỏi: KMA quy định trang phục khi thi như thế nào?
+      - Cần tư vấn giúp em: Đi dự lễ hoặc thực hành ở Học viện phải mặc gì?
+      - Giải đáp giúp em: KMA quy định trang phục khi thi như thế nào?
+      - Em cần thông tin cụ thể: Đi dự lễ hoặc thực hành ở Học viện phải mặc gì?
+      - What clothing is required for KMA exams ceremonies and laboratories?
+      - I have a question about KMA: What clothing is required for KMA exams ceremonies and laboratories?
+      - Please help me with this question: What clothing is required for KMA exams ceremonies and laboratories?
+      - KMA quy dinh trang phuc khi thi nhu the nao?
+      - Di du le hoac thuc hanh o Hoc vien phai mac gi?
+      - Cho em hoi, KMA quy dinh trang phuc khi thi nhu the nao?
+      - Ad oi, di du le hoac thuc hanh o Hoc vien phai mac gi?
+      - KMA: KMA quy dinh trang phuc khi thi nhu the nao?
+      - KMA quy định trang phục khi thi ntn?
+      - Đi dự lễ hoặc thực hành ở HV phải mặc gì?
+      - ad oi, KMA quy dinh trang phuc khi thi ntn?
+
+  # 12 · TRANG PHỤC & VĂN HÓA HỌC ĐƯỜNG | intent trong Excel: noi_quy/nhuom_toc
+  - intent: faq_noi_quy/nhuom_toc
+    examples: |
+      - Sinh viên có được nhuộm tóc, đeo khuyên tai không?
+      - Sinh viên KMA có được nhuộm tóc hoặc đeo khuyên tai khi đến trường không?
+      - Sinh viên KMA có được nhuộm tóc không?
+      - Đeo khuyên tai hoặc để tóc màu khi học Học viện có vi phạm không?
+      - Cho em hỏi, sinh viên KMA có được nhuộm tóc không?
+      - Cho mình hỏi, đeo khuyên tai hoặc để tóc màu khi học Học viện có vi phạm không?
+      - Admin ơi, sinh viên KMA có được nhuộm tóc không?
+      - Ad cho mình hỏi, đeo khuyên tai hoặc để tóc màu khi học Học viện có vi phạm không?
+      - Mình muốn biết: Sinh viên KMA có được nhuộm tóc không?
+      - Em đang thắc mắc: Đeo khuyên tai hoặc để tóc màu khi học Học viện có vi phạm không?
+      - Cho hỏi một chút, sinh viên KMA có được nhuộm tóc không?
+      - Mình hỏi về KMA: Đeo khuyên tai hoặc để tóc màu khi học Học viện có vi phạm không?
+      - Về Học viện Kỹ thuật mật mã, sinh viên KMA có được nhuộm tóc không?
+      - Ở KMA thì đeo khuyên tai hoặc để tóc màu khi học Học viện có vi phạm không?
+      - Em đang tìm hiểu về KMA, sinh viên KMA có được nhuộm tóc không?
+      - KMA ơi, đeo khuyên tai hoặc để tóc màu khi học Học viện có vi phạm không?
+      - Các anh chị cho em hỏi: Sinh viên KMA có được nhuộm tóc không?
+      - Cần tư vấn giúp em: Đeo khuyên tai hoặc để tóc màu khi học Học viện có vi phạm không?
+      - Giải đáp giúp em: Sinh viên KMA có được nhuộm tóc không?
+      - Em cần thông tin cụ thể: Đeo khuyên tai hoặc để tóc màu khi học Học viện có vi phạm không?
+      - Are dyed hair and earrings allowed under KMA student rules?
+      - I have a question about KMA: Are dyed hair and earrings allowed under KMA student rules?
+      - Please help me with this question: Are dyed hair and earrings allowed under KMA student rules?
+      - Sinh vien KMA co duoc nhuom toc khong?
+      - Deo khuyen tai hoac de toc mau khi hoc Hoc vien co vi pham khong?
+      - Cho em hoi, sinh vien KMA co duoc nhuom toc khong?
+      - Ad oi, deo khuyen tai hoac de toc mau khi hoc Hoc vien co vi pham khong?
+      - KMA: Sinh vien KMA co duoc nhuom toc khong?
+      - SV KMA có dc nhuộm tóc ko?
+      - Đeo khuyên tai hoặc để tóc màu khi học HV có vi phạm ko?
+      - ad oi, sv KMA co dc nhuom toc ko?
+
+  # 12 · TRANG PHỤC & VĂN HÓA HỌC ĐƯỜNG | intent trong Excel: noi_quy/dien_thoai_lop
+  - intent: faq_noi_quy/dien_thoai_lop
+    examples: |
+      - Có được sử dụng điện thoại, laptop trong giờ học không?
+      - Trong giờ học KMA có được dùng điện thoại không?
+      - Dùng laptop trong lớp Học viện có bị cấm không?
+      - Cho em hỏi, trong giờ học KMA có được dùng điện thoại không?
+      - Cho mình hỏi, dùng laptop trong lớp Học viện có bị cấm không?
+      - Admin ơi, trong giờ học KMA có được dùng điện thoại không?
+      - Ad cho mình hỏi, dùng laptop trong lớp Học viện có bị cấm không?
+      - Mình muốn biết: Trong giờ học KMA có được dùng điện thoại không?
+      - Em đang thắc mắc: Dùng laptop trong lớp Học viện có bị cấm không?
+      - Cho hỏi một chút, trong giờ học KMA có được dùng điện thoại không?
+      - Mình hỏi về KMA: Dùng laptop trong lớp Học viện có bị cấm không?
+      - Về Học viện Kỹ thuật mật mã, trong giờ học KMA có được dùng điện thoại không?
+      - Ở KMA thì dùng laptop trong lớp Học viện có bị cấm không?
+      - Em đang tìm hiểu về KMA, trong giờ học KMA có được dùng điện thoại không?
+      - KMA ơi, dùng laptop trong lớp Học viện có bị cấm không?
+      - Các anh chị cho em hỏi: Trong giờ học KMA có được dùng điện thoại không?
+      - Cần tư vấn giúp em: Dùng laptop trong lớp Học viện có bị cấm không?
+      - Giải đáp giúp em: Trong giờ học KMA có được dùng điện thoại không?
+      - Em cần thông tin cụ thể: Dùng laptop trong lớp Học viện có bị cấm không?
+      - Can KMA students use mobile phones or laptops during class?
+      - I have a question about KMA: Can KMA students use mobile phones or laptops during class?
+      - Please help me with this question: Can KMA students use mobile phones or laptops during class?
+      - Trong gio hoc KMA co duoc dung dien thoai khong?
+      - Dung laptop trong lop Hoc vien co bi cam khong?
+      - Cho em hoi, trong gio hoc KMA co duoc dung dien thoai khong?
+      - Ad oi, dung laptop trong lop Hoc vien co bi cam khong?
+      - KMA: Trong gio hoc KMA co duoc dung dien thoai khong?
+      - Trong giờ học KMA có dc dùng điện thoại ko?
+      - Dùng laptop trong lớp HV có bị cấm ko?
+      - ad oi, trong gio hoc KMA co dc dung dien thoai ko?
+
+  # 12 · TRANG PHỤC & VĂN HÓA HỌC ĐƯỜNG | intent trong Excel: noi_quy/di_muon_nghi_hoc
+  - intent: faq_noi_quy/di_muon_nghi_hoc
+    examples: |
+      - Đi muộn, ra ngoài giữa giờ hoặc bỏ tiết bị xử lý thế nào?
+      - Đi học muộn KMA bị xử lý thế nào?
+      - Ra khỏi lớp giữa giờ hoặc bỏ tiết ở Học viện có bị trừ điểm?
+      - Cho em hỏi, đi học muộn KMA bị xử lý thế nào?
+      - Cho mình hỏi, ra khỏi lớp giữa giờ hoặc bỏ tiết ở Học viện có bị trừ điểm?
+      - Admin ơi, đi học muộn KMA bị xử lý thế nào?
+      - Ad cho mình hỏi, ra khỏi lớp giữa giờ hoặc bỏ tiết ở Học viện có bị trừ điểm?
+      - Mình muốn biết: Đi học muộn KMA bị xử lý thế nào?
+      - Em đang thắc mắc: Ra khỏi lớp giữa giờ hoặc bỏ tiết ở Học viện có bị trừ điểm?
+      - Cho hỏi một chút, đi học muộn KMA bị xử lý thế nào?
+      - Mình hỏi về KMA: Ra khỏi lớp giữa giờ hoặc bỏ tiết ở Học viện có bị trừ điểm?
+      - Về Học viện Kỹ thuật mật mã, đi học muộn KMA bị xử lý thế nào?
+      - Ở KMA thì ra khỏi lớp giữa giờ hoặc bỏ tiết ở Học viện có bị trừ điểm?
+      - Em đang tìm hiểu về KMA, đi học muộn KMA bị xử lý thế nào?
+      - KMA ơi, ra khỏi lớp giữa giờ hoặc bỏ tiết ở Học viện có bị trừ điểm?
+      - Các anh chị cho em hỏi: Đi học muộn KMA bị xử lý thế nào?
+      - Cần tư vấn giúp em: Ra khỏi lớp giữa giờ hoặc bỏ tiết ở Học viện có bị trừ điểm?
+      - Giải đáp giúp em: Đi học muộn KMA bị xử lý thế nào?
+      - Em cần thông tin cụ thể: Ra khỏi lớp giữa giờ hoặc bỏ tiết ở Học viện có bị trừ điểm?
+      - What happens if a KMA student is late or skips class?
+      - I have a question about KMA: What happens if a KMA student is late or skips class?
+      - Please help me with this question: What happens if a KMA student is late or skips class?
+      - Di hoc muon KMA bi xu ly the nao?
+      - Ra khoi lop giua gio hoac bo tiet o Hoc vien co bi tru diem?
+      - Cho em hoi, di hoc muon KMA bi xu ly the nao?
+      - Ad oi, ra khoi lop giua gio hoac bo tiet o Hoc vien co bi tru diem?
+      - KMA: Di hoc muon KMA bi xu ly the nao?
+      - Đi học muộn KMA bị xử lý tn?
+      - Ra khỏi lớp giữa giờ hoặc bỏ tiết ở HV có bị trừ điểm?
+      - ad oi, di hoc muon KMA bi xu ly tn?
+
+  # 12 · TRANG PHỤC & VĂN HÓA HỌC ĐƯỜNG | intent trong Excel: noi_quy/ung_xu
+  - intent: faq_noi_quy/ung_xu
+    examples: |
+      - Quy định về ứng xử và giao tiếp với giảng viên thế nào?
+      - Sinh viên KMA cần ứng xử với giảng viên thế nào?
+      - Quy tắc giao tiếp lịch sự tại Học viện?
+      - Cho em hỏi, sinh viên KMA cần ứng xử với giảng viên thế nào?
+      - Cho mình hỏi, quy tắc giao tiếp lịch sự tại Học viện?
+      - Admin ơi, sinh viên KMA cần ứng xử với giảng viên thế nào?
+      - Ad cho mình hỏi, quy tắc giao tiếp lịch sự tại Học viện?
+      - Mình muốn biết: Sinh viên KMA cần ứng xử với giảng viên thế nào?
+      - Em đang thắc mắc: Quy tắc giao tiếp lịch sự tại Học viện?
+      - Cho hỏi một chút, sinh viên KMA cần ứng xử với giảng viên thế nào?
+      - Mình hỏi về KMA: Quy tắc giao tiếp lịch sự tại Học viện?
+      - Về Học viện Kỹ thuật mật mã, sinh viên KMA cần ứng xử với giảng viên thế nào?
+      - Ở KMA thì quy tắc giao tiếp lịch sự tại Học viện?
+      - Em đang tìm hiểu về KMA, sinh viên KMA cần ứng xử với giảng viên thế nào?
+      - KMA ơi, quy tắc giao tiếp lịch sự tại Học viện?
+      - Các anh chị cho em hỏi: Sinh viên KMA cần ứng xử với giảng viên thế nào?
+      - Cần tư vấn giúp em: Quy tắc giao tiếp lịch sự tại Học viện?
+      - Giải đáp giúp em: Sinh viên KMA cần ứng xử với giảng viên thế nào?
+      - Em cần thông tin cụ thể: Quy tắc giao tiếp lịch sự tại Học viện?
+      - What are KMA's expectations for respectful student behavior?
+      - I have a question about KMA: What are KMA's expectations for respectful student behavior?
+      - Please help me with this question: What are KMA's expectations for respectful student behavior?
+      - Sinh vien KMA can ung xu voi giang vien the nao?
+      - Quy tac giao tiep lich su tai Hoc vien?
+      - Cho em hoi, sinh vien KMA can ung xu voi giang vien the nao?
+      - Ad oi, quy tac giao tiep lich su tai Hoc vien?
+      - KMA: Sinh vien KMA can ung xu voi giang vien the nao?
+      - SV KMA cần ứng xử với giảng viên tn?
+      - Quy tắc giao tiếp lịch sự tại HV?
+      - ad oi, sv KMA can ung xu voi giang vien tn?
+
+  # 12 · TRANG PHỤC & VĂN HÓA HỌC ĐƯỜNG | intent trong Excel: noi_quy/khach_vao_truong
+  - intent: faq_noi_quy/khach_vao_truong
+    examples: |
+      - Người ngoài trường có thể vào KMA không?
+      - Người ngoài có được vào Học viện Kỹ thuật mật mã không?
+      - Dẫn bạn vào khuôn viên KMA cần thủ tục gì?
+      - Người ngoài Học viện có được vào khuôn viên KMA không?
+      - Cho em hỏi, người ngoài có được vào Học viện Kỹ thuật mật mã không?
+      - Cho mình hỏi, dẫn bạn vào khuôn viên KMA cần thủ tục gì?
+      - Admin ơi, người ngoài có được vào Học viện Kỹ thuật mật mã không?
+      - Ad cho mình hỏi, dẫn bạn vào khuôn viên KMA cần thủ tục gì?
+      - Mình muốn biết: Người ngoài có được vào Học viện Kỹ thuật mật mã không?
+      - Em đang thắc mắc: Dẫn bạn vào khuôn viên KMA cần thủ tục gì?
+      - Cho hỏi một chút, người ngoài có được vào Học viện Kỹ thuật mật mã không?
+      - Mình hỏi về KMA: Dẫn bạn vào khuôn viên KMA cần thủ tục gì?
+      - Về Học viện Kỹ thuật mật mã, người ngoài có được vào Học viện Kỹ thuật mật mã không?
+      - Ở KMA thì dẫn bạn vào khuôn viên KMA cần thủ tục gì?
+      - Em đang tìm hiểu về KMA, người ngoài có được vào Học viện Kỹ thuật mật mã không?
+      - KMA ơi, dẫn bạn vào khuôn viên KMA cần thủ tục gì?
+      - Các anh chị cho em hỏi: Người ngoài có được vào Học viện Kỹ thuật mật mã không?
+      - Cần tư vấn giúp em: Dẫn bạn vào khuôn viên KMA cần thủ tục gì?
+      - Giải đáp giúp em: Người ngoài có được vào Học viện Kỹ thuật mật mã không?
+      - Em cần thông tin cụ thể: Dẫn bạn vào khuôn viên KMA cần thủ tục gì?
+      - Are visitors allowed to enter the KMA campus?
+      - I have a question about KMA: Are visitors allowed to enter the KMA campus?
+      - Please help me with this question: Are visitors allowed to enter the KMA campus?
+      - Nguoi ngoai co duoc vao Hoc vien Ky thuat mat ma khong?
+      - Dan ban vao khuon vien KMA can thu tuc gi?
+      - Cho em hoi, nguoi ngoai co duoc vao Hoc vien Ky thuat mat ma khong?
+      - Ad oi, dan ban vao khuon vien KMA can thu tuc gi?
+      - KMA: Nguoi ngoai co duoc vao Hoc vien Ky thuat mat ma khong?
+      - Người ngoài có dc vào KMA ko?
+      - ad oi, nguoi ngoai co dc vao KMA ko?
+      - Mình xin hỏi thêm: Người ngoài có được vào Học viện Kỹ thuật mật mã không?
