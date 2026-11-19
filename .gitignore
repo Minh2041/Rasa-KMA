@@ -1,0 +1,41 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+.venv-rag/
+venv/
+env/
+
+# Rasa cache
+.rasa/
+
+# Rasa trained models
+models/
+*.tar.gz
+
+# RAG vector database
+rag_db/
+
+# Log files
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS
+.DS_Store
+Thumbs.db
